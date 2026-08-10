@@ -1,0 +1,154 @@
+<section class="rounded-2xl border border-white/10 bg-slate-900 p-5 sm:p-6">
+  <!-- HEADER -->
+
+  <div class="mb-5 flex items-center justify-between">
+    <div>
+      <p class="text-xs font-bold uppercase tracking-[0.2em] text-slate-500">
+        Discard Pile
+      </p>
+
+      <h3 class="mt-1 text-lg font-black text-white">Carte scartate</h3>
+    </div>
+
+    <span
+      class="rounded-full bg-slate-800 px-3 py-1 text-xs font-bold text-slate-400"
+    >
+      {{ cards.length }} carte
+    </span>
+  </div>
+
+  <!-- PILE CLICCABILE -->
+
+  <button
+    type="button"
+    (click)="openPile()"
+    class="group w-full text-left"
+    [disabled]="cards.length === 0"
+    [class.cursor-pointer]="cards.length > 0"
+    [class.cursor-default]="cards.length === 0"
+  >
+    <!-- ULTIMA CARTA -->
+
+    @if (lastDiscardedCard) {
+      <div class="flex justify-center">
+        <div
+          class="relative overflow-hidden rounded-xl border border-white/10 bg-slate-800 shadow-lg transition duration-300 group-hover:-translate-y-1 group-hover:border-purple-500/50 group-hover:shadow-purple-950/30"
+        >
+          <img
+            [src]="lastDiscardedCard.image"
+            [alt]="lastDiscardedCard.name"
+            class="h-48 w-32 object-cover transition duration-300 group-hover:scale-105 sm:h-56 sm:w-36"
+          />
+        </div>
+      </div>
+
+      <!-- NOME CARTA -->
+
+      <div class="mt-4 text-center">
+        <p class="text-sm font-bold text-white">
+          {{ lastDiscardedCard.name }}
+        </p>
+
+        <p class="mt-1 text-xs text-slate-500">Ultima carta scartata</p>
+
+        <p
+          class="mt-3 text-xs font-semibold text-purple-400 opacity-0 transition duration-300 group-hover:opacity-100"
+        >
+          Clicca per vedere la pila
+        </p>
+      </div>
+    }
+
+    <!-- NESSUNA CARTA -->
+
+    @else {
+      <div
+        class="flex h-48 items-center justify-center rounded-xl border border-dashed border-white/10 bg-slate-800/50 sm:h-56"
+      >
+        <div class="text-center">
+          <p class="text-3xl opacity-30">🗑️</p>
+
+          <p class="mt-2 text-xs font-semibold text-slate-600">
+            Nessuna carta scartata
+          </p>
+        </div>
+      </div>
+    }
+  </button>
+</section>
+
+@if (isOpen) {
+  <div
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm"
+    (click)="closePile()"
+  >
+    <div
+      class="relative max-h-[90vh] w-full max-w-5xl overflow-hidden rounded-2xl border border-white/10 bg-slate-900 shadow-2xl"
+      (click)="$event.stopPropagation()"
+    >
+      <!-- HEADER MODALE -->
+
+      <div
+        class="flex items-center justify-between border-b border-white/10 px-5 py-4 sm:px-6"
+      >
+        <div>
+          <p
+            class="text-xs font-bold uppercase tracking-[0.2em] text-purple-400"
+          >
+            Discard Pile
+          </p>
+
+          <h3 class="mt-1 text-xl font-black text-white">Carte scartate</h3>
+        </div>
+
+        <button
+          type="button"
+          (click)="closePile()"
+          class="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-800 text-lg text-slate-400 transition hover:bg-slate-700 hover:text-white"
+        >
+          ✕
+        </button>
+      </div>
+
+      <!-- CONTENUTO -->
+
+      <div class="max-h-[calc(90vh-100px)] overflow-y-auto p-5 sm:p-6">
+        <div class="mb-5 flex items-center justify-between">
+          <p class="text-sm text-slate-400">
+            Tutte le carte presenti nella pila degli scarti.
+          </p>
+
+          <span
+            class="rounded-full bg-slate-800 px-3 py-1 text-xs font-bold text-slate-400"
+          >
+            {{ cards.length }} carte
+          </span>
+        </div>
+
+        <!-- GRIGLIA CARTE -->
+
+        <div
+          class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+        >
+          @for (card of cards; track card.instanceId) {
+            <div
+              class="group overflow-hidden rounded-xl border border-white/10 bg-slate-800 shadow-lg"
+            >
+              <img
+                [src]="card.image"
+                [alt]="card.name"
+                class="aspect-[2/3] w-full object-cover transition duration-300 group-hover:scale-105"
+              />
+
+              <div class="border-t border-white/5 px-3 py-2">
+                <p class="truncate text-xs font-bold text-white">
+                  {{ card.name }}
+                </p>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+}

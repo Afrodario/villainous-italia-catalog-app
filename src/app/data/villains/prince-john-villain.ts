@@ -1,0 +1,21 @@
+import { Villain } from '../../models/villain.model';
+
+export const PRINCE_JOHN: Villain = {
+  id: 'prince-john',
+
+  name: 'Principe Giovanni',
+
+  expansionId: 'the-worst-takes-it-all',
+
+  portrait: 'assets/images/cards/prince_john/Prince_John.png',
+
+  mover: 'assets/images/movers/Prince_Johnmover.png',
+
+  mechanics: `Nulla da segnalare`,
+
+  objective: 'Start your turn with at least 20 Power.',
+
+  quote: `"This crown gives me a feeling of power!"`,
+  villainDeckBack: ``,
+  fateDeckBack: ``,
+};

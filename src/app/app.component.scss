@@ -1,0 +1,174 @@
+.app-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+
+  background: #151515;
+  color: white;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+
+  text-align: center;
+}
+
+.app-header h1 {
+  margin-bottom: 5px;
+
+  font-size: 36px;
+}
+
+.app-header p {
+  margin-top: 0;
+
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+.scenario-selection,
+.game {
+  max-width: 900px;
+  margin: auto;
+}
+
+.scenario-selection h2 {
+  text-align: center;
+}
+
+.scenario-card {
+  margin-top: 30px;
+  padding: 20px;
+
+  background: #242424;
+
+  border-radius: 12px;
+
+  text-align: center;
+}
+
+.scenario-card img {
+  width: 100%;
+  max-height: 350px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+.scenario-card button {
+  margin-top: 15px;
+}
+
+.game-header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.scene {
+  overflow: hidden;
+
+  background: #242424;
+
+  border-radius: 12px;
+}
+
+.scene > img {
+  width: 100%;
+
+  max-height: 500px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.scene-content {
+  padding: 30px;
+}
+
+.scene-content h2 {
+  margin-top: 0;
+
+  font-size: 30px;
+}
+
+.scene-content p {
+  font-size: 18px;
+
+  line-height: 1.6;
+}
+
+.choices {
+  margin-top: 30px;
+}
+
+.choices h3 {
+  margin-bottom: 15px;
+}
+
+.choice-button {
+  display: block;
+
+  width: 100%;
+
+  margin-top: 10px;
+
+  text-align: left;
+}
+
+.choice-button:hover {
+  transform: translateY(-2px);
+}
+
+.final-message {
+  margin-top: 30px;
+
+  padding: 20px;
+
+  background: #303030;
+
+  border-radius: 8px;
+
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 20px 10px;
+  }
+
+  .app-header h1 {
+    font-size: 28px;
+  }
+
+  .scene-content {
+    padding: 20px;
+  }
+
+  .scene-content h2 {
+    font-size: 24px;
+  }
+
+  .game-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

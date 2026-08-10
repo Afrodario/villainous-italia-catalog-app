@@ -1,0 +1,159 @@
+<main class="mx-auto max-w-5xl px-4 py-6 sm:px-6 sm:py-10">
+  <!-- TOP BAR -->
+  <div
+    class="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
+  >
+    <div>
+      <p class="text-xs font-bold uppercase tracking-[0.2em] text-purple-400">
+        {{ scenario.villain }}
+      </p>
+
+      <h2 class="mt-1 text-2xl font-black text-white">
+        {{ scenario.title }}
+      </h2>
+    </div>
+
+    <button
+      type="button"
+      (click)="backToScenarios()"
+      class="self-start rounded-lg border border-white/10 bg-slate-900 px-4 py-2 text-sm font-semibold text-slate-300 transition hover:bg-slate-800 hover:text-white sm:self-auto"
+    >
+      ← Scenari
+    </button>
+  </div>
+
+  <!-- GAME STATE -->
+  <section class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-5">
+    <!-- POWER -->
+    <div class="rounded-xl border border-white/10 bg-slate-900 p-4">
+      <p class="text-xs uppercase tracking-wider text-slate-500">Power</p>
+
+      <p class="mt-1 text-2xl font-black text-yellow-400">
+        {{ gameState.power }}
+      </p>
+    </div>
+
+    <!-- CARTE -->
+    <div class="rounded-xl border border-white/10 bg-slate-900 p-4">
+      <p class="text-xs uppercase tracking-wider text-slate-500">Carte</p>
+
+      <p class="mt-1 text-2xl font-black text-blue-400">
+        {{ gameState.hand.length }}
+      </p>
+    </div>
+
+    <!-- HERO -->
+    <div class="rounded-xl border border-white/10 bg-slate-900 p-4">
+      <p class="text-xs uppercase tracking-wider text-slate-500">Hero</p>
+
+      <p class="mt-1 text-2xl font-black text-red-400">
+        {{ gameState.heroCount }}
+      </p>
+    </div>
+
+    <!-- ALLEATI -->
+    <div class="rounded-xl border border-white/10 bg-slate-900 p-4">
+      <p class="text-xs uppercase tracking-wider text-slate-500">Alleati</p>
+
+      <p class="mt-1 text-2xl font-black text-green-400">
+        {{ gameState.allyCount }}
+      </p>
+    </div>
+
+    <!-- OBIETTIVO -->
+    <div
+      class="col-span-2 rounded-xl border border-white/10 bg-slate-900 p-4 sm:col-span-1"
+    >
+      <p class="text-xs uppercase tracking-wider text-slate-500">Obiettivo</p>
+
+      <p class="mt-1 text-2xl font-black text-purple-400">
+        {{ gameState.objectiveProgress }}
+      </p>
+    </div>
+  </section>
+
+  <!-- LAMPADA MAGICA -->
+  @if (gameState.hasMagicLamp) {
+    <div
+      class="mb-6 flex items-center gap-3 rounded-xl border border-yellow-500/20 bg-yellow-500/5 px-4 py-3"
+    >
+      <span class="text-xl"> 🪔 </span>
+
+      <div>
+        <p class="text-sm font-bold text-yellow-300">Lampada Magica</p>
+
+        <p class="text-xs text-yellow-200/60">
+          La Lampada Magica è in tuo possesso.
+        </p>
+      </div>
+    </div>
+  }
+
+  <!-- SCENA -->
+  <section
+    class="overflow-hidden rounded-2xl border border-white/10 bg-slate-900 shadow-2xl shadow-black/30"
+  >
+    <!-- IMMAGINE -->
+    <div class="aspect-video overflow-hidden bg-slate-800">
+      <img
+        [src]="scene.image"
+        [alt]="scene.title"
+        class="h-full w-full object-cover"
+      />
+    </div>
+
+    <!-- CONTENUTO -->
+    <div class="p-6 sm:p-8">
+      <h3 class="text-2xl font-black text-white sm:text-3xl">
+        {{ scene.title }}
+      </h3>
+
+      <p class="mt-4 text-base leading-7 text-slate-400">
+        {{ scene.description }}
+      </p>
+
+      <!-- SCELTE -->
+
+      <app-choice-list
+        [choices]="choiceViewModels"
+        (choiceSelected)="selectChoice($event)"
+      />
+
+      <!-- MANO -->
+
+      <app-hand
+        [cards]="handCards"
+        [canDiscard]="hasAction('discard') && isActionActive('discard')"
+        (cardSelected)="onCardSelected($event)"
+        (cardsDiscarded)="onCardsDiscarded($event)"
+        [discardModeActive]="isActionActive('discard')"
+      ></app-hand>
+
+      <!-- VILLAIN DECK + DISCARD PILE -->
+
+      <div class="mt-6 grid gap-6 sm:grid-cols-2">
+        <!-- VILLAIN DECK -->
+
+        <app-villain-deck
+          [cardCount]="villainDeckCount"
+          (drawCard)="drawVillainCard()"
+        ></app-villain-deck>
+
+        <!-- DISCARD PILE -->
+
+        <app-discard-pile [cards]="discardPileCards"></app-discard-pile>
+      </div>
+
+      <!-- RESTART -->
+      <div class="mt-8 border-t border-white/10 pt-6">
+        <button
+          type="button"
+          (click)="restartScenario()"
+          class="text-sm font-semibold text-slate-500 transition hover:text-white"
+        >
+          ↻ Ricomincia lo scenario
+        </button>
+      </div>
+    </div>
+  </section>
+</main>

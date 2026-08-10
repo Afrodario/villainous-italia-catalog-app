@@ -1,0 +1,125 @@
+<div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+  @for (card of sortedCards; track card.instanceId) {
+    <button
+      type="button"
+      (click)="openDetails(card)"
+      class="relative overflow-hidden rounded-xl border border-white/10 bg-slate-900 transition hover:-translate-y-1 hover:border-purple-500"
+    >
+      <img [src]="card.image" [alt]="card.name" class="w-full" />
+
+      <div
+        class="absolute top-2 right-2 flex h-8 w-8 items-center justify-center rounded-full border-2 border-white text-sm font-black text-white shadow-lg"
+        [class.bg-red-600]="card.quantity === 1"
+        [class.bg-orange-500]="card.quantity === 2"
+        [class.bg-purple-600]="card.quantity >= 3"
+      >
+        x {{ card.quantity }}
+      </div>
+    </button>
+  }
+</div>
+
+@if (selectedCard) {
+  <div
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-3 sm:p-6"
+    (click)="closeDetails()"
+  >
+    <div
+      class="flex max-h-[95vh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl border border-white/10 bg-slate-900 shadow-2xl md:flex-row"
+      (click)="$event.stopPropagation()"
+    >
+      <!-- Immagine -->
+      <div
+        class="flex shrink-0 items-center justify-center bg-slate-950 p-4 sm:p-6 md:w-2/5"
+      >
+        <img
+          [src]="selectedCard.image"
+          [alt]="selectedCard.name"
+          class="max-h-[35vh] w-auto max-w-full rounded-xl object-contain md:max-h-[70vh]"
+        />
+      </div>
+
+      <!-- Contenuto -->
+      <div class="flex min-h-0 flex-1 flex-col p-5 sm:p-6 md:p-8">
+        <div class="min-h-0 flex-1 overflow-y-auto pr-1 sm:pr-2">
+          <p
+            class="text-xs font-bold uppercase tracking-[0.2em] text-purple-400"
+          >
+            {{ selectedCard.type }}
+          </p>
+
+          <h2 class="mt-2 text-2xl font-black text-white sm:text-3xl">
+            {{ selectedCard.name }}
+          </h2>
+
+          <div class="mt-6 space-y-4 sm:mt-8">
+            <div class="flex flex-wrap gap-2">
+              @if (selectedCard.cost) {
+                <span
+                  class="rounded-full bg-purple-600 px-3 py-1 text-xs font-bold"
+                >
+                  Costo {{ selectedCard.cost }}
+                </span>
+              }
+
+              @if (selectedCard.strength) {
+                <span
+                  class="rounded-full bg-red-600 px-3 py-1 text-xs font-bold"
+                >
+                  Forza {{ selectedCard.strength }}
+                </span>
+              }
+
+              <span
+                class="rounded-full bg-green-600 px-3 py-1 text-xs font-bold"
+              >
+                Numero di copie {{ selectedCard.quantity }}
+              </span>
+            </div>
+
+            <p
+              class="text-sm leading-6 text-slate-300 sm:text-base sm:leading-7"
+            >
+              {{ selectedCard.description }}
+            </p>
+          </div>
+
+          @if (selectedCard.faq && selectedCard.faq.length > 0) {
+            <div class="mt-6 border-t border-white/10 pt-5 sm:mt-8 sm:pt-6">
+              <h3
+                class="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-purple-400"
+              >
+                Specifiche
+              </h3>
+
+              <ul class="space-y-3">
+                @for (faq of selectedCard.faq; track faq) {
+                  <li class="flex items-start gap-3">
+                    <span
+                      class="mt-2 h-2 w-2 shrink-0 rounded-full bg-purple-500"
+                    ></span>
+
+                    <span class="text-sm leading-6 text-slate-300 sm:text-base">
+                      {{ faq }}
+                    </span>
+                  </li>
+                }
+              </ul>
+            </div>
+          }
+        </div>
+
+        <!-- Pulsante -->
+        <div class="shrink-0 pt-5 sm:pt-6">
+          <button
+            type="button"
+            (click)="closeDetails()"
+            class="w-full rounded-lg bg-purple-600 px-5 py-3 font-bold transition-colors hover:bg-purple-500 sm:w-auto sm:self-end"
+          >
+            Chiudi
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+}

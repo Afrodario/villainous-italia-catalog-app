@@ -1,0 +1,205 @@
+<section
+  class="mt-8 rounded-2xl border border-white/10 bg-slate-900 p-5 sm:p-6"
+>
+  <!-- HEADER -->
+
+  <div class="mb-5 flex items-center justify-between">
+    <div>
+      <p class="text-xs font-bold uppercase tracking-[0.2em] text-slate-500">
+        La tua mano
+      </p>
+
+      <h3 class="mt-1 text-lg font-black text-white">Carte in mano</h3>
+    </div>
+
+    <span
+      class="rounded-full bg-slate-800 px-3 py-1 text-xs font-bold text-slate-400"
+    >
+      {{ cards.length }} carte
+    </span>
+  </div>
+
+  @if (discardModeActive) {
+    <div
+      class="mb-5 rounded-xl border border-purple-500/30 bg-purple-500/10 px-4 py-3"
+    >
+      <p class="text-sm font-bold text-purple-200">Modalità Scarto attiva</p>
+
+      <p class="mt-1 text-xs text-purple-300/70">
+        Seleziona una o più carte da scartare, quindi conferma l'operazione.
+      </p>
+    </div>
+  }
+
+  <!-- CARTE -->
+
+  <div class="flex flex-wrap gap-3 pb-3">
+    @for (card of cards; track card.instanceId) {
+      <button
+        type="button"
+        (click)="selectCard(card)"
+        class="group relative flex-shrink-0 overflow-hidden rounded-xl border bg-slate-800 shadow-lg transition duration-300"
+        [class.border-purple-500]="isCardSelected(card)"
+        [class.border-white-10]="!isCardSelected(card)"
+        [class.-translate-y-2]="isCardSelected(card)"
+      >
+        <img
+          [src]="card.image"
+          [alt]="card.name"
+          class="h-48 w-32 object-cover transition duration-300 group-hover:scale-105 sm:h-56 sm:w-36"
+        />
+      </button>
+    }
+  </div>
+
+  <!-- AZIONI CARTA SELEZIONATA -->
+
+  @if (selectedCards.length > 0) {
+    <div
+      class="mt-5 flex flex-col gap-3 rounded-xl border border-purple-500/20 bg-purple-500/5 p-4 sm:flex-row sm:items-center sm:justify-between"
+    >
+      <div>
+        <p class="text-sm font-bold text-white">
+          {{ selectedCards.length }} carte selezionate
+        </p>
+      </div>
+
+      <div class="flex gap-2">
+        <!-- ANNULLA -->
+
+        <button
+          type="button"
+          (click)="cancelSelection()"
+          class="rounded-lg border border-white/10 bg-slate-800 px-4 py-2 text-sm font-semibold text-slate-300 transition hover:bg-slate-700 hover:text-white"
+        >
+          Annulla
+        </button>
+
+        <!-- SCARTA -->
+
+        @if (canDiscard) {
+          <button
+            type="button"
+            (click)="confirmDiscard()"
+            class="rounded-lg bg-red-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-red-500"
+          >
+            Scarta {{ selectedCards.length }} carte
+          </button>
+        }
+
+        <!-- DETTAGLIO -->
+
+        @else if (selectedCards.length === 1) {
+          <button
+            type="button"
+            (click)="showCardDetails()"
+            class="rounded-lg bg-purple-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-purple-500"
+          >
+            Dettaglio
+          </button>
+        }
+      </div>
+    </div>
+  }
+</section>
+
+@if (selectedCardForDetails) {
+  <div
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+    (click)="closeCardDetails()"
+  >
+    <div
+      class="relative flex max-h-[90vh] w-full max-w-3xl flex-col overflow-hidden rounded-2xl border border-white/10 bg-slate-900 shadow-2xl sm:flex-row"
+      (click)="$event.stopPropagation()"
+    >
+      <!-- CHIUDI -->
+
+      <button
+        type="button"
+        (click)="closeCardDetails()"
+        class="absolute right-3 top-3 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/60 text-xl text-white transition hover:bg-black/80"
+        aria-label="Chiudi"
+      >
+        ×
+      </button>
+
+      <!-- IMMAGINE -->
+
+      <div class="flex items-center justify-center bg-slate-950 p-4 sm:w-1/2">
+        <img
+          [src]="selectedCardForDetails.image"
+          [alt]="selectedCardForDetails.name"
+          class="max-h-[70vh] w-auto max-w-full rounded-xl object-contain shadow-2xl"
+        />
+      </div>
+
+      <!-- INFORMAZIONI -->
+
+      <div class="flex flex-1 flex-col justify-center p-6 sm:p-8">
+        <!-- TIPO CARTA -->
+
+        <p class="text-xs font-bold uppercase tracking-[0.2em] text-purple-400">
+          {{ selectedCardForDetails.type }}
+        </p>
+
+        <!-- NOME -->
+
+        <h2 class="mt-2 text-2xl font-black text-white sm:text-3xl">
+          {{ selectedCardForDetails.name }}
+        </h2>
+
+        <!-- STATISTICHE -->
+
+        <div class="mt-6 grid grid-cols-2 gap-3">
+          <!-- COSTO -->
+
+          <div class="rounded-xl border border-amber-500/20 bg-amber-500/5 p-4">
+            <p
+              class="text-xs font-bold uppercase tracking-wider text-amber-400"
+            >
+              Costo
+            </p>
+
+            <p class="mt-1 text-2xl font-black text-white">
+              {{ selectedCardForDetails.cost }}
+            </p>
+          </div>
+
+          <!-- FORZA -->
+
+          <div class="rounded-xl border border-red-500/20 bg-red-500/5 p-4">
+            <p class="text-xs font-bold uppercase tracking-wider text-red-400">
+              Forza
+            </p>
+
+            <p class="mt-1 text-2xl font-black text-white">
+              {{ selectedCardForDetails.strength }}
+            </p>
+          </div>
+        </div>
+
+        <!-- DESCRIZIONE -->
+
+        <div class="mt-6 border-t border-white/10 pt-5">
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-500">
+            Descrizione
+          </p>
+
+          <p class="mt-2 text-sm leading-6 text-slate-300">
+            {{ selectedCardForDetails.description }}
+          </p>
+        </div>
+
+        <!-- CHIUDI -->
+
+        <button
+          type="button"
+          (click)="closeCardDetails()"
+          class="mt-8 rounded-lg bg-purple-600 px-5 py-3 text-sm font-bold text-white transition hover:bg-purple-500"
+        >
+          Chiudi
+        </button>
+      </div>
+    </div>
+  </div>
+}
