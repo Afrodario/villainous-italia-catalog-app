@@ -8,18 +8,20 @@
         <h1
           class="text-xl font-black uppercase tracking-widest text-white sm:text-2xl"
         >
-          Villainous
+          Villainous Italia
         </h1>
 
         <p
           class="mt-1 text-xs font-medium uppercase tracking-[0.25em] text-purple-400"
         >
-          What Would You Do?
+          Catalog App
         </p>
       </div>
 
       <div class="hidden text-right sm:block">
-        <p class="text-xs text-slate-500">Interactive Scenarios</p>
+        <p class="text-xs text-slate-500">
+          Catalogo disponibile · Scenari in sviluppo
+        </p>
 
         <p class="text-sm font-semibold text-slate-300">Disney Villainous</p>
       </div>
@@ -27,17 +29,14 @@
   </header>
 
   <nav class="border-b border-white/10 bg-slate-900">
-    <div class="mx-auto flex max-w-7xl gap-3 px-4 py-4 sm:px-6 lg:px-8">
+    <div class="flex items-center gap-2">
       <button
         type="button"
-        (click)="showScenarios()"
-        class="rounded-lg px-5 py-2 font-semibold transition"
-        [class.bg-purple-600]="currentSection === 'scenarios'"
-        [class.bg-slate-800]="currentSection !== 'scenarios'"
+        disabled
+        class="cursor-not-allowed rounded-lg px-5 py-2 font-semibold text-slate-500 opacity-60"
       >
-        🎮 Scenari
+        🎬 Scenari <span class="ml-1 text-xs">🚧 [IN SVILUPPO]</span>
       </button>
-
       <button
         type="button"
         (click)="showCatalog()"

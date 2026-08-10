@@ -23,7 +23,7 @@ export class AppComponent {
   currentScenario: Scenario | null = null;
   currentScene: Scene | null = null;
   gameState: GameState | null = null;
-  currentSection: 'scenarios' | 'catalog' = 'scenarios';
+  currentSection: 'scenarios' | 'catalog' = 'catalog';
 
   constructor(
     private scenarioService: ScenarioService,
