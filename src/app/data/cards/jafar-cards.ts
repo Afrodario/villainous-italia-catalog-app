@@ -116,7 +116,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     cost: 0,
     quantity: 3,
     description:
-      'You may move a Hero to any unlocked location. You may move an Ally to any unlocked location.',
+      'Discard any Ally or Item under your control and gain 3 Power.',
     isFateCard: false,
   },
   {
@@ -129,7 +129,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     cost: 0,
     quantity: 3,
     description:
-      'You may move a Hero to any unlocked location. You may move an Ally to any unlocked location.',
+      'When Scimitar is played, attach it to an Ally. That Ally gets +1 Strength.',
     isFateCard: false,
   },
   {
@@ -142,7 +142,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     cost: 1,
     quantity: 3,
     description:
-      'You may move a Hero to any unlocked location. You may move an Ally to any unlocked location.',
+      'Choose either Item or Ally. Reveal cards from the top of your deck until you reveal a card of the chosen type. Put that card into your hand. Discard the rest.',
     isFateCard: false,
   },
   {
@@ -155,7 +155,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     cost: 1,
     quantity: 2,
     description:
-      'You may move a Hero to any unlocked location. You may move an Ally to any unlocked location.',
+      'Activate: Heroes at this location get -2 Strength until the end of your turn.',
     isFateCard: false,
   },
   {
@@ -167,7 +167,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     type: 'condition',
     quantity: 2,
     description:
-      'You may move a Hero to any unlocked location. You may move an Ally to any unlocked location.',
+      'During their turn, if another player has three or more Allies in their Realm, you may play Manipulation. Choose any card from your discard pile and put it in your hand.',
     isFateCard: false,
   },
   {
@@ -180,7 +180,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     cost: 2,
     quantity: 1,
     description:
-      'You may move a Hero to any unlocked location. You may move an Ally to any unlocked location.',
+      'When Gazeem is discarded from your Realm, you may choose an Item from your discard pile and put it into your hand.',
     strength: 2,
     isFateCard: false,
   },
@@ -194,7 +194,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     cost: 3,
     quantity: 1,
     description:
-      'You may move a Hero to any unlocked location. You may move an Ally to any unlocked location.',
+      "The Cost to play Allies to Razoul's location is reduced by 1 Power.",
     strength: 3,
     isFateCard: false,
   },
@@ -208,7 +208,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     cost: 3,
     quantity: 1,
     description:
-      'You may move a Hero to any unlocked location. You may move an Ally to any unlocked location.',
+      'When Scarab Pendant is played, unlock the Cave of Wonders. At the end of each turn, draw until you have five cards in your hand.',
     isFateCard: false,
   },
   {
@@ -221,7 +221,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     cost: 2,
     quantity: 1,
     description:
-      'You may move a Hero to any unlocked location. You may move an Ally to any unlocked location.',
+      'Activate: Pay 1 Power. Put a Hypnotize that is in your discard pile into your hand.',
     isFateCard: false,
   },
   // MAZZO FATO
@@ -234,7 +234,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     type: 'hero',
     strength: 2,
     quantity: 1,
-    description: 'Descrizione',
+    description: 'When Abu is played, you may choose any Item at his location and attach it to him. Jafar cannot use the Item. When Abu is defeated, the Item is returned to Jafar at the same location.',
     isFateCard: true,
   },
 
@@ -247,7 +247,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     type: 'hero',
     strength: 4,
     quantity: 1,
-    description: 'Descrizione',
+    description: 'When Aladdin is played, you may choose any Item at his location and attach it to him. Jafar cannot use the Item. When Aladdin is defeated, the Item is returned to Jafar at the same location.',
     isFateCard: true,
   },
 
@@ -260,7 +260,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     type: 'hero',
     strength: 2,
     quantity: 1,
-    description: 'Descrizione',
+    description: 'Jafar must defeat Carpet before defeating other Heroes.',
     isFateCard: true,
   },
 
@@ -272,7 +272,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     image: 'assets/images/cards/jafar/Crushing_Blow.png',
     type: 'effect',
     quantity: 2,
-    description: 'Descrizione',
+    description: "Discard an Ally with a Strength of 3 or less from Jafar's Realm.",
     isFateCard: true,
   },
   {
@@ -283,7 +283,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     image: 'assets/images/cards/jafar/Wish.png',
     type: 'item',
     quantity: 3,
-    description: 'Descrizione',
+    description: 'When Wish is played, attach it to a Hero. That Hero gets +2 Strength.',
     isFateCard: true,
   },
   {
@@ -294,7 +294,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     image: 'assets/images/cards/jafar/Narrow_Escape.png',
     type: 'effect',
     quantity: 2,
-    description: 'Descrizione',
+    description: "Choose and play a Hero from Jafar's Fate discard pile.",
     isFateCard: true,
   },
   {
@@ -306,7 +306,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     type: 'hero',
     strength: 6,
     quantity: 1,
-    description: 'Descrizione',
+    description: 'Genie gets +2 Strength if Magic Lamp is at his location.',
     isFateCard: true,
   },
   {
@@ -318,7 +318,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     type: 'hero',
     strength: 3,
     quantity: 1,
-    description: 'Descrizione',
+    description: 'When Jafar draws cards at the end of each turn, he draws one less card.',
     isFateCard: true,
   },
   {
@@ -330,7 +330,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     type: 'hero',
     strength: 4,
     quantity: 1,
-    description: 'Descrizione',
+    description: "Rajah gets +2 Strength if Princess Jasmine is in Jafar's Realm.",
     isFateCard: true,
   },
   {
@@ -342,7 +342,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     type: 'hero',
     strength: 2,
     quantity: 1,
-    description: 'Descrizione',
+    description: 'Palace Guards cannot be used to defeat Sultan.',
     isFateCard: true,
   },
   {
@@ -353,7 +353,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     image: 'assets/images/cards/jafar/Treachery.png',
     type: 'effect',
     quantity: 1,
-    description: 'Descrizione',
+    description: 'Jafar loses up to 2 Power.',
     isFateCard: true,
   },
 ];

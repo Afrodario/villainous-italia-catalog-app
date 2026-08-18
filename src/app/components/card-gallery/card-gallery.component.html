@@ -79,9 +79,8 @@
 
             <p
               class="text-sm leading-6 text-slate-300 sm:text-base sm:leading-7"
-            >
-              {{ selectedCard.description }}
-            </p>
+              [innerHTML]="formatCardText(selectedCard.description)"
+            ></p>
           </div>
 
           @if (selectedCard.faq && selectedCard.faq.length > 0) {
@@ -99,9 +98,10 @@
                       class="mt-2 h-2 w-2 shrink-0 rounded-full bg-purple-500"
                     ></span>
 
-                    <span class="text-sm leading-6 text-slate-300 sm:text-base">
-                      {{ faq }}
-                    </span>
+                    <span
+                      class="text-sm leading-6 text-slate-300 sm:text-base"
+                      [innerHTML]="formatCardText(faq)"
+                    ></span>
                   </li>
                 }
               </ul>
