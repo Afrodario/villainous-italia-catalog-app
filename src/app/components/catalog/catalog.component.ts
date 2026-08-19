@@ -67,7 +67,8 @@ export class CatalogComponent {
     this.fateDeck = [];
 
     this.villains = this.villainRepository.getByExpansion(expansion.id);
-    setTimeout(() => {
+
+    requestAnimationFrame(() => {
       this.villainsSection?.nativeElement.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
@@ -77,7 +78,9 @@ export class CatalogComponent {
 
   selectVillain(villain: Villain): void {
     this.selectedVillain = villain;
+
     console.log('SELECTED VILLAIN', villain);
+
     this.villainDeck = this.toCardViewModels(
       this.cardRepository.getVillainDeck(villain.id),
     );
@@ -85,8 +88,10 @@ export class CatalogComponent {
     this.fateDeck = this.toCardViewModels(
       this.cardRepository.getFateDeck(villain.id),
     );
+
     this.realm = this.realmRepository.getByVillainId(villain.id);
-    setTimeout(() => {
+
+    requestAnimationFrame(() => {
       this.deckSection?.nativeElement.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
