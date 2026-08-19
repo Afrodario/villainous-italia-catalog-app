@@ -132,7 +132,9 @@ export class CatalogComponent {
       cost: card.cost,
       quantity: card.quantity,
       description: card.description,
+      strategy: card.strategy,
       strength: card.strength,
+      strengthModifier: card.strengthModifier,
       faq: card.faq,
 
       isFateCard: card.isFateCard,

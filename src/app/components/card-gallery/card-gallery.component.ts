@@ -61,33 +61,110 @@ export class CardGalleryComponent {
     }
   }
 
+  getCardTypeLabel(type: CardType): string {
+    const labels: Record<CardType, string> = {
+      ally: 'ALLEATO',
+      item: 'OGGETTO',
+      effect: 'EFFETTO',
+      condition: 'CONDIZIONE',
+      hero: 'EROE',
+    };
+
+    return labels[type];
+  }
+
+  getCardTypeClass(type: CardType): string {
+    const classes: Record<CardType, string> = {
+      ally: 'text-red-400',
+      item: 'text-sky-400',
+      effect: 'text-green-400',
+      condition: 'text-purple-400',
+      hero: 'text-yellow-400',
+    };
+
+    return classes[type];
+  }
+
   formatCardText(text: string): string {
     if (!text) {
       return '';
     }
 
-    return text
-      .replace(
-        /\bHero\b/g,
-        '<span class="font-bold text-yellow-400">Hero</span>',
-      )
-      .replace(/\bAlly\b/g, '<span class="font-bold text-red-400">Ally</span>')
-      .replace(/\bItem\b/g, '<span class="font-bold text-sky-400">Item</span>')
-      .replace(
-        /\bEffect\b/g,
-        '<span class="font-bold text-green-400">Effect</span>',
-      )
-      .replace(
-        /\bCondition\b/g,
-        '<span class="font-bold text-purple-400">Condition</span>',
-      )
-      // .replace(
-      //   /\bLocation\b/g,
-      //   '<span class="font-bold text-orange-400">Location</span>',
-      // )
-      // .replace(
-      //   /\bPower\b/g,
-      //   '<span class="font-bold text-amber-400">Power</span>',
-      // );
+    return (
+      text
+        .replace(
+          /\b(Activate|Attivare):\s*/g,
+          '<span class="mx-1 inline-flex items-center rounded-md border border-orange-500/40 bg-orange-500/10 px-1.5 py-0.5 align-middle text-xs font-black text-orange-400" title="Attivare">⚡</span>',
+        )
+        // HERO
+        .replace(
+          /\bHero\b/g,
+          '<span class="font-bold text-yellow-400">Hero</span>',
+        )
+        .replace(
+          /\bEroe\b/g,
+          '<span class="font-bold text-yellow-400">Eroe</span>',
+        )
+        .replace(
+          /\bEroi\b/g,
+          '<span class="font-bold text-yellow-400">Eroi</span>',
+        )
+
+        // ALLY
+        .replace(
+          /\bAlly\b/g,
+          '<span class="font-bold text-red-400">Ally</span>',
+        )
+        .replace(
+          /\bAlleato\b/g,
+          '<span class="font-bold text-red-400">Alleato</span>',
+        )
+        .replace(
+          /\bAlleati\b/g,
+          '<span class="font-bold text-red-400">Alleati</span>',
+        )
+
+        // ITEM
+        .replace(
+          /\bItem\b/g,
+          '<span class="font-bold text-sky-400">Item</span>',
+        )
+        .replace(
+          /\bOggetto\b/g,
+          '<span class="font-bold text-sky-400">Oggetto</span>',
+        )
+        .replace(
+          /\bOggetti\b/g,
+          '<span class="font-bold text-sky-400">Oggetti</span>',
+        )
+
+        // EFFECT
+        .replace(
+          /\bEffect\b/g,
+          '<span class="font-bold text-green-400">Effect</span>',
+        )
+        .replace(
+          /\bEffetto\b/g,
+          '<span class="font-bold text-green-400">Effetto</span>',
+        )
+        .replace(
+          /\bEffetti\b/g,
+          '<span class="font-bold text-green-400">Effetti</span>',
+        )
+
+        // CONDITION
+        .replace(
+          /\bCondition\b/g,
+          '<span class="font-bold text-purple-400">Condition</span>',
+        )
+        .replace(
+          /\bCondizione\b/g,
+          '<span class="font-bold text-purple-400">Condizione</span>',
+        )
+        .replace(
+          /\bCondizioni\b/g,
+          '<span class="font-bold text-purple-400">Condizioni</span>',
+        )
+    );
   }
 }

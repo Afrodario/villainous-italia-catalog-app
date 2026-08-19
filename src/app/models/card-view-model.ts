@@ -1,11 +1,8 @@
+import { CardStrategy } from './card-strategy.model';
+
 export type CardType = 'ally' | 'item' | 'effect' | 'condition' | 'hero';
 
-export type CardSort =
-  | 'name'
-  | 'cost'
-  | 'quantity'
-  | 'strength'
-  | 'type';
+export type CardSort = 'name' | 'cost' | 'quantity' | 'strength' | 'type';
 
 export interface CardViewModel {
   instanceId: string;
@@ -16,7 +13,9 @@ export interface CardViewModel {
   cost?: number;
   quantity: number;
   description: string;
+  strategy?: CardStrategy;
   strength?: number;
+  strengthModifier?: number;
   faq?: string[];
   isFateCard?: boolean;
 }

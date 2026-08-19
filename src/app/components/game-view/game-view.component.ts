@@ -84,6 +84,7 @@ export class GameViewComponent {
       cost: definition.cost,
       quantity: definition.quantity,
       description: definition.description,
+      strategy: definition.strategy,
       strength: definition.strength,
       isFateCard: definition.isFateCard
     };
