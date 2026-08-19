@@ -10,7 +10,7 @@ export interface CardViewModel {
   name: string;
   image: string;
   type: CardType;
-  cost?: number;
+  cost?: number | '?';
   quantity: number;
   description: string;
   strategy?: CardStrategy;

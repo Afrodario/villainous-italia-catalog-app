@@ -10,7 +10,7 @@ export interface CardDefinition {
   image: string;
   type: CardType;
   quantity: number;
-  cost?: number;
+  cost?: number | '?';
   description: string;
   strategy?: CardStrategy;
   strength?: number;

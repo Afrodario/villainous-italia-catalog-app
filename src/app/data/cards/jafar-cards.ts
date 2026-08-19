@@ -76,7 +76,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     name: 'Ipnotizzare',
     image: 'assets/images/cards/jafar/Hypnotize.png',
     type: 'effect',
-    cost: 0,
+    cost: '?',
     quantity: 2,
     faq: [
       'Any Fate Items attached to the Hero are discarded.',

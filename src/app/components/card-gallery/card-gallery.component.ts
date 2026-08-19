@@ -45,7 +45,9 @@ export class CardGalleryComponent {
         return cards.sort((a, b) => a.name.localeCompare(b.name));
 
       case 'cost':
-        return cards.sort((a, b) => (a.cost ?? 999) - (b.cost ?? 999));
+        return cards.sort(
+          (a, b) => this.getCostSortValue(a) - this.getCostSortValue(b),
+        );
 
       case 'quantity':
         return cards.sort((a, b) => b.quantity - a.quantity);
@@ -59,6 +61,18 @@ export class CardGalleryComponent {
       default:
         return cards;
     }
+  }
+
+  private getCostSortValue(card: CardViewModel): number {
+    if (card.cost === undefined) {
+      return 1000;
+    }
+
+    if (card.cost === '?') {
+      return 999;
+    }
+
+    return card.cost;
   }
 
   getCardTypeLabel(type: CardType): string {
