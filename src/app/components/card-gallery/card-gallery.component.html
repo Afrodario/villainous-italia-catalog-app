@@ -25,22 +25,26 @@
     (click)="closeDetails()"
   >
     <div
-      class="flex max-h-[95vh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl border border-white/10 bg-slate-900 shadow-2xl md:flex-row"
+      class="flex max-h-[95vh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl border border-white/10 bg-slate-900 shadow-2xl landscape:flex-row sm:max-h-[90vh] sm:landscape:max-h-[95vh]"
       (click)="$event.stopPropagation()"
     >
       <!-- Immagine -->
+
       <div
-        class="flex shrink-0 items-center justify-center bg-slate-950 p-4 sm:p-6 md:w-2/5"
+        class="flex shrink-0 items-center justify-center bg-slate-950 p-4 sm:p-6 landscape:w-[38%] landscape:p-4 sm:landscape:w-2/5"
       >
         <img
           [src]="selectedCard.image"
           [alt]="selectedCard.name"
-          class="max-h-[35vh] w-auto max-w-full rounded-xl object-contain md:max-h-[70vh]"
+          class="max-h-[35vh] w-auto max-w-full rounded-xl object-contain landscape:max-h-[82vh] sm:max-h-[40vh] sm:landscape:max-h-[85vh]"
         />
       </div>
 
       <!-- Contenuto -->
-      <div class="flex min-h-0 flex-1 flex-col p-5 sm:p-6 md:p-8">
+
+      <div
+        class="flex min-h-0 flex-1 flex-col p-5 sm:p-6 md:p-8 landscape:p-4 sm:landscape:p-5"
+      >
         <div class="min-h-0 flex-1 overflow-y-auto pr-1 sm:pr-2">
           <p
             class="text-xs font-black uppercase tracking-[0.2em]"
