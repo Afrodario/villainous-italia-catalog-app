@@ -1,5 +1,4 @@
 import { CardDefinition } from '../../models/card-definition.model';
-import { Card } from '../../models/card.model';
 
 export const JAFAR_CARDS: CardDefinition[] = [
   {

@@ -19,6 +19,6 @@ export const CAPTAIN_HOOK: Villain = {
 
   quote: `"Double the powder and shorten the fuse!"`,
 
-  villainDeckBack: ``,
-  fateDeckBack: ``,
+  villainDeckBack: `assets/images/cards/captain_hook/Captain_Hook_Villain_Back.png`,
+  fateDeckBack: `assets/images/cards/captain_hook/Captain_Hook_Fate_Back.png`,
 };
