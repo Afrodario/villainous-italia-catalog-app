@@ -12,7 +12,9 @@ export const QUEEN_OF_HEARTS_REALM: Realm = {
       id: 'sultans-palace',
       name: 'Palazzo del Sultano',
       image: 'assets/images/realms/jafar/Sultans_Palace.jpg',
-      description: 'Il centro del regno di Agrabah.',
+      description: {
+        paragraphs: []
+      },
       upperActions: ['Giocare una carta', 'Attivare'],
       lowerActions: ['Scontro', 'Fato'],
     },
@@ -21,7 +23,9 @@ export const QUEEN_OF_HEARTS_REALM: Realm = {
       id: 'streets-of-agrabah',
       name: 'Strade di Agrabah',
       image: 'assets/images/realms/jafar/Streets_of_Agrabah.png',
-      description: 'La dimora della Lampada Magica.',
+      description: {
+        paragraphs: []
+      },
       upperActions: ['Giocare una carta', 'Attivare'],
       lowerActions: ['Scontro', 'Fato'],
     },
@@ -30,7 +34,9 @@ export const QUEEN_OF_HEARTS_REALM: Realm = {
       name: 'Oasi',
       image: 'assets/images/realms/jafar/Oasis.png',
 
-      description: 'La dimora della Lampada Magica.',
+      description: {
+        paragraphs: []
+      },
 
       upperActions: ['Giocare una carta', 'Attivare'],
       lowerActions: ['Scontro', 'Fato'],
@@ -40,7 +46,9 @@ export const QUEEN_OF_HEARTS_REALM: Realm = {
       name: 'Caverna delle meraviglie',
       image: 'assets/images/realms/jafar/Cave_of_Wonders.png',
 
-      description: 'La dimora della Lampada Magica.',
+      description: {
+        paragraphs: []
+      },
 
       upperActions: ['Giocare una carta', 'Attivare'],
       lowerActions: ['Scontro', 'Fato'],
