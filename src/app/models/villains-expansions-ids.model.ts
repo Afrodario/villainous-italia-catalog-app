@@ -9,5 +9,5 @@ export enum VILLAINS_IDS {
     Maleficent = 'maleficent',
     QueenOfHearts = 'queen-of-hearts',
     PrinceJohn = 'prince-john',
-    Ursula = 'Ursula'
+    Ursula = 'ursula'
 }

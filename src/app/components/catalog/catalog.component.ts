@@ -19,6 +19,7 @@ import { CardDefinition } from '../../models/card-definition.model';
 import { RealmRepository } from '../../repositories/realm.repository';
 import { Realm } from '../../models/realm.model';
 import { LocationGalleryComponent } from '../location-gallery/location-gallery.component';
+import { VILLAINS_IDS } from '../../models/villains-expansions-ids.model';
 
 @Component({
   selector: 'app-catalog',
@@ -119,12 +120,9 @@ export class CatalogComponent implements OnDestroy {
   selectVillain(villain: Villain): void {
     this.selectedVillain = villain;
 
-    console.log('SELECTED VILLAIN', villain);
-
     this.villainDeck = this.toCardViewModels(
       this.cardRepository.getVillainDeck(villain.id),
     );
-
     this.fateDeck = this.toCardViewModels(
       this.cardRepository.getFateDeck(villain.id),
     );
@@ -181,7 +179,7 @@ export class CatalogComponent implements OnDestroy {
       strength: card.strength,
       strengthModifier: card.strengthModifier,
       faq: card.faq,
-
+      variants: card.variants,
       isFateCard: card.isFateCard,
     }));
   }

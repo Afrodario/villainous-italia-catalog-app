@@ -17,6 +17,6 @@ export const URSULA: Villain = {
   objective: `Start your turn with the Trident and the Crown at Ursula's lair.`,
 
   quote: `"The sea and all its spoils bow to my power!"`,
-  villainDeckBack: ``,
-  fateDeckBack: ``,
+  villainDeckBack: `assets/images/cards/ursula/Ursula_Villain_Back.png`,
+  fateDeckBack: `assets/images/cards/ursula/Ursula_Fate_Back.png`,
 };

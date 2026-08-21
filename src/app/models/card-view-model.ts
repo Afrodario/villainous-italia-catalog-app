@@ -1,6 +1,13 @@
 import { CardStrategy } from './card-strategy.model';
+import { CardVariant } from './card-variant.model';
 
-export type CardType = 'ally' | 'item' | 'effect' | 'condition' | 'hero' | 'curse';
+export type CardType =
+  | 'ally'
+  | 'item'
+  | 'effect'
+  | 'condition'
+  | 'hero'
+  | 'curse';
 
 export type CardSort = 'name' | 'cost' | 'quantity' | 'strength' | 'type';
 
@@ -17,5 +24,6 @@ export interface CardViewModel {
   strength?: number;
   strengthModifier?: number;
   faq?: string[];
+  variants?: CardVariant[];
   isFateCard?: boolean;
 }
