@@ -1,4 +1,10 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnDestroy,
+  ViewChild,
+} from '@angular/core';
 import { afterNextRender } from '@angular/core';
 
 import { Expansion } from '../../models/expansion.model';
@@ -20,7 +26,7 @@ import { LocationGalleryComponent } from '../location-gallery/location-gallery.c
   imports: [CardGalleryComponent, LocationGalleryComponent],
   templateUrl: './catalog.component.html',
 })
-export class CatalogComponent {
+export class CatalogComponent implements AfterViewInit, OnDestroy {
   expansions: Expansion[] = [];
   selectedExpansion: Expansion | null = null;
   villains: Villain[] = [];
@@ -32,6 +38,8 @@ export class CatalogComponent {
   selectedMover: Villain | null = null;
   selectedDeckBack: string | null = null;
   selectedDeckBackTitle = '';
+  showBackToVillains = false;
+  private villainsObserver?: IntersectionObserver;
 
   villainDeckSortBy: CardSort = 'quantity';
   fateDeckSortBy: CardSort = 'quantity';
@@ -74,6 +82,30 @@ export class CatalogComponent {
         block: 'start',
       });
     });
+  }
+
+  scrollToVillains(): void {
+    this.villainsSection?.nativeElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+
+  ngAfterViewInit(): void {
+    this.villainsObserver = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+
+        this.showBackToVillains = !entry.isIntersecting;
+      },
+      {
+        threshold: 0.1,
+      },
+    );
+
+    if (this.villainsSection) {
+      this.villainsObserver.observe(this.villainsSection.nativeElement);
+    }
   }
 
   selectVillain(villain: Villain): void {
@@ -144,5 +176,9 @@ export class CatalogComponent {
 
       isFateCard: card.isFateCard,
     }));
+  }
+
+  ngOnDestroy(): void {
+    this.villainsObserver?.disconnect();
   }
 }
