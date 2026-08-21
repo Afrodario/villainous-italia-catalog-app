@@ -300,11 +300,11 @@
   }
   @if (selectedMover) {
     <div
-      class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-3 sm:p-6"
+      class="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/80 p-3 sm:p-6"
       (click)="closeMover()"
     >
       <div
-        class="flex max-h-[95vh] w-full max-w-lg flex-col overflow-hidden rounded-2xl border border-white/10 bg-slate-900 p-4 shadow-2xl sm:p-8"
+        class="w-full max-w-lg rounded-2xl border border-white/10 bg-slate-900 p-4 shadow-2xl sm:p-8"
         (click)="$event.stopPropagation()"
       >
         <h2
@@ -313,7 +313,7 @@
           Pedina di {{ selectedMover.name }}
         </h2>
 
-        <div class="flex min-h-0 flex-1 items-center justify-center">
+        <div class="flex justify-center">
           <img
             [src]="selectedMover.mover"
             [alt]="'Pedina di ' + selectedMover.name"
@@ -335,11 +335,11 @@
   }
   @if (selectedDeckBack) {
     <div
-      class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-3 sm:p-6"
+      class="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/80 p-3 sm:p-6"
       (click)="closeDeckBack()"
     >
       <div
-        class="flex max-h-[95vh] w-full max-w-lg flex-col items-center overflow-hidden rounded-2xl border border-white/10 bg-slate-900 p-4 shadow-2xl sm:p-8"
+        class="w-full max-w-lg rounded-2xl border border-white/10 bg-slate-900 p-4 shadow-2xl sm:p-8"
         (click)="$event.stopPropagation()"
       >
         <h2
@@ -348,13 +348,11 @@
           {{ selectedDeckBackTitle }}
         </h2>
 
-        <div
-          class="flex min-h-0 flex-1 items-center justify-center overflow-hidden"
-        >
+        <div class="flex justify-center">
           <img
             [src]="selectedDeckBack"
             [alt]="selectedDeckBackTitle"
-            class="max-h-[58vh] w-auto max-w-full rounded-xl object-contain shadow-2xl sm:max-h-[70vh]"
+            class="max-h-[60vh] w-auto max-w-full rounded-xl object-contain shadow-2xl sm:max-h-[70vh]"
           />
         </div>
 
