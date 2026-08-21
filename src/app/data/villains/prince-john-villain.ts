@@ -16,6 +16,6 @@ export const PRINCE_JOHN: Villain = {
   objective: 'Start your turn with at least 20 Power.',
 
   quote: `"This crown gives me a feeling of power!"`,
-  villainDeckBack: ``,
-  fateDeckBack: ``,
+  villainDeckBack: `assets/images/cards/prince_john/Prince_John_Villain_Back.png`,
+  fateDeckBack: `assets/images/cards/prince_john/Prince_John_Fate_Back.png`,
 };

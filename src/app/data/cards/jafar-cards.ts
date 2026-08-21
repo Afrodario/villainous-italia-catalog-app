@@ -1,13 +1,15 @@
+import { CARD_TYPES } from '../../models/actions-types.model';
 import { CardDefinition } from '../../models/card-definition.model';
+import { EXPANSIONS_IDS, VILLAINS_IDS } from '../../models/villains-expansions-ids.model';
 
 export const JAFAR_CARDS: CardDefinition[] = [
   {
     id: 'magic-lamp',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Lampada Magica',
     image: 'assets/images/cards/jafar/Magic_Lamp.png',
-    type: 'item',
+    type: CARD_TYPES.Item,
     cost: 4,
     quantity: 1,
     description:
@@ -26,11 +28,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
 
   {
     id: 'iago',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Iago',
     image: 'assets/images/cards/jafar/Iago.png',
-    type: 'ally',
+    type: CARD_TYPES.Ally,
     cost: 1,
     quantity: 1,
     description:
@@ -49,11 +51,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
 
   {
     id: 'palace-guard',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Guardia di Palazzo',
     image: 'assets/images/cards/jafar/Palace_Guard.png',
-    type: 'ally',
+    type: CARD_TYPES.Ally,
     cost: 1,
     quantity: 3,
     description: 'No additional Ability.',
@@ -70,11 +72,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
 
   {
     id: 'hypnotize',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Ipnotizzare',
     image: 'assets/images/cards/jafar/Hypnotize.png',
-    type: 'effect',
+    type: CARD_TYPES.Effect,
     cost: '?',
     quantity: 2,
     faq: [
@@ -104,11 +106,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
 
   {
     id: 'a-snake-am-i',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Ah, sarei un serpente?',
     image: 'assets/images/cards/jafar/A_Snake_Am_I.png',
-    type: 'effect',
+    type: CARD_TYPES.Effect,
     cost: 2,
     quantity: 2,
     description:
@@ -126,11 +128,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
 
   {
     id: 'deception',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Inganno',
     image: 'assets/images/cards/jafar/Deception.png',
-    type: 'condition',
+    type: CARD_TYPES.Condition,
     quantity: 2,
     description:
       "During their turn, if another player has two or more Items in their Realm, you may play Deception. Reveal and play the top card of that player's Fate deck.",
@@ -147,11 +149,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
 
   {
     id: 'sorcerous-power',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Potere dello Stregone',
     image: 'assets/images/cards/jafar/Sorcerous_Power.png',
-    type: 'effect',
+    type: CARD_TYPES.Effect,
     cost: 2,
     quantity: 2,
     description:
@@ -167,11 +169,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'necessary-sacrifice',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Sacrificio Necessario',
     image: 'assets/images/cards/jafar/Necessary_Sacrifice.png',
-    type: 'effect',
+    type: CARD_TYPES.Effect,
     cost: 0,
     quantity: 3,
     description:
@@ -188,11 +190,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'scimitar',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Scimitarra',
     image: 'assets/images/cards/jafar/Scimitar.png',
-    type: 'item',
+    type: CARD_TYPES.Item,
     cost: 0,
     quantity: 3,
     strengthModifier: +1,
@@ -210,11 +212,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'scrying',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Chiaroveggenza',
     image: 'assets/images/cards/jafar/Scrying.png',
-    type: 'effect',
+    type: CARD_TYPES.Effect,
     cost: 1,
     quantity: 3,
     description:
@@ -231,11 +233,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'giant-hourglass',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Clessidra Gigante',
     image: 'assets/images/cards/jafar/Giant_Hourglass.png',
-    type: 'item',
+    type: CARD_TYPES.Item,
     cost: 1,
     quantity: 2,
     description:
@@ -254,11 +256,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'manipulation',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Manipolazione',
     image: 'assets/images/cards/jafar/Manipulation.png',
-    type: 'condition',
+    type: CARD_TYPES.Condition,
     quantity: 2,
     description:
       'During their turn, if another player has three or more Allies in their Realm, you may play Manipulation. Choose any card from your discard pile and put it in your hand.',
@@ -274,11 +276,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'gazeem',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Gazeem',
     image: 'assets/images/cards/jafar/Gazeem.png',
-    type: 'ally',
+    type: CARD_TYPES.Ally,
     cost: 2,
     quantity: 1,
     description:
@@ -295,11 +297,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'razoul',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Razoul',
     image: 'assets/images/cards/jafar/Razoul.png',
-    type: 'ally',
+    type: CARD_TYPES.Ally,
     cost: 3,
     quantity: 1,
     description:
@@ -318,11 +320,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'scarab-pendant',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Amuleto dello Scarabeo',
     image: 'assets/images/cards/jafar/Scarab_Pendant.png',
-    type: 'effect',
+    type: CARD_TYPES.Effect,
     cost: 3,
     quantity: 1,
     description:
@@ -340,11 +342,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'snake-staff',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Bastone del Serpente',
     image: 'assets/images/cards/jafar/Snake_Staff.png',
-    type: 'effect',
+    type: CARD_TYPES.Effect,
     cost: 2,
     quantity: 1,
     description:
@@ -361,11 +363,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   // MAZZO FATO
   {
     id: 'abu',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Abu',
     image: 'assets/images/cards/jafar/Abu.png',
-    type: 'hero',
+    type: CARD_TYPES.Hero,
     strength: 2,
     quantity: 1,
     description:
@@ -382,11 +384,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
 
   {
     id: 'aladdin',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Aladdin',
     image: 'assets/images/cards/jafar/Aladdin.png',
-    type: 'hero',
+    type: CARD_TYPES.Hero,
     strength: 4,
     quantity: 1,
     description:
@@ -404,11 +406,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
 
   {
     id: 'carpet',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Tappeto Magico',
     image: 'assets/images/cards/jafar/Carpet.png',
-    type: 'hero',
+    type: CARD_TYPES.Hero,
     strength: 2,
     quantity: 1,
     description: 'Jafar must defeat Carpet before defeating other Heroes.',
@@ -425,11 +427,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
 
   {
     id: 'crushing-blow',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Brutto Colpo',
     image: 'assets/images/cards/jafar/Crushing_Blow.png',
-    type: 'effect',
+    type: CARD_TYPES.Effect,
     quantity: 2,
     description:
       "Discard an Ally with a Strength of 3 or less from Jafar's Realm.",
@@ -444,11 +446,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'wish',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Desiderio',
     image: 'assets/images/cards/jafar/Wish.png',
-    type: 'item',
+    type: CARD_TYPES.Item,
     quantity: 3,
     strengthModifier: 2,
     description:
@@ -464,11 +466,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'narrow-escape',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: `C'è mancato poco`,
     image: 'assets/images/cards/jafar/Narrow_Escape.png',
-    type: 'effect',
+    type: CARD_TYPES.Effect,
     quantity: 2,
     description: "Choose and play a Hero from Jafar's Fate discard pile.",
     strategy: {
@@ -482,11 +484,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'genie',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Genio',
     image: 'assets/images/cards/jafar/Genie.png',
-    type: 'hero',
+    type: CARD_TYPES.Hero,
     strength: 6,
     quantity: 1,
     description: 'Genie gets +2 Strength if Magic Lamp is at his location.',
@@ -502,11 +504,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'princess-jasmine',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Principessa Jasmine',
     image: 'assets/images/cards/jafar/Princess_Jasmine.png',
-    type: 'hero',
+    type: CARD_TYPES.Hero,
     strength: 3,
     quantity: 1,
     description:
@@ -523,11 +525,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'rajah',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Rajah',
     image: 'assets/images/cards/jafar/Rajah.png',
-    type: 'hero',
+    type: CARD_TYPES.Hero,
     strength: 4,
     quantity: 1,
     description:
@@ -543,11 +545,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'sultan',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Sultano',
     image: 'assets/images/cards/jafar/Sultan.png',
-    type: 'hero',
+    type: CARD_TYPES.Hero,
     strength: 2,
     quantity: 1,
     description: 'Palace Guards cannot be used to defeat Sultan.',
@@ -562,11 +564,11 @@ export const JAFAR_CARDS: CardDefinition[] = [
   },
   {
     id: 'treachery',
-    villainId: 'jafar',
-    expansionId: 'the-worst-takes-it-all',
+    villainId: VILLAINS_IDS.Jafar,
+    expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Tradimento',
     image: 'assets/images/cards/jafar/Treachery.png',
-    type: 'effect',
+    type: CARD_TYPES.Effect,
     quantity: 1,
     description: 'Jafar loses up to 2 Power.',
     strategy: {

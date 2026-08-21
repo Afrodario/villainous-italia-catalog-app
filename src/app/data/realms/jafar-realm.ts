@@ -1,4 +1,4 @@
-import { ACTIONS } from '../../models/actions.model';
+import { ACTIONS } from '../../models/actions-types.model';
 import { Realm } from '../../models/realm.model';
 
 export const JAFAR_REALM: Realm = {

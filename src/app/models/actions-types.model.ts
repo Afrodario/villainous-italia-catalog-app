@@ -9,3 +9,12 @@ export enum ACTIONS {
     DiscardCards = 'Scartare',
     BrewPoison = 'Preparare Veleno'
 }
+
+export enum CARD_TYPES {
+    Hero = 'hero',
+    Item = 'item',
+    Ally = 'ally',
+    Effect = 'effect',
+    Curse = 'curse',
+    Condition = 'condition'
+}
