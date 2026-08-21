@@ -5,5 +5,6 @@ export interface CardVariant {
   quantity: number;
   cost?: number | '?';
   strength?: number;
+  strengthModifier?: number;
   description: string;
 }

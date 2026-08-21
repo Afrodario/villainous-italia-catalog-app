@@ -6,6 +6,7 @@ import {
   CardViewModel,
 } from '../../models/card-view-model';
 import { GameTextFormatterService } from '../../services/game-text-formatter.service';
+import { CardVariant } from '../../models/card-variant.model';
 
 @Component({
   selector: 'app-card-gallery',
@@ -20,16 +21,27 @@ export class CardGalleryComponent {
   sortBy: CardSort = 'quantity';
 
   selectedCard: CardViewModel | null = null;
+  selectedVariantIndex = 0;
 
   constructor(public gameTextFormatter: GameTextFormatterService) {}
 
   openDetails(card: CardViewModel): void {
     this.selectedCard = card;
+    this.selectedVariantIndex = 0;
+
     console.log('CARD', card);
   }
 
   closeDetails(): void {
     this.selectedCard = null;
+  }
+
+  get selectedVariant(): CardVariant | null {
+    if (!this.selectedCard?.variants?.length) {
+      return null;
+    }
+
+    return this.selectedCard.variants[this.selectedVariantIndex] ?? null;
   }
 
   get sortedCards(): CardViewModel[] {
@@ -39,7 +51,7 @@ export class CardGalleryComponent {
       effect: 3,
       condition: 4,
       hero: 5,
-      curse: 6
+      curse: 6,
     };
 
     const cards = [...this.cards];
@@ -86,7 +98,7 @@ export class CardGalleryComponent {
       effect: 'EFFETTO',
       condition: 'CONDIZIONE',
       hero: 'EROE',
-      curse: 'MALEDIZIONE'
+      curse: 'MALEDIZIONE',
     };
 
     return labels[type];
@@ -103,5 +115,25 @@ export class CardGalleryComponent {
     };
 
     return classes[type];
+  }
+
+  previousVariant(): void {
+    if (!this.selectedCard?.variants?.length) {
+      return;
+    }
+
+    const total = this.selectedCard.variants.length;
+
+    this.selectedVariantIndex = (this.selectedVariantIndex - 1 + total) % total;
+  }
+
+  nextVariant(): void {
+    if (!this.selectedCard?.variants?.length) {
+      return;
+    }
+
+    const total = this.selectedCard.variants.length;
+
+    this.selectedVariantIndex = (this.selectedVariantIndex + 1) % total;
   }
 }
