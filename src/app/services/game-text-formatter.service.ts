@@ -70,18 +70,34 @@ export class GameTextFormatterService {
       )
       .replace(
         /\bCondition\b/g,
-        '<span class="font-bold text-purple-400">Condition</span>',
+        '<span class="font-bold text-pink-400">Condition</span>',
       )
       .replace(
         /\bConditions\b/g,
-        '<span class="font-bold text-purple-400">Conditions</span>',
+        '<span class="font-bold text-pink-400">Conditions</span>',
       )
       .replace(
         /\bCondizione\b/g,
-        '<span class="font-bold text-purple-400">Condizione</span>',
+        '<span class="font-bold text-pink-400">Condizione</span>',
       )
       .replace(
         /\bCondizioni\b/g,
+        '<span class="font-bold text-pink-400">Condizioni</span>',
+      )
+      .replace(
+        /\bMaledizione\b/g,
+        '<span class="font-bold text-purple-400">Condizioni</span>',
+      )
+      .replace(
+        /\bMaledizioni\b/g,
+        '<span class="font-bold text-purple-400">Condizioni</span>',
+      )
+        .replace(
+        /\bCurse\b/g,
+        '<span class="font-bold text-purple-400">Condizioni</span>',
+      )
+        .replace(
+        /\bCurses\b/g,
         '<span class="font-bold text-purple-400">Condizioni</span>',
       );
   }

@@ -26,7 +26,7 @@ import { LocationGalleryComponent } from '../location-gallery/location-gallery.c
   imports: [CardGalleryComponent, LocationGalleryComponent],
   templateUrl: './catalog.component.html',
 })
-export class CatalogComponent implements AfterViewInit, OnDestroy {
+export class CatalogComponent implements OnDestroy {
   expansions: Expansion[] = [];
   selectedExpansion: Expansion | null = null;
   villains: Villain[] = [];
@@ -74,9 +74,13 @@ export class CatalogComponent implements AfterViewInit, OnDestroy {
     this.villainDeck = [];
     this.fateDeck = [];
 
+    this.showBackToVillains = false;
+
     this.villains = this.villainRepository.getByExpansion(expansion.id);
 
     requestAnimationFrame(() => {
+      this.setupVillainsObserver();
+
       this.villainsSection?.nativeElement.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
@@ -91,7 +95,13 @@ export class CatalogComponent implements AfterViewInit, OnDestroy {
     });
   }
 
-  ngAfterViewInit(): void {
+  private setupVillainsObserver(): void {
+    this.villainsObserver?.disconnect();
+
+    if (!this.villainsSection) {
+      return;
+    }
+
     this.villainsObserver = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
@@ -103,9 +113,7 @@ export class CatalogComponent implements AfterViewInit, OnDestroy {
       },
     );
 
-    if (this.villainsSection) {
-      this.villainsObserver.observe(this.villainsSection.nativeElement);
-    }
+    this.villainsObserver.observe(this.villainsSection.nativeElement);
   }
 
   selectVillain(villain: Villain): void {

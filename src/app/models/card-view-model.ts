@@ -1,6 +1,6 @@
 import { CardStrategy } from './card-strategy.model';
 
-export type CardType = 'ally' | 'item' | 'effect' | 'condition' | 'hero';
+export type CardType = 'ally' | 'item' | 'effect' | 'condition' | 'hero' | 'curse';
 
 export type CardSort = 'name' | 'cost' | 'quantity' | 'strength' | 'type';
 

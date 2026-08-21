@@ -39,6 +39,7 @@ export class CardGalleryComponent {
       effect: 3,
       condition: 4,
       hero: 5,
+      curse: 6
     };
 
     const cards = [...this.cards];
@@ -85,6 +86,7 @@ export class CardGalleryComponent {
       effect: 'EFFETTO',
       condition: 'CONDIZIONE',
       hero: 'EROE',
+      curse: 'MALEDIZIONE'
     };
 
     return labels[type];
@@ -97,6 +99,7 @@ export class CardGalleryComponent {
       effect: 'text-green-400',
       condition: 'text-purple-400',
       hero: 'text-yellow-400',
+      curse: 'text-purple-400',
     };
 
     return classes[type];

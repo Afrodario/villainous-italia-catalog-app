@@ -17,6 +17,6 @@ export const MALEFICENT: Villain = {
   objective: 'Start your turn with a Curse at each location.',
 
   quote: `"Now go with a curse and serve me well!"`,
-  villainDeckBack: ``,
-  fateDeckBack: ``,
+  villainDeckBack: `assets/images/cards/maleficent/Maleficent_Villain_Back.png`,
+  fateDeckBack: `assets/images/cards/maleficent/Maleficent_Fate_Back.png`,
 };
