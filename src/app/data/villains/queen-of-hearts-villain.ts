@@ -20,6 +20,6 @@ export const QUEEN_OF_HEARTS: Villain = {
   objective: 'Have a Wicket at each location and successfully take a shot.',
 
   quote: `"If I lose my temper, you lose your head."`,
-  villainDeckBack: ``,
-  fateDeckBack: ``,
+  villainDeckBack: `assets/images/cards/queen_of_hearts/Queen_of_Hearts_Villain_Back.png`,
+  fateDeckBack: `assets/images/cards/queen_of_hearts/Queen_of_Hearts_Fate_Back.png`,
 };

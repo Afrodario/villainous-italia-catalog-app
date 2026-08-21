@@ -3,5 +3,7 @@ export interface CardVariant {
   name: string;
   image: string;
   quantity: number;
+  cost?: number | '?';
+  strength?: number;
   description: string;
 }
