@@ -4,15 +4,17 @@ import { MALEFICENT_CARDS } from './cards/maleficent-cards';
 import { PRINCE_JOHN_CARDS } from './cards/prince-john-cards';
 import { QUEEN_OF_HEARTS_CARDS } from './cards/queen-of-hearts-cards';
 import { URSULA_CARDS } from './cards/ursula-cards';
-import { CAPTAIN_HOOK } from './villains/captain-hook-villain';
-import { EVIL_QUEEN } from './villains/evil-queen-villain';
-import { JAFAR } from './villains/jafar-villain';
-import { MALEFICENT } from './villains/maleficent-villain';
-import { PRINCE_JOHN } from './villains/prince-john-villain';
-import { QUEEN_OF_HEARTS } from './villains/queen-of-hearts-villain';
-import { URSULA } from './villains/ursula-villain';
+import { CAPTAIN_HOOK } from './villains/0-the-worst-takes-it-all/captain-hook-villain';
+import { JAFAR } from './villains/0-the-worst-takes-it-all/jafar-villain';
+import { MALEFICENT } from './villains/0-the-worst-takes-it-all/maleficent-villain';
+import { PRINCE_JOHN } from './villains/0-the-worst-takes-it-all/prince-john-villain';
+import { QUEEN_OF_HEARTS } from './villains/0-the-worst-takes-it-all/queen-of-hearts-villain';
+import { URSULA } from './villains/0-the-worst-takes-it-all/ursula-villain';
+import { DR_FACILIER } from './villains/1-wicked-to-the-core/dr-facilier-villain';
+import { EVIL_QUEEN } from './villains/1-wicked-to-the-core/evil-queen-villain';
+import { HADES } from './villains/1-wicked-to-the-core/hades-villain';
 export * from './expansions';
-export * from './villains/jafar-villain';
+export * from './villains/0-the-worst-takes-it-all/jafar-villain';
 
 export const ALL_CARDS = [
   ...JAFAR_CARDS,
@@ -31,4 +33,6 @@ export const ALL_VILLAINS = [
   QUEEN_OF_HEARTS,
   URSULA,
   EVIL_QUEEN,
+  DR_FACILIER,
+  HADES
 ];

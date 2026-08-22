@@ -184,6 +184,15 @@ export class CatalogComponent implements OnDestroy {
     }));
   }
 
+  formatExpansionDate(date: Date): string {
+    const formatted = new Intl.DateTimeFormat('it-IT', {
+      month: 'long',
+      year: 'numeric',
+    }).format(date);
+
+    return formatted.charAt(0).toUpperCase() + formatted.slice(1);
+  }
+
   ngOnDestroy(): void {
     this.villainsObserver?.disconnect();
   }
