@@ -13,6 +13,9 @@ import { URSULA } from './villains/0-the-worst-takes-it-all/ursula-villain';
 import { DR_FACILIER } from './villains/1-wicked-to-the-core/dr-facilier-villain';
 import { EVIL_QUEEN } from './villains/1-wicked-to-the-core/evil-queen-villain';
 import { HADES } from './villains/1-wicked-to-the-core/hades-villain';
+import { RATIGAN } from './villains/2-evil-comes-prepared/ratigan-villain';
+import { SCAR } from './villains/2-evil-comes-prepared/scar-villain';
+import { YZMA } from './villains/2-evil-comes-prepared/yzma-villain';
 export * from './expansions';
 export * from './villains/0-the-worst-takes-it-all/jafar-villain';
 
@@ -34,5 +37,8 @@ export const ALL_VILLAINS = [
   URSULA,
   EVIL_QUEEN,
   DR_FACILIER,
-  HADES
+  HADES,
+  SCAR,
+  YZMA,
+  RATIGAN
 ];
