@@ -20,6 +20,8 @@ import { RealmRepository } from '../../repositories/realm.repository';
 import { Realm } from '../../models/realm.model';
 import { LocationGalleryComponent } from '../location-gallery/location-gallery.component';
 import { VILLAINS_IDS } from '../../models/villains-expansions-ids.model';
+import { GameTextFormatterService } from '../../services/game-text-formatter.service';
+import { VillainMechanics } from '../../models/villain-mechanics.model';
 
 @Component({
   selector: 'app-catalog',
@@ -63,6 +65,7 @@ export class CatalogComponent implements OnDestroy {
     private villainRepository: VillainRepository,
     private cardRepository: CardRepository,
     private realmRepository: RealmRepository,
+    public gameTextFormatter: GameTextFormatterService,
   ) {
     this.expansions = this.expansionRepository.getAll();
   }
@@ -191,6 +194,12 @@ export class CatalogComponent implements OnDestroy {
     }).format(date);
 
     return formatted.charAt(0).toUpperCase() + formatted.slice(1);
+  }
+
+  isStructuredMechanics(
+    mechanics: string | VillainMechanics,
+  ): mechanics is VillainMechanics {
+    return typeof mechanics !== 'string';
   }
 
   ngOnDestroy(): void {

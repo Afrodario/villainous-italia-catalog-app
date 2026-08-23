@@ -1,5 +1,5 @@
 import { EVIL_COMES_PREPARED } from './evil-comes-prepared-expansion';
-import { PERFECTLY_WRETCHED } from './perfectly-wretched-box';
+import { PERFECTLY_WRETCHED } from './perfectly-wretched-expansion';
 import { THE_WORST_TAKES_IT_ALL } from './the-worst-takes-it-all-expansion';
 import { WICKED_TO_THE_CORE } from './wicked-to-the-core-expansion';
 

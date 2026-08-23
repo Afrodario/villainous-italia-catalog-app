@@ -13,6 +13,7 @@ export const YZMA: Villain = {
   If a location's Fate deck is empty, that location cannot be chosen for a Fate action. 
   Yzma still has a single Fate discard pile; if a Fate action is taken against her and all of her Fate decks are empty, her Fate discard pile is shuffled and dealt into four Fate decks again.`,
   objective: 'Defeat Kuzco using Kronk.',
+  objectivePortrait: ``,
   quote: `"Our moment of triumph approaches!"`,
   villainDeckBack: `assets/images/cards/yzma/Yzma_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/yzma/Yzma_Fate_Back.png`,

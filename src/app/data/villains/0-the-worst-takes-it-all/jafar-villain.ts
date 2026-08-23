@@ -10,6 +10,7 @@ export const JAFAR: Villain = {
   mechanics: 'Nulla di particolare da segnalare',
   objective:
     "Start your turn with the Magic Lamp in Sultan's Palace and Genie under your control.",
+  objectivePortrait: ``,
   quote: `"Finally, you will bow to me!"`,
   villainDeckBack: `assets/images/cards/jafar/Jafar_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/jafar/Jafar_Fate_Back.png`,

@@ -9,6 +9,7 @@ export const PRINCE_JOHN: Villain = {
   mover: 'assets/images/movers/Prince_Johnmover.png',
   mechanics: `Nulla da segnalare`,
   objective: 'Start your turn with at least 20 Power.',
+  objectivePortrait: ``,
   quote: `"This crown gives me a feeling of power!"`,
   villainDeckBack: `assets/images/cards/prince_john/Prince_John_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/prince_john/Prince_John_Fate_Back.png`,

@@ -15,6 +15,7 @@ Ratigan has an Objective Tile to track which win condition he must meet, turning
 He is the only Villain with more than one possible Objective.`,
   objective:
     'Start your turn with the Robot Queen at Buckingham Palace / Defeat Basil.',
+  objectivePortrait: `assets/images/cards/ratigan/Ratigan_Objective.png`,
   quote: `"Oh this is wicked. So delightfully wicked!"`,
   villainDeckBack: `assets/images/cards/ratigan/Ratigan_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/ratigan/Ratigan_Fate_Back.png`,

@@ -16,6 +16,9 @@ import { HADES } from './villains/1-wicked-to-the-core/hades-villain';
 import { RATIGAN } from './villains/2-evil-comes-prepared/ratigan-villain';
 import { SCAR } from './villains/2-evil-comes-prepared/scar-villain';
 import { YZMA } from './villains/2-evil-comes-prepared/yzma-villain';
+import { CRUELLA_DE_VIL } from './villains/3-perfectly-wretched/cruella-de-vil-villain';
+import { MOTHER_GOTHEL } from './villains/3-perfectly-wretched/mother-gothel-villain';
+import { PETE } from './villains/3-perfectly-wretched/pete-villain';
 export * from './expansions';
 export * from './villains/0-the-worst-takes-it-all/jafar-villain';
 
@@ -40,5 +43,8 @@ export const ALL_VILLAINS = [
   HADES,
   SCAR,
   YZMA,
-  RATIGAN
+  RATIGAN,
+  CRUELLA_DE_VIL,
+  MOTHER_GOTHEL,
+  PETE
 ];

@@ -1,7 +1,8 @@
 export enum EXPANSIONS_IDS {
     TheWorstTakesItAll = 'the-worst-takes-it-all',
     WickedToTheCore = 'wicked-to-the-core',
-    EvilComesPrepared = 'evil-comes-prepared'
+    EvilComesPrepared = 'evil-comes-prepared',
+    PerfectlyWretched = 'perfectly-wretched'
 }
 
 export enum VILLAINS_IDS {

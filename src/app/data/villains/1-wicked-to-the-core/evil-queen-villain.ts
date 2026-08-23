@@ -1,6 +1,5 @@
-import { Villain } from "../../../models/villain.model";
-import { EXPANSIONS_IDS } from "../../../models/villains-expansions-ids.model";
-
+import { Villain } from '../../../models/villain.model';
+import { EXPANSIONS_IDS } from '../../../models/villains-expansions-ids.model';
 
 export const EVIL_QUEEN: Villain = {
   id: 'evil-queen',
@@ -12,6 +11,7 @@ export const EVIL_QUEEN: Villain = {
   She uses Poison to defeat Heroes (as she lacks a Vanquish action) by playing Take a Bite at their location. 
   She uses Ingredients to unlock the Dwarfs' Cottage, allowing her to fulfill her win condition and defeat Snow White.`,
   objective: 'Defeat Snow White.',
+  objectivePortrait: ``,
   quote: `"I'll be the fairest in the land!"`,
   villainDeckBack: `assets/images/cards/evil_queen/Evil_Queen_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/evil_queen/Evil_Queen_Fate_Back.png`,

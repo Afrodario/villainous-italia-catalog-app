@@ -1,6 +1,5 @@
-import { Villain } from "../../../models/villain.model";
-import { EXPANSIONS_IDS } from "../../../models/villains-expansions-ids.model";
-
+import { Villain } from '../../../models/villain.model';
+import { EXPANSIONS_IDS } from '../../../models/villains-expansions-ids.model';
 
 export const DR_FACILIER: Villain = {
   id: 'dr-facilier',
@@ -14,6 +13,7 @@ export const DR_FACILIER: Villain = {
   Some cards (including his win condition, Rule New Orleans), have an Ability if revealed in this way, some helping him, some harming him. 
   Cards without a Fortune Ability are simply discarded if revealed.`,
   objective: 'Control the Talisman and successfully rule New Orleans.',
+  objectivePortrait: ``,
   quote: `"I got friends on the other side."`,
   villainDeckBack: `assets/images/cards/dr_facilier/Dr_Facilier_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/dr_facilier/Dr_Facilier_Fate_Back.png`,

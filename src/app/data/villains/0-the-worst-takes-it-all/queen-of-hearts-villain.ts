@@ -13,6 +13,7 @@ export const QUEEN_OF_HEARTS: Villain = {
   An Enlarged Hero can be targeted in a Vanquish action by Allies at either location, or both. 
   If multiple Heroes are at a location, the priority is: Enlarged > Shrunken > Normal; so adding a Hero to a location with a Shrunken Hero will not cover back up the uncovered top action, but later Enlarging that normal Hero will successfully cover three actions, even though a Shrunken Hero is also present.`,
   objective: 'Have a Wicket at each location and successfully take a shot.',
+  objectivePortrait: ``,
   quote: `"If I lose my temper, you lose your head."`,
   villainDeckBack: `assets/images/cards/queen_of_hearts/Queen_of_Hearts_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/queen_of_hearts/Queen_of_Hearts_Fate_Back.png`,
