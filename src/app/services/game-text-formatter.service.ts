@@ -86,19 +86,19 @@ export class GameTextFormatterService {
       )
       .replace(
         /\bMaledizione\b/g,
-        '<span class="font-bold text-purple-400">Condizioni</span>',
+        '<span class="font-bold text-purple-400">Maledizione</span>',
       )
       .replace(
         /\bMaledizioni\b/g,
-        '<span class="font-bold text-purple-400">Condizioni</span>',
+        '<span class="font-bold text-purple-400">Maledizioni</span>',
       )
         .replace(
         /\bCurse\b/g,
-        '<span class="font-bold text-purple-400">Condizioni</span>',
+        '<span class="font-bold text-purple-400">Curse</span>',
       )
         .replace(
         /\bCurses\b/g,
-        '<span class="font-bold text-purple-400">Condizioni</span>',
+        '<span class="font-bold text-purple-400">Curses</span>',
       );
   }
 }
