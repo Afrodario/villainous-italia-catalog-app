@@ -2,15 +2,15 @@ import { ACTIONS } from '../../models/actions-types.model';
 import { Realm } from '../../models/realm.model';
 import { VILLAINS_IDS } from '../../models/villains-expansions-ids.model';
 
-export const JAFAR_REALM: Realm = {
-  id: 'jafar-realm',
-  villainId: VILLAINS_IDS.Jafar,
-  image: 'assets/images/cards/jafar/Jafarrealm.jpg',
+export const CAPTAIN_HOOK_REALM: Realm = {
+  id: 'captain-hook-realm',
+  villainId: VILLAINS_IDS.CaptainHook,
+  image: 'assets/images/realms/captain_hook/Hookrealm.jpg',
   locations: [
     {
-      id: 'sultans-palace',
-      name: 'Palazzo del Sultano',
-      image: 'assets/images/realms/jafar/Sultans_Palace.jpg',
+      id: 'jolly-roger',
+      name: 'Jolly Roger',
+      image: 'assets/images/realms/captain_hook/Jolly_Roger.png',
       description: {
         paragraphs: [
           'Luogo utile sopratutto per il Fato sempre disponibile e per l’unica azione Scontro di cui dispone Jafar',
@@ -18,27 +18,28 @@ export const JAFAR_REALM: Realm = {
           'Non è un luogo fondamentale per Jafar (in quanto lo Scontro non sempre è necessario poiché Jafar può anche usare Ipnotizzare o Ah, Sarei un Serpente?',
         ],
       },
-      upperActions: [ACTIONS.PlayACard, ACTIONS.Activate],
-      lowerActions: [ACTIONS.Vanquish, ACTIONS.Fate],
+      upperActions: [ACTIONS.GainPower, ACTIONS.DiscardCards],
+      lowerActions: [ACTIONS.Vanquish, ACTIONS.PlayACard],
+      gainPower: 1
     },
     {
-      id: 'streets-of-agrabah',
-      name: 'Strade di Agrabah',
-      image: 'assets/images/realms/jafar/Streets_of_Agrabah.png',
+      id: 'skull-rock',
+      name: 'La Roccia del Teschio',
+      image: 'assets/images/realms/captain_hook/Skull_Rock.png',
       description: {
         paragraphs: [
           'Un ottimo luogo per Jafar in quanto dispone dell’azione Scartare carte (unica disponibile se la Caverna delle Meraviglie è ancora bloccata) che vi permette di scorrere il vostro mazzo cattivo',
           'Utile anche per giocare una carta e, se non ci sono eroi a coprirne la parte superiore, il Fato',
         ],
       },
-      upperActions: [ACTIONS.GainPower, ACTIONS.Fate],
-      lowerActions: [ACTIONS.DiscardCards, ACTIONS.PlayACard],
+      upperActions: [ACTIONS.GainPower, ACTIONS.PlayACard],
+      lowerActions: [ACTIONS.Fate, ACTIONS.DiscardCards],
       gainPower: 1
     },
     {
-      id: 'oasis',
-      name: 'Oasi',
-      image: 'assets/images/realms/jafar/Oasis.png',
+      id: 'mermaid-lagoon',
+      name: 'La Laguna delle Sirene',
+      image: 'assets/images/realms/captain_hook/Mermaid_Lagoon.png',
       description: {
         paragraphs: [
           'Ottimo luogo per Jafar sopratutto nelle prime fasi della partita, prima di sbloccare la Caverna delle Meraviglie',
@@ -46,14 +47,14 @@ export const JAFAR_REALM: Realm = {
         ],
       },
 
-      upperActions: [ACTIONS.Activate, ACTIONS.PlayACard],
+      upperActions: [ACTIONS.PlayACard, ACTIONS.MoveItemOrAlly],
       lowerActions: [ACTIONS.GainPower, ACTIONS.PlayACard],
       gainPower: 3
     },
     {
-      id: 'cave-of-wonders',
-      name: 'Caverna delle meraviglie',
-      image: 'assets/images/realms/jafar/Cave_of_Wonders.png',
+      id: 'hangmans-tree',
+      name: 'L’Albero dell’Impiccato',
+      image: 'assets/images/realms/captain_hook/Hangmans_Tree.png',
 
       description: {
         paragraphs: [
@@ -62,11 +63,10 @@ export const JAFAR_REALM: Realm = {
           'Vi permette di ottenere una discreta quantità di Potere e di scartare carte per scorrere il vostro mazzo',
         ],
       },
-
-      upperActions: [ACTIONS.DiscardCards, ACTIONS.GainPower],
-      lowerActions: [ACTIONS.PlayACard, ACTIONS.MoveItemOrAlly],
-      gainPower: 2,
+      upperActions: [ACTIONS.Fate, ACTIONS.GainPower],
+      lowerActions: [ACTIONS.MoveAHero, ACTIONS.PlayACard],
       isLocked: true,
+      gainPower: 2
     },
   ],
 };

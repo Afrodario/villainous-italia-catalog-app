@@ -7,10 +7,16 @@ export const URSULA: Villain = {
   expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
   portrait: 'assets/images/cards/ursula/Ursula.png',
   mover: 'assets/images/movers/Ursulamover.png',
-  mechanics: `Ursula cannot perform Vanquish actions; instead, she must attach Binding Contracts to Heroes and move them to the Contracts' specified locations to defeat them. 
-  However, her Allies and Heroes still have Strength values, so that other players' Conditions can be triggered.`,
+  mechanics: {
+    setup: ``,
+    rules: [
+      `Ursula cannot perform Vanquish actions; instead, she must attach Binding Contracts to Heroes and move them to the Contracts' specified locations to defeat them.`,
+      `However, her Allies and Heroes still have Strength values, so that other players' Conditions can be triggered.`,
+    ],
+    victory: ``,
+  },
   objective: `Start your turn with the Trident and the Crown at Ursula's lair.`,
-  objectivePortrait: ``,
+  objectivePortrait: `assets/images/cards/ursula/Ursula_Objective.jpg`,
   quote: `"The sea and all its spoils bow to my power!"`,
   villainDeckBack: `assets/images/cards/ursula/Ursula_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/ursula/Ursula_Fate_Back.png`,
