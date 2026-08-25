@@ -10,11 +10,12 @@ import { GameState } from './models/game-state.model';
 import { ScenarioListComponent } from './components/scenario-list.component';
 import { GameViewComponent } from './components/game-view/game-view.component';
 import { CatalogComponent } from './components/catalog/catalog.component';
+import { GameplayComponent } from './components/gameplay/gameplay.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ScenarioListComponent, GameViewComponent, CatalogComponent],
+  imports: [ScenarioListComponent, GameViewComponent, CatalogComponent, GameplayComponent],
 
   templateUrl: './app.component.html',
 })
@@ -23,7 +24,7 @@ export class AppComponent {
   currentScenario: Scenario | null = null;
   currentScene: Scene | null = null;
   gameState: GameState | null = null;
-  currentSection: 'scenarios' | 'catalog' = 'catalog';
+  currentSection: 'scenarios' | 'catalog' | 'gameplay' = 'catalog';
 
   constructor(
     private scenarioService: ScenarioService,
@@ -38,6 +39,10 @@ export class AppComponent {
 
   showCatalog(): void {
     this.currentSection = 'catalog';
+  }
+
+  showGameplay(): void {
+    this.currentSection = 'gameplay';
   }
 
   startScenario(scenario: Scenario): void {

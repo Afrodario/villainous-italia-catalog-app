@@ -46,6 +46,15 @@
       >
         📚 Catalogo
       </button>
+      <button
+        type="button"
+        (click)="showGameplay()"
+        class="rounded-lg px-5 py-2 font-semibold transition"
+        [class.bg-purple-600]="currentSection === 'gameplay'"
+        [class.bg-slate-800]="currentSection !== 'gameplay'"
+      >
+        📚 Regole di gioco
+      </button>
     </div>
   </nav>
 
@@ -76,5 +85,9 @@
 
   @if (currentSection === "catalog") {
     <app-catalog />
+  }
+
+  @if (currentSection === "gameplay") {
+    <app-gameplay />
   }
 </div>
