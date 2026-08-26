@@ -3,19 +3,25 @@ import { Injectable } from '@angular/core';
 import { Expansion } from '../models/expansion.model';
 import { ALL_EXPANSIONS } from '../data';
 import { ActionGameplay } from '../models/gameplay/action-gameplay.model';
-import { ALL_ACTIONS } from '../data/gameplay/actions';
+import { ALL_ACTIONS, ALL_CARD_TYPES } from '../data/gameplay';
+import { CardTypeGameplay } from '../models/gameplay/card-type-gameplay.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class GameplayRepository {
   private readonly actions = ALL_ACTIONS;
+  private readonly cardTypes = ALL_CARD_TYPES;
 
-  getAll(): ActionGameplay[] {
+  getAllActions(): ActionGameplay[] {
     return this.actions;
   }
 
-  getById(id: string): ActionGameplay {
+  getAllCardTypes(): CardTypeGameplay[] {
+    return this.cardTypes;
+  }
+
+  getActionsById(id: string): ActionGameplay {
     const action = this.actions.find((e) => e.id === id);
 
     if (!action) {

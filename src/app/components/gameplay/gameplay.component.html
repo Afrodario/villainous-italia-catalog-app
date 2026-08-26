@@ -1,48 +1,50 @@
 <div class="mx-auto max-w-7xl px-6 py-10">
   <section class="mx-auto max-w-7xl px-6 py-10">
     <h2 class="text-3xl font-black text-white">Regole di gioco</h2>
-    <h3
-      class="mt-10 text-sm font-black uppercase tracking-[0.2em] text-purple-400"
-    >
-      Azioni
-    </h3>
 
-    <div class="mt-5 grid items-start gap-4 md:grid-cols-2 lg:grid-cols-3">
-      @for (action of actionsGameplay; track action.id) {
-        <button
-          type="button"
-          (click)="selectAction(action)"
-          class="group self-start overflow-hidden rounded-2xl border border-white/10 bg-slate-900 text-left transition duration-300 hover:-translate-y-1 hover:border-purple-500 hover:bg-slate-800 hover:shadow-xl hover:shadow-purple-900/20"
-        >
-          <div class="flex items-center gap-4 p-4 sm:p-5">
-            <!-- ICONA -->
-            <div
-              class="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-slate-950 p-2 transition duration-300 group-hover:border-purple-500/40"
-            >
-              <img
-                [src]="action.iconPath"
-                [alt]="action.name"
-                class="h-full w-full object-contain transition duration-300 group-hover:scale-110"
-              />
-            </div>
+    <section #actionsSection class="mt-16">
+      <h3
+        class="mt-10 text-sm font-black uppercase tracking-[0.2em] text-purple-400"
+      >
+        Azioni
+      </h3>
 
-            <!-- TESTO -->
-            <div class="min-w-0 flex-1">
-              <h4
-                class="text-lg font-black text-white transition group-hover:text-purple-300"
+      <div class="mt-5 grid items-start gap-4 md:grid-cols-2 lg:grid-cols-3">
+        @for (action of actionsGameplay; track action.id) {
+          <button
+            type="button"
+            (click)="selectAction(action)"
+            class="group self-start overflow-hidden rounded-2xl border border-white/10 bg-slate-900 text-left transition duration-300 hover:-translate-y-1 hover:border-purple-500 hover:bg-slate-800 hover:shadow-xl hover:shadow-purple-900/20"
+          >
+            <div class="flex items-center gap-4 p-4 sm:p-5">
+              <!-- ICONA -->
+              <div
+                class="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-slate-950 p-2 transition duration-300 group-hover:border-purple-500/40"
               >
-                {{ action.name }}
-              </h4>
+                <img
+                  [src]="action.iconPath"
+                  [alt]="action.name"
+                  class="h-full w-full object-contain transition duration-300 group-hover:scale-110"
+                />
+              </div>
 
-              <p class="mt-2 text-sm leading-6 text-slate-400">
-                {{ action.description }}
-              </p>
+              <!-- TESTO -->
+              <div class="min-w-0 flex-1">
+                <h4
+                  class="text-lg font-black text-white transition group-hover:text-purple-300"
+                >
+                  {{ action.name }}
+                </h4>
+
+                <p class="mt-2 text-sm leading-6 text-slate-400">
+                  {{ action.description }}
+                </p>
+              </div>
             </div>
-          </div>
-        </button>
-      }
-    </div>
-
+          </button>
+        }
+      </div>
+    </section>
     @if (selectedAction) {
       <section #actionDetails class="mt-14 scroll-mt-6">
         <div
@@ -180,22 +182,331 @@
           </div>
 
           <!-- FOOTER -->
-          <div class="mt-8 border-t border-white/10 pt-6">
-            <div class="flex justify-end">
-              <button
-                type="button"
-                (click)="closeAction()"
-                class="w-full rounded-lg bg-purple-600 px-5 py-3 font-bold text-white transition hover:bg-purple-500 sm:w-auto"
-              >
-                Chiudi
-              </button>
-            </div>
+          <div
+            class="mt-8 flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row sm:justify-end"
+          >
+            <button
+              type="button"
+              (click)="scrollToActions()"
+              class="w-full rounded-xl border border-purple-500/30 bg-purple-500/10 px-6 py-3 font-bold text-purple-300 transition hover:border-purple-500 hover:bg-purple-500/20 sm:w-auto"
+            >
+              ↑ Torna alle Azioni
+            </button>
+
+            <button
+              type="button"
+              (click)="closeAction()"
+              class="w-full rounded-xl bg-gradient-to-r from-purple-700 to-fuchsia-600 px-6 py-3 font-bold text-white transition hover:scale-105 hover:shadow-lg hover:shadow-purple-700/40 sm:w-auto"
+            >
+              Chiudi
+            </button>
           </div>
         </div>
       </section>
     }
 
-    <h3 class="mt-2 text-slate-400">TIPI DI CARTE</h3>
+    <section #cardTypesSection class="mt-16">
+      <h3 class="text-sm font-black uppercase tracking-[0.2em] text-purple-400">
+        Tipi di carte
+      </h3>
+
+      <p class="mt-2 text-slate-400">
+        Le diverse tipologie di carte presenti nel gioco.
+      </p>
+
+      <!-- COMUNI -->
+      @if (commonCardTypes.length > 0) {
+        <div class="mt-8">
+          <div class="mb-4 flex items-center gap-3">
+            <h4 class="text-lg font-black text-white">Tipi di carte comuni</h4>
+
+            <span
+              class="rounded-full border border-green-500/30 bg-green-500/10 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-green-400"
+            >
+              Comuni
+            </span>
+          </div>
+
+          <div class="grid items-start gap-4 md:grid-cols-2 lg:grid-cols-3">
+            @for (cardType of commonCardTypes; track cardType.id) {
+              <button
+                type="button"
+                (click)="selectCardType(cardType)"
+                class="group self-start overflow-hidden rounded-2xl border border-white/10 bg-slate-900 text-left transition duration-300 hover:-translate-y-1 hover:border-purple-500 hover:bg-slate-800 hover:shadow-xl hover:shadow-purple-900/20"
+              >
+                <div class="flex items-center gap-4 p-4 sm:p-5">
+                  <!-- IMMAGINE -->
+                  <div
+                    class="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-slate-950 p-2 transition duration-300 group-hover:border-purple-500/40"
+                  >
+                    <img
+                      [src]="cardType.imagePath"
+                      [alt]="cardType.name"
+                      class="h-full w-full object-contain transition duration-300 group-hover:scale-110"
+                    />
+                  </div>
+
+                  <!-- TESTO -->
+                  <div class="min-w-0 flex-1">
+                    <h5 class="text-lg font-black text-white">
+                      {{ cardType.name }}
+                    </h5>
+
+                    <p class="mt-2 text-sm leading-6 text-slate-400">
+                      {{ cardType.description }}
+                    </p>
+                  </div>
+                </div>
+              </button>
+            }
+          </div>
+        </div>
+      }
+
+      <!-- SPECIFICI -->
+      @if (specificCardTypes.length > 0) {
+        <div class="mt-10">
+          <div class="mb-4 flex items-center gap-3">
+            <h4 class="text-lg font-black text-white">
+              Tipi di carte specifici
+            </h4>
+
+            <span
+              class="rounded-full border border-amber-500/30 bg-amber-500/10 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-amber-400"
+            >
+              Specifici dei Cattivi
+            </span>
+          </div>
+
+          <div class="grid items-start gap-4 md:grid-cols-2 lg:grid-cols-3">
+            @for (cardType of specificCardTypes; track cardType.id) {
+              <button
+                type="button"
+                (click)="selectCardType(cardType)"
+                class="group relative self-start overflow-hidden rounded-2xl border border-white/10 bg-slate-900 text-left transition duration-300 hover:-translate-y-1 hover:border-purple-500 hover:bg-slate-800 hover:shadow-xl hover:shadow-purple-900/20"
+              >
+                <!-- BADGE -->
+                <div
+                  class="absolute right-3 top-3 z-10 rounded-full border border-amber-500/40 bg-slate-950/90 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-amber-400 shadow-lg"
+                >
+                  Specifico
+                </div>
+
+                <div class="flex items-center gap-4 p-4 sm:p-5">
+                  <!-- IMMAGINE -->
+                  <div
+                    class="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-slate-950 p-2 transition duration-300 group-hover:border-purple-500/40"
+                  >
+                    <img
+                      [src]="cardType.imagePath"
+                      [alt]="cardType.name"
+                      class="h-full w-full object-contain transition duration-300 group-hover:scale-110"
+                    />
+                  </div>
+
+                  <!-- TESTO -->
+                  <div class="min-w-0 flex-1 pr-14">
+                    <h5 class="text-lg font-black text-white">
+                      {{ cardType.name }}
+                    </h5>
+
+                    <p class="mt-2 text-sm leading-6 text-slate-400">
+                      {{ cardType.description }}
+                    </p>
+                  </div>
+                </div>
+              </button>
+            }
+          </div>
+        </div>
+      }
+    </section>
+
+    @if (selectedCardType) {
+      <section #cardTypeDetails class="mt-10 scroll-mt-6">
+        <div
+          class="rounded-2xl border border-purple-500/30 bg-gradient-to-br from-slate-900 to-slate-800 p-6 sm:p-8"
+        >
+          <!-- HEADER -->
+          <div class="mb-8 flex items-start justify-between gap-4">
+            <div>
+              <div class="flex flex-wrap items-center gap-3">
+                <p
+                  class="text-xs font-black uppercase tracking-[0.2em] text-purple-400"
+                >
+                  Tipo di carta
+                </p>
+
+                @if (selectedCardType.isCommon) {
+                  <span
+                    class="rounded-full border border-green-500/30 bg-green-500/10 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-green-400"
+                  >
+                    Comune
+                  </span>
+                } @else {
+                  <span
+                    class="rounded-full border border-amber-500/30 bg-amber-500/10 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-amber-400"
+                  >
+                    Specifico dei Cattivi
+                  </span>
+                }
+              </div>
+
+              <h2 class="mt-2 text-2xl font-black text-white sm:text-3xl">
+                {{ selectedCardType.name }}
+              </h2>
+
+              <p class="mt-2 max-w-3xl leading-7 text-slate-400">
+                {{ selectedCardType.description }}
+              </p>
+            </div>
+
+            <button
+              type="button"
+              (click)="closeCardType()"
+              class="shrink-0 rounded-lg bg-slate-800 px-4 py-2 text-sm font-bold text-slate-300 transition hover:bg-slate-700 hover:text-white"
+            >
+              Chiudi
+            </button>
+          </div>
+
+          <!-- IMMAGINE -->
+          <div
+            class="mb-8 flex justify-center overflow-hidden rounded-xl border border-white/10 bg-slate-950 p-4"
+          >
+            <img
+              [src]="selectedCardType.imagePath"
+              [alt]="selectedCardType.name"
+              class="max-h-[300px] w-auto object-contain"
+            />
+          </div>
+
+          <!-- REGOLE -->
+          @if (selectedCardType.rules.paragraphs.length > 0) {
+            <div
+              class="rounded-xl border border-purple-500/20 bg-purple-500/5 p-5"
+            >
+              <div class="mb-4 flex items-center gap-3">
+                <div
+                  class="flex h-9 w-9 items-center justify-center rounded-lg bg-purple-500/10 text-lg"
+                >
+                  🎮
+                </div>
+
+                <h3
+                  class="text-sm font-black uppercase tracking-[0.18em] text-purple-400"
+                >
+                  Regole
+                </h3>
+              </div>
+
+              <div class="space-y-4">
+                @for (
+                  paragraph of selectedCardType.rules.paragraphs;
+                  track paragraph
+                ) {
+                  <p
+                    class="leading-7 text-slate-300"
+                    [innerHTML]="gameTextFormatter.format(paragraph)"
+                  ></p>
+                }
+              </div>
+            </div>
+          }
+
+          <!-- CHIARIMENTI -->
+          @if (
+            selectedCardType.clarifications &&
+            selectedCardType.clarifications.paragraphs.length > 0
+          ) {
+            <div
+              class="mt-5 rounded-xl border border-blue-500/20 bg-blue-500/5 p-5"
+            >
+              <div class="mb-4 flex items-center gap-3">
+                <div
+                  class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-500/10 text-lg"
+                >
+                  💡
+                </div>
+
+                <h3
+                  class="text-sm font-black uppercase tracking-[0.18em] text-blue-400"
+                >
+                  Chiarimenti
+                </h3>
+              </div>
+
+              <div class="space-y-4">
+                @for (
+                  paragraph of selectedCardType.clarifications.paragraphs;
+                  track paragraph
+                ) {
+                  <p
+                    class="leading-7 text-slate-300"
+                    [innerHTML]="gameTextFormatter.format(paragraph)"
+                  ></p>
+                }
+              </div>
+            </div>
+          }
+
+          <!-- FAQ -->
+          @if (
+            selectedCardType.faq && selectedCardType.faq.paragraphs.length > 0
+          ) {
+            <div
+              class="mt-5 rounded-xl border border-amber-500/20 bg-amber-500/5 p-5"
+            >
+              <div class="mb-4 flex items-center gap-3">
+                <div
+                  class="flex h-9 w-9 items-center justify-center rounded-lg bg-amber-500/10 text-lg"
+                >
+                  ❓
+                </div>
+
+                <h3
+                  class="text-sm font-black uppercase tracking-[0.18em] text-amber-400"
+                >
+                  FAQ
+                </h3>
+              </div>
+
+              <div class="space-y-4">
+                @for (
+                  paragraph of selectedCardType.faq.paragraphs;
+                  track paragraph
+                ) {
+                  <p
+                    class="leading-7 text-slate-300"
+                    [innerHTML]="gameTextFormatter.format(paragraph)"
+                  ></p>
+                }
+              </div>
+            </div>
+          }
+          <div
+            class="mt-8 flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row sm:justify-end"
+          >
+            <button
+              type="button"
+              (click)="scrollToCardTypes()"
+              class="w-full rounded-xl border border-purple-500/30 bg-purple-500/10 px-6 py-3 font-bold text-purple-300 transition hover:border-purple-500 hover:bg-purple-500/20 sm:w-auto"
+            >
+              ↑ Torna ai Tipi di carte
+            </button>
+
+            <button
+              type="button"
+              (click)="closeCardType()"
+              class="w-full rounded-xl bg-gradient-to-r from-purple-700 to-fuchsia-600 px-6 py-3 font-bold text-white transition hover:scale-105 hover:shadow-lg hover:shadow-purple-700/40 sm:w-auto"
+            >
+              Chiudi
+            </button>
+          </div>
+        </div>
+      </section>
+    }
+
     <h3 class="mt-2 text-slate-400">PAROLE CHIAVE</h3>
   </section>
 </div>
