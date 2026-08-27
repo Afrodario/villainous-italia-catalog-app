@@ -1,4 +1,6 @@
 import { CAPTAIN_HOOK_CARDS } from './cards/captain-hook-cards';
+import { DR_FACILIER_CARDS } from './cards/dr-facilier-cards';
+import { EVIL_QUEEN_CARDS } from './cards/evil-queen-cards';
 import { JAFAR_CARDS } from './cards/jafar-cards';
 import { MALEFICENT_CARDS } from './cards/maleficent-cards';
 import { PRINCE_JOHN_CARDS } from './cards/prince-john-cards';
@@ -29,6 +31,8 @@ export const ALL_CARDS = [
   ...PRINCE_JOHN_CARDS,
   ...QUEEN_OF_HEARTS_CARDS,
   ...URSULA_CARDS,
+  ...EVIL_QUEEN_CARDS,
+  ...DR_FACILIER_CARDS
 ];
 
 export const ALL_VILLAINS = [

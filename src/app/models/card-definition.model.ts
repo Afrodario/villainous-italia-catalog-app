@@ -7,7 +7,8 @@ export type CardType =
   | 'effect'
   | 'condition'
   | 'hero'
-  | 'curse';
+  | 'curse'
+  | 'ingredient';
 
 export interface CardDefinition {
   id: string;

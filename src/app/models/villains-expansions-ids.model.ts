@@ -11,5 +11,8 @@ export enum VILLAINS_IDS {
     Maleficent = 'maleficent',
     QueenOfHearts = 'queen-of-hearts',
     PrinceJohn = 'prince-john',
-    Ursula = 'ursula'
+    Ursula = 'ursula',
+    EvilQueen = 'evil-queen',
+    DrFacilier = 'dr-facilier',
+    Hades = 'hades'
 }
