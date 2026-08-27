@@ -52,7 +52,8 @@ export class CardGalleryComponent {
       condition: 4,
       hero: 5,
       curse: 6,
-      ingredient: 6
+      ingredient: 6,
+      titan: 6
     };
 
     const cards = [...this.cards];
@@ -100,7 +101,8 @@ export class CardGalleryComponent {
       condition: 'CONDIZIONE',
       hero: 'EROE',
       curse: 'MALEDIZIONE',
-      ingredient: 'INGREDIENTE'
+      ingredient: 'INGREDIENTE',
+      titan: 'TITANO'
     };
 
     return labels[type];
@@ -114,7 +116,8 @@ export class CardGalleryComponent {
       condition: 'text-purple-400',
       hero: 'text-yellow-400',
       curse: 'text-purple-400',
-      ingredient: 'text-purple-200',
+      ingredient: 'text-purple-300',
+      titan: 'text-purple-200'
     };
 
     return classes[type];

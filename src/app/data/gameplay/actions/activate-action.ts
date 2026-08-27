@@ -5,7 +5,7 @@ export const ACTIVATE: ActionGameplay = {
   name: 'Attivare',
   description:
     'Perform an Activatable Ability of an Ally or Item in your Realm. Doing this does not discard that Ally or Item.',
-  iconPath: '',
+  iconPath: 'assets/images/gameplay/Activate.png',
   rules: {
     paragraphs: [
       'Choose one Item or Ally in your Realm with the Activate symbol.',

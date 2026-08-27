@@ -5,7 +5,7 @@ export const PLAY_A_CARD: ActionGameplay = {
   name: 'Giocare una Carta',
   description:
     'play one card from your hand, paying its Cost, and doing what it says. If it is an Ally or Item, you play it to a location on your board; otherwise, you discard it.',
-  iconPath: '',
+  iconPath: 'assets/images/gameplay/Play_a_Card.png',
   rules: {
     paragraphs: [
       'You may play only one card for each Play a Card action icon.',

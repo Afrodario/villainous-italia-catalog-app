@@ -2,9 +2,9 @@ import { ActionGameplay } from '../../../models/gameplay/action-gameplay.model';
 
 export const GAIN_POWER: ActionGameplay = {
   id: 'gain-power',
-  name: 'Ottenere Gettoni Potere',
+  name: 'Ottenere Potere',
   description: 'Take Power tokens from the Cauldron. Power is mostly used to pay the Cost of cards you play.',
-  iconPath: '',
+  iconPath: 'assets/images/gameplay/Gain_Power.png',
   rules: {
     paragraphs: [
       'Take Power from the Supply equal to the number in the symbol on your location.',

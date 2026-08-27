@@ -8,7 +8,8 @@ export type CardType =
   | 'condition'
   | 'hero'
   | 'curse'
-  | 'ingredient';
+  | 'ingredient'
+  | 'titan';
 
 export type CardSort = 'name' | 'cost' | 'quantity' | 'strength' | 'type';
 
@@ -18,6 +19,7 @@ export interface CardViewModel {
   name: string;
   image: string;
   type: CardType;
+  additionalType?: CardType;
   cost?: number | '?';
   quantity: number;
   description: string;

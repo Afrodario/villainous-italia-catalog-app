@@ -126,12 +126,20 @@
                   <div
                     class="flex items-center gap-3 rounded-xl border border-slate-700 bg-slate-800 p-3 transition hover:border-purple-500 sm:p-4"
                   >
+                    <!-- ICONA AZIONE -->
                     <div
-                      class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-purple-500/10 text-base text-purple-300 sm:h-10 sm:w-10 sm:text-lg"
+                      class="flex h-12 w-12 shrink-0 items-center justify-center sm:h-14 sm:w-14"
                     >
-                      ⚡
+                      @if (getAction(action); as actionData) {
+                        <img
+                          [src]="actionData.iconPath"
+                          [alt]="actionData.name"
+                          class="h-full w-full object-contain"
+                        />
+                      }
                     </div>
 
+                    <!-- NOME AZIONE -->
                     <span
                       class="text-sm font-medium leading-5 text-slate-100 sm:text-base"
                     >
@@ -165,12 +173,20 @@
                   <div
                     class="flex items-center gap-3 rounded-xl border border-slate-700 bg-slate-800 p-3 transition hover:border-purple-500 sm:p-4"
                   >
+                    <!-- ICONA AZIONE -->
                     <div
-                      class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-purple-500/10 text-base text-purple-300 sm:h-10 sm:w-10 sm:text-lg"
+                      class="flex h-12 w-12 shrink-0 items-center justify-center sm:h-14 sm:w-14"
                     >
-                      🎴
+                      @if (getAction(action); as actionData) {
+                        <img
+                          [src]="actionData.iconPath"
+                          [alt]="actionData.name"
+                          class="h-full w-full object-contain"
+                        />
+                      }
                     </div>
 
+                    <!-- NOME AZIONE -->
                     <span
                       class="text-sm font-medium leading-5 text-slate-100 sm:text-base"
                     >

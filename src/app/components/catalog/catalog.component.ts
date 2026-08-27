@@ -174,7 +174,7 @@ export class CatalogComponent implements OnDestroy {
       name: card.name,
       image: card.image,
       type: card.type,
-
+      additionalType: card.additionalType,
       cost: card.cost,
       quantity: card.quantity,
       description: card.description,

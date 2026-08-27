@@ -17,6 +17,7 @@ export interface CardDefinition {
   name: string;
   image: string;
   type: CardType;
+  additionalType?: CardType;
   quantity: number;
   cost?: number | '?';
   description: string;

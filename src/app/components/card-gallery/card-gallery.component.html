@@ -70,12 +70,25 @@
         class="flex min-h-0 flex-1 flex-col p-5 sm:p-6 md:p-8 landscape:p-4 sm:landscape:p-5"
       >
         <div class="min-h-0 flex-1 overflow-y-auto pr-1 sm:pr-2">
-          <p
-            class="text-xs font-black uppercase tracking-[0.2em]"
-            [class]="getCardTypeClass(selectedCard.type)"
-          >
-            {{ getCardTypeLabel(selectedCard.type) }}
-          </p>
+          <div class="flex items-center gap-2">
+            <span
+              class="text-xs font-black uppercase tracking-[0.2em]"
+              [class]="getCardTypeClass(selectedCard.type)"
+            >
+              {{ getCardTypeLabel(selectedCard.type) }}
+            </span>
+
+            @if (selectedCard.additionalType) {
+              <span class="text-xs font-black text-slate-500">/</span>
+
+              <span
+                class="text-xs font-black uppercase tracking-[0.2em]"
+                [class]="getCardTypeClass(selectedCard.additionalType)"
+              >
+                {{ getCardTypeLabel(selectedCard.additionalType) }}
+              </span>
+            }
+          </div>
 
           <h2 class="mt-2 text-2xl font-black text-white sm:text-3xl">
             {{ selectedVariant?.name ?? selectedCard.name }}
