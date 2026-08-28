@@ -15,7 +15,12 @@ import { GameplayComponent } from './components/gameplay/gameplay.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ScenarioListComponent, GameViewComponent, CatalogComponent, GameplayComponent],
+  imports: [
+    ScenarioListComponent,
+    GameViewComponent,
+    CatalogComponent,
+    GameplayComponent,
+  ],
 
   templateUrl: './app.component.html',
 })
@@ -24,6 +29,7 @@ export class AppComponent {
   currentScenario: Scenario | null = null;
   currentScene: Scene | null = null;
   gameState: GameState | null = null;
+  selectedGameplayActionId: string | null = null;
   currentSection: 'scenarios' | 'catalog' | 'gameplay' = 'catalog';
 
   constructor(
@@ -42,6 +48,11 @@ export class AppComponent {
   }
 
   showGameplay(): void {
+    this.currentSection = 'gameplay';
+  }
+
+  showGameplayAction(actionId: string): void {
+    this.selectedGameplayActionId = actionId;
     this.currentSection = 'gameplay';
   }
 

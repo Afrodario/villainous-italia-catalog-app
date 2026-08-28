@@ -123,25 +123,27 @@
 
               <div class="grid gap-3 sm:grid-cols-2 sm:gap-4">
                 @for (action of selectedLocation.upperActions; track action) {
-                  <div
-                    class="flex items-center gap-3 rounded-xl border border-slate-700 bg-slate-800 p-3 transition hover:border-purple-500 sm:p-4"
+                  <button
+                    type="button"
+                    (click)="goToAction(action)"
+                    class="group flex w-full items-center gap-3 rounded-xl border border-slate-700 bg-slate-800 p-3 text-left transition hover:border-purple-500 hover:bg-slate-700 sm:p-4"
                   >
                     <!-- ICONA AZIONE -->
                     <div
-                      class="flex h-12 w-12 shrink-0 items-center justify-center sm:h-14 sm:w-14"
+                      class="flex h-10 w-10 shrink-0 items-center justify-center"
                     >
                       @if (getAction(action); as actionData) {
                         <img
                           [src]="actionData.iconPath"
                           [alt]="actionData.name"
-                          class="h-full w-full object-contain"
+                          class="h-full w-full object-contain transition duration-300 group-hover:scale-110"
                         />
                       }
                     </div>
 
-                    <!-- NOME AZIONE -->
+                    <!-- NOME -->
                     <span
-                      class="text-sm font-medium leading-5 text-slate-100 sm:text-base"
+                      class="text-sm font-medium leading-5 text-slate-100 transition group-hover:text-purple-300 sm:text-base"
                     >
                       @if (action === ACTIONS.GainPower) {
                         Ottenere {{ selectedLocation.gainPower }}
@@ -155,7 +157,7 @@
                         {{ action }}
                       }
                     </span>
-                  </div>
+                  </button>
                 }
               </div>
             </section>
@@ -170,25 +172,27 @@
 
               <div class="grid gap-3 sm:grid-cols-2 sm:gap-4">
                 @for (action of selectedLocation.lowerActions; track action) {
-                  <div
-                    class="flex items-center gap-3 rounded-xl border border-slate-700 bg-slate-800 p-3 transition hover:border-purple-500 sm:p-4"
+                  <button
+                    type="button"
+                    (click)="goToAction(action)"
+                    class="group flex w-full items-center gap-3 rounded-xl border border-slate-700 bg-slate-800 p-3 text-left transition hover:border-purple-500 hover:bg-slate-700 sm:p-4"
                   >
                     <!-- ICONA AZIONE -->
                     <div
-                      class="flex h-12 w-12 shrink-0 items-center justify-center sm:h-14 sm:w-14"
+                      class="flex h-10 w-10 shrink-0 items-center justify-center"
                     >
                       @if (getAction(action); as actionData) {
                         <img
                           [src]="actionData.iconPath"
                           [alt]="actionData.name"
-                          class="h-full w-full object-contain"
+                          class="h-full w-full object-contain transition duration-300 group-hover:scale-110"
                         />
                       }
                     </div>
 
-                    <!-- NOME AZIONE -->
+                    <!-- NOME -->
                     <span
-                      class="text-sm font-medium leading-5 text-slate-100 sm:text-base"
+                      class="text-sm font-medium leading-5 text-slate-100 transition group-hover:text-purple-300 sm:text-base"
                     >
                       @if (action === ACTIONS.GainPower) {
                         Ottenere {{ selectedLocation.gainPower }}
@@ -202,7 +206,7 @@
                         {{ action }}
                       }
                     </span>
-                  </div>
+                  </button>
                 }
               </div>
             </section>

@@ -504,7 +504,10 @@
           Luoghi del reame
         </h3>
 
-        <app-location-gallery [locations]="realm.locations" />
+        <app-location-gallery
+          [locations]="realm.locations"
+          (actionSelected)="goToGameplayAction($event)"
+        />
       </section>
     }
   }

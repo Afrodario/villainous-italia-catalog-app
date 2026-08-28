@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 
 import { GameTextFormatterService } from '../../services/game-text-formatter.service';
 import { ActionGameplay } from '../../models/gameplay/action-gameplay.model';
@@ -16,6 +16,8 @@ export class GameplayComponent {
   selectedAction: ActionGameplay | null = null;
   cardTypesGameplay: CardTypeGameplay[] = [];
   selectedCardType: CardTypeGameplay | null = null;
+
+  @Input() selectedActionId: string | null = null;
 
   @ViewChild('cardTypeDetails')
   cardTypeDetails?: ElementRef<HTMLElement>;
@@ -35,6 +37,18 @@ export class GameplayComponent {
   ) {
     this.actionsGameplay = this.gameplayRepository.getAllActions();
     this.cardTypesGameplay = this.gameplayRepository.getAllCardTypes();
+  }
+
+  ngOnInit(): void {
+    if (this.selectedActionId) {
+      const action = this.actionsGameplay.find(
+        (action) => action.id === this.selectedActionId,
+      );
+
+      if (action) {
+        this.selectAction(action);
+      }
+    }
   }
 
   selectAction(action: ActionGameplay): void {

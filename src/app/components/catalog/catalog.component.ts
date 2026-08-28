@@ -2,7 +2,9 @@ import {
   AfterViewInit,
   Component,
   ElementRef,
+  EventEmitter,
   OnDestroy,
+  Output,
   ViewChild,
 } from '@angular/core';
 import { afterNextRender } from '@angular/core';
@@ -51,6 +53,8 @@ export class CatalogComponent implements OnDestroy {
   villainsSection?: ElementRef<HTMLElement>;
   @ViewChild('deckSection')
   deckSection?: ElementRef<HTMLElement>;
+
+  @Output() gameplayActionSelected = new EventEmitter<string>();
 
   sortOptions: { value: CardSort; label: string }[] = [
     { value: 'quantity', label: 'Copie' },
@@ -138,6 +142,10 @@ export class CatalogComponent implements OnDestroy {
         block: 'start',
       });
     });
+  }
+
+  goToGameplayAction(actionId: string): void {
+    this.gameplayActionSelected.emit(actionId);
   }
 
   openMover(villain: Villain): void {
