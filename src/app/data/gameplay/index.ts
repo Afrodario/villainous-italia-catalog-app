@@ -9,6 +9,7 @@ import { PLAY_A_CARD } from './actions/play-a-card-action';
 import { VANQUISH } from './actions/vanquish-action';
 import { ALLY } from './card-types/ally-card-type';
 import { CURSE } from './card-types/curse-card-type';
+import { DEFEAT } from './keywords/defeat-keyword';
 
 export const ALL_ACTIONS = [
   GAIN_POWER,
@@ -22,3 +23,5 @@ export const ALL_ACTIONS = [
   BREW_POISON
 ];
 export const ALL_CARD_TYPES = [ALLY, CURSE];
+
+export const ALL_KEYWORDS = [DEFEAT]

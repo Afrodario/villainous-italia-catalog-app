@@ -4,6 +4,10 @@ import { GameTextFormatterService } from '../../services/game-text-formatter.ser
 import { ActionGameplay } from '../../models/gameplay/action-gameplay.model';
 import { GameplayRepository } from '../../repositories/gameplay.repository';
 import { CardTypeGameplay } from '../../models/gameplay/card-type-gameplay.model';
+import { KeywordGameplay } from '../../models/gameplay/keyword-gameplay.model';
+import { CardDefinition } from '../../models/card-definition.model';
+import { CardRepository } from '../../repositories/card.repository';
+import { VillainRepository } from '../../repositories/villain.repository';
 
 @Component({
   selector: 'app-gameplay',
@@ -15,7 +19,9 @@ export class GameplayComponent {
   actionsGameplay: ActionGameplay[] = [];
   selectedAction: ActionGameplay | null = null;
   cardTypesGameplay: CardTypeGameplay[] = [];
+  keywordsGameplay: KeywordGameplay[] = [];
   selectedCardType: CardTypeGameplay | null = null;
+  selectedKeyword: KeywordGameplay | null = null;
 
   @Input() selectedActionId: string | null = null;
 
@@ -31,12 +37,21 @@ export class GameplayComponent {
   @ViewChild('cardTypesSection')
   cardTypesSection?: ElementRef<HTMLElement>;
 
+  @ViewChild('keywordsSection')
+  keywordsSection?: ElementRef<HTMLElement>;
+
+  @ViewChild('keywordDetails')
+  keywordDetails?: ElementRef<HTMLElement>;
+
   constructor(
     private gameplayRepository: GameplayRepository,
     public gameTextFormatter: GameTextFormatterService,
+    private cardRepository: CardRepository,
+    private villainRepository: VillainRepository,
   ) {
     this.actionsGameplay = this.gameplayRepository.getAllActions();
     this.cardTypesGameplay = this.gameplayRepository.getAllCardTypes();
+    this.keywordsGameplay = this.gameplayRepository.getAllKeywords();
   }
 
   ngOnInit(): void {
@@ -89,6 +104,29 @@ export class GameplayComponent {
     return this.cardTypesGameplay.filter((cardType) => !cardType.isCommon);
   }
 
+  getVillainName(villainId: string): string {
+    try {
+      return this.villainRepository.getById(villainId).name;
+    } catch {
+      return villainId;
+    }
+  }
+
+  openKeywordDetails(keyword: KeywordGameplay): void {
+    this.selectedKeyword = keyword;
+
+    requestAnimationFrame(() => {
+      this.keywordDetails?.nativeElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  }
+
+  closeKeywordDetails(): void {
+    this.selectedKeyword = null;
+  }
+
   scrollToActions(): void {
     this.selectedAction = null;
 
@@ -109,5 +147,22 @@ export class GameplayComponent {
         block: 'start',
       });
     });
+  }
+
+  scrollToKeywords(): void {
+    this.selectedKeyword = null;
+
+    requestAnimationFrame(() => {
+      this.keywordsSection?.nativeElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  }
+
+  getCardsForList(cardIds: string[]): CardDefinition[] {
+    return cardIds
+      .map((id) => this.cardRepository.getById(id))
+      .filter((card): card is CardDefinition => !!card);
   }
 }

@@ -3,8 +3,9 @@ import { Injectable } from '@angular/core';
 import { Expansion } from '../models/expansion.model';
 import { ALL_EXPANSIONS } from '../data';
 import { ActionGameplay } from '../models/gameplay/action-gameplay.model';
-import { ALL_ACTIONS, ALL_CARD_TYPES } from '../data/gameplay';
+import { ALL_ACTIONS, ALL_CARD_TYPES, ALL_KEYWORDS } from '../data/gameplay';
 import { CardTypeGameplay } from '../models/gameplay/card-type-gameplay.model';
+import { KeywordGameplay } from '../models/gameplay/keyword-gameplay.model';
 
 @Injectable({
   providedIn: 'root',
@@ -12,6 +13,7 @@ import { CardTypeGameplay } from '../models/gameplay/card-type-gameplay.model';
 export class GameplayRepository {
   private readonly actions = ALL_ACTIONS;
   private readonly cardTypes = ALL_CARD_TYPES;
+  private readonly keywords = ALL_KEYWORDS;
 
   getAllActions(): ActionGameplay[] {
     return this.actions;
@@ -19,6 +21,10 @@ export class GameplayRepository {
 
   getAllCardTypes(): CardTypeGameplay[] {
     return this.cardTypes;
+  }
+
+  getAllKeywords(): KeywordGameplay[] {
+    return this.keywords;
   }
 
   getActionsById(id: string): ActionGameplay {
