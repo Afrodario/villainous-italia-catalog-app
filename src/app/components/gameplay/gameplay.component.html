@@ -693,15 +693,46 @@
                 track cardList.listType
               ) {
                 <div class="mt-6">
-                  <h4 class="mb-4 text-lg font-black text-white">
-                    {{ cardList.listType }}
-                  </h4>
+                  <div
+                    class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+                  >
+                    <h4 class="text-lg font-black text-white">
+                      {{ cardList.listType }}
+                    </h4>
+
+                    <div class="flex items-center gap-2">
+                      <label
+                        [for]="'sort-' + cardList.listType"
+                        class="text-xs font-bold uppercase tracking-wider text-slate-500"
+                      >
+                        Ordina per
+                      </label>
+
+                      <select
+                        [id]="'sort-' + cardList.listType"
+                        [value]="getKeywordCardListSort(cardList.listType)"
+                        (change)="
+                          setKeywordCardListSort(
+                            cardList.listType,
+                            $any($event.target).value
+                          )
+                        "
+                        class="rounded-lg border border-white/10 bg-slate-900 px-3 py-2 text-sm font-bold text-slate-300 outline-none transition focus:border-purple-500"
+                      >
+                        <option value="name">Nome carta</option>
+                        <option value="villain">Cattivo</option>
+                      </select>
+                    </div>
+                  </div>
 
                   <div
                     class="grid gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
                   >
                     @for (
-                      card of getCardsForList(cardList.cardIds);
+                      card of sortCardsForKeywordList(
+                        getCardsForList(cardList.cardIds),
+                        getKeywordCardListSort(cardList.listType)
+                      );
                       track card.id
                     ) {
                       <div

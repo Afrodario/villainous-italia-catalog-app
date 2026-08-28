@@ -9,6 +9,7 @@ import { CardDefinition } from '../../models/card-definition.model';
 import { CardRepository } from '../../repositories/card.repository';
 import { VillainRepository } from '../../repositories/villain.repository';
 
+type KeywordCardListSort = 'name' | 'villain';
 @Component({
   selector: 'app-gameplay',
   standalone: true,
@@ -22,7 +23,7 @@ export class GameplayComponent {
   keywordsGameplay: KeywordGameplay[] = [];
   selectedCardType: CardTypeGameplay | null = null;
   selectedKeyword: KeywordGameplay | null = null;
-
+  keywordCardListSorts: Record<string, KeywordCardListSort> = {};
   @Input() selectedActionId: string | null = null;
 
   @ViewChild('cardTypeDetails')
@@ -164,5 +165,39 @@ export class GameplayComponent {
     return cardIds
       .map((id) => this.cardRepository.getById(id))
       .filter((card): card is CardDefinition => !!card);
+  }
+
+  sortCardsForKeywordList(
+    cards: CardDefinition[],
+    sortBy: KeywordCardListSort,
+  ): CardDefinition[] {
+    const sortedCards = [...cards];
+
+    switch (sortBy) {
+      case 'name':
+        return sortedCards.sort((a, b) => a.name.localeCompare(b.name, 'it'));
+
+      case 'villain':
+        return sortedCards.sort((a, b) => {
+          const villainA = this.getVillainName(a.villainId);
+          const villainB = this.getVillainName(b.villainId);
+
+          const villainComparison = villainA.localeCompare(villainB, 'it');
+
+          if (villainComparison !== 0) {
+            return villainComparison;
+          }
+
+          return a.name.localeCompare(b.name, 'it');
+        });
+    }
+  }
+
+  getKeywordCardListSort(listId: string): KeywordCardListSort {
+    return this.keywordCardListSorts[listId] ?? 'name';
+  }
+
+  setKeywordCardListSort(listType: string, sortBy: KeywordCardListSort): void {
+    this.keywordCardListSorts[listType] = sortBy;
   }
 }

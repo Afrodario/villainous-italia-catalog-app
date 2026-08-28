@@ -11,19 +11,13 @@ export const DEFEAT: KeywordGameplay = {
     ],
   },
   clarifications: {
-    paragraphs: [
-      ``,
-    ],
+    paragraphs: [``],
   },
   cardLists: [
     {
+      id: 'defeat-cards',
       listType: 'Carte che possono sconfiggere gli Eroi',
-      cardIds: [
-        'a-snake-am-i',
-        'dragon-form',
-        'hypnotize'
-      ],
-      //TODO inserire gli id delle carte interessate OPPURE inserire in ogni card una proprietà che specifica il tipo di keyword
+      cardIds: ['a-snake-am-i', 'dragon-form', 'hypnotize'],
     },
   ],
 };
