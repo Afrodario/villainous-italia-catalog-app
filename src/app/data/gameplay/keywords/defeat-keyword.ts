@@ -17,7 +17,15 @@ export const DEFEAT: KeywordGameplay = {
     {
       id: 'defeat-cards',
       listType: 'Carte che possono sconfiggere gli Eroi',
-      cardIds: ['a-snake-am-i', 'dragon-form', 'hypnotize'],
+      cardIds: [
+        'a-snake-am-i',
+        'dragon-form',
+        'hypnotize',
+        'binding-contract',
+        'malice',
+        'off-with-your-head',
+        'take-a-bite',
+      ],
     },
   ],
 };
