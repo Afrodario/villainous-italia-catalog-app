@@ -50,6 +50,7 @@ export class AppComponent {
 
   showGameplay(): void {
     this.currentSection = 'gameplay';
+    this.cardToOpenId = null;
   }
 
   showGameplayAction(actionId: string): void {

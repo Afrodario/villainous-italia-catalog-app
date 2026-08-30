@@ -721,6 +721,8 @@
                       >
                         <option value="name">Nome carta</option>
                         <option value="villain">Cattivo</option>
+                        <option value="type">Tipo carta</option>
+                        <option value="deck">Mazzo</option>
                       </select>
                     </div>
                   </div>
@@ -747,14 +749,29 @@
                         />
 
                         <div class="p-3">
+                          <!-- NOME -->
                           <p class="text-sm font-black text-white">
                             {{ card.name }}
                           </p>
 
+                          <!-- TIPO -->
                           <p
-                            class="mt-1 text-xs font-bold uppercase tracking-wider text-purple-400"
+                            class="mt-1 text-xs font-bold uppercase tracking-wider"
+                            [class]="getCardTypeClass(card.type)"
                           >
+                            {{ getCardTypeLabel(card.type) }}
+                          </p>
+
+                          <!-- CATTIVO -->
+                          <p class="mt-1 text-xs font-medium text-slate-400">
                             {{ getVillainName(card.villainId) }}
+                          </p>
+
+                          <!-- MAZZO -->
+                          <p
+                            class="mt-1 text-[10px] font-bold uppercase tracking-wider text-slate-500"
+                          >
+                            Mazzo {{ getCardDeckLabel(card) }}
                           </p>
                         </div>
                       </button>

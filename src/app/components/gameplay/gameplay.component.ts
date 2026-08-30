@@ -12,11 +12,11 @@ import { ActionGameplay } from '../../models/gameplay/action-gameplay.model';
 import { GameplayRepository } from '../../repositories/gameplay.repository';
 import { CardTypeGameplay } from '../../models/gameplay/card-type-gameplay.model';
 import { KeywordGameplay } from '../../models/gameplay/keyword-gameplay.model';
-import { CardDefinition } from '../../models/card-definition.model';
+import { CardDefinition, CardType } from '../../models/card-definition.model';
 import { CardRepository } from '../../repositories/card.repository';
 import { VillainRepository } from '../../repositories/villain.repository';
 
-type KeywordCardListSort = 'name' | 'villain';
+type KeywordCardListSort = 'name' | 'villain' | 'type' | 'deck';
 @Component({
   selector: 'app-gameplay',
   standalone: true,
@@ -181,6 +181,40 @@ export class GameplayComponent {
       .filter((card): card is CardDefinition => !!card);
   }
 
+  getCardTypeLabel(type: CardType): string {
+    const labels: Record<CardType, string> = {
+      ally: 'ALLEATO',
+      item: 'OGGETTO',
+      effect: 'EFFETTO',
+      condition: 'CONDIZIONE',
+      hero: 'EROE',
+      curse: 'MALEDIZIONE',
+      ingredient: 'INGREDIENTE',
+      titan: 'TITANO'
+    };
+
+    return labels[type];
+  }
+
+  getCardTypeClass(type: CardType): string {
+    const classes: Record<CardType, string> = {
+      ally: 'text-red-400',
+      item: 'text-sky-400',
+      effect: 'text-green-400',
+      condition: 'text-purple-400',
+      hero: 'text-yellow-400',
+      curse: 'text-purple-400',
+      ingredient: 'text-purple-300',
+      titan: 'text-purple-100'
+    };
+
+    return classes[type];
+  }
+
+  getCardDeckLabel(card: CardDefinition): string {
+    return card.isFateCard ? 'FATO' : 'CATTIVO';
+  }
+
   sortCardsForKeywordList(
     cards: CardDefinition[],
     sortBy: KeywordCardListSort,
@@ -200,6 +234,34 @@ export class GameplayComponent {
 
           if (villainComparison !== 0) {
             return villainComparison;
+          }
+
+          return a.name.localeCompare(b.name, 'it');
+        });
+
+      case 'type':
+        return sortedCards.sort((a, b) => {
+          const typeA = this.getCardTypeLabel(a.type);
+          const typeB = this.getCardTypeLabel(b.type);
+
+          const typeComparison = typeA.localeCompare(typeB, 'it');
+
+          if (typeComparison !== 0) {
+            return typeComparison;
+          }
+
+          return a.name.localeCompare(b.name, 'it');
+        });
+
+      case 'deck':
+        return sortedCards.sort((a, b) => {
+          const deckA = this.getCardDeckLabel(a);
+          const deckB = this.getCardDeckLabel(b);
+
+          const deckComparison = deckA.localeCompare(deckB, 'it');
+
+          if (deckComparison !== 0) {
+            return deckComparison;
           }
 
           return a.name.localeCompare(b.name, 'it');
