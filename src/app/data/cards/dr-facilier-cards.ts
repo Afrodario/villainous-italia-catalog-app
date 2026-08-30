@@ -323,7 +323,7 @@ export const DR_FACILIER_CARDS: CardDefinition[] = [
     isFateCard: true,
   },
   {
-    id: 'Eudora',
+    id: 'eudora',
     villainId: VILLAINS_IDS.DrFacilier,
     expansionId: EXPANSIONS_IDS.WickedToTheCore,
     name: 'Eudora',

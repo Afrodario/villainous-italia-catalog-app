@@ -427,7 +427,7 @@ export const PRINCE_JOHN_CARDS: CardDefinition[] = [
     isFateCard: true,
   },
   {
-    id: 'toby',
+    id: 'toby-prince-john',
     villainId: VILLAINS_IDS.PrinceJohn,
     expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Tobia',
