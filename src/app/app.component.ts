@@ -30,6 +30,7 @@ export class AppComponent {
   currentScene: Scene | null = null;
   gameState: GameState | null = null;
   selectedGameplayActionId: string | null = null;
+  cardToOpenId: string | null = null;
   currentSection: 'scenarios' | 'catalog' | 'gameplay' = 'catalog';
 
   constructor(
@@ -82,5 +83,11 @@ export class AppComponent {
     this.currentScenario = null;
     this.currentScene = null;
     this.gameState = null;
+  }
+
+  showCatalogCard(cardId: string): void {
+    this.cardToOpenId = cardId;
+    console.log('CARD TO OPEN ID PRESO', this.cardToOpenId);
+    this.currentSection = 'catalog';
   }
 }

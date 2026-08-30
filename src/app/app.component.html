@@ -84,10 +84,16 @@
   }
 
   @if (currentSection === "catalog") {
-    <app-catalog (gameplayActionSelected)="showGameplayAction($event)" />
+    <app-catalog
+      (gameplayActionSelected)="showGameplayAction($event)"
+      [cardToOpenId]="cardToOpenId"
+    />
   }
 
   @if (currentSection === "gameplay") {
-    <app-gameplay [selectedActionId]="selectedGameplayActionId" />
+    <app-gameplay
+      [selectedActionId]="selectedGameplayActionId"
+      (cardSelected)="showCatalogCard($event)"
+    />
   }
 </div>

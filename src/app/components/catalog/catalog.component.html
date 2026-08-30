@@ -428,6 +428,7 @@
           <app-card-gallery
             [cards]="villainDeck"
             [sortBy]="villainDeckSortBy"
+            [cardToOpenId]="cardToOpenId"
           />
         </section>
 
@@ -487,7 +488,11 @@
             </div>
           </div>
 
-          <app-card-gallery [cards]="fateDeck" [sortBy]="fateDeckSortBy" />
+          <app-card-gallery
+            [cards]="fateDeck"
+            [sortBy]="fateDeckSortBy"
+            [cardToOpenId]="cardToOpenId"
+          />
         </section>
       </div>
     </section>

@@ -3,8 +3,11 @@ import {
   Component,
   ElementRef,
   EventEmitter,
+  Input,
   OnDestroy,
+  OnChanges,
   Output,
+  SimpleChanges,
   ViewChild,
 } from '@angular/core';
 import { afterNextRender } from '@angular/core';
@@ -54,6 +57,7 @@ export class CatalogComponent implements OnDestroy {
   @ViewChild('deckSection')
   deckSection?: ElementRef<HTMLElement>;
 
+  @Input() cardToOpenId: string | null = null;
   @Output() gameplayActionSelected = new EventEmitter<string>();
 
   sortOptions: { value: CardSort; label: string }[] = [
@@ -72,6 +76,35 @@ export class CatalogComponent implements OnDestroy {
     public gameTextFormatter: GameTextFormatterService,
   ) {
     this.expansions = this.expansionRepository.getAll();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['cardToOpenId'] && this.cardToOpenId) {
+      const card = this.cardRepository.getById(this.cardToOpenId);
+
+      const villain = this.villainRepository.getById(card.villainId);
+
+      console.log('Carta da aprire:', card);
+      console.log('Villain:', villain);
+
+      this.selectedExpansion =
+        this.expansionRepository
+          .getAll()
+          .find((expansion) => expansion.id === villain.expansionId) ?? null;
+
+      if (!this.selectedExpansion) {
+        console.error(
+          `Espansione "${villain.expansionId}" non trovata per il Villain "${villain.id}"`,
+        );
+        return;
+      }
+
+      this.villains = this.villainRepository.getByExpansion(
+        this.selectedExpansion.id,
+      );
+
+      this.selectVillain(villain);
+    }
   }
 
   selectExpansion(expansion: Expansion): void {

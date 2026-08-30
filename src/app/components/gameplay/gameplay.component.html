@@ -735,8 +735,10 @@
                       );
                       track card.id
                     ) {
-                      <div
-                        class="overflow-hidden rounded-xl border border-white/10 bg-slate-950"
+                      <button
+                        type="button"
+                        (click)="selectKeywordCard(card.id)"
+                        class="group w-full overflow-hidden rounded-xl border border-white/10 bg-slate-950 text-left transition duration-300 hover:-translate-y-1 hover:border-purple-500 hover:shadow-xl hover:shadow-purple-900/20"
                       >
                         <img
                           [src]="card.image"
@@ -755,7 +757,7 @@
                             {{ getVillainName(card.villainId) }}
                           </p>
                         </div>
-                      </div>
+                      </button>
                     }
                   </div>
                 </div>

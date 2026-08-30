@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 import {
   CardSort,
@@ -14,16 +14,29 @@ import { CardVariant } from '../../models/card-variant.model';
   imports: [],
   templateUrl: './card-gallery.component.html',
 })
-export class CardGalleryComponent {
+export class CardGalleryComponent implements OnChanges {
   @Input()
   cards: CardViewModel[] = [];
   @Input()
   sortBy: CardSort = 'quantity';
+  @Input() cardToOpenId: string | null = null;
 
   selectedCard: CardViewModel | null = null;
   selectedVariantIndex = 0;
 
   constructor(public gameTextFormatter: GameTextFormatterService) {}
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['cardToOpenId'] && this.cardToOpenId) {
+      const card = this.cards.find(
+        (card) => card.definitionId === this.cardToOpenId,
+      );
+
+      if (card) {
+        this.openDetails(card);
+      }
+    }
+  }
 
   openDetails(card: CardViewModel): void {
     this.selectedCard = card;
@@ -53,7 +66,7 @@ export class CardGalleryComponent {
       hero: 5,
       curse: 6,
       ingredient: 6,
-      titan: 6
+      titan: 6,
     };
 
     const cards = [...this.cards];
@@ -102,7 +115,7 @@ export class CardGalleryComponent {
       hero: 'EROE',
       curse: 'MALEDIZIONE',
       ingredient: 'INGREDIENTE',
-      titan: 'TITANO'
+      titan: 'TITANO',
     };
 
     return labels[type];
@@ -117,7 +130,7 @@ export class CardGalleryComponent {
       hero: 'text-yellow-400',
       curse: 'text-purple-400',
       ingredient: 'text-purple-300',
-      titan: 'text-purple-200'
+      titan: 'text-purple-200',
     };
 
     return classes[type];

@@ -1,4 +1,11 @@
-import { Component, ElementRef, Input, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input,
+  Output,
+  ViewChild,
+} from '@angular/core';
 
 import { GameTextFormatterService } from '../../services/game-text-formatter.service';
 import { ActionGameplay } from '../../models/gameplay/action-gameplay.model';
@@ -25,6 +32,8 @@ export class GameplayComponent {
   selectedKeyword: KeywordGameplay | null = null;
   keywordCardListSorts: Record<string, KeywordCardListSort> = {};
   @Input() selectedActionId: string | null = null;
+
+  @Output() cardSelected = new EventEmitter<string>();
 
   @ViewChild('cardTypeDetails')
   cardTypeDetails?: ElementRef<HTMLElement>;
@@ -126,6 +135,11 @@ export class GameplayComponent {
 
   closeKeywordDetails(): void {
     this.selectedKeyword = null;
+  }
+
+  selectKeywordCard(cardId: string): void {
+    console.log('EMETTO ID');
+    this.cardSelected.emit(cardId);
   }
 
   scrollToActions(): void {
