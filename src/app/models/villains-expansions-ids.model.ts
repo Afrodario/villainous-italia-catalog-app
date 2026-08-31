@@ -14,5 +14,8 @@ export enum VILLAINS_IDS {
     Ursula = 'ursula',
     EvilQueen = 'evil-queen',
     DrFacilier = 'dr-facilier',
-    Hades = 'hades'
+    Hades = 'hades',
+    Scar = 'scar',
+    Ratigan = 'ratigan',
+    Yzma = 'yzma'
 }
