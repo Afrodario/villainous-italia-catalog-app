@@ -8,6 +8,7 @@ import { PRINCE_JOHN_CARDS } from './cards/prince-john-cards';
 import { QUEEN_OF_HEARTS_CARDS } from './cards/queen-of-hearts-cards';
 import { SCAR_CARDS } from './cards/scar-cards';
 import { URSULA_CARDS } from './cards/ursula-cards';
+import { YZMA_CARDS } from './cards/yzma-cards';
 import { CAPTAIN_HOOK } from './villains/0-the-worst-takes-it-all/captain-hook-villain';
 import { JAFAR } from './villains/0-the-worst-takes-it-all/jafar-villain';
 import { MALEFICENT } from './villains/0-the-worst-takes-it-all/maleficent-villain';
@@ -36,7 +37,8 @@ export const ALL_CARDS = [
   ...EVIL_QUEEN_CARDS,
   ...DR_FACILIER_CARDS,
   ...HADES_CARDS,
-  ...SCAR_CARDS
+  ...SCAR_CARDS,
+  ...YZMA_CARDS
 ];
 
 export const ALL_VILLAINS = [
