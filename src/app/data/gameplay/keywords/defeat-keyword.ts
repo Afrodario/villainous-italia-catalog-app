@@ -25,6 +25,8 @@ export const DEFEAT: KeywordGameplay = {
         'malice',
         'off-with-your-head',
         'take-a-bite',
+        'ferocity',
+        'marvelous-trap'
       ],
     },
     {
@@ -40,6 +42,10 @@ export const DEFEAT: KeywordGameplay = {
         'spinning-wheel',
         'talisman',
         'trident',
+        'ferocity',
+        'hydra',
+        'nessus',
+        'rage'
       ],
     },
     {
@@ -54,6 +60,9 @@ export const DEFEAT: KeywordGameplay = {
         'maid-marian',
         'steal-from-the-rich',
         'toby-prince-john',
+        'mufasa',
+        'olivia',
+        'rafikis-stick'
       ],
     },
   ],

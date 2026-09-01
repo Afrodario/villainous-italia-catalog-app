@@ -6,6 +6,7 @@ import { JAFAR_CARDS } from './cards/jafar-cards';
 import { MALEFICENT_CARDS } from './cards/maleficent-cards';
 import { PRINCE_JOHN_CARDS } from './cards/prince-john-cards';
 import { QUEEN_OF_HEARTS_CARDS } from './cards/queen-of-hearts-cards';
+import { RATIGAN_CARDS } from './cards/ratigan-cards';
 import { SCAR_CARDS } from './cards/scar-cards';
 import { URSULA_CARDS } from './cards/ursula-cards';
 import { YZMA_CARDS } from './cards/yzma-cards';
@@ -38,7 +39,8 @@ export const ALL_CARDS = [
   ...DR_FACILIER_CARDS,
   ...HADES_CARDS,
   ...SCAR_CARDS,
-  ...YZMA_CARDS
+  ...YZMA_CARDS,
+  ...RATIGAN_CARDS
 ];
 
 export const ALL_VILLAINS = [
