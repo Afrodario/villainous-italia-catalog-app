@@ -15,5 +15,6 @@ export interface KeywordGameplay {
 export interface KeywordCardList {
   id: string;
   listType: string;
+  listTypeDescription?: string[];
   cardIds: string[];
 }

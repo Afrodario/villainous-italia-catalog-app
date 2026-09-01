@@ -10,6 +10,7 @@ import { VANQUISH } from './actions/vanquish-action';
 import { ALLY } from './card-types/ally-card-type';
 import { CURSE } from './card-types/curse-card-type';
 import { DEFEAT } from './keywords/defeat-keyword';
+import { DISCARD_KW } from './keywords/discard-keyword';
 
 export const ALL_ACTIONS = [
   GAIN_POWER,
@@ -20,8 +21,8 @@ export const ALL_ACTIONS = [
   FATE,
   MOVE_ITEM_OR_ALLY,
   MOVE_A_HERO,
-  BREW_POISON
+  BREW_POISON,
 ];
 export const ALL_CARD_TYPES = [ALLY, CURSE];
 
-export const ALL_KEYWORDS = [DEFEAT]
+export const ALL_KEYWORDS = [DEFEAT, DISCARD_KW];

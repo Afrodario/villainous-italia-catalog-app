@@ -10,9 +10,9 @@ export const DEFEAT: KeywordGameplay = {
       `"Defeating" a Hero refers to removing that Hero from the top of your Board, either by performing a Vanquish action or by playing a card.`,
     ],
   },
-  clarifications: {
-    paragraphs: [``],
-  },
+  // clarifications: {
+  //   paragraphs: [``],
+  // },
   cardLists: [
     {
       id: 'defeat-cards',
@@ -26,7 +26,7 @@ export const DEFEAT: KeywordGameplay = {
         'off-with-your-head',
         'take-a-bite',
         'ferocity',
-        'marvelous-trap'
+        'marvelous-trap',
       ],
     },
     {
@@ -45,12 +45,16 @@ export const DEFEAT: KeywordGameplay = {
         'ferocity',
         'hydra',
         'nessus',
-        'rage'
+        'rage',
       ],
     },
     {
       id: 'fate-cards-on-defeat-abilities',
       listType: 'Carte Fato con abilità innescate dalla loro sconfitta',
+      listTypeDescription: [
+        "Multiple Heroes in Dr. Facilier's and Syndrome's Fate decks can steal a specific Villain card, and return it when defeated, and are not enumerated here.",
+        'Gurgi has an Ability when he is defeated in a Vanquish action, but not when otherwise defeated.',
+      ],
       cardIds: [
         'abu',
         'aladdin',
@@ -62,7 +66,7 @@ export const DEFEAT: KeywordGameplay = {
         'toby-prince-john',
         'mufasa',
         'olivia',
-        'rafikis-stick'
+        'rafikis-stick',
       ],
     },
   ],
