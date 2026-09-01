@@ -17,5 +17,8 @@ export enum VILLAINS_IDS {
     Hades = 'hades',
     Scar = 'scar',
     Ratigan = 'ratigan',
-    Yzma = 'yzma'
+    Yzma = 'yzma',
+    CruellaDeVil = 'cruella-de-vil',
+    MotherGothel = 'mother-gothel',
+    Pete = 'pete'
 }

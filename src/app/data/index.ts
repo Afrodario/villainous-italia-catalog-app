@@ -1,4 +1,5 @@
 import { CAPTAIN_HOOK_CARDS } from './cards/captain-hook-cards';
+import { CRUELLA_DE_VIL_CARDS } from './cards/cruella-de-vil-cards';
 import { DR_FACILIER_CARDS } from './cards/dr-facilier-cards';
 import { EVIL_QUEEN_CARDS } from './cards/evil-queen-cards';
 import { HADES_CARDS } from './cards/hades-cards';
@@ -40,7 +41,8 @@ export const ALL_CARDS = [
   ...HADES_CARDS,
   ...SCAR_CARDS,
   ...YZMA_CARDS,
-  ...RATIGAN_CARDS
+  ...RATIGAN_CARDS,
+  ...CRUELLA_DE_VIL_CARDS
 ];
 
 export const ALL_VILLAINS = [
