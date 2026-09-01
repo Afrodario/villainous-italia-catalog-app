@@ -69,29 +69,36 @@ export class CardGalleryComponent implements OnChanges {
       titan: 6,
     };
 
-    const cards = [...this.cards];
+    // Le tessere vengono escluse dal sorting
+    const cards = this.cards.filter((card) => !card.isTile);
+    const tiles = this.cards.filter((card) => card.isTile);
 
     switch (this.sortBy) {
       case 'name':
-        return cards.sort((a, b) => a.name.localeCompare(b.name));
+        cards.sort((a, b) => a.name.localeCompare(b.name));
+        break;
 
       case 'cost':
-        return cards.sort(
+        cards.sort(
           (a, b) => this.getCostSortValue(a) - this.getCostSortValue(b),
         );
+        break;
 
       case 'quantity':
-        return cards.sort((a, b) => b.quantity - a.quantity);
+        cards.sort((a, b) => b.quantity - a.quantity);
+        break;
 
       case 'strength':
-        return cards.sort((a, b) => (b.strength ?? 0) - (a.strength ?? 0));
+        cards.sort((a, b) => (b.strength ?? 0) - (a.strength ?? 0));
+        break;
 
       case 'type':
-        return cards.sort((a, b) => typeOrder[a.type] - typeOrder[b.type]);
-
-      default:
-        return cards;
+        cards.sort((a, b) => typeOrder[a.type] - typeOrder[b.type]);
+        break;
     }
+
+    // Le tessere vengono sempre collocate alla fine
+    return [...cards, ...tiles];
   }
 
   private getCostSortValue(card: CardViewModel): number {

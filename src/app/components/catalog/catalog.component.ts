@@ -225,6 +225,7 @@ export class CatalogComponent implements OnDestroy {
       faq: card.faq,
       variants: card.variants,
       isFateCard: card.isFateCard,
+      isTile: card.isTile,
     }));
   }
 

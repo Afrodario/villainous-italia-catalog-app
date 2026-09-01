@@ -28,4 +28,5 @@ export interface CardDefinition {
   faq?: string[];
   isFateCard?: boolean;
   variants?: CardVariant[];
+  isTile?: boolean;
 }

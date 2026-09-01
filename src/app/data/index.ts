@@ -5,6 +5,7 @@ import { EVIL_QUEEN_CARDS } from './cards/evil-queen-cards';
 import { HADES_CARDS } from './cards/hades-cards';
 import { JAFAR_CARDS } from './cards/jafar-cards';
 import { MALEFICENT_CARDS } from './cards/maleficent-cards';
+import { MOTHER_GOTHEL_CARDS } from './cards/mother-gothel-cards';
 import { PRINCE_JOHN_CARDS } from './cards/prince-john-cards';
 import { QUEEN_OF_HEARTS_CARDS } from './cards/queen-of-hearts-cards';
 import { RATIGAN_CARDS } from './cards/ratigan-cards';
@@ -42,7 +43,8 @@ export const ALL_CARDS = [
   ...SCAR_CARDS,
   ...YZMA_CARDS,
   ...RATIGAN_CARDS,
-  ...CRUELLA_DE_VIL_CARDS
+  ...CRUELLA_DE_VIL_CARDS,
+  ...MOTHER_GOTHEL_CARDS
 ];
 
 export const ALL_VILLAINS = [

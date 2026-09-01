@@ -29,4 +29,5 @@ export interface CardViewModel {
   faq?: string[];
   variants?: CardVariant[];
   isFateCard?: boolean;
+  isTile?: boolean;
 }

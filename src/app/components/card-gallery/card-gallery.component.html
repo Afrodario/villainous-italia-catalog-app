@@ -1,9 +1,29 @@
-<div class="grid grid-cols-2 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-  @for (card of sortedCards; track card.instanceId) {
+<div
+  class="grid grid-cols-2 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"
+>
+  @for (card of sortedCards; track card.instanceId; let i = $index) {
+    @if (card.isTile && (i === 0 || !sortedCards[i - 1].isTile)) {
+      <div class="col-span-full mt-4 mb-1 flex items-center gap-3">
+        <div class="h-px flex-1 bg-amber-500/20"></div>
+
+        <span
+          class="text-xs font-black uppercase tracking-[0.2em] text-amber-400"
+        >
+          🧩 Tessere
+        </span>
+
+        <div class="h-px flex-1 bg-amber-500/20"></div>
+      </div>
+    }
+
     <button
       type="button"
       (click)="openDetails(card)"
-      class="relative overflow-hidden rounded-xl border border-white/10 bg-slate-900 transition hover:-translate-y-1 hover:border-purple-500"
+      class="relative overflow-hidden rounded-xl border bg-slate-900 transition hover:-translate-y-1"
+      [class.border-amber-500\40]="card.isTile"
+      [class.border-white\10]="!card.isTile"
+      [class.hover:border-amber-400]="card.isTile"
+      [class.hover:border-purple-500]="!card.isTile"
     >
       <img [src]="card.image" [alt]="card.name" class="w-full" />
 
