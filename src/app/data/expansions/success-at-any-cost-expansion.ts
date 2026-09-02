@@ -9,4 +9,5 @@ export const SUCCESS_AT_ANY_COST: Expansion = {
   villains: [],
   nameReference:
     'Its name is based on how the Villains will do whatever it takes to achieve their goals. It could also be based on the line by Ernesto "Success doesn’t come for free."',
+    isBaseSet: false,
 };

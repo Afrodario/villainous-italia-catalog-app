@@ -207,6 +207,14 @@ export class CatalogComponent implements OnDestroy {
     return this.fateDeck.reduce((total, card) => total + card.quantity, 0);
   }
 
+  get baseSets(): Expansion[] {
+    return this.expansions.filter((expansion) => expansion.isBaseSet);
+  }
+
+  get expansionsOnly(): Expansion[] {
+    return this.expansions.filter((expansion) => !expansion.isBaseSet);
+  }
+
   private toCardViewModels(definitions: CardDefinition[]): CardViewModel[] {
     return definitions.map((card) => ({
       instanceId: card.id,

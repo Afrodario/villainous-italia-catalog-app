@@ -9,4 +9,5 @@ export const COME_WE_FLY: Expansion = {
   villains: [],
   nameReference:
     'The name is a quote from a line spoken by Winifred Sanderson shortly after arriving to the 20th century.',
+    isBaseSet: false,
 };

@@ -12,4 +12,5 @@ export const WICKED_TO_THE_CORE: Expansion = {
   villains: [EVIL_QUEEN, DR_FACILIER, HADES],
   nameReference:
     'The name is a reference to the poisoned apple used by the Evil Queen.',
+  isBaseSet: false,
 };

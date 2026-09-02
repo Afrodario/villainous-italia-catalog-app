@@ -9,4 +9,5 @@ export const FILLED_WITH_FRIGHT: Expansion = {
   villains: [],
   nameReference:
     'The name references one of Oogie Boogie’s lines in the song "This Is Halloween".',
+    isBaseSet: false,
 };

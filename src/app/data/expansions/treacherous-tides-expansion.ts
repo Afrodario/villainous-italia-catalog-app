@@ -9,4 +9,5 @@ export const TREACHEROUS_TIDES: Expansion = {
   villains: [],
   nameReference:
     'Its name refers to both Villains being ocean-based.',
+    isBaseSet: false,
 };

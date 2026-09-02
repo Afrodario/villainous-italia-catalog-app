@@ -8,4 +8,5 @@ export interface Expansion {
   expansionNumber: number;
   villains: Villain[];
   nameReference: string;
+  isBaseSet: boolean
 }

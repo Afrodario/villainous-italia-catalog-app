@@ -22,4 +22,5 @@ export const THE_WORST_TAKES_IT_ALL: Expansion = {
   ],
   nameReference:
     "Slogan originale, probabilmente un gioco di parole sulla canzone 'The Winner Takes It All' degli ABBA",
+    isBaseSet: true,
 };

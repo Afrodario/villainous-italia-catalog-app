@@ -9,4 +9,5 @@ export const DESPICABLE_PLOTS: Expansion = {
   villains: [],
   nameReference:
     'The name is inspired by Monsieur D’Arque calling Gaston "despicable".',
+    isBaseSet: false,
 };

@@ -9,4 +9,5 @@ export const SUGAR_AND_SPITE: Expansion = {
   villains: [],
   nameReference:
     'Its name is a play on the phrase "sugar and spice and everything nice".',
+    isBaseSet: false,
 };

@@ -12,4 +12,5 @@ export const EVIL_COMES_PREPARED: Expansion = {
   villains: [SCAR, YZMA, RATIGAN],
   nameReference:
     'The name is a reference to the song "Be Prepared", sung by Scar.',
+  isBaseSet: false,
 };

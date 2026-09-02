@@ -12,4 +12,5 @@ export const PERFECTLY_WRETCHED: Expansion = {
   villains: [CRUELLA_DE_VIL, MOTHER_GOTHEL, PETE],
   nameReference:
     'The name is a quote from a line spoken by Cruella De Vil when we first meet her.',
+    isBaseSet: false,
 };

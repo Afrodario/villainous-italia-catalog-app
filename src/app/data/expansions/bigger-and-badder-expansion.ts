@@ -9,4 +9,5 @@ export const BIGGER_AND_BADDER: Expansion = {
   villains: [],
   nameReference:
     'The name references a line where Syndrome calls his Omnidroid "bigger" and "badder".',
+  isBaseSet: false,
 };
