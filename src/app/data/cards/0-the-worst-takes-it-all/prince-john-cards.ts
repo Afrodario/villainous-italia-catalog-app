@@ -1,9 +1,6 @@
-import { CARD_TYPES } from '../../models/actions-types.model';
-import { CardDefinition } from '../../models/card-definition.model';
-import {
-  EXPANSIONS_IDS,
-  VILLAINS_IDS,
-} from '../../models/villains-expansions-ids.model';
+import { CARD_TYPES } from "../../../models/actions-types.model";
+import { CardDefinition } from "../../../models/card-definition.model";
+import { EXPANSIONS_IDS, VILLAINS_IDS } from "../../../models/villains-expansions-ids.model";
 
 export const PRINCE_JOHN_CARDS: CardDefinition[] = [
   {
