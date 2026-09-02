@@ -2,7 +2,9 @@ export enum EXPANSIONS_IDS {
     TheWorstTakesItAll = 'the-worst-takes-it-all',
     WickedToTheCore = 'wicked-to-the-core',
     EvilComesPrepared = 'evil-comes-prepared',
-    PerfectlyWretched = 'perfectly-wretched'
+    PerfectlyWretched = 'perfectly-wretched',
+    DarknessBrewing = 'darkness-brewing',
+    ComeWeFly = 'come-we-fly'
 }
 
 export enum VILLAINS_IDS {

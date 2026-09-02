@@ -14,4 +14,5 @@ export interface Villain {
   fateDeckBack: string;
   additionalTokens?: boolean;
   additionalTokensPath?: string;
+  additionalSetIds?: string[];
 }

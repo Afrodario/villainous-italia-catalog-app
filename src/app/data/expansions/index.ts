@@ -1,8 +1,10 @@
 import { BIGGER_AND_BADDER } from './bigger-and-badder-expansion';
 import { COME_WE_FLY } from './come-we-fly-expansion';
+import { DARKNESS_BREWING } from './darkness-brewing-expansion';
 import { DESPICABLE_PLOTS } from './despicable-plots-expansion';
 import { EVIL_COMES_PREPARED } from './evil-comes-prepared-expansion';
 import { FILLED_WITH_FRIGHT } from './filled-with-fright-expansion';
+import { INTRODUCTION_TO_EVIL } from './introduction-to-evil-expansion';
 import { PERFECTLY_WRETCHED } from './perfectly-wretched-expansion';
 import { SUCCESS_AT_ANY_COST } from './success-at-any-cost-expansion';
 import { SUGAR_AND_SPITE } from './sugar-and-spite-expansion';
@@ -12,6 +14,8 @@ import { WICKED_TO_THE_CORE } from './wicked-to-the-core-expansion';
 
 export const ALL_EXPANSIONS = [
   THE_WORST_TAKES_IT_ALL,
+  INTRODUCTION_TO_EVIL,
+  DARKNESS_BREWING,
   WICKED_TO_THE_CORE,
   EVIL_COMES_PREPARED,
   PERFECTLY_WRETCHED,

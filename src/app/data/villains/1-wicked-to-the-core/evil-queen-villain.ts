@@ -21,4 +21,5 @@ export const EVIL_QUEEN: Villain = {
   quote: `"I'll be the fairest in the land!"`,
   villainDeckBack: `assets/images/cards/evil_queen/Evil_Queen_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/evil_queen/Evil_Queen_Fate_Back.png`,
+  additionalSetIds: [EXPANSIONS_IDS.DarknessBrewing]
 };

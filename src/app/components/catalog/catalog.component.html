@@ -18,85 +18,10 @@
 
       <div class="grid items-start gap-6 md:grid-cols-2 lg:grid-cols-3">
         @for (expansion of baseSets; track expansion.id) {
-          <!-- CARD ESPANSIONE -->
-          <button
-            type="button"
-            (click)="selectExpansion(expansion)"
-            class="group self-start overflow-hidden rounded-2xl border border-white/10 bg-slate-900 text-left transition duration-300 hover:-translate-y-1 hover:border-purple-500 hover:bg-slate-800 hover:shadow-xl hover:shadow-purple-900/20"
-          >
-            <!-- COVER -->
-            <div
-              class="relative flex h-[480px] shrink-0 items-start justify-center overflow-hidden bg-slate-950 p-2"
-            >
-              <img
-                [src]="expansion.coverImage"
-                [alt]="expansion.name"
-                class="h-full w-auto object-contain transition duration-300 group-hover:scale-105"
-              />
-
-              <!-- BASE SET -->
-              <div
-                class="absolute top-3 left-3 rounded-full border-2 border-white/80 bg-amber-500 px-3 py-1.5 text-xs font-black text-white shadow-lg"
-              >
-                BASE SET
-              </div>
-            </div>
-
-            <!-- CONTENUTO -->
-            <div class="p-5">
-              <!-- NOME -->
-              <h3 class="text-xl font-black text-white">
-                {{ expansion.name }}
-              </h3>
-
-              <!-- DATA + RIFERIMENTO -->
-              <div class="mt-2 space-y-1">
-                <p class="text-sm text-slate-400">
-                  {{ formatExpansionDate(expansion.releaseDate) }}
-                </p>
-
-                @if (expansion.nameReference) {
-                  <p class="text-xs italic text-slate-500">
-                    {{ expansion.nameReference }}
-                  </p>
-                }
-              </div>
-
-              <!-- CATTIVI -->
-              <div class="mt-5 border-t border-white/10 pt-5">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="text-sm font-black uppercase tracking-[0.15em] text-slate-300"
-                    >
-                      I Cattivi al suo interno
-                    </span>
-                  </div>
-
-                  <span
-                    class="flex h-9 min-w-9 items-center justify-center rounded-full border border-purple-500/40 bg-purple-500/15 px-2.5 text-sm font-black text-purple-300 shadow-lg shadow-purple-900/20"
-                  >
-                    {{ expansion.villains.length }}
-                  </span>
-                </div>
-
-                <div class="mt-4 grid grid-cols-3 gap-2 sm:gap-3">
-                  @for (villain of expansion.villains; track villain.id) {
-                    <div
-                      class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-slate-950 transition duration-300 group-hover:border-purple-500/30"
-                      [title]="villain.name"
-                    >
-                      <img
-                        [src]="villain.portrait"
-                        [alt]="'Ritratto di ' + villain.name"
-                        class="h-full w-full object-cover transition duration-300 group-hover:scale-110"
-                      />
-                    </div>
-                  }
-                </div>
-              </div>
-            </div>
-          </button>
+          <app-expansion-card
+            [expansion]="expansion"
+            (expansionSelected)="selectExpansion($event)"
+          />
         }
       </div>
     </section>
@@ -115,88 +40,14 @@
 
       <div class="grid items-start gap-6 md:grid-cols-2 lg:grid-cols-3">
         @for (expansion of expansionsOnly; track expansion.id) {
-          <!-- CARD ESPANSIONE -->
-          <button
-            type="button"
-            (click)="selectExpansion(expansion)"
-            class="group self-start overflow-hidden rounded-2xl border border-white/10 bg-slate-900 text-left transition duration-300 hover:-translate-y-1 hover:border-purple-500 hover:bg-slate-800 hover:shadow-xl hover:shadow-purple-900/20"
-          >
-            <!-- COVER -->
-            <div
-              class="relative flex h-[480px] shrink-0 items-start justify-center overflow-hidden bg-slate-950 p-2"
-            >
-              <img
-                [src]="expansion.coverImage"
-                [alt]="expansion.name"
-                class="h-full w-auto object-contain transition duration-300 group-hover:scale-105"
-              />
-
-              <!-- NUMERO ESPANSIONE -->
-              <div
-                class="absolute top-3 left-3 flex h-9 min-w-9 items-center justify-center rounded-full border-2 border-white/80 bg-purple-600 px-2 text-sm font-black text-white shadow-lg"
-              >
-                #{{ expansion.expansionNumber }}
-              </div>
-            </div>
-
-            <!-- CONTENUTO -->
-            <div class="p-5">
-              <!-- NOME -->
-              <h3 class="text-xl font-black text-white">
-                {{ expansion.name }}
-              </h3>
-
-              <!-- DATA + RIFERIMENTO -->
-              <div class="mt-2 space-y-1">
-                <p class="text-sm text-slate-400">
-                  {{ formatExpansionDate(expansion.releaseDate) }}
-                </p>
-
-                @if (expansion.nameReference) {
-                  <p class="text-xs italic text-slate-500">
-                    {{ expansion.nameReference }}
-                  </p>
-                }
-              </div>
-
-              <!-- CATTIVI -->
-              <div class="mt-5 border-t border-white/10 pt-5">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="text-sm font-black uppercase tracking-[0.15em] text-slate-300"
-                    >
-                      I Cattivi al suo interno
-                    </span>
-                  </div>
-
-                  <span
-                    class="flex h-9 min-w-9 items-center justify-center rounded-full border border-purple-500/40 bg-purple-500/15 px-2.5 text-sm font-black text-purple-300 shadow-lg shadow-purple-900/20"
-                  >
-                    {{ expansion.villains.length }}
-                  </span>
-                </div>
-
-                <div class="mt-4 grid grid-cols-3 gap-2 sm:gap-3">
-                  @for (villain of expansion.villains; track villain.id) {
-                    <div
-                      class="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-slate-950 transition duration-300 group-hover:border-purple-500/30"
-                      [title]="villain.name"
-                    >
-                      <img
-                        [src]="villain.portrait"
-                        [alt]="'Ritratto di ' + villain.name"
-                        class="h-full w-full object-cover transition duration-300 group-hover:scale-110"
-                      />
-                    </div>
-                  }
-                </div>
-              </div>
-            </div>
-          </button>
+          <app-expansion-card
+            [expansion]="expansion"
+            (expansionSelected)="selectExpansion($event)"
+          />
         }
       </div>
     </section>
+    
   </section>
 
   @if (selectedExpansion) {

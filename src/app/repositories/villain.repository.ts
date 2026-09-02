@@ -25,7 +25,9 @@ export class VillainRepository {
 
   getByExpansion(expansionId: string): Villain[] {
     return this.villains.filter(
-      (villain) => villain.expansionId === expansionId,
+      (villain) =>
+        villain.expansionId === expansionId ||
+        villain.additionalSetIds?.includes(expansionId),
     );
   }
 }

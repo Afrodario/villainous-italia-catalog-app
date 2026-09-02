@@ -27,11 +27,12 @@ import { LocationGalleryComponent } from '../location-gallery/location-gallery.c
 import { VILLAINS_IDS } from '../../models/villains-expansions-ids.model';
 import { GameTextFormatterService } from '../../services/game-text-formatter.service';
 import { VillainMechanics } from '../../models/villain-mechanics.model';
+import { ExpansionCardComponent } from './expansion-card/expansion-card.component';
 
 @Component({
   selector: 'app-catalog',
   standalone: true,
-  imports: [CardGalleryComponent, LocationGalleryComponent],
+  imports: [CardGalleryComponent, LocationGalleryComponent, ExpansionCardComponent],
   templateUrl: './catalog.component.html',
 })
 export class CatalogComponent implements OnDestroy {
@@ -108,6 +109,7 @@ export class CatalogComponent implements OnDestroy {
   }
 
   selectExpansion(expansion: Expansion): void {
+    console.log('SELECTED EXPANSION', expansion);
     this.selectedExpansion = expansion;
 
     this.selectedVillain = null;
@@ -118,6 +120,7 @@ export class CatalogComponent implements OnDestroy {
     this.showBackToVillains = false;
 
     this.villains = this.villainRepository.getByExpansion(expansion.id);
+    console.log('VILLAINS', this.villains);
 
     requestAnimationFrame(() => {
       this.setupVillainsObserver();
