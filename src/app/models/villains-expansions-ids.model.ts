@@ -3,6 +3,7 @@ export enum EXPANSIONS_IDS {
     WickedToTheCore = 'wicked-to-the-core',
     EvilComesPrepared = 'evil-comes-prepared',
     PerfectlyWretched = 'perfectly-wretched',
+    DespicablePlots = 'despicable-plots',
     DarknessBrewing = 'darkness-brewing',
     ComeWeFly = 'come-we-fly'
 }
