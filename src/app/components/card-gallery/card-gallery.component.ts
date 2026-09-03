@@ -67,6 +67,7 @@ export class CardGalleryComponent implements OnChanges {
       curse: 6,
       ingredient: 6,
       titan: 6,
+      prince: 6
     };
 
     // Le tessere vengono escluse dal sorting
@@ -123,6 +124,7 @@ export class CardGalleryComponent implements OnChanges {
       curse: 'MALEDIZIONE',
       ingredient: 'INGREDIENTE',
       titan: 'TITANO',
+      prince: 'PRINCIPE'
     };
 
     return labels[type];
@@ -138,6 +140,7 @@ export class CardGalleryComponent implements OnChanges {
       curse: 'text-purple-400',
       ingredient: 'text-purple-300',
       titan: 'text-purple-200',
+      prince: 'text-purple-200'
     };
 
     return classes[type];

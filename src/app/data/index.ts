@@ -14,6 +14,7 @@ import { CRUELLA_DE_VIL_CARDS } from './cards/3-perfectly-wretched/cruella-de-vi
 import { MOTHER_GOTHEL_CARDS } from './cards/3-perfectly-wretched/mother-gothel-cards';
 import { PETE_CARDS } from './cards/3-perfectly-wretched/pete-cards';
 import { GASTON_CARDS } from './cards/4-despicable-plots/gaston-cards';
+import { LADY_TREMAINE_CARDS } from './cards/4-despicable-plots/lady-tremaine-cards';
 import { CAPTAIN_HOOK } from './villains/0-the-worst-takes-it-all/captain-hook-villain';
 import { JAFAR } from './villains/0-the-worst-takes-it-all/jafar-villain';
 import { MALEFICENT } from './villains/0-the-worst-takes-it-all/maleficent-villain';
@@ -52,7 +53,8 @@ export const ALL_CARDS = [
   ...CRUELLA_DE_VIL_CARDS,
   ...MOTHER_GOTHEL_CARDS,
   ...PETE_CARDS,
-  ...GASTON_CARDS
+  ...GASTON_CARDS,
+  ...LADY_TREMAINE_CARDS
 ];
 
 export const ALL_VILLAINS = [

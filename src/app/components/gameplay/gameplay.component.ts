@@ -190,7 +190,8 @@ export class GameplayComponent {
       hero: 'EROE',
       curse: 'MALEDIZIONE',
       ingredient: 'INGREDIENTE',
-      titan: 'TITANO'
+      titan: 'TITANO',
+      prince: 'PRINCIPE'
     };
 
     return labels[type];
@@ -205,7 +206,8 @@ export class GameplayComponent {
       hero: 'text-yellow-400',
       curse: 'text-purple-400',
       ingredient: 'text-purple-300',
-      titan: 'text-purple-100'
+      titan: 'text-purple-100',
+      prince: 'text-purple-200'
     };
 
     return classes[type];

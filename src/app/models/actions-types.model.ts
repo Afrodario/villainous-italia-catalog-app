@@ -18,5 +18,6 @@ export enum CARD_TYPES {
     Curse = 'curse',
     Condition = 'condition',
     Ingredient = 'ingredient',
-    Titan = 'titan'
+    Titan = 'titan',
+    Prince = 'prince'
 }
