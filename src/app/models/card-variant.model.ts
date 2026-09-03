@@ -7,4 +7,5 @@ export interface CardVariant {
   strength?: number;
   strengthModifier?: number;
   description: string;
+  isTile?: boolean
 }
