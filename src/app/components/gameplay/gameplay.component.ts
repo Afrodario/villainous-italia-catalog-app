@@ -191,7 +191,8 @@ export class GameplayComponent {
       curse: 'MALEDIZIONE',
       ingredient: 'INGREDIENTE',
       titan: 'TITANO',
-      prince: 'PRINCIPE'
+      prince: 'PRINCIPE',
+      relic: 'RELIQUIA'
     };
 
     return labels[type];
@@ -207,7 +208,8 @@ export class GameplayComponent {
       curse: 'text-purple-400',
       ingredient: 'text-purple-300',
       titan: 'text-purple-100',
-      prince: 'text-purple-200'
+      prince: 'text-purple-200',
+      relic: 'text-purple-300'
     };
 
     return classes[type];

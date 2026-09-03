@@ -10,7 +10,8 @@ export type CardType =
   | 'curse'
   | 'ingredient'
   | 'titan'
-  | 'prince';
+  | 'prince'
+  | 'relic';
 
 export type CardSort = 'name' | 'cost' | 'quantity' | 'strength' | 'type';
 

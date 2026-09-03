@@ -32,7 +32,11 @@ import { ExpansionCardComponent } from './expansion-card/expansion-card.componen
 @Component({
   selector: 'app-catalog',
   standalone: true,
-  imports: [CardGalleryComponent, LocationGalleryComponent, ExpansionCardComponent],
+  imports: [
+    CardGalleryComponent,
+    LocationGalleryComponent,
+    ExpansionCardComponent,
+  ],
   templateUrl: './catalog.component.html',
 })
 export class CatalogComponent implements OnDestroy {
@@ -202,12 +206,18 @@ export class CatalogComponent implements OnDestroy {
     this.selectedDeckBackTitle = '';
   }
 
+  private countDeckCards(cards: CardViewModel[]): number {
+    return cards
+      .filter((card) => !card.isTile)
+      .reduce((total, card) => total + card.quantity, 0);
+  }
+
   get villainDeckCardCount(): number {
-    return this.villainDeck.reduce((total, card) => total + card.quantity, 0);
+    return this.countDeckCards(this.villainDeck);
   }
 
   get fateDeckCardCount(): number {
-    return this.fateDeck.reduce((total, card) => total + card.quantity, 0);
+    return this.countDeckCards(this.fateDeck);
   }
 
   get baseSets(): Expansion[] {
