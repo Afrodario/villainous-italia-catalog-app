@@ -346,7 +346,7 @@ export const LADY_TREMAINE_CARDS: CardDefinition[] = [
     isFateCard: true,
   },
   {
-    id: 'glass-slipper-cinderellas-room',
+    id: 'glass-slipper',
     villainId: VILLAINS_IDS.LadyTremaine,
     expansionId: EXPANSIONS_IDS.DespicablePlots,
     name: 'Scarpetta di Cristallo',
@@ -354,28 +354,30 @@ export const LADY_TREMAINE_CARDS: CardDefinition[] = [
       'assets/images/cards/lady_tremaine/Glass_Slipper_(Cinderellas_Room).jpg',
     type: CARD_TYPES.Item,
     //strength: 1,
-    quantity: 1,
+    quantity: 2,
     description: 'Description.',
     strategy: {
       paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
       warning: 'Warning',
     },
-    isFateCard: true,
-  },
-  {
-    id: 'glass-slipper-the-castle',
-    villainId: VILLAINS_IDS.LadyTremaine,
-    expansionId: EXPANSIONS_IDS.DespicablePlots,
-    name: 'Scarpetta di Cristallo',
-    image: 'assets/images/cards/lady_tremaine/Glass_Slipper_(The_Castle).jpg',
-    type: CARD_TYPES.Item,
-    //strength: 1,
-    quantity: 1,
-    description: 'Description.',
-    strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
-    },
+    variants: [
+      {
+        id: 'glass-slipper-cinderellas-room',
+        name: 'Scarpetta di Cristallo (Stanza di Cenerentola)',
+        image:
+          'assets/images/cards/lady_tremaine/Glass_Slipper_(Cinderellas_Room).jpg',
+        quantity: 1,
+        description: 'Description.',
+      },
+      {
+        id: 'glass-slipper-the-castle',
+        name: 'Scarpetta di Cristallo (Il Castello)',
+        image:
+          'assets/images/cards/lady_tremaine/Glass_Slipper_(The_Castle).jpg',
+        quantity: 1,
+        description: 'Description.',
+      },
+    ],
     isFateCard: true,
   },
   {
