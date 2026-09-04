@@ -16,6 +16,7 @@ import { PETE_CARDS } from './cards/3-perfectly-wretched/pete-cards';
 import { GASTON_CARDS } from './cards/4-despicable-plots/gaston-cards';
 import { HORNED_KING_CARDS } from './cards/4-despicable-plots/horned-king-cards';
 import { LADY_TREMAINE_CARDS } from './cards/4-despicable-plots/lady-tremaine-cards';
+import { SYNDROME_CARDS } from './cards/5-bigger-and-badder/syndrome-cards';
 import { CAPTAIN_HOOK } from './villains/0-the-worst-takes-it-all/captain-hook-villain';
 import { JAFAR } from './villains/0-the-worst-takes-it-all/jafar-villain';
 import { MALEFICENT } from './villains/0-the-worst-takes-it-all/maleficent-villain';
@@ -59,7 +60,8 @@ export const ALL_CARDS = [
   ...PETE_CARDS,
   ...GASTON_CARDS,
   ...LADY_TREMAINE_CARDS,
-  ...HORNED_KING_CARDS
+  ...HORNED_KING_CARDS,
+  ...SYNDROME_CARDS
 ];
 
 export const ALL_VILLAINS = [

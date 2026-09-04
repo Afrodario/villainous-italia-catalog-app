@@ -68,7 +68,9 @@ export class CardGalleryComponent implements OnChanges {
       ingredient: 6,
       titan: 6,
       prince: 6,
-      relic: 6
+      relic: 6,
+      remote: 6,
+      omnidroid: 6
     };
 
     // Le tessere vengono escluse dal sorting
@@ -126,7 +128,9 @@ export class CardGalleryComponent implements OnChanges {
       ingredient: 'INGREDIENTE',
       titan: 'TITANO',
       prince: 'PRINCIPE',
-      relic: 'RELIQUIA'
+      relic: 'RELIQUIA',
+      remote: 'TELECOMANDO',
+      omnidroid: 'OMNIDROIDE'
     };
 
     return labels[type];
@@ -143,7 +147,9 @@ export class CardGalleryComponent implements OnChanges {
       ingredient: 'text-purple-300',
       titan: 'text-purple-200',
       prince: 'text-purple-200',
-      relic: 'text-purple-300'
+      relic: 'text-purple-300',
+      remote: 'text-sky-400',
+      omnidroid: 'text-sky-400'
     };
 
     return classes[type];

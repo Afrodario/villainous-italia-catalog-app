@@ -27,5 +27,8 @@ export enum VILLAINS_IDS {
     Pete = 'pete',
     Gaston = 'gaston',
     LadyTremaine = 'lady-tremaine',
-    HornedKing = 'horned-king'
+    HornedKing = 'horned-king',
+    Syndrome = 'syndrome',
+    Lotso = 'lotso',
+    MadamMim = 'madam-mim'
 }

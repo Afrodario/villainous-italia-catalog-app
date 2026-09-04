@@ -11,7 +11,9 @@ export type CardType =
   | 'ingredient'
   | 'titan'
   | 'prince'
-  | 'relic';
+  | 'relic'
+  | 'remote'
+  | 'omnidroid';
 
 export type CardSort = 'name' | 'cost' | 'quantity' | 'strength' | 'type';
 

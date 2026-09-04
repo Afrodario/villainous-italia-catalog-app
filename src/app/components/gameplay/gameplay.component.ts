@@ -192,7 +192,9 @@ export class GameplayComponent {
       ingredient: 'INGREDIENTE',
       titan: 'TITANO',
       prince: 'PRINCIPE',
-      relic: 'RELIQUIA'
+      relic: 'RELIQUIA',
+      remote: 'TELECOMANDO',
+      omnidroid: 'OMNIDROIDE'
     };
 
     return labels[type];
@@ -209,7 +211,9 @@ export class GameplayComponent {
       ingredient: 'text-purple-300',
       titan: 'text-purple-100',
       prince: 'text-purple-200',
-      relic: 'text-purple-300'
+      relic: 'text-purple-300',
+      remote: 'text-sky-400',
+      omnidroid: 'text-sky-400'
     };
 
     return classes[type];

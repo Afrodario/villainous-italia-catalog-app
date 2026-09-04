@@ -11,7 +11,9 @@ export type CardType =
   | 'ingredient'
   | 'titan'
   | 'prince'
-  | 'relic';
+  | 'relic'
+  | 'remote'
+  | 'omnidroid';
 
 export interface CardDefinition {
   id: string;

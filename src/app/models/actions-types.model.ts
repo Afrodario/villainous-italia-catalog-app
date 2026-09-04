@@ -20,5 +20,7 @@ export enum CARD_TYPES {
     Ingredient = 'ingredient',
     Titan = 'titan',
     Prince = 'prince',
-    Relic = 'relic'
+    Relic = 'relic',
+    Remote = 'remote',
+    Omnidroid = 'omnidroid'
 }
