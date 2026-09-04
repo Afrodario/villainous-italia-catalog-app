@@ -4,6 +4,7 @@ export enum EXPANSIONS_IDS {
     EvilComesPrepared = 'evil-comes-prepared',
     PerfectlyWretched = 'perfectly-wretched',
     DespicablePlots = 'despicable-plots',
+    BiggerAndBadder = 'bigger-and-badder',
     DarknessBrewing = 'darkness-brewing',
     ComeWeFly = 'come-we-fly'
 }

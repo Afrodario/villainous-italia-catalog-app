@@ -34,6 +34,9 @@ import { PETE } from './villains/3-perfectly-wretched/pete-villain';
 import { GASTON } from './villains/4-despicable-plots/gaston-villain';
 import { HORNED_KING } from './villains/4-despicable-plots/horned-king-villain';
 import { LADY_TREMAINE } from './villains/4-despicable-plots/lady-tremaine-villain';
+import { LOTSO } from './villains/5-bigger-and-badder/lotso-villain';
+import { MADAM_MIM } from './villains/5-bigger-and-badder/madam-mim-villain';
+import { SYNDROME } from './villains/5-bigger-and-badder/syndrome-villain';
 import { SANDERSON_SISTERS } from './villains/sanderson-sisters-villain';
 export * from './expansions';
 export * from './villains/0-the-worst-takes-it-all/jafar-villain';
@@ -78,5 +81,8 @@ export const ALL_VILLAINS = [
   GASTON,
   LADY_TREMAINE,
   HORNED_KING,
+  SYNDROME,
+  LOTSO,
+  MADAM_MIM,
   SANDERSON_SISTERS
 ];
