@@ -28,12 +28,28 @@ export class CardRepository {
     return [...this.cards].sort(() => Math.random() - 0.5).slice(0, count);
   }
 
-  getVillainDeck(villainId: string) {
-    return this.cards.filter((c) => c.villainId === villainId && !c.isFateCard);
+  getVillainDeck(villainId: string): CardDefinition[] {
+    return this.cards.filter(
+      (card) =>
+        card.villainId === villainId &&
+        !card.isFateCard &&
+        card.deck !== 'additional',
+    );
   }
 
-  getFateDeck(villainId: string) {
-    return this.cards.filter((c) => c.villainId === villainId && c.isFateCard);
+  getAdditionalDeck(villainId: string): CardDefinition[] {
+    return this.cards.filter(
+      (card) =>
+        card.villainId === villainId &&
+        !card.isFateCard &&
+        card.deck === 'additional',
+    );
+  }
+
+  getFateDeck(villainId: string): CardDefinition[] {
+    return this.cards.filter(
+      (card) => card.villainId === villainId && card.isFateCard,
+    );
   }
 
   getByType(type: CardType) {

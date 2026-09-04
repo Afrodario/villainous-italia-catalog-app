@@ -57,6 +57,9 @@ export class CatalogComponent implements OnDestroy {
   villainDeckSortBy: CardSort = 'quantity';
   fateDeckSortBy: CardSort = 'quantity';
 
+  additionalDeck: CardViewModel[] = [];
+  additionalDeckSortBy: CardSort = 'quantity';
+
   @ViewChild('villainsSection')
   villainsSection?: ElementRef<HTMLElement>;
   @ViewChild('deckSection')
@@ -170,9 +173,14 @@ export class CatalogComponent implements OnDestroy {
     this.villainDeck = this.toCardViewModels(
       this.cardRepository.getVillainDeck(villain.id),
     );
+
     this.fateDeck = this.toCardViewModels(
       this.cardRepository.getFateDeck(villain.id),
     );
+
+    this.additionalDeck = villain.additionalDeck
+      ? this.toCardViewModels(this.cardRepository.getAdditionalDeck(villain.id))
+      : [];
 
     this.realm = this.realmRepository.getByVillainId(villain.id);
 
@@ -220,6 +228,12 @@ export class CatalogComponent implements OnDestroy {
     return this.countDeckCards(this.fateDeck);
   }
 
+  get additionalDeckCardCount(): number {
+    return this.additionalDeck
+      .filter((card) => !card.isTile)
+      .reduce((total, card) => total + card.quantity, 0);
+  }
+
   get baseSets(): Expansion[] {
     return this.expansions.filter((expansion) => expansion.isBaseSet);
   }
@@ -247,6 +261,7 @@ export class CatalogComponent implements OnDestroy {
       variants: card.variants,
       isFateCard: card.isFateCard,
       isTile: card.isTile,
+      deck: card.deck,
     }));
   }
 

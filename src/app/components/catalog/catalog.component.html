@@ -47,7 +47,6 @@
         }
       </div>
     </section>
-    
   </section>
 
   @if (selectedExpansion) {
@@ -322,10 +321,6 @@
     </section>
 
     <section class="mt-14">
-      <!-- <h2 class="text-2xl font-black">Mazzo di {{ selectedVillain.name }}</h2>
-
-      <p class="mt-2 text-slate-400">{{ cards.length }} carte</p> -->
-
       <div class="mt-8">
         <section class="mt-12">
           <div
@@ -453,6 +448,85 @@
             [cardToOpenId]="cardToOpenId"
           />
         </section>
+
+        @if (selectedVillain.additionalDeck) {
+          <section class="mt-14">
+            <div
+              class="mb-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between"
+            >
+              <div class="flex items-center gap-4">
+                <button
+                  type="button"
+                  (click)="
+                    openDeckBack(
+                      selectedVillain.additionalDeckBack!,
+                      `Dorso del Mazzo ${selectedVillain.additionalDeckName}`
+                    )
+                  "
+                  class="group shrink-0"
+                >
+                  <img
+                    [src]="selectedVillain.additionalDeckBack"
+                    alt="Dorso del Mazzo {{
+                      selectedVillain.additionalDeckName
+                    }}"
+                    class="h-44 w-[117px] rounded-lg object-contain shadow-xl transition duration-300 group-hover:scale-105"
+                  />
+                </button>
+
+                <div>
+                  <h2 class="text-2xl font-black text-white">
+                    🎴 Mazzo {{ selectedVillain.additionalDeckName }}
+                  </h2>
+
+                  <p class="text-sm text-slate-400">
+                    {{ additionalDeckCardCount }} carte
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <span class="text-sm font-medium text-slate-400">
+                  Ordina:
+                </span>
+
+                <div class="flex flex-wrap gap-2">
+                  @for (option of sortOptions; track option.value) {
+                    <button
+                      type="button"
+                      (click)="additionalDeckSortBy = option.value"
+                      class="rounded-lg border px-3 py-2 text-sm font-medium transition"
+                      [class.bg-purple-600]="
+                        additionalDeckSortBy === option.value
+                      "
+                      [class.border-purple-500]="
+                        additionalDeckSortBy === option.value
+                      "
+                      [class.text-white]="additionalDeckSortBy === option.value"
+                      [class.bg-slate-800]="
+                        additionalDeckSortBy !== option.value
+                      "
+                      [class.border-white-10]="
+                        additionalDeckSortBy !== option.value
+                      "
+                      [class.text-slate-300]="
+                        additionalDeckSortBy !== option.value
+                      "
+                    >
+                      {{ option.label }}
+                    </button>
+                  }
+                </div>
+              </div>
+            </div>
+
+            <app-card-gallery
+              [cards]="additionalDeck"
+              [sortBy]="additionalDeckSortBy"
+              [cardToOpenId]="cardToOpenId"
+            />
+          </section>
+        }
       </div>
     </section>
 

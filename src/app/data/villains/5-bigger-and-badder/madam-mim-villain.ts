@@ -21,4 +21,7 @@ export const MADAM_MIM: Villain = {
   quote: `"Want to fight? Want to have a Wizard's Duel?!"`,
   villainDeckBack: `assets/images/cards/madam_mim/Madam_Mim_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/madam_mim/Madam_Mim_Fate_Back.png`,
+  additionalDeck: true,
+  additionalDeckBack: `assets/images/cards/madam_mim/Merlin_Back.png`,
+  additionalDeckName: `Trasformazioni di Merlino`
 };

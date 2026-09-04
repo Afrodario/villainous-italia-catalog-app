@@ -31,4 +31,5 @@ export interface CardDefinition {
   isFateCard?: boolean;
   variants?: CardVariant[];
   isTile?: boolean;
+  deck?: 'villain' | 'additional';
 }

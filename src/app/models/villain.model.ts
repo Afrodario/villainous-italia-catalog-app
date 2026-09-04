@@ -15,4 +15,7 @@ export interface Villain {
   additionalTokens?: boolean;
   additionalTokensPath?: string;
   additionalSetIds?: string[];
+  additionalDeck?: boolean,
+  additionalDeckBack?: string
+  additionalDeckName?: string
 }

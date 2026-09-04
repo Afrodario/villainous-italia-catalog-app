@@ -32,4 +32,5 @@ export interface CardViewModel {
   variants?: CardVariant[];
   isFateCard?: boolean;
   isTile?: boolean;
+  deck?: 'villain' | 'additional';
 }
