@@ -15,6 +15,18 @@ export const MADAM_MIM: Villain = {
       `When a player performs a Fate action against Madam Mim, they do so from her traditional Fate deck.`,
     ],
     victory: `Madam Mim must defeat all of Merlin's Transformations. She can do so by either Vanquishing them with their corresponding Mim Transformations in her Villain deck, or by playing I'll Make the Rules.`,
+    victoryList: {
+      header: `The matchups for the Transformations are:`,
+      elements: [
+        `Chicken Mim beats Caterpillar Merlin`,
+        `Crocodile Mim beats Turtle Merlin`,
+        `Elephant Mim beats Walrus Merlin`,
+        `Fox Mim beats Rabbit Merlin`,
+        `Purple Dragon Mim beats Goat Merlin`,
+        `Rattlesnake Mim or Tiger Mim beats Mouse Merlin`,
+        `Rhinoceros Mim beats Crab Merlin`,
+      ],
+    },
   },
   objective: "Defeat all of Merlin's Transformations.",
   objectivePortrait: `assets/images/cards/madam_mim/Madam_Mim_Objective.jpg`,
@@ -23,5 +35,5 @@ export const MADAM_MIM: Villain = {
   fateDeckBack: `assets/images/cards/madam_mim/Madam_Mim_Fate_Back.png`,
   additionalDeck: true,
   additionalDeckBack: `assets/images/cards/madam_mim/Merlin_Back.png`,
-  additionalDeckName: `Trasformazioni di Merlino`
+  additionalDeckName: `Trasformazioni di Merlino`,
 };

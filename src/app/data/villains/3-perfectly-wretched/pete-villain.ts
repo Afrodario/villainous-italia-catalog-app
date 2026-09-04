@@ -17,6 +17,16 @@ export const PETE: Villain = {
     ],
 
     victory: `When he has completed all four selected Goals, Pete wins. The unused Goal remains face down, and is not public knowledge.`,
+    victoryList: {
+      header: `The possible Goals are:`,
+      elements: [
+        `<strong>Power Play:</strong> Spend at least 6 Power in one turn while Pete is at this location.`,
+        `<strong>Round Up:</strong> Start your turn with Allies totaling at least 10 Strength at this location.`,
+        `<strong>Rule the Realm:</strong> Start your turn with more Allies than Heroes at each location.`,
+        `<strong>Strike It Rich:</strong> Start your turn with at least three Items at this location.`,
+        `<strong>Win Big:</strong> Gain at least 4 Power from playing Play a Game at this location.`,
+      ],
+    },
   },
   objective: 'Complete the four selected Goals.',
   objectivePortrait: `assets/images/cards/pete/Pete_Objective.jpg`,

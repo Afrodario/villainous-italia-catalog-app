@@ -281,6 +281,7 @@
                       </h3>
                     </div>
 
+                    <!-- DESCRIZIONE DELLA VITTORIA -->
                     <p
                       class="leading-7 text-slate-200"
                       [innerHTML]="
@@ -289,6 +290,28 @@
                         )
                       "
                     ></p>
+
+                    <!-- ELENCO AGGIUNTIVO -->
+                    @if (selectedVillain.mechanics.victoryList) {
+                      <div class="mt-5 border-t border-emerald-500/20 pt-5">
+                        <h4 class="mb-3 text-sm font-bold text-slate-100">
+                          {{ selectedVillain.mechanics.victoryList.header }}
+                        </h4>
+
+                        <ul class="list-disc space-y-2 pl-5 text-slate-200">
+                          @for (
+                            element of selectedVillain.mechanics.victoryList
+                              .elements;
+                            track element
+                          ) {
+                            <li
+                              class="leading-7"
+                              [innerHTML]="gameTextFormatter.format(element)"
+                            ></li>
+                          }
+                        </ul>
+                      </div>
+                    }
                   </div>
                 }
               </div>
