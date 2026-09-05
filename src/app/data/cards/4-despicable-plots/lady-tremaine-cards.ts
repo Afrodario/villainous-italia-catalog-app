@@ -92,7 +92,7 @@ export const LADY_TREMAINE_CARDS: CardDefinition[] = [
     isFateCard: false,
   },
   {
-    id: 'locked-up',
+    id: 'locked-up-lady-tremaine',
     villainId: VILLAINS_IDS.LadyTremaine,
     expansionId: EXPANSIONS_IDS.DespicablePlots,
     name: 'Rinchiusa',

@@ -194,7 +194,8 @@ export class GameplayComponent {
       prince: 'PRINCIPE',
       relic: 'RELIQUIA',
       remote: 'TELECOMANDO',
-      omnidroid: 'OMNIDROIDE'
+      omnidroid: 'OMNIDROIDE',
+      guardian: 'GUARDIANO'
     };
 
     return labels[type];
@@ -213,7 +214,8 @@ export class GameplayComponent {
       prince: 'text-purple-200',
       relic: 'text-purple-300',
       remote: 'text-sky-400',
-      omnidroid: 'text-sky-400'
+      omnidroid: 'text-sky-400',
+      guardian: 'text-orange-400'
     };
 
     return classes[type];

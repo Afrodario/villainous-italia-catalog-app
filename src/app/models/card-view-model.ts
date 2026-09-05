@@ -13,7 +13,8 @@ export type CardType =
   | 'prince'
   | 'relic'
   | 'remote'
-  | 'omnidroid';
+  | 'omnidroid'
+  | 'guardian';
 
 export type CardSort = 'name' | 'cost' | 'quantity' | 'strength' | 'type';
 
