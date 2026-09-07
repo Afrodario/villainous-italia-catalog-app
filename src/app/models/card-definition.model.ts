@@ -17,7 +17,9 @@ export type CardType =
   | 'omnidroid'
   | 'guardian'
   | 'cheat'
-  | 'prisoner';
+  | 'prisoner'
+  | 'transformationMerlin'
+  | 'transformationMim'
 
 export interface CardDefinition {
   id: string;

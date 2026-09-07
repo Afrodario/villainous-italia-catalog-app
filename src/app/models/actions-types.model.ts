@@ -25,5 +25,7 @@ export enum CARD_TYPES {
     Omnidroid = 'omnidroid',
     Guardian = 'guardian',
     Cheat = 'cheat',
-    Prisoner = 'prisoner'
+    Prisoner = 'prisoner',
+    TransformationMerlin = 'transformationMerlin',
+    TransformationMim = 'transformationMim'
 }

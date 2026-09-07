@@ -73,7 +73,9 @@ export class CardGalleryComponent implements OnChanges {
       omnidroid: 6,
       guardian: 6,
       cheat: 6,
-      prisoner: 6
+      prisoner: 6,
+      transformationMerlin: 6,
+      transformationMim: 6
     };
 
     // Le tessere vengono escluse dal sorting
@@ -136,7 +138,9 @@ export class CardGalleryComponent implements OnChanges {
       omnidroid: 'OMNIDROIDE',
       guardian: 'GUARDIANO',
       cheat: 'IMBROGLIO',
-      prisoner: 'PRIGIONIERO'
+      prisoner: 'PRIGIONIERO',
+      transformationMerlin: 'TRASFORMAZIONE',
+      transformationMim: 'TRASFORMAZIONE'
     };
 
     return labels[type];
@@ -158,7 +162,9 @@ export class CardGalleryComponent implements OnChanges {
       omnidroid: 'text-sky-400',
       guardian: 'text-orange-400',
       cheat: 'text-black',
-      prisoner: 'text-slate-700'
+      prisoner: 'text-slate-700',
+      transformationMerlin: 'text-yellow-400',
+      transformationMim: 'text-red-600'
     };
 
     return classes[type];

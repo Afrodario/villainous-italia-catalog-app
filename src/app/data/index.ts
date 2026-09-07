@@ -17,6 +17,7 @@ import { GASTON_CARDS } from './cards/4-despicable-plots/gaston-cards';
 import { HORNED_KING_CARDS } from './cards/4-despicable-plots/horned-king-cards';
 import { LADY_TREMAINE_CARDS } from './cards/4-despicable-plots/lady-tremaine-cards';
 import { LOTSO_CARDS } from './cards/5-bigger-and-badder/lotso-cards';
+import { MADAM_MIM_CARDS } from './cards/5-bigger-and-badder/madam-mim-cards';
 import { SYNDROME_CARDS } from './cards/5-bigger-and-badder/syndrome-cards';
 import { OOGIE_BOOGIE_CARDS } from './cards/6-filled-with-fright/oogie-boogie-cards';
 import { KING_CANDY_CARDS } from './cards/7-sugar-and-spite/king-candy-cards';
@@ -68,6 +69,7 @@ export const ALL_CARDS = [
   ...HORNED_KING_CARDS,
   ...SYNDROME_CARDS,
   ...LOTSO_CARDS,
+  ...MADAM_MIM_CARDS,
   ...OOGIE_BOOGIE_CARDS,
   ...KING_CANDY_CARDS
 ];

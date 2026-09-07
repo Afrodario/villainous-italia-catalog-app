@@ -197,7 +197,9 @@ export class GameplayComponent {
       omnidroid: 'OMNIDROIDE',
       guardian: 'GUARDIANO',
       cheat: 'IMBROGLIO',
-      prisoner: 'PRIGIONIERO'
+      prisoner: 'PRIGIONIERO',
+      transformationMerlin: 'TRASFORMAZIONE',
+      transformationMim: 'TRASFORMAZIONE'
     };
 
     return labels[type];
@@ -219,7 +221,9 @@ export class GameplayComponent {
       omnidroid: 'text-sky-400',
       guardian: 'text-orange-400',
       cheat: 'text-black',
-      prisoner: 'text-slate-700'
+      prisoner: 'text-slate-700',
+      transformationMerlin: 'text-yellow-400',
+      transformationMim: 'text-red-400'
     };
 
     return classes[type];

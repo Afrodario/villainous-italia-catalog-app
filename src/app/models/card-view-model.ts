@@ -18,6 +18,8 @@ export type CardType =
   | 'guardian'
   | 'cheat'
   | 'prisoner'
+  | 'transformationMerlin'
+  | 'transformationMim'
 
 export type CardSort = 'name' | 'cost' | 'quantity' | 'strength' | 'type';
 
