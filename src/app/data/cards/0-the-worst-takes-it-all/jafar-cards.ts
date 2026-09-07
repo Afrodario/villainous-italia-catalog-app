@@ -324,7 +324,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Amuleto dello Scarabeo',
     image: 'assets/images/cards/jafar/Scarab_Pendant.png',
-    type: CARD_TYPES.Effect,
+    type: CARD_TYPES.Item,
     cost: 3,
     quantity: 1,
     description:
@@ -346,7 +346,7 @@ export const JAFAR_CARDS: CardDefinition[] = [
     expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
     name: 'Bastone del Serpente',
     image: 'assets/images/cards/jafar/Snake_Staff.png',
-    type: CARD_TYPES.Effect,
+    type: CARD_TYPES.Item,
     cost: 2,
     quantity: 1,
     description:

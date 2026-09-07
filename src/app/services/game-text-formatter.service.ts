@@ -26,18 +26,18 @@ export class GameTextFormatterService {
         /\bEroi\b/g,
         '<span class="font-bold text-yellow-400">Eroi</span>',
       )
-      .replace(/\bAlly\b/g, '<span class="font-bold text-red-400">Ally</span>')
+      .replace(/\bAlly\b/g, '<span class="font-bold text-red-600">Ally</span>')
       .replace(
         /\bAllies\b/g,
-        '<span class="font-bold text-red-400">Allies</span>',
+        '<span class="font-bold text-red-600">Allies</span>',
       )
       .replace(
         /\bAlleato\b/g,
-        '<span class="font-bold text-red-400">Alleato</span>',
+        '<span class="font-bold text-red-600">Alleato</span>',
       )
       .replace(
         /\bAlleati\b/g,
-        '<span class="font-bold text-red-400">Alleati</span>',
+        '<span class="font-bold text-red-600">Alleati</span>',
       )
       .replace(/\bItem\b/g, '<span class="font-bold text-sky-400">Item</span>')
       .replace(

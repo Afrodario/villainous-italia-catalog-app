@@ -140,7 +140,7 @@ export class CardGalleryComponent implements OnChanges {
 
   getCardTypeClass(type: CardType): string {
     const classes: Record<CardType, string> = {
-      ally: 'text-red-400',
+      ally: 'text-red-600',
       item: 'text-sky-400',
       effect: 'text-green-400',
       condition: 'text-purple-400',
