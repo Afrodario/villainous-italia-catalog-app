@@ -1,6 +1,7 @@
-import { CARD_TYPES } from "../../../models/actions-types.model";
+import { ACTIONS, CARD_TYPES } from "../../../models/actions-types.model";
 import { CardDefinition } from "../../../models/card-definition.model";
 import { EXPANSIONS_IDS, VILLAINS_IDS } from "../../../models/villains-expansions-ids.model";
+import { VANQUISH } from "../../gameplay/actions/vanquish-action";
 
 export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
   {
@@ -136,6 +137,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
         'Warning',
     },
     isFateCard: false,
+    specifics: {
+      hasAddedAction: true,
+      addedAction: VANQUISH
+    }
   },
   {
     id: 'cunning',

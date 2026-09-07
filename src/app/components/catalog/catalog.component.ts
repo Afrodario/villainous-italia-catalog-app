@@ -262,6 +262,7 @@ export class CatalogComponent implements OnDestroy {
       isFateCard: card.isFateCard,
       isTile: card.isTile,
       deck: card.deck,
+      specifics: card.specifics
     }));
   }
 

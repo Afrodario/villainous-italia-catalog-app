@@ -47,6 +47,10 @@ export const JAFAR_CARDS: CardDefinition[] = [
     },
     strength: 1,
     isFateCard: false,
+    specifics: {
+      hasActivate: true,
+      activateCost: 1
+    }
   },
 
   {
@@ -253,6 +257,9 @@ export const JAFAR_CARDS: CardDefinition[] = [
       warning: '',
     },
     isFateCard: false,
+    specifics: {
+      hasActivate: true,
+    }
   },
   {
     id: 'manipulation',

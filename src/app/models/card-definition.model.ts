@@ -1,5 +1,6 @@
 import { CardStrategy } from './card-strategy.model';
 import { CardVariant } from './card-variant.model';
+import { ActionGameplay } from './gameplay/action-gameplay.model';
 
 export type CardType =
   | 'ally'
@@ -37,4 +38,12 @@ export interface CardDefinition {
   variants?: CardVariant[];
   isTile?: boolean;
   deck?: 'villain' | 'additional';
+  specifics?: CardSpecifics;
+}
+
+export interface CardSpecifics {
+  hasActivate?: boolean;
+  activateCost?: number;
+  hasAddedAction?: boolean;
+  addedAction?: ActionGameplay;
 }

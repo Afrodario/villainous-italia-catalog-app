@@ -1,3 +1,4 @@
+import { CardSpecifics } from './card-definition.model';
 import { CardStrategy } from './card-strategy.model';
 import { CardVariant } from './card-variant.model';
 
@@ -38,4 +39,5 @@ export interface CardViewModel {
   isFateCard?: boolean;
   isTile?: boolean;
   deck?: 'villain' | 'additional';
+  specifics?: CardSpecifics
 }

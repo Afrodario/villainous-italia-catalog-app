@@ -212,6 +212,68 @@
               </div>
             </div>
 
+            @if (selectedCard.specifics) {
+              <div class="grid grid-cols-2 gap-3 border-b border-white/10 pb-5">
+                <!-- ATTIVAZIONE -->
+
+                @if (selectedCard.specifics.hasActivate) {
+                  <div
+                    class="flex flex-col items-center justify-center rounded-xl border border-orange-500/30 bg-orange-500/5 p-4 text-center"
+                  >
+                    <span
+                      class="text-[10px] font-bold uppercase tracking-[0.15em] text-slate-500 sm:text-xs"
+                    >
+                      Carta attivabile
+                    </span>
+
+                    <div class="mt-2 flex items-center gap-2">
+                      <img
+                        src="assets/images/gameplay/Activate.png"
+                        alt="Attivazione"
+                        class="h-9 w-9 object-contain"
+                      />
+
+                      @if (selectedCard.specifics.activateCost !== undefined) {
+                        <span class="text-xs font-bold text-slate-400">
+                          a costo
+                        </span>
+                        <span
+                          class="flex h-7 w-7 items-center justify-center rounded-full border border-purple-500/50 bg-purple-500/10 text-xs font-black text-purple-400"
+                        >
+                          {{ selectedCard.specifics.activateCost }}
+                        </span>
+                      }
+                    </div>
+                  </div>
+                }
+
+                <!-- AZIONE AGGIUNTA -->
+
+                @if (
+                  selectedCard.specifics.hasAddedAction &&
+                  selectedCard.specifics.addedAction
+                ) {
+                  <div
+                    class="flex flex-col items-center justify-center rounded-xl border border-sky-500/30 bg-sky-500/5 p-4 text-center"
+                  >
+                    <span
+                      class="text-[10px] font-bold uppercase tracking-[0.15em] text-slate-500 sm:text-xs"
+                    >
+                      Azione aggiunta
+                    </span>
+
+                    <div class="mt-2 flex h-10 items-center justify-center">
+                      <img
+                        [src]="selectedCard.specifics.addedAction.iconPath"
+                        [alt]="selectedCard.specifics.addedAction.name"
+                        class="h-9 w-9 object-contain"
+                      />
+                    </div>
+                  </div>
+                }
+              </div>
+            }
+
             <p
               class="text-sm leading-6 text-slate-300 sm:text-base sm:leading-7"
               [innerHTML]="
