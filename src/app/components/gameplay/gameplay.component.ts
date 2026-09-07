@@ -195,7 +195,9 @@ export class GameplayComponent {
       relic: 'RELIQUIA',
       remote: 'TELECOMANDO',
       omnidroid: 'OMNIDROIDE',
-      guardian: 'GUARDIANO'
+      guardian: 'GUARDIANO',
+      cheat: 'IMBROGLIO',
+      prisoner: 'PRIGIONIERO'
     };
 
     return labels[type];
@@ -215,7 +217,9 @@ export class GameplayComponent {
       relic: 'text-purple-300',
       remote: 'text-sky-400',
       omnidroid: 'text-sky-400',
-      guardian: 'text-orange-400'
+      guardian: 'text-orange-400',
+      cheat: 'text-black',
+      prisoner: 'text-slate-700'
     };
 
     return classes[type];

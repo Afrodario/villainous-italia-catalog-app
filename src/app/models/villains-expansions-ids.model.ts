@@ -5,6 +5,7 @@ export enum EXPANSIONS_IDS {
     PerfectlyWretched = 'perfectly-wretched',
     DespicablePlots = 'despicable-plots',
     BiggerAndBadder = 'bigger-and-badder',
+    FilledWithFright = 'filled-with-fright',
     DarknessBrewing = 'darkness-brewing',
     ComeWeFly = 'come-we-fly'
 }
@@ -30,5 +31,6 @@ export enum VILLAINS_IDS {
     HornedKing = 'horned-king',
     Syndrome = 'syndrome',
     Lotso = 'lotso',
-    MadamMim = 'madam-mim'
+    MadamMim = 'madam-mim',
+    OogieBoogie = 'oogie-boogie'
 }

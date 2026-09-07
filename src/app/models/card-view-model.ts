@@ -14,7 +14,9 @@ export type CardType =
   | 'relic'
   | 'remote'
   | 'omnidroid'
-  | 'guardian';
+  | 'guardian'
+  | 'cheat'
+  | 'prisoner'
 
 export type CardSort = 'name' | 'cost' | 'quantity' | 'strength' | 'type';
 
