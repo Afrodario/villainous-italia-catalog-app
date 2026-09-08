@@ -21,6 +21,7 @@ import { MADAM_MIM_CARDS } from './cards/5-bigger-and-badder/madam-mim-cards';
 import { SYNDROME_CARDS } from './cards/5-bigger-and-badder/syndrome-cards';
 import { OOGIE_BOOGIE_CARDS } from './cards/6-filled-with-fright/oogie-boogie-cards';
 import { KING_CANDY_CARDS } from './cards/7-sugar-and-spite/king-candy-cards';
+import { SHERE_KHAN_CARDS } from './cards/7-sugar-and-spite/shere-khan-cards';
 import { CAPTAIN_HOOK } from './villains/0-the-worst-takes-it-all/captain-hook-villain';
 import { JAFAR } from './villains/0-the-worst-takes-it-all/jafar-villain';
 import { MALEFICENT } from './villains/0-the-worst-takes-it-all/maleficent-villain';
@@ -44,6 +45,7 @@ import { MADAM_MIM } from './villains/5-bigger-and-badder/madam-mim-villain';
 import { SYNDROME } from './villains/5-bigger-and-badder/syndrome-villain';
 import { OOGIE_BOOGIE } from './villains/6-filled-with-fright/oogie-boogie-villain';
 import { KING_CANDY } from './villains/7-sugar-and-spite/king-candy-villain';
+import { SHERE_KHAN } from './villains/7-sugar-and-spite/shere-khan-villain';
 import { SANDERSON_SISTERS } from './villains/sanderson-sisters-villain';
 export * from './expansions';
 export * from './villains/0-the-worst-takes-it-all/jafar-villain';
@@ -71,7 +73,8 @@ export const ALL_CARDS = [
   ...LOTSO_CARDS,
   ...MADAM_MIM_CARDS,
   ...OOGIE_BOOGIE_CARDS,
-  ...KING_CANDY_CARDS
+  ...KING_CANDY_CARDS,
+  ...SHERE_KHAN_CARDS
 ];
 
 export const ALL_VILLAINS = [
@@ -98,5 +101,6 @@ export const ALL_VILLAINS = [
   MADAM_MIM,
   OOGIE_BOOGIE,
   KING_CANDY,
+  SHERE_KHAN,
   SANDERSON_SISTERS
 ];
