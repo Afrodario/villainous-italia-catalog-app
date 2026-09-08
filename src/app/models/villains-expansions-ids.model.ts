@@ -7,6 +7,7 @@ export enum EXPANSIONS_IDS {
     BiggerAndBadder = 'bigger-and-badder',
     FilledWithFright = 'filled-with-fright',
     SugarAndSpite = 'sugar-and-spite',
+    TreacherousTides = 'treacherous-tides',
     DarknessBrewing = 'darkness-brewing',
     ComeWeFly = 'come-we-fly'
 }
