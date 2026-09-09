@@ -20,6 +20,7 @@ export type CardType =
   | 'prisoner'
   | 'transformationMerlin'
   | 'transformationMim'
+  | 'maui';
 
 export interface CardDefinition {
   id: string;

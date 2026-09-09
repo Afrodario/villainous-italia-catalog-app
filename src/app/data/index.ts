@@ -23,6 +23,7 @@ import { OOGIE_BOOGIE_CARDS } from './cards/6-filled-with-fright/oogie-boogie-ca
 import { KING_CANDY_CARDS } from './cards/7-sugar-and-spite/king-candy-cards';
 import { SHERE_KHAN_CARDS } from './cards/7-sugar-and-spite/shere-khan-cards';
 import { DAVY_JONES_CARDS } from './cards/8-treacherous-tides/davy-jones-cards';
+import { TAMATOA_CARDS } from './cards/8-treacherous-tides/tamatoa-cards';
 import { CAPTAIN_HOOK } from './villains/0-the-worst-takes-it-all/captain-hook-villain';
 import { JAFAR } from './villains/0-the-worst-takes-it-all/jafar-villain';
 import { MALEFICENT } from './villains/0-the-worst-takes-it-all/maleficent-villain';
@@ -48,6 +49,7 @@ import { OOGIE_BOOGIE } from './villains/6-filled-with-fright/oogie-boogie-villa
 import { KING_CANDY } from './villains/7-sugar-and-spite/king-candy-villain';
 import { SHERE_KHAN } from './villains/7-sugar-and-spite/shere-khan-villain';
 import { DAVY_JONES } from './villains/8-treacherous-tides/davy-jones-villain';
+import { TAMATOA } from './villains/8-treacherous-tides/tamatoa-villain';
 import { SANDERSON_SISTERS } from './villains/sanderson-sisters-villain';
 export * from './expansions';
 export * from './villains/0-the-worst-takes-it-all/jafar-villain';
@@ -77,7 +79,8 @@ export const ALL_CARDS = [
   ...OOGIE_BOOGIE_CARDS,
   ...KING_CANDY_CARDS,
   ...SHERE_KHAN_CARDS,
-  ...DAVY_JONES_CARDS
+  ...DAVY_JONES_CARDS,
+  ...TAMATOA_CARDS
 ];
 
 export const ALL_VILLAINS = [
@@ -106,5 +109,6 @@ export const ALL_VILLAINS = [
   KING_CANDY,
   SHERE_KHAN,
   DAVY_JONES,
+  TAMATOA,
   SANDERSON_SISTERS
 ];

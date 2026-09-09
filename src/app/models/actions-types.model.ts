@@ -27,5 +27,6 @@ export enum CARD_TYPES {
     Cheat = 'cheat',
     Prisoner = 'prisoner',
     TransformationMerlin = 'transformationMerlin',
-    TransformationMim = 'transformationMim'
+    TransformationMim = 'transformationMim',
+    Maui = 'maui'
 }

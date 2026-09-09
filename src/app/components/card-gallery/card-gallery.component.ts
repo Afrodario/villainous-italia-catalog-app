@@ -75,7 +75,8 @@ export class CardGalleryComponent implements OnChanges {
       cheat: 6,
       prisoner: 6,
       transformationMerlin: 6,
-      transformationMim: 6
+      transformationMim: 6,
+      maui: 6
     };
 
     // Le tessere vengono escluse dal sorting
@@ -140,7 +141,8 @@ export class CardGalleryComponent implements OnChanges {
       cheat: 'IMBROGLIO',
       prisoner: 'PRIGIONIERO',
       transformationMerlin: 'TRASFORMAZIONE',
-      transformationMim: 'TRASFORMAZIONE'
+      transformationMim: 'TRASFORMAZIONE',
+      maui: 'MAUI'
     };
 
     return labels[type];
@@ -164,7 +166,8 @@ export class CardGalleryComponent implements OnChanges {
       cheat: 'text-black',
       prisoner: 'text-slate-700',
       transformationMerlin: 'text-yellow-400',
-      transformationMim: 'text-red-600'
+      transformationMim: 'text-red-600',
+      maui: 'text-green-400'
     };
 
     return classes[type];

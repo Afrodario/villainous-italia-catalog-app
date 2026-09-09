@@ -199,7 +199,8 @@ export class GameplayComponent {
       cheat: 'IMBROGLIO',
       prisoner: 'PRIGIONIERO',
       transformationMerlin: 'TRASFORMAZIONE',
-      transformationMim: 'TRASFORMAZIONE'
+      transformationMim: 'TRASFORMAZIONE',
+      maui: 'MAUI'
     };
 
     return labels[type];
@@ -223,7 +224,8 @@ export class GameplayComponent {
       cheat: 'text-black',
       prisoner: 'text-slate-700',
       transformationMerlin: 'text-yellow-400',
-      transformationMim: 'text-red-400'
+      transformationMim: 'text-red-400',
+      maui: 'text-green-400'
     };
 
     return classes[type];
