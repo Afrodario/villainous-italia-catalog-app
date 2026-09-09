@@ -57,7 +57,7 @@
         {{ selectedExpansion.name }}
       </p>
 
-      <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div class="mt-6 grid items-stretch gap-4 md:grid-cols-2 lg:grid-cols-3">
         @for (villain of villains; track villain.id) {
           <div
             class="rounded-xl border border-white/10 bg-slate-900 p-5"
@@ -116,6 +116,45 @@
                 </div>
               </div>
             </button>
+
+            <div
+              class="mt-5 rounded-lg border border-white/10 bg-slate-800 p-4"
+            >
+              <div class="flex items-center justify-between gap-4">
+                <div class="flex items-center gap-2">
+                  <p
+                    class="text-xs font-semibold uppercase tracking-wider text-slate-500"
+                  >
+                    Livello di velocità
+                  </p>
+
+                  <button
+                    type="button"
+                    (click)="openSpeedInfo()"
+                    aria-label="Informazioni sui livelli di velocità"
+                    title="Informazioni sui livelli di velocità"
+                    class="flex h-5 w-5 items-center justify-center rounded-full border border-slate-600 text-xs font-bold text-slate-400 transition hover:border-purple-400 hover:text-purple-400"
+                  >
+                    i
+                  </button>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <span class="text-xs font-bold text-slate-300">
+                    {{ getSpeedLevelLabel(villain.speedLevel) }}
+                  </span>
+
+                  <div
+                    class="h-6 w-16 rounded-md border border-white/10"
+                    [class.bg-red-500]="villain.speedLevel === 'red'"
+                    [class.bg-green-500]="villain.speedLevel === 'green'"
+                    [class.bg-yellow-400]="villain.speedLevel === 'yellow'"
+                    [class.bg-orange-500]="villain.speedLevel === 'orange'"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
             <button
               type="button"
               (click)="openMover(villain)"
@@ -654,5 +693,9 @@
 
       <span class="sm:hidden"> Cattivi </span>
     </button>
+  }
+
+  @if (showSpeedInfo) {
+    <app-speed-level-info (closed)="closeSpeedInfo()" />
   }
 </div>

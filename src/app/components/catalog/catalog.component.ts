@@ -28,6 +28,7 @@ import { VILLAINS_IDS } from '../../models/villains-expansions-ids.model';
 import { GameTextFormatterService } from '../../services/game-text-formatter.service';
 import { VillainMechanics } from '../../models/villain-mechanics.model';
 import { ExpansionCardComponent } from './expansion-card/expansion-card.component';
+import { SpeedLevelInfoComponent } from './speed-level-info/speed-level-info.component';
 
 @Component({
   selector: 'app-catalog',
@@ -36,6 +37,7 @@ import { ExpansionCardComponent } from './expansion-card/expansion-card.componen
     CardGalleryComponent,
     LocationGalleryComponent,
     ExpansionCardComponent,
+    SpeedLevelInfoComponent
   ],
   templateUrl: './catalog.component.html',
 })
@@ -52,6 +54,7 @@ export class CatalogComponent implements OnDestroy {
   selectedDeckBack: string | null = null;
   selectedDeckBackTitle = '';
   showBackToVillains = false;
+  showSpeedInfo = false;
   private villainsObserver?: IntersectionObserver;
 
   villainDeckSortBy: CardSort = 'quantity';
@@ -262,7 +265,7 @@ export class CatalogComponent implements OnDestroy {
       isFateCard: card.isFateCard,
       isTile: card.isTile,
       deck: card.deck,
-      specifics: card.specifics
+      specifics: card.specifics,
     }));
   }
 
@@ -273,6 +276,27 @@ export class CatalogComponent implements OnDestroy {
     }).format(date);
 
     return formatted.charAt(0).toUpperCase() + formatted.slice(1);
+  }
+
+  getSpeedLevelLabel(speedLevel: Villain['speedLevel']): string {
+    switch (speedLevel) {
+      case 'red':
+        return 'Molto lento';
+      case 'orange':
+        return 'Lento';
+      case 'yellow':
+        return 'Medio';
+      case 'green':
+        return 'Veloce';
+    }
+  }
+
+  openSpeedInfo(): void {
+    this.showSpeedInfo = true;
+  }
+
+  closeSpeedInfo(): void {
+    this.showSpeedInfo = false;
   }
 
   isStructuredMechanics(
