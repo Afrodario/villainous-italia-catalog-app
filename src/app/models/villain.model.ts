@@ -1,4 +1,4 @@
-import { VillainMechanics } from "./villain-mechanics.model";
+import { VillainMechanics } from './villain-mechanics.model';
 
 export interface Villain {
   id: string;
@@ -9,13 +9,16 @@ export interface Villain {
   mechanics: string | VillainMechanics;
   objective: string;
   objectivePortrait: string;
-  quote: string,
+  quote: string;
   villainDeckBack: string;
   fateDeckBack: string;
   additionalTokens?: boolean;
   additionalTokensPath?: string;
   additionalSetIds?: string[];
-  additionalDeck?: boolean,
-  additionalDeckBack?: string
-  additionalDeckName?: string
+  additionalDeck?: boolean;
+  additionalDeckBack?: string;
+  additionalDeckName?: string;
+  speedLevel: SpeedLevel
 }
+
+export type SpeedLevel = 'green' | 'yellow' | 'orange' | 'red';

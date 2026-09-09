@@ -20,4 +20,5 @@ export const HORNED_KING: Villain = {
   quote: `"Arise, my messengers of death! Our time has arrived!"`,
   villainDeckBack: `assets/images/cards/horned_king/Horned_King_Villain_Back.jpg`,
   fateDeckBack: `assets/images/cards/horned_king/Horned_King_Fate_Back.jpg`,
+  speedLevel: 'orange'
 };

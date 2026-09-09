@@ -26,5 +26,6 @@ export const SANDERSON_SISTERS: Villain = {
   fateDeckBack: ``,
   additionalTokens: true,
   additionalTokensPath: ``,
-  additionalSetIds: [EXPANSIONS_IDS.DarknessBrewing]
+  additionalSetIds: [EXPANSIONS_IDS.DarknessBrewing],
+  speedLevel: 'red'
 };

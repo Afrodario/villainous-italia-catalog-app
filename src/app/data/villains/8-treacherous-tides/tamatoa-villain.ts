@@ -24,4 +24,5 @@ export const TAMATOA: Villain = {
   additionalDeck: true,
   additionalDeckBack: `assets/images/cards/tamatoa/Tamatoa_Maui_Back.png`,
   additionalDeckName: `Maui`,
+  speedLevel: 'yellow'
 };

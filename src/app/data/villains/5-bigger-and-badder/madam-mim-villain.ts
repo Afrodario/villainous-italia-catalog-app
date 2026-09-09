@@ -36,4 +36,5 @@ export const MADAM_MIM: Villain = {
   additionalDeck: true,
   additionalDeckBack: `assets/images/cards/madam_mim/Merlin_Back.png`,
   additionalDeckName: `Trasformazioni di Merlino`,
+  speedLevel: 'green'
 };

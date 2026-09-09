@@ -20,4 +20,5 @@ export const SYNDROME: Villain = {
   quote: `"You can't count on anyone, especially your heroes."`,
   villainDeckBack: `assets/images/cards/syndrome/Syndrome_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/syndrome/Syndrome_Fate_Back.png`,
+  speedLevel: 'yellow'
 };

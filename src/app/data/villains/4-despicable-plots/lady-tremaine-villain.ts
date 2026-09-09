@@ -24,4 +24,5 @@ export const LADY_TREMAINE: Villain = {
   fateDeckBack: `assets/images/cards/lady_tremaine/Lady_Tremaine_Fate_Back.jpg`,
   additionalTokens: true,
   additionalTokensPath: `assets/images/cards/lady_tremaine/Trappedtokens.png`,
+  speedLevel: 'orange'
 };

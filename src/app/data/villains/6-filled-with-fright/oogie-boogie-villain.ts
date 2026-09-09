@@ -20,4 +20,5 @@ export const OOGIE_BOOGIE: Villain = {
   quote: `"Looks like it's Oogie's turn to boogie now."`,
   villainDeckBack: `assets/images/cards/oogie_boogie/Oogie_Boogie_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/oogie_boogie/Oogie_Boogie_Fate_Back.png`,
+  speedLevel: 'yellow'
 };

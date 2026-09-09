@@ -23,4 +23,5 @@ export const QUEEN_OF_HEARTS: Villain = {
   quote: `"If I lose my temper, you lose your head."`,
   villainDeckBack: `assets/images/cards/queen_of_hearts/Queen_of_Hearts_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/queen_of_hearts/Queen_of_Hearts_Fate_Back.png`,
+  speedLevel: 'green'
 };

@@ -21,4 +21,5 @@ export const DR_FACILIER: Villain = {
   quote: `"I got friends on the other side."`,
   villainDeckBack: `assets/images/cards/dr_facilier/Dr_Facilier_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/dr_facilier/Dr_Facilier_Fate_Back.png`,
+  speedLevel: 'green'
 };

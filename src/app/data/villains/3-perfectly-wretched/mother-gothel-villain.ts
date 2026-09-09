@@ -22,4 +22,5 @@ export const MOTHER_GOTHEL: Villain = {
   quote: `"You want me to be the bad guy? Fine. Now I'm the bad guy."`,
   villainDeckBack: `assets/images/cards/mother_gothel/Mother_Gothel_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/mother_gothel/Mother_Gothel_Fate_Back.png`,
+  speedLevel: 'red'
 };

@@ -21,4 +21,5 @@ export const SCAR: Villain = {
   quote: `"Long live the king."`,
   villainDeckBack: `assets/images/cards/scar/Scar_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/scar/Scar_Fate_Back.png`,
+  speedLevel: 'red'
 };

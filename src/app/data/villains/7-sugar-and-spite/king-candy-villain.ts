@@ -26,4 +26,5 @@ export const KING_CANDY: Villain = {
   fateDeckBack: `assets/images/cards/king_candy/King_Candy_Fate_Back.png`,
   additionalTokens: true,
   additionalTokensPath: `assets/images/cards/king_candy/Racer_Token.png`,
+  speedLevel: 'orange'
 };

@@ -20,4 +20,5 @@ export const MALEFICENT: Villain = {
   quote: `"Now go with a curse and serve me well!"`,
   villainDeckBack: `assets/images/cards/maleficent/Maleficent_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/maleficent/Maleficent_Fate_Back.png`,
+  speedLevel: 'yellow'
 };

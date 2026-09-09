@@ -21,4 +21,5 @@ export const LOTSO: Villain = {
   quote: `"You're a piece of plastic. You were meant to be thrown away."`,
   villainDeckBack: `assets/images/cards/lotso/Lotso_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/lotso/Lotso_Fate_Back.png`,
+  speedLevel: 'red'
 };

@@ -22,4 +22,5 @@ export const YZMA: Villain = {
   quote: `"Our moment of triumph approaches!"`,
   villainDeckBack: `assets/images/cards/yzma/Yzma_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/yzma/Yzma_Fate_Back.png`,
+  speedLevel: 'yellow'
 };

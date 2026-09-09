@@ -20,4 +20,5 @@ export const URSULA: Villain = {
   quote: `"The sea and all its spoils bow to my power!"`,
   villainDeckBack: `assets/images/cards/ursula/Ursula_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/ursula/Ursula_Fate_Back.png`,
+  speedLevel: 'red'
 };

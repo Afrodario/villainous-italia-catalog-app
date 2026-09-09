@@ -25,4 +25,5 @@ export const CRUELLA_DE_VIL: Villain = {
   fateDeckBack: `assets/images/cards/cruella_de_vil/Cruella_De_Vil_Fate_Back.png`,
   additionalTokens: true,
   additionalTokensPath: `assets/images/cards/cruella_de_vil/Cruella_De_Vil_Puppytokens.png`,
+  speedLevel: 'red'
 };

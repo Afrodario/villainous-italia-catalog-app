@@ -21,4 +21,5 @@ export const HADES: Villain = {
   quote: `"Everybody's got a weakness."`,
   villainDeckBack: `assets/images/cards/hades/Hades_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/hades/Hades_Fate_Back.png`,
+  speedLevel: 'red'
 };

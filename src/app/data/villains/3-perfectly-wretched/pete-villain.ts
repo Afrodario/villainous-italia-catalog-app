@@ -35,4 +35,5 @@ export const PETE: Villain = {
   fateDeckBack: `assets/images/cards/pete/Pete_Fate_Back.png`,
   additionalTokens: true,
   additionalTokensPath: `assets/images/cards/pete/Pete_Goaltokens.png`,
+  speedLevel: 'orange'
 };

@@ -33,4 +33,5 @@ export const DAVY_JONES: Villain = {
   fateDeckBack: `assets/images/cards/davy_jones/Davy_Jones_Fate_Back.png`,
   additionalTokens: true,
   additionalTokensPath: `assets/images/cards/davy_jones/Treasure_Tokens.png`,
+  speedLevel: 'red'
 };

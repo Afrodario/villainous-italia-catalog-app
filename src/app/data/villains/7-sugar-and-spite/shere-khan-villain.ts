@@ -23,4 +23,5 @@ export const SHERE_KHAN: Villain = {
   fateDeckBack: `assets/images/cards/shere_khan/Shere_Khan_Fate_Back.png`,
   additionalTokens: true,
   additionalTokensPath: `assets/images/cards/shere_khan/Fire_Token.png`,
+  speedLevel: 'green'
 };

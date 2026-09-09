@@ -23,4 +23,5 @@ export const RATIGAN: Villain = {
   quote: `"Oh this is wicked. So delightfully wicked!"`,
   villainDeckBack: `assets/images/cards/ratigan/Ratigan_Villain_Back.png`,
   fateDeckBack: `assets/images/cards/ratigan/Ratigan_Fate_Back.png`,
+  speedLevel: 'yellow'
 };

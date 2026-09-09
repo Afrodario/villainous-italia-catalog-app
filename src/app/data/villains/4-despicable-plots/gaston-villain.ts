@@ -22,4 +22,5 @@ export const GASTON: Villain = {
   fateDeckBack: `assets/images/cards/gaston/Gaston_Fate_Back.jpg`,
   additionalTokens: true,
   additionalTokensPath: `assets/images/cards/gaston/Obstacletokens.png`,
+  speedLevel: 'orange'
 };
