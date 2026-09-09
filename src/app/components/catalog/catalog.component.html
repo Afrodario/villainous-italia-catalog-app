@@ -1,701 +1,852 @@
 <div class="mx-auto max-w-7xl px-6 py-10">
   <section class="mx-auto max-w-7xl px-6 py-10">
-    <h2 class="text-3xl font-black text-white">Catalogo</h2>
-
-    <p class="mt-2 text-slate-400">Seleziona un'espansione.</p>
-
-    <!-- BASE SET -->
-    <section class="mt-10">
+    <!-- SELEZIONE DEL GIOCO -->
+    <section>
       <div class="mb-6">
-        <h2 class="text-2xl font-black uppercase tracking-wide text-white">
-          Base Set
-        </h2>
+        <h1 class="text-3xl font-black text-white">Catalogo Villainous</h1>
 
-        <p class="mt-2 text-sm text-slate-400">
-          Le scatole base di Disney Villainous.
+        <p class="mt-2 text-slate-400">
+          Scegli una versione di Villainous per esplorare il catalogo.
         </p>
       </div>
 
-      <div class="grid items-start gap-6 md:grid-cols-2 lg:grid-cols-3">
-        @for (expansion of baseSets; track expansion.id) {
-          <app-expansion-card
-            [expansion]="expansion"
-            (expansionSelected)="selectExpansion($event)"
-          />
-        }
-      </div>
-    </section>
+      <div class="grid gap-6 md:grid-cols-2">
+        <!-- DISNEY VILLAINOUS -->
+        <button
+          type="button"
+          (click)="selectVersion('disney')"
+          class="group relative overflow-hidden rounded-2xl border border-white/10 bg-slate-900 p-6 text-left transition duration-300 hover:-translate-y-1 hover:bg-slate-800"
+          [class.border-purple-500]="selectedVersion === 'disney'"
+        >
+          <div class="flex min-h-40 items-center justify-center">
+            <img
+              src="assets/images/logos/Disney_Villainous_Logo.png"
+              alt="Disney Villainous"
+              class="max-h-32 max-w-full object-contain transition duration-300 group-hover:scale-105"
+            />
+          </div>
 
-    <!-- ESPANSIONI -->
-    <section class="mt-16">
-      <div class="mb-6">
-        <h2 class="text-2xl font-black uppercase tracking-wide text-white">
-          Espansioni
-        </h2>
+          <div class="mt-5">
+            <h2 class="text-xl font-black text-white">Disney Villainous</h2>
 
-        <p class="mt-2 text-sm text-slate-400">
-          Le espansioni che ampliano il gioco con nuovi Cattivi e contenuti.
-        </p>
-      </div>
+            <p class="mt-2 text-sm leading-6 text-slate-400">
+              Consulta Cattivi, espansioni, carte, meccaniche e contenuti di
+              gioco.
+            </p>
+          </div>
 
-      <div class="grid items-start gap-6 md:grid-cols-2 lg:grid-cols-3">
-        @for (expansion of expansionsOnly; track expansion.id) {
-          <app-expansion-card
-            [expansion]="expansion"
-            (expansionSelected)="selectExpansion($event)"
-          />
-        }
-      </div>
-    </section>
-  </section>
-
-  @if (selectedExpansion) {
-    <section #villainsSection class="mx-auto mt-14 max-w-7xl px-6 pb-10">
-      <h2 class="text-2xl font-black text-white">Cattivi</h2>
-
-      <p class="mt-2 text-slate-400">
-        {{ selectedExpansion.name }}
-      </p>
-
-      <div class="mt-6 grid items-stretch gap-4 md:grid-cols-2 lg:grid-cols-3">
-        @for (villain of villains; track villain.id) {
-          <div
-            class="rounded-xl border border-white/10 bg-slate-900 p-5"
-            [class.border-purple-500]="selectedVillain?.id === villain.id"
-            [class.ring-2]="selectedVillain?.id === villain.id"
-            [class.ring-purple-500]="selectedVillain?.id === villain.id"
-          >
-            <button
-              type="button"
-              (click)="selectVillain(villain)"
-              class="w-full text-left"
+          @if (selectedVersion === "disney") {
+            <div
+              class="mt-5 inline-flex items-center rounded-full bg-purple-600 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white"
             >
-              <img
-                [src]="villain.portrait"
-                [alt]="villain.name"
-                class="mb-4 w-80 object-cover"
+              Selezionato
+            </div>
+          }
+        </button>
+
+        <!-- MARVEL VILLAINOUS -->
+        <button
+          type="button"
+          disabled
+          class="relative cursor-not-allowed overflow-hidden rounded-2xl border border-white/10 bg-slate-900 p-6 text-left opacity-60"
+        >
+          <div class="flex min-h-40 items-center justify-center">
+            <img
+              src="assets/images/logos/Marvel_Villainous_Logo.png"
+              alt="Marvel Villainous"
+              class="max-h-32 max-w-full object-contain grayscale"
+            />
+          </div>
+
+          <div class="mt-5">
+            <h2 class="text-xl font-black text-white">Marvel Villainous</h2>
+
+            <p class="mt-2 text-sm leading-6 text-slate-400">
+              Il catalogo di Marvel Villainous è attualmente in sviluppo.
+            </p>
+          </div>
+
+          <div
+            class="absolute right-4 top-4 rounded-full bg-slate-700 px-3 py-1 text-xs font-bold uppercase tracking-wide text-slate-300"
+          >
+            In sviluppo
+          </div>
+        </button>
+
+        <!-- STAR WARS VILLAINOUS -->
+        <button
+          type="button"
+          disabled
+          class="relative cursor-not-allowed overflow-hidden rounded-2xl border border-white/10 bg-slate-900 p-6 text-left opacity-60"
+        >
+          <div class="flex min-h-40 items-center justify-center">
+            <img
+              src="assets/images/logos/Star_Wars_Villainous_Logo.png"
+              alt="Star Wars Villainous"
+              class="max-h-32 max-w-full object-contain grayscale"
+            />
+          </div>
+
+          <div class="mt-5">
+            <h2 class="text-xl font-black text-white">Star Wars Villainous</h2>
+
+            <p class="mt-2 text-sm leading-6 text-slate-400">
+              Il catalogo di Star Wars Villainous è attualmente in sviluppo.
+            </p>
+          </div>
+
+          <div
+            class="absolute right-4 top-4 rounded-full bg-slate-700 px-3 py-1 text-xs font-bold uppercase tracking-wide text-slate-300"
+          >
+            In sviluppo
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <!-- CATALOGO DISNEY -->
+    @if (selectedVersion === "disney") {
+      <section class="mx-auto mt-16 max-w-7xl">
+        <h2 class="text-2xl font-black text-white">Disney Villainous</h2>
+
+        <p class="mt-2 text-slate-400">Seleziona un'espansione.</p>
+        <!-- BASE SET -->
+        <section class="mt-10">
+          <div class="mb-6">
+            <h2 class="text-2xl font-black uppercase tracking-wide text-white">
+              Base Set
+            </h2>
+
+            <p class="mt-2 text-sm text-slate-400">
+              Le scatole base di Disney Villainous.
+            </p>
+          </div>
+
+          <div class="grid items-start gap-6 md:grid-cols-2 lg:grid-cols-3">
+            @for (expansion of baseSets; track expansion.id) {
+              <app-expansion-card
+                [expansion]="expansion"
+                (expansionSelected)="selectExpansion($event)"
               />
+            }
+          </div>
+        </section>
 
-              <div
-                class="space-y-5 rounded-xl border border-purple-500/30 bg-purple-500/10 p-4 transition duration-300 hover:border-purple-400 hover:bg-purple-500/15"
-              >
-                <h3 class="text-2xl font-black tracking-wide text-white">
-                  {{ villain.name }}
-                </h3>
+        <!-- ESPANSIONI -->
+        <section class="mt-16">
+          <div class="mb-6">
+            <h2 class="text-2xl font-black uppercase tracking-wide text-white">
+              Espansioni
+            </h2>
 
-                <div
-                  class="my-4 h-px bg-gradient-to-r from-purple-500 via-purple-400/40 to-transparent"
-                ></div>
+            <p class="mt-2 text-sm text-slate-400">
+              Le espansioni che ampliano il gioco con nuovi Cattivi e contenuti.
+            </p>
+          </div>
 
-                <div class="flex items-start gap-3">
-                  <span class="text-xl">🎯</span>
+          <div class="grid items-start gap-6 md:grid-cols-2 lg:grid-cols-3">
+            @for (expansion of expansionsOnly; track expansion.id) {
+              <app-expansion-card
+                [expansion]="expansion"
+                (expansionSelected)="selectExpansion($event)"
+              />
+            }
+          </div>
+        </section>
 
-                  <div>
-                    <p
-                      class="text-xs uppercase tracking-widest text-purple-400"
-                    >
-                      Obiettivo
-                    </p>
+        @if (selectedExpansion) {
+          <section #villainsSection class="mx-auto mt-14 max-w-7xl px-6 pb-10">
+            <h2 class="text-2xl font-black text-white">Cattivi</h2>
 
-                    <p class="mt-1 text-slate-200">
-                      {{ villain.objective }}
-                    </p>
-                  </div>
-                </div>
-
-                <div class="my-5 h-px bg-white/10"></div>
-
-                <div
-                  class="rounded-xl border border-slate-700 bg-slate-800/60 p-4 transition duration-300 hover:border-slate-500"
-                >
-                  <span class="text-xl">❝</span>
-
-                  <blockquote class="italic text-slate-300">
-                    {{ villain.quote }}
-                  </blockquote>
-                </div>
-              </div>
-            </button>
+            <p class="mt-2 text-slate-400">
+              {{ selectedExpansion.name }}
+            </p>
 
             <div
-              class="mt-5 rounded-lg border border-white/10 bg-slate-800 p-4"
+              class="mt-6 grid items-stretch gap-4 md:grid-cols-2 lg:grid-cols-3"
             >
-              <div class="flex items-center justify-between gap-4">
-                <div class="flex items-center gap-2">
-                  <p
-                    class="text-xs font-semibold uppercase tracking-wider text-slate-500"
+              @for (villain of villains; track villain.id) {
+                <div
+                  class="rounded-xl border border-white/10 bg-slate-900 p-5"
+                  [class.border-purple-500]="selectedVillain?.id === villain.id"
+                  [class.ring-2]="selectedVillain?.id === villain.id"
+                  [class.ring-purple-500]="selectedVillain?.id === villain.id"
+                >
+                  <button
+                    type="button"
+                    (click)="selectVillain(villain)"
+                    class="w-full text-left"
                   >
-                    Livello di velocità
-                  </p>
+                    <img
+                      [src]="villain.portrait"
+                      [alt]="villain.name"
+                      class="mb-4 w-80 object-cover"
+                    />
+
+                    <div
+                      class="space-y-5 rounded-xl border border-purple-500/30 bg-purple-500/10 p-4 transition duration-300 hover:border-purple-400 hover:bg-purple-500/15"
+                    >
+                      <h3 class="text-2xl font-black tracking-wide text-white">
+                        {{ villain.name }}
+                      </h3>
+
+                      <div
+                        class="my-4 h-px bg-gradient-to-r from-purple-500 via-purple-400/40 to-transparent"
+                      ></div>
+
+                      <div class="flex items-start gap-3">
+                        <span class="text-xl">🎯</span>
+
+                        <div>
+                          <p
+                            class="text-xs uppercase tracking-widest text-purple-400"
+                          >
+                            Obiettivo
+                          </p>
+
+                          <p class="mt-1 text-slate-200">
+                            {{ villain.objective }}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="my-5 h-px bg-white/10"></div>
+
+                      <div
+                        class="rounded-xl border border-slate-700 bg-slate-800/60 p-4 transition duration-300 hover:border-slate-500"
+                      >
+                        <span class="text-xl">❝</span>
+
+                        <blockquote class="italic text-slate-300">
+                          {{ villain.quote }}
+                        </blockquote>
+                      </div>
+                    </div>
+                  </button>
+
+                  <div
+                    class="mt-5 rounded-lg border border-white/10 bg-slate-800 p-4"
+                  >
+                    <div class="flex items-center justify-between gap-4">
+                      <div class="flex items-center gap-2">
+                        <p
+                          class="text-xs font-semibold uppercase tracking-wider text-slate-500"
+                        >
+                          Livello di velocità
+                        </p>
+
+                        <button
+                          type="button"
+                          (click)="openSpeedInfo()"
+                          aria-label="Informazioni sui livelli di velocità"
+                          title="Informazioni sui livelli di velocità"
+                          class="flex h-5 w-5 items-center justify-center rounded-full border border-slate-600 text-xs font-bold text-slate-400 transition hover:border-purple-400 hover:text-purple-400"
+                        >
+                          i
+                        </button>
+                      </div>
+
+                      <div class="flex items-center gap-3">
+                        <span class="text-xs font-bold text-slate-300">
+                          {{ getSpeedLevelLabel(villain.speedLevel) }}
+                        </span>
+
+                        <div
+                          class="h-6 w-16 rounded-md border border-white/10"
+                          [class.bg-red-500]="villain.speedLevel === 'red'"
+                          [class.bg-green-500]="villain.speedLevel === 'green'"
+                          [class.bg-yellow-400]="
+                            villain.speedLevel === 'yellow'
+                          "
+                          [class.bg-orange-500]="
+                            villain.speedLevel === 'orange'
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
 
                   <button
                     type="button"
-                    (click)="openSpeedInfo()"
-                    aria-label="Informazioni sui livelli di velocità"
-                    title="Informazioni sui livelli di velocità"
-                    class="flex h-5 w-5 items-center justify-center rounded-full border border-slate-600 text-xs font-bold text-slate-400 transition hover:border-purple-400 hover:text-purple-400"
+                    (click)="openMover(villain)"
+                    class="mt-5 w-full rounded-lg border border-white/10 bg-slate-800 p-4 text-left transition hover:border-purple-500 hover:bg-slate-700"
                   >
-                    i
-                  </button>
-                </div>
-
-                <div class="flex items-center gap-3">
-                  <span class="text-xs font-bold text-slate-300">
-                    {{ getSpeedLevelLabel(villain.speedLevel) }}
-                  </span>
-
-                  <div
-                    class="h-6 w-16 rounded-md border border-white/10"
-                    [class.bg-red-500]="villain.speedLevel === 'red'"
-                    [class.bg-green-500]="villain.speedLevel === 'green'"
-                    [class.bg-yellow-400]="villain.speedLevel === 'yellow'"
-                    [class.bg-orange-500]="villain.speedLevel === 'orange'"
-                  ></div>
-                </div>
-              </div>
-            </div>
-
-            <button
-              type="button"
-              (click)="openMover(villain)"
-              class="mt-5 w-full rounded-lg border border-white/10 bg-slate-800 p-4 text-left transition hover:border-purple-500 hover:bg-slate-700"
-            >
-              <div class="flex items-center justify-between">
-                <p
-                  class="text-xs font-semibold uppercase tracking-wider text-slate-500"
-                >
-                  Pedina
-                </p>
-
-                <span class="text-xs text-purple-400">
-                  Clicca per ingrandire 🔍
-                </span>
-              </div>
-
-              <div class="mt-4 flex justify-center">
-                <img
-                  [src]="villain.mover"
-                  [alt]="'Pedina di ' + villain.name"
-                  class="h-36 w-auto object-contain transition duration-300 hover:scale-105"
-                />
-              </div>
-            </button>
-          </div>
-        }
-      </div>
-    </section>
-  }
-
-  @if (selectedVillain) {
-    <section #deckSection class="mt-14">
-      <div
-        class="rounded-2xl border border-purple-500/30 bg-gradient-to-br from-slate-900 to-slate-800 p-6 sm:p-8"
-      >
-        <div class="mb-6 flex items-center gap-4">
-          <div
-            class="rounded-full bg-purple-600 px-4 py-2 text-sm font-bold text-white"
-          >
-            MECCANICHE DI GIOCO
-          </div>
-
-          <h2 class="text-2xl font-black text-white">
-            {{ selectedVillain.name }}
-          </h2>
-        </div>
-
-        <div class="flex flex-col gap-8 lg:flex-row lg:items-start">
-          <!-- RITRATTO CON OBIETTIVO -->
-          <div class="flex shrink-0 justify-center lg:w-1/4">
-            <div
-              class="overflow-hidden rounded-xl border border-white/10 bg-slate-950 shadow-xl"
-            >
-              <img
-                [src]="selectedVillain.objectivePortrait"
-                [alt]="'Obiettivo di ' + selectedVillain.name"
-                class="max-h-[500px] w-auto max-w-full object-contain"
-              />
-            </div>
-          </div>
-
-          <!-- MECCANICHE + MATERIALE AGGIUNTIVO -->
-          <div class="min-w-0 flex-1 border-l-4 border-purple-500 pl-5">
-            <!-- VECCHIO FORMATO -->
-            @if (!isStructuredMechanics(selectedVillain.mechanics)) {
-              <p
-                class="leading-7 text-slate-300"
-                [innerHTML]="
-                  gameTextFormatter.format(selectedVillain.mechanics)
-                "
-              ></p>
-            }
-
-            <!-- NUOVO FORMATO -->
-            @if (isStructuredMechanics(selectedVillain.mechanics)) {
-              <div class="space-y-5">
-                <!-- SETUP -->
-                @if (selectedVillain.mechanics.setup) {
-                  <div
-                    class="rounded-xl border border-blue-500/20 bg-blue-500/5 p-5"
-                  >
-                    <div class="mb-3 flex items-center gap-3">
-                      <div
-                        class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-500/10 text-lg"
+                    <div class="flex items-center justify-between">
+                      <p
+                        class="text-xs font-semibold uppercase tracking-wider text-slate-500"
                       >
-                        ⚙️
-                      </div>
+                        Pedina
+                      </p>
 
-                      <h3
-                        class="text-sm font-black uppercase tracking-[0.18em] text-blue-400"
-                      >
-                        Setup
-                      </h3>
+                      <span class="text-xs text-purple-400">
+                        Clicca per ingrandire 🔍
+                      </span>
                     </div>
 
+                    <div class="mt-4 flex justify-center">
+                      <img
+                        [src]="villain.mover"
+                        [alt]="'Pedina di ' + villain.name"
+                        class="h-36 w-auto object-contain transition duration-300 hover:scale-105"
+                      />
+                    </div>
+                  </button>
+                </div>
+              }
+            </div>
+          </section>
+        }
+
+        @if (selectedVillain) {
+          <section #deckSection class="mt-14">
+            <div
+              class="rounded-2xl border border-purple-500/30 bg-gradient-to-br from-slate-900 to-slate-800 p-6 sm:p-8"
+            >
+              <div class="mb-6 flex items-center gap-4">
+                <div
+                  class="rounded-full bg-purple-600 px-4 py-2 text-sm font-bold text-white"
+                >
+                  MECCANICHE DI GIOCO
+                </div>
+
+                <h2 class="text-2xl font-black text-white">
+                  {{ selectedVillain.name }}
+                </h2>
+              </div>
+
+              <div class="flex flex-col gap-8 lg:flex-row lg:items-start">
+                <!-- RITRATTO CON OBIETTIVO -->
+                <div class="flex shrink-0 justify-center lg:w-1/4">
+                  <div
+                    class="overflow-hidden rounded-xl border border-white/10 bg-slate-950 shadow-xl"
+                  >
+                    <img
+                      [src]="selectedVillain.objectivePortrait"
+                      [alt]="'Obiettivo di ' + selectedVillain.name"
+                      class="max-h-[500px] w-auto max-w-full object-contain"
+                    />
+                  </div>
+                </div>
+
+                <!-- MECCANICHE + MATERIALE AGGIUNTIVO -->
+                <div class="min-w-0 flex-1 border-l-4 border-purple-500 pl-5">
+                  <!-- VECCHIO FORMATO -->
+                  @if (!isStructuredMechanics(selectedVillain.mechanics)) {
                     <p
                       class="leading-7 text-slate-300"
                       [innerHTML]="
-                        gameTextFormatter.format(
-                          selectedVillain.mechanics.setup
-                        )
+                        gameTextFormatter.format(selectedVillain.mechanics)
                       "
                     ></p>
-                  </div>
-                }
+                  }
 
-                <!-- MECCANICHE -->
-                @if (selectedVillain.mechanics.rules.length > 0) {
-                  <div
-                    class="rounded-xl border border-purple-500/20 bg-purple-500/5 p-5"
-                  >
-                    <div class="mb-4 flex items-center gap-3">
-                      <div
-                        class="flex h-9 w-9 items-center justify-center rounded-lg bg-purple-500/10 text-lg"
-                      >
-                        🎮
-                      </div>
+                  <!-- NUOVO FORMATO -->
+                  @if (isStructuredMechanics(selectedVillain.mechanics)) {
+                    <div class="space-y-5">
+                      <!-- SETUP -->
+                      @if (selectedVillain.mechanics.setup) {
+                        <div
+                          class="rounded-xl border border-blue-500/20 bg-blue-500/5 p-5"
+                        >
+                          <div class="mb-3 flex items-center gap-3">
+                            <div
+                              class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-500/10 text-lg"
+                            >
+                              ⚙️
+                            </div>
 
-                      <h3
-                        class="text-sm font-black uppercase tracking-[0.18em] text-purple-400"
-                      >
-                        Meccaniche
-                      </h3>
-                    </div>
-
-                    <div class="space-y-4">
-                      @for (
-                        rule of selectedVillain.mechanics.rules;
-                        track rule
-                      ) {
-                        <div class="flex items-start gap-3">
-                          <span
-                            class="mt-2 h-2 w-2 shrink-0 rounded-full bg-purple-500"
-                          ></span>
+                            <h3
+                              class="text-sm font-black uppercase tracking-[0.18em] text-blue-400"
+                            >
+                              Setup
+                            </h3>
+                          </div>
 
                           <p
                             class="leading-7 text-slate-300"
-                            [innerHTML]="gameTextFormatter.format(rule)"
+                            [innerHTML]="
+                              gameTextFormatter.format(
+                                selectedVillain.mechanics.setup
+                              )
+                            "
                           ></p>
                         </div>
                       }
-                    </div>
-                  </div>
-                }
 
-                <!-- CONDIZIONE DI VITTORIA -->
-                @if (selectedVillain.mechanics.victory) {
-                  <div
-                    class="rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-5"
-                  >
-                    <div class="mb-3 flex items-center gap-3">
-                      <div
-                        class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10 text-lg"
-                      >
-                        🏆
-                      </div>
+                      <!-- MECCANICHE -->
+                      @if (selectedVillain.mechanics.rules.length > 0) {
+                        <div
+                          class="rounded-xl border border-purple-500/20 bg-purple-500/5 p-5"
+                        >
+                          <div class="mb-4 flex items-center gap-3">
+                            <div
+                              class="flex h-9 w-9 items-center justify-center rounded-lg bg-purple-500/10 text-lg"
+                            >
+                              🎮
+                            </div>
 
-                      <h3
-                        class="text-sm font-black uppercase tracking-[0.18em] text-emerald-400"
-                      >
-                        Condizione di vittoria
-                      </h3>
-                    </div>
+                            <h3
+                              class="text-sm font-black uppercase tracking-[0.18em] text-purple-400"
+                            >
+                              Meccaniche
+                            </h3>
+                          </div>
 
-                    <!-- DESCRIZIONE DELLA VITTORIA -->
-                    <p
-                      class="leading-7 text-slate-200"
-                      [innerHTML]="
-                        gameTextFormatter.format(
-                          selectedVillain.mechanics.victory
-                        )
-                      "
-                    ></p>
+                          <div class="space-y-4">
+                            @for (
+                              rule of selectedVillain.mechanics.rules;
+                              track rule
+                            ) {
+                              <div class="flex items-start gap-3">
+                                <span
+                                  class="mt-2 h-2 w-2 shrink-0 rounded-full bg-purple-500"
+                                ></span>
 
-                    <!-- ELENCO AGGIUNTIVO -->
-                    @if (selectedVillain.mechanics.victoryList) {
-                      <div class="mt-5 border-t border-emerald-500/20 pt-5">
-                        <h4 class="mb-3 text-sm font-bold text-slate-100">
-                          {{ selectedVillain.mechanics.victoryList.header }}
-                        </h4>
+                                <p
+                                  class="leading-7 text-slate-300"
+                                  [innerHTML]="gameTextFormatter.format(rule)"
+                                ></p>
+                              </div>
+                            }
+                          </div>
+                        </div>
+                      }
 
-                        <ul class="list-disc space-y-2 pl-5 text-slate-200">
-                          @for (
-                            element of selectedVillain.mechanics.victoryList
-                              .elements;
-                            track element
-                          ) {
-                            <li
-                              class="leading-7"
-                              [innerHTML]="gameTextFormatter.format(element)"
-                            ></li>
+                      <!-- CONDIZIONE DI VITTORIA -->
+                      @if (selectedVillain.mechanics.victory) {
+                        <div
+                          class="rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-5"
+                        >
+                          <div class="mb-3 flex items-center gap-3">
+                            <div
+                              class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10 text-lg"
+                            >
+                              🏆
+                            </div>
+
+                            <h3
+                              class="text-sm font-black uppercase tracking-[0.18em] text-emerald-400"
+                            >
+                              Condizione di vittoria
+                            </h3>
+                          </div>
+
+                          <!-- DESCRIZIONE DELLA VITTORIA -->
+                          <p
+                            class="leading-7 text-slate-200"
+                            [innerHTML]="
+                              gameTextFormatter.format(
+                                selectedVillain.mechanics.victory
+                              )
+                            "
+                          ></p>
+
+                          <!-- ELENCO AGGIUNTIVO -->
+                          @if (selectedVillain.mechanics.victoryList) {
+                            <div
+                              class="mt-5 border-t border-emerald-500/20 pt-5"
+                            >
+                              <h4 class="mb-3 text-sm font-bold text-slate-100">
+                                {{
+                                  selectedVillain.mechanics.victoryList.header
+                                }}
+                              </h4>
+
+                              <ul
+                                class="list-disc space-y-2 pl-5 text-slate-200"
+                              >
+                                @for (
+                                  element of selectedVillain.mechanics
+                                    .victoryList.elements;
+                                  track element
+                                ) {
+                                  <li
+                                    class="leading-7"
+                                    [innerHTML]="
+                                      gameTextFormatter.format(element)
+                                    "
+                                  ></li>
+                                }
+                              </ul>
+                            </div>
                           }
-                        </ul>
+                        </div>
+                      }
+                    </div>
+                  }
+
+                  <!-- MATERIALE AGGIUNTIVO -->
+                  @if (
+                    selectedVillain.additionalTokens &&
+                    selectedVillain.additionalTokensPath
+                  ) {
+                    <div class="mt-8 border-t border-white/10 pt-6">
+                      <h3
+                        class="mb-4 text-sm font-black uppercase tracking-[0.18em] text-purple-400"
+                      >
+                        Materiale aggiuntivo
+                      </h3>
+
+                      <div class="flex justify-center">
+                        <img
+                          [src]="selectedVillain.additionalTokensPath"
+                          [alt]="
+                            'Materiale aggiuntivo di ' + selectedVillain.name
+                          "
+                          class="max-h-[300px] w-auto max-w-full rounded-xl border border-white/10 bg-slate-950 object-contain shadow-xl"
+                        />
                       </div>
-                    }
-                  </div>
-                }
-              </div>
-            }
-
-            <!-- MATERIALE AGGIUNTIVO -->
-            @if (
-              selectedVillain.additionalTokens &&
-              selectedVillain.additionalTokensPath
-            ) {
-              <div class="mt-8 border-t border-white/10 pt-6">
-                <h3
-                  class="mb-4 text-sm font-black uppercase tracking-[0.18em] text-purple-400"
-                >
-                  Materiale aggiuntivo
-                </h3>
-
-                <div class="flex justify-center">
-                  <img
-                    [src]="selectedVillain.additionalTokensPath"
-                    [alt]="'Materiale aggiuntivo di ' + selectedVillain.name"
-                    class="max-h-[300px] w-auto max-w-full rounded-xl border border-white/10 bg-slate-950 object-contain shadow-xl"
-                  />
-                </div>
-              </div>
-            }
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mt-14">
-      <div class="mt-8">
-        <section class="mt-12">
-          <div
-            class="mb-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between"
-          >
-            <div class="flex items-center gap-4">
-              <button
-                type="button"
-                (click)="
-                  openDeckBack(
-                    selectedVillain.villainDeckBack,
-                    'Dorso del Mazzo Cattivo'
-                  )
-                "
-                class="group shrink-0"
-              >
-                <img
-                  [src]="selectedVillain.villainDeckBack"
-                  alt="Dorso del Mazzo Cattivo"
-                  class="h-44 w-[117px] rounded-lg object-contain shadow-xl transition duration-300 group-hover:scale-105"
-                />
-              </button>
-
-              <div>
-                <h2 class="text-2xl font-black text-white">
-                  🎴 Mazzo Cattivo di {{ selectedVillain.name }}
-                </h2>
-
-                <p class="text-sm text-slate-400">
-                  {{ villainDeckCardCount }} carte
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-center gap-3">
-              <span class="text-sm font-medium text-slate-400"> Ordina: </span>
-
-              <div class="flex flex-wrap gap-2">
-                @for (option of sortOptions; track option.value) {
-                  <button
-                    type="button"
-                    (click)="villainDeckSortBy = option.value"
-                    class="rounded-lg border px-3 py-2 text-sm font-medium transition"
-                    [class.bg-purple-600]="villainDeckSortBy === option.value"
-                    [class.border-purple-500]="
-                      villainDeckSortBy === option.value
-                    "
-                    [class.text-white]="villainDeckSortBy === option.value"
-                    [class.bg-slate-800]="villainDeckSortBy !== option.value"
-                    [class.border-white-10]="villainDeckSortBy !== option.value"
-                    [class.text-slate-300]="villainDeckSortBy !== option.value"
-                  >
-                    {{ option.label }}
-                  </button>
-                }
-              </div>
-            </div>
-          </div>
-          <app-card-gallery
-            [cards]="villainDeck"
-            [sortBy]="villainDeckSortBy"
-            [cardToOpenId]="cardToOpenId"
-          />
-        </section>
-
-        <section class="mt-14">
-          <div
-            class="mb-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between"
-          >
-            <div class="flex items-center gap-4">
-              <button
-                type="button"
-                (click)="
-                  openDeckBack(
-                    selectedVillain.fateDeckBack,
-                    'Dorso del Mazzo Fato'
-                  )
-                "
-                class="group shrink-0"
-              >
-                <img
-                  [src]="selectedVillain.fateDeckBack"
-                  alt="Dorso del Mazzo Fato"
-                  class="h-44 w-[117px] rounded-lg object-contain shadow-xl transition duration-300 group-hover:scale-105"
-                />
-              </button>
-
-              <div>
-                <h2 class="text-2xl font-black text-white">
-                  🎴 Mazzo Fato di {{ selectedVillain.name }}
-                </h2>
-
-                <p class="text-sm text-slate-400">
-                  {{ fateDeckCardCount }} carte
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-center gap-3">
-              <span class="text-sm font-medium text-slate-400"> Ordina: </span>
-
-              <div class="flex flex-wrap gap-2">
-                @for (option of sortOptions; track option.value) {
-                  <button
-                    type="button"
-                    (click)="fateDeckSortBy = option.value"
-                    class="rounded-lg border px-3 py-2 text-sm font-medium transition"
-                    [class.bg-purple-600]="fateDeckSortBy === option.value"
-                    [class.border-purple-500]="fateDeckSortBy === option.value"
-                    [class.text-white]="fateDeckSortBy === option.value"
-                    [class.bg-slate-800]="fateDeckSortBy !== option.value"
-                    [class.border-white-10]="fateDeckSortBy !== option.value"
-                    [class.text-slate-300]="fateDeckSortBy !== option.value"
-                  >
-                    {{ option.label }}
-                  </button>
-                }
-              </div>
-            </div>
-          </div>
-
-          <app-card-gallery
-            [cards]="fateDeck"
-            [sortBy]="fateDeckSortBy"
-            [cardToOpenId]="cardToOpenId"
-          />
-        </section>
-
-        @if (selectedVillain.additionalDeck) {
-          <section class="mt-14">
-            <div
-              class="mb-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between"
-            >
-              <div class="flex items-center gap-4">
-                <button
-                  type="button"
-                  (click)="
-                    openDeckBack(
-                      selectedVillain.additionalDeckBack!,
-                      `Dorso del Mazzo ${selectedVillain.additionalDeckName}`
-                    )
-                  "
-                  class="group shrink-0"
-                >
-                  <img
-                    [src]="selectedVillain.additionalDeckBack"
-                    alt="Dorso del Mazzo {{
-                      selectedVillain.additionalDeckName
-                    }}"
-                    class="h-44 w-[117px] rounded-lg object-contain shadow-xl transition duration-300 group-hover:scale-105"
-                  />
-                </button>
-
-                <div>
-                  <h2 class="text-2xl font-black text-white">
-                    🎴 Mazzo {{ selectedVillain.additionalDeckName }}
-                  </h2>
-
-                  <p class="text-sm text-slate-400">
-                    {{ additionalDeckCardCount }} carte
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-3">
-                <span class="text-sm font-medium text-slate-400">
-                  Ordina:
-                </span>
-
-                <div class="flex flex-wrap gap-2">
-                  @for (option of sortOptions; track option.value) {
-                    <button
-                      type="button"
-                      (click)="additionalDeckSortBy = option.value"
-                      class="rounded-lg border px-3 py-2 text-sm font-medium transition"
-                      [class.bg-purple-600]="
-                        additionalDeckSortBy === option.value
-                      "
-                      [class.border-purple-500]="
-                        additionalDeckSortBy === option.value
-                      "
-                      [class.text-white]="additionalDeckSortBy === option.value"
-                      [class.bg-slate-800]="
-                        additionalDeckSortBy !== option.value
-                      "
-                      [class.border-white-10]="
-                        additionalDeckSortBy !== option.value
-                      "
-                      [class.text-slate-300]="
-                        additionalDeckSortBy !== option.value
-                      "
-                    >
-                      {{ option.label }}
-                    </button>
+                    </div>
                   }
                 </div>
               </div>
             </div>
-
-            <app-card-gallery
-              [cards]="additionalDeck"
-              [sortBy]="additionalDeckSortBy"
-              [cardToOpenId]="cardToOpenId"
-            />
           </section>
+
+          <section class="mt-14">
+            <div class="mt-8">
+              <section class="mt-12">
+                <div
+                  class="mb-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between"
+                >
+                  <div class="flex items-center gap-4">
+                    <button
+                      type="button"
+                      (click)="
+                        openDeckBack(
+                          selectedVillain.villainDeckBack,
+                          'Dorso del Mazzo Cattivo'
+                        )
+                      "
+                      class="group shrink-0"
+                    >
+                      <img
+                        [src]="selectedVillain.villainDeckBack"
+                        alt="Dorso del Mazzo Cattivo"
+                        class="h-44 w-[117px] rounded-lg object-contain shadow-xl transition duration-300 group-hover:scale-105"
+                      />
+                    </button>
+
+                    <div>
+                      <h2 class="text-2xl font-black text-white">
+                        🎴 Mazzo Cattivo di {{ selectedVillain.name }}
+                      </h2>
+
+                      <p class="text-sm text-slate-400">
+                        {{ villainDeckCardCount }} carte
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center gap-3">
+                    <span class="text-sm font-medium text-slate-400">
+                      Ordina:
+                    </span>
+
+                    <div class="flex flex-wrap gap-2">
+                      @for (option of sortOptions; track option.value) {
+                        <button
+                          type="button"
+                          (click)="villainDeckSortBy = option.value"
+                          class="rounded-lg border px-3 py-2 text-sm font-medium transition"
+                          [class.bg-purple-600]="
+                            villainDeckSortBy === option.value
+                          "
+                          [class.border-purple-500]="
+                            villainDeckSortBy === option.value
+                          "
+                          [class.text-white]="
+                            villainDeckSortBy === option.value
+                          "
+                          [class.bg-slate-800]="
+                            villainDeckSortBy !== option.value
+                          "
+                          [class.border-white-10]="
+                            villainDeckSortBy !== option.value
+                          "
+                          [class.text-slate-300]="
+                            villainDeckSortBy !== option.value
+                          "
+                        >
+                          {{ option.label }}
+                        </button>
+                      }
+                    </div>
+                  </div>
+                </div>
+                <app-card-gallery
+                  [cards]="villainDeck"
+                  [sortBy]="villainDeckSortBy"
+                  [cardToOpenId]="cardToOpenId"
+                />
+              </section>
+
+              <section class="mt-14">
+                <div
+                  class="mb-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between"
+                >
+                  <div class="flex items-center gap-4">
+                    <button
+                      type="button"
+                      (click)="
+                        openDeckBack(
+                          selectedVillain.fateDeckBack,
+                          'Dorso del Mazzo Fato'
+                        )
+                      "
+                      class="group shrink-0"
+                    >
+                      <img
+                        [src]="selectedVillain.fateDeckBack"
+                        alt="Dorso del Mazzo Fato"
+                        class="h-44 w-[117px] rounded-lg object-contain shadow-xl transition duration-300 group-hover:scale-105"
+                      />
+                    </button>
+
+                    <div>
+                      <h2 class="text-2xl font-black text-white">
+                        🎴 Mazzo Fato di {{ selectedVillain.name }}
+                      </h2>
+
+                      <p class="text-sm text-slate-400">
+                        {{ fateDeckCardCount }} carte
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center gap-3">
+                    <span class="text-sm font-medium text-slate-400">
+                      Ordina:
+                    </span>
+
+                    <div class="flex flex-wrap gap-2">
+                      @for (option of sortOptions; track option.value) {
+                        <button
+                          type="button"
+                          (click)="fateDeckSortBy = option.value"
+                          class="rounded-lg border px-3 py-2 text-sm font-medium transition"
+                          [class.bg-purple-600]="
+                            fateDeckSortBy === option.value
+                          "
+                          [class.border-purple-500]="
+                            fateDeckSortBy === option.value
+                          "
+                          [class.text-white]="fateDeckSortBy === option.value"
+                          [class.bg-slate-800]="fateDeckSortBy !== option.value"
+                          [class.border-white-10]="
+                            fateDeckSortBy !== option.value
+                          "
+                          [class.text-slate-300]="
+                            fateDeckSortBy !== option.value
+                          "
+                        >
+                          {{ option.label }}
+                        </button>
+                      }
+                    </div>
+                  </div>
+                </div>
+
+                <app-card-gallery
+                  [cards]="fateDeck"
+                  [sortBy]="fateDeckSortBy"
+                  [cardToOpenId]="cardToOpenId"
+                />
+              </section>
+
+              @if (selectedVillain.additionalDeck) {
+                <section class="mt-14">
+                  <div
+                    class="mb-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between"
+                  >
+                    <div class="flex items-center gap-4">
+                      <button
+                        type="button"
+                        (click)="
+                          openDeckBack(
+                            selectedVillain.additionalDeckBack!,
+                            `Dorso del Mazzo ${selectedVillain.additionalDeckName}`
+                          )
+                        "
+                        class="group shrink-0"
+                      >
+                        <img
+                          [src]="selectedVillain.additionalDeckBack"
+                          alt="Dorso del Mazzo {{
+                            selectedVillain.additionalDeckName
+                          }}"
+                          class="h-44 w-[117px] rounded-lg object-contain shadow-xl transition duration-300 group-hover:scale-105"
+                        />
+                      </button>
+
+                      <div>
+                        <h2 class="text-2xl font-black text-white">
+                          🎴 Mazzo {{ selectedVillain.additionalDeckName }}
+                        </h2>
+
+                        <p class="text-sm text-slate-400">
+                          {{ additionalDeckCardCount }} carte
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                      <span class="text-sm font-medium text-slate-400">
+                        Ordina:
+                      </span>
+
+                      <div class="flex flex-wrap gap-2">
+                        @for (option of sortOptions; track option.value) {
+                          <button
+                            type="button"
+                            (click)="additionalDeckSortBy = option.value"
+                            class="rounded-lg border px-3 py-2 text-sm font-medium transition"
+                            [class.bg-purple-600]="
+                              additionalDeckSortBy === option.value
+                            "
+                            [class.border-purple-500]="
+                              additionalDeckSortBy === option.value
+                            "
+                            [class.text-white]="
+                              additionalDeckSortBy === option.value
+                            "
+                            [class.bg-slate-800]="
+                              additionalDeckSortBy !== option.value
+                            "
+                            [class.border-white-10]="
+                              additionalDeckSortBy !== option.value
+                            "
+                            [class.text-slate-300]="
+                              additionalDeckSortBy !== option.value
+                            "
+                          >
+                            {{ option.label }}
+                          </button>
+                        }
+                      </div>
+                    </div>
+                  </div>
+
+                  <app-card-gallery
+                    [cards]="additionalDeck"
+                    [sortBy]="additionalDeckSortBy"
+                    [cardToOpenId]="cardToOpenId"
+                  />
+                </section>
+              }
+            </div>
+          </section>
+
+          @if (realm) {
+            <section class="mt-16">
+              <h2 class="text-2xl font-black text-white">
+                🏰 Reame di {{ selectedVillain.name }}
+              </h2>
+
+              <img
+                [src]="realm.image"
+                class="mt-6 w-full rounded-xl shadow-xl"
+              />
+
+              <h3 class="mt-10 mb-4 text-xl font-bold text-white">
+                Luoghi del reame
+              </h3>
+
+              <app-location-gallery
+                [locations]="realm.locations"
+                (actionSelected)="goToGameplayAction($event)"
+              />
+            </section>
+          }
         }
-      </div>
-    </section>
+        @if (selectedMover) {
+          <div
+            class="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/80 p-3 sm:p-6"
+            (click)="closeMover()"
+          >
+            <div
+              class="w-full max-w-lg rounded-2xl border border-white/10 bg-slate-900 p-4 shadow-2xl sm:p-8"
+              (click)="$event.stopPropagation()"
+            >
+              <h2
+                class="mb-4 text-center text-xl font-black text-white sm:mb-6 sm:text-2xl"
+              >
+                Pedina di {{ selectedMover.name }}
+              </h2>
 
-    @if (realm) {
-      <section class="mt-16">
-        <h2 class="text-2xl font-black text-white">
-          🏰 Reame di {{ selectedVillain.name }}
-        </h2>
+              <div class="flex justify-center">
+                <img
+                  [src]="selectedMover.mover"
+                  [alt]="'Pedina di ' + selectedMover.name"
+                  class="max-h-[55vh] w-auto max-w-full object-contain sm:max-h-[70vh]"
+                />
+              </div>
 
-        <img [src]="realm.image" class="mt-6 w-full rounded-xl shadow-xl" />
+              <div class="mt-4 flex justify-end sm:mt-8">
+                <button
+                  type="button"
+                  (click)="closeMover()"
+                  class="w-full rounded-lg bg-purple-600 px-5 py-3 font-bold text-white transition hover:bg-purple-500 sm:w-auto"
+                >
+                  Chiudi
+                </button>
+              </div>
+            </div>
+          </div>
+        }
+        @if (selectedDeckBack) {
+          <div
+            class="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/80 p-3 sm:p-6"
+            (click)="closeDeckBack()"
+          >
+            <div
+              class="w-full max-w-lg rounded-2xl border border-white/10 bg-slate-900 p-4 shadow-2xl sm:p-8"
+              (click)="$event.stopPropagation()"
+            >
+              <h2
+                class="mb-4 text-center text-xl font-black text-white sm:mb-6 sm:text-2xl"
+              >
+                {{ selectedDeckBackTitle }}
+              </h2>
 
-        <h3 class="mt-10 mb-4 text-xl font-bold text-white">
-          Luoghi del reame
-        </h3>
+              <div class="flex justify-center">
+                <img
+                  [src]="selectedDeckBack"
+                  [alt]="selectedDeckBackTitle"
+                  class="max-h-[60vh] w-auto max-w-full rounded-xl object-contain shadow-2xl sm:max-h-[70vh]"
+                />
+              </div>
 
-        <app-location-gallery
-          [locations]="realm.locations"
-          (actionSelected)="goToGameplayAction($event)"
-        />
+              <div class="mt-4 flex w-full justify-end sm:mt-6">
+                <button
+                  type="button"
+                  (click)="closeDeckBack()"
+                  class="w-full rounded-lg bg-purple-600 px-5 py-3 font-bold text-white transition hover:bg-purple-500 sm:w-auto"
+                >
+                  Chiudi
+                </button>
+              </div>
+            </div>
+          </div>
+        }
+        @if (selectedVillain && showBackToVillains) {
+          <button
+            type="button"
+            (click)="scrollToVillains()"
+            class="fixed right-4 bottom-4 z-40 flex items-center gap-2 rounded-full border border-purple-500/40 bg-slate-900/95 px-4 py-3 text-sm font-bold text-white shadow-xl shadow-black/30 backdrop-blur transition hover:border-purple-400 hover:bg-slate-800 sm:right-6 sm:bottom-6 sm:px-5"
+          >
+            <span class="text-lg">↑</span>
+
+            <span class="hidden sm:inline"> Torna ai Cattivi </span>
+
+            <span class="sm:hidden"> Cattivi </span>
+          </button>
+        }
+
+        @if (showSpeedInfo) {
+          <app-speed-level-info (closed)="closeSpeedInfo()" />
+        }
       </section>
     }
-  }
-  @if (selectedMover) {
-    <div
-      class="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/80 p-3 sm:p-6"
-      (click)="closeMover()"
-    >
-      <div
-        class="w-full max-w-lg rounded-2xl border border-white/10 bg-slate-900 p-4 shadow-2xl sm:p-8"
-        (click)="$event.stopPropagation()"
-      >
-        <h2
-          class="mb-4 text-center text-xl font-black text-white sm:mb-6 sm:text-2xl"
-        >
-          Pedina di {{ selectedMover.name }}
-        </h2>
-
-        <div class="flex justify-center">
-          <img
-            [src]="selectedMover.mover"
-            [alt]="'Pedina di ' + selectedMover.name"
-            class="max-h-[55vh] w-auto max-w-full object-contain sm:max-h-[70vh]"
-          />
-        </div>
-
-        <div class="mt-4 flex justify-end sm:mt-8">
-          <button
-            type="button"
-            (click)="closeMover()"
-            class="w-full rounded-lg bg-purple-600 px-5 py-3 font-bold text-white transition hover:bg-purple-500 sm:w-auto"
-          >
-            Chiudi
-          </button>
-        </div>
-      </div>
-    </div>
-  }
-  @if (selectedDeckBack) {
-    <div
-      class="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/80 p-3 sm:p-6"
-      (click)="closeDeckBack()"
-    >
-      <div
-        class="w-full max-w-lg rounded-2xl border border-white/10 bg-slate-900 p-4 shadow-2xl sm:p-8"
-        (click)="$event.stopPropagation()"
-      >
-        <h2
-          class="mb-4 text-center text-xl font-black text-white sm:mb-6 sm:text-2xl"
-        >
-          {{ selectedDeckBackTitle }}
-        </h2>
-
-        <div class="flex justify-center">
-          <img
-            [src]="selectedDeckBack"
-            [alt]="selectedDeckBackTitle"
-            class="max-h-[60vh] w-auto max-w-full rounded-xl object-contain shadow-2xl sm:max-h-[70vh]"
-          />
-        </div>
-
-        <div class="mt-4 flex w-full justify-end sm:mt-6">
-          <button
-            type="button"
-            (click)="closeDeckBack()"
-            class="w-full rounded-lg bg-purple-600 px-5 py-3 font-bold text-white transition hover:bg-purple-500 sm:w-auto"
-          >
-            Chiudi
-          </button>
-        </div>
-      </div>
-    </div>
-  }
-  @if (selectedVillain && showBackToVillains) {
-    <button
-      type="button"
-      (click)="scrollToVillains()"
-      class="fixed right-4 bottom-4 z-40 flex items-center gap-2 rounded-full border border-purple-500/40 bg-slate-900/95 px-4 py-3 text-sm font-bold text-white shadow-xl shadow-black/30 backdrop-blur transition hover:border-purple-400 hover:bg-slate-800 sm:right-6 sm:bottom-6 sm:px-5"
-    >
-      <span class="text-lg">↑</span>
-
-      <span class="hidden sm:inline"> Torna ai Cattivi </span>
-
-      <span class="sm:hidden"> Cattivi </span>
-    </button>
-  }
-
-  @if (showSpeedInfo) {
-    <app-speed-level-info (closed)="closeSpeedInfo()" />
-  }
+  </section>
 </div>

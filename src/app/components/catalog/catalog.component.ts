@@ -30,6 +30,7 @@ import { VillainMechanics } from '../../models/villain-mechanics.model';
 import { ExpansionCardComponent } from './expansion-card/expansion-card.component';
 import { SpeedLevelInfoComponent } from './speed-level-info/speed-level-info.component';
 
+type VillainousVersion = 'disney' | 'marvel';
 @Component({
   selector: 'app-catalog',
   standalone: true,
@@ -37,7 +38,7 @@ import { SpeedLevelInfoComponent } from './speed-level-info/speed-level-info.com
     CardGalleryComponent,
     LocationGalleryComponent,
     ExpansionCardComponent,
-    SpeedLevelInfoComponent
+    SpeedLevelInfoComponent,
   ],
   templateUrl: './catalog.component.html',
 })
@@ -56,6 +57,8 @@ export class CatalogComponent implements OnDestroy {
   showBackToVillains = false;
   showSpeedInfo = false;
   private villainsObserver?: IntersectionObserver;
+
+selectedVersion: VillainousVersion | null = null;
 
   villainDeckSortBy: CardSort = 'quantity';
   fateDeckSortBy: CardSort = 'quantity';
@@ -116,6 +119,10 @@ export class CatalogComponent implements OnDestroy {
 
       this.selectVillain(villain);
     }
+  }
+
+  selectVersion(version: VillainousVersion): void {
+    this.selectedVersion = version;
   }
 
   selectExpansion(expansion: Expansion): void {
