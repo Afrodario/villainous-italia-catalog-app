@@ -30,7 +30,7 @@ import { VillainMechanics } from '../../models/villain-mechanics.model';
 import { ExpansionCardComponent } from './expansion-card/expansion-card.component';
 import { SpeedLevelInfoComponent } from './speed-level-info/speed-level-info.component';
 
-type VillainousVersion = 'disney' | 'marvel';
+type VillainousVersion = 'disney' | 'marvel' | 'starwars';
 @Component({
   selector: 'app-catalog',
   standalone: true,
@@ -58,7 +58,7 @@ export class CatalogComponent implements OnDestroy {
   showSpeedInfo = false;
   private villainsObserver?: IntersectionObserver;
 
-selectedVersion: VillainousVersion | null = null;
+  selectedVersion: VillainousVersion | null = null;
 
   villainDeckSortBy: CardSort = 'quantity';
   fateDeckSortBy: CardSort = 'quantity';
@@ -116,6 +116,9 @@ selectedVersion: VillainousVersion | null = null;
       this.villains = this.villainRepository.getByExpansion(
         this.selectedExpansion.id,
       );
+
+      // La carta proviene attualmente dal catalogo Disney.
+      this.selectedVersion = 'disney';
 
       this.selectVillain(villain);
     }
