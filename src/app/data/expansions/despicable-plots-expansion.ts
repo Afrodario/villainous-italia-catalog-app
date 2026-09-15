@@ -6,7 +6,7 @@ import { LADY_TREMAINE } from '../villains/4-despicable-plots/lady-tremaine-vill
 export const DESPICABLE_PLOTS: Expansion = {
   id: 'despicable-plots',
   name: 'Despicable Plots',
-  coverImage: 'assets/images/expansions/despicable-plots-box.png',
+  coverImage: 'assets/images-webp/expansions/despicable-plots-box.webp',
   releaseDate: new Date('2021-02'),
   expansionNumber: 4,
   villains: [GASTON, HORNED_KING, LADY_TREMAINE],

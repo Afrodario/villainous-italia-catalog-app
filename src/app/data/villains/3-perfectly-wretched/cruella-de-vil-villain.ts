@@ -5,8 +5,8 @@ export const CRUELLA_DE_VIL: Villain = {
   id: 'cruella-de-vil',
   name: 'Crudelia de Mon',
   expansionId: EXPANSIONS_IDS.PerfectlyWretched,
-  portrait: 'assets/images/cards/cruella_de_vil/Cruella_De_Vil.png',
-  mover: 'assets/images/movers/Cruella_De_Vilmover.png',
+  portrait: 'assets/images-webp/cards/cruella_de_vil/Cruella_De_Vil.webp',
+  mover: 'assets/images-webp/movers/Cruella_De_Vilmover.webp',
   mechanics: {
     setup: `Cruella De Vil has Puppy Tokens, which track her completion of her Objective. 
     There are twelve tokens: three for each location (two each with 11 Puppies, one each with 22 Puppies). 
@@ -19,11 +19,11 @@ export const CRUELLA_DE_VIL: Villain = {
     victory: ``,
   },
   objective: 'Start your turn with at least 99 captured Puppies.',
-  objectivePortrait: `assets/images/cards/cruella_de_vil/Cruella_De_Vil_Objective.jpg`,
+  objectivePortrait: `assets/images-webp/cards/cruella_de_vil/Cruella_De_Vil_Objective.webp`,
   quote: `"I'll get even. Just wait. You'll be sorry."`,
-  villainDeckBack: `assets/images/cards/cruella_de_vil/Cruella_De_Vil_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/cruella_de_vil/Cruella_De_Vil_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/cruella_de_vil/Cruella_De_Vil_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/cruella_de_vil/Cruella_De_Vil_Fate_Back.webp`,
   additionalTokens: true,
-  additionalTokensPath: `assets/images/cards/cruella_de_vil/Cruella_De_Vil_Puppytokens.png`,
+  additionalTokensPath: `assets/images-webp/cards/cruella_de_vil/Cruella_De_Vil_Puppytokens.webp`,
   speedLevel: 'red'
 };

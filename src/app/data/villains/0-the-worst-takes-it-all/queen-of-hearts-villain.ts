@@ -5,8 +5,8 @@ export const QUEEN_OF_HEARTS: Villain = {
   id: 'queen-of-hearts',
   name: 'Regina di Cuori',
   expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
-  portrait: 'assets/images/cards/queen_of_hearts/Queen_of_Hearts.png',
-  mover: 'assets/images/movers/Queen_of_Heartsmover.png',
+  portrait: 'assets/images-webp/cards/queen_of_hearts/Queen_of_Hearts.webp',
+  mover: 'assets/images-webp/movers/Queen_of_Heartsmover.webp',
   mechanics: {
     setup: ``,
     rules: [
@@ -19,9 +19,9 @@ export const QUEEN_OF_HEARTS: Villain = {
     victory: ``,
   },
   objective: 'Have a Wicket at each location and successfully take a shot.',
-  objectivePortrait: `assets/images/cards/queen_of_hearts/Queen_of_Hearts_Objective.jpg`,
+  objectivePortrait: `assets/images-webp/cards/queen_of_hearts/Queen_of_Hearts_Objective.webp`,
   quote: `"If I lose my temper, you lose your head."`,
-  villainDeckBack: `assets/images/cards/queen_of_hearts/Queen_of_Hearts_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/queen_of_hearts/Queen_of_Hearts_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/queen_of_hearts/Queen_of_Hearts_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/queen_of_hearts/Queen_of_Hearts_Fate_Back.webp`,
   speedLevel: 'green'
 };

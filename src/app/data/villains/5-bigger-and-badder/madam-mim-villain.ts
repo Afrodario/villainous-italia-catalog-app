@@ -5,8 +5,8 @@ export const MADAM_MIM: Villain = {
   id: 'madam-mim',
   name: 'Maga Magò',
   expansionId: EXPANSIONS_IDS.BiggerAndBadder,
-  portrait: 'assets/images/cards/madam_mim/Madam_Mim.png',
-  mover: 'assets/images/movers/Madammimmover.png',
+  portrait: 'assets/images-webp/cards/madam_mim/Madam_Mim.webp',
+  mover: 'assets/images-webp/movers/Madammimmover.webp',
   mechanics: {
     setup: `Madam Mim has two separate Fate decks with different card backs: a traditional one that functions as expected, though with only eight cards, and a deck solely for Merlin's Transformations. Madam Mim starts with a random Merlin Transformation on her board at Dueling Ground, and whenever she defeats one, she plays another one to Dueling Ground.`,
     rules: [
@@ -29,12 +29,12 @@ export const MADAM_MIM: Villain = {
     },
   },
   objective: "Defeat all of Merlin's Transformations.",
-  objectivePortrait: `assets/images/cards/madam_mim/Madam_Mim_Objective.jpg`,
+  objectivePortrait: `assets/images-webp/cards/madam_mim/Madam_Mim_Objective.webp`,
   quote: `"Want to fight? Want to have a Wizard's Duel?!"`,
-  villainDeckBack: `assets/images/cards/madam_mim/Madam_Mim_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/madam_mim/Madam_Mim_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/madam_mim/Madam_Mim_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/madam_mim/Madam_Mim_Fate_Back.webp`,
   additionalDeck: true,
-  additionalDeckBack: `assets/images/cards/madam_mim/Merlin_Back.png`,
+  additionalDeckBack: `assets/images-webp/cards/madam_mim/Merlin_Back.webp`,
   additionalDeckName: `Trasformazioni di Merlino`,
   speedLevel: 'green'
 };

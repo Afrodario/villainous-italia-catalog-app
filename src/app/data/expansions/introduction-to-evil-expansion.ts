@@ -7,7 +7,7 @@ import { URSULA } from '../villains/0-the-worst-takes-it-all/ursula-villain';
 export const INTRODUCTION_TO_EVIL: Expansion = {
   id: 'introduction-to-evil',
   name: 'Introduction to Evil',
-  coverImage: 'assets/images/expansions/introduction-to-evil-box.png',
+  coverImage: 'assets/images-webp/expansions/introduction-to-evil-box.webp',
   releaseDate: new Date('2024-08'),
   expansionNumber: 0,
   villains: [CAPTAIN_HOOK, MALEFICENT, PRINCE_JOHN, URSULA],

@@ -5,8 +5,8 @@ export const JAFAR: Villain = {
   id: 'jafar',
   name: 'Jafar',
   expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
-  portrait: 'assets/images/cards/jafar/Jafar.png',
-  mover: 'assets/images/movers/Jafarmover.png',
+  portrait: 'assets/images-webp/cards/jafar/Jafar.webp',
+  mover: 'assets/images-webp/movers/Jafarmover.webp',
   mechanics: {
     setup: ``,
     rules: [],
@@ -14,9 +14,9 @@ export const JAFAR: Villain = {
   },
   objective:
     "Start your turn with the Magic Lamp in Sultan's Palace and Genie under your control.",
-  objectivePortrait: `assets/images/cards/jafar/Jafar_Objective.jpg`,
+  objectivePortrait: `assets/images-webp/cards/jafar/Jafar_Objective.webp`,
   quote: `"Finally, you will bow to me!"`,
-  villainDeckBack: `assets/images/cards/jafar/Jafar_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/jafar/Jafar_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/jafar/Jafar_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/jafar/Jafar_Fate_Back.webp`,
   speedLevel: 'orange'
 };

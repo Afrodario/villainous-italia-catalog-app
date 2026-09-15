@@ -5,8 +5,8 @@ export const RATIGAN: Villain = {
   id: 'ratigan',
   name: 'Rattigan',
   expansionId: EXPANSIONS_IDS.EvilComesPrepared,
-  portrait: 'assets/images/cards/ratigan/Ratigan.png',
-  mover: 'assets/images/movers/Ratiganmover.png',
+  portrait: 'assets/images-webp/cards/ratigan/Ratigan.webp',
+  mover: 'assets/images-webp/movers/Ratiganmover.webp',
   mechanics: {
     setup: ``,
     rules: [
@@ -19,9 +19,9 @@ export const RATIGAN: Villain = {
   },
   objective:
     'Start your turn with the Robot Queen at Buckingham Palace / Defeat Basil.',
-  objectivePortrait: `assets/images/cards/ratigan/Ratigan_Objective.png`,
+  objectivePortrait: `assets/images-webp/cards/ratigan/Ratigan_Objective.webp`,
   quote: `"Oh this is wicked. So delightfully wicked!"`,
-  villainDeckBack: `assets/images/cards/ratigan/Ratigan_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/ratigan/Ratigan_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/ratigan/Ratigan_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/ratigan/Ratigan_Fate_Back.webp`,
   speedLevel: 'yellow'
 };

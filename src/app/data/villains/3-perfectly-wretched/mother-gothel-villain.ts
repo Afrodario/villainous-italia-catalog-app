@@ -5,8 +5,8 @@ export const MOTHER_GOTHEL: Villain = {
   id: 'mother-gothel',
   name: 'Madre Gothel',
   expansionId: EXPANSIONS_IDS.PerfectlyWretched,
-  portrait: 'assets/images/cards/mother_gothel/Mother_Gothel.png',
-  mover: 'assets/images/movers/Mother_Gothelmover.png',
+  portrait: 'assets/images-webp/cards/mother_gothel/Mother_Gothel.webp',
+  mover: 'assets/images-webp/movers/Mother_Gothelmover.webp',
   mechanics: {
     setup: `Mother Gothel has a Hero, Rapunzel, that is always in her Realm. At the start of the game, Mother Gothel plays Rapunzel (who is printed on a tile instead of a card) to Rapunzel's Tower.`,
     rules: [
@@ -18,9 +18,9 @@ export const MOTHER_GOTHEL: Villain = {
     victory: ``,
   },
   objective: 'Start your turn with at least 10 Trust.',
-  objectivePortrait: `assets/images/cards/mother_gothel/Mother_Gothel_Objective.jpg`,
+  objectivePortrait: `assets/images-webp/cards/mother_gothel/Mother_Gothel_Objective.webp`,
   quote: `"You want me to be the bad guy? Fine. Now I'm the bad guy."`,
-  villainDeckBack: `assets/images/cards/mother_gothel/Mother_Gothel_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/mother_gothel/Mother_Gothel_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/mother_gothel/Mother_Gothel_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/mother_gothel/Mother_Gothel_Fate_Back.webp`,
   speedLevel: 'red'
 };

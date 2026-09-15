@@ -4,7 +4,7 @@ import { OOGIE_BOOGIE } from '../villains/6-filled-with-fright/oogie-boogie-vill
 export const FILLED_WITH_FRIGHT: Expansion = {
   id: 'filled-with-fright',
   name: 'Filled with Fright',
-  coverImage: 'assets/images/expansions/filled-with-fright-box.png',
+  coverImage: 'assets/images-webp/expansions/filled-with-fright-box.webp',
   releaseDate: new Date('2023-10'),
   expansionNumber: 6,
   villains: [OOGIE_BOOGIE],

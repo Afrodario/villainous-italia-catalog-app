@@ -5,8 +5,8 @@ export const SCAR: Villain = {
   id: 'scar',
   name: 'Scar',
   expansionId: EXPANSIONS_IDS.EvilComesPrepared,
-  portrait: 'assets/images/cards/scar/Scar.png',
-  mover: 'assets/images/movers/Scarmover.png',
+  portrait: 'assets/images-webp/cards/scar/Scar.webp',
+  mover: 'assets/images-webp/movers/Scarmover.webp',
   mechanics: {
     setup: ``,
     rules: [
@@ -17,9 +17,9 @@ export const SCAR: Villain = {
   },
   objective:
     'Start your turn with at least 15 Strength in the Succession Pile.',
-  objectivePortrait: `assets/images/cards/scar/Scar_Objective.png`,
+  objectivePortrait: `assets/images-webp/cards/scar/Scar_Objective.webp`,
   quote: `"Long live the king."`,
-  villainDeckBack: `assets/images/cards/scar/Scar_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/scar/Scar_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/scar/Scar_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/scar/Scar_Fate_Back.webp`,
   speedLevel: 'red'
 };

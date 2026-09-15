@@ -5,8 +5,8 @@ export const KING_CANDY: Villain = {
   id: 'king-candy',
   name: 'Re Candito',
   expansionId: EXPANSIONS_IDS.SugarAndSpite,
-  portrait: 'assets/images/cards/king_candy/King_Candy.png',
-  mover: 'assets/images/movers/Kingcandymover.png',
+  portrait: 'assets/images-webp/cards/king_candy/King_Candy.webp',
+  mover: 'assets/images-webp/movers/Kingcandymover.webp',
   mechanics: {
     setup: `King Candy has a unique Realm setup which he moves through uniquely: his actions are placed along a figure-eight racetrack, and his mover can move forward one to four actions each turn, starting the game at a special Start/Finish action. After moving, he may perform the action he is on, as well as the actions immediately in front of and behind him. Heroes can cover parts of the racetrack or change how many actions forward he can move.`,
     rules: [
@@ -20,11 +20,11 @@ export const KING_CANDY: Villain = {
   },
   objective:
     'Pass Start/Finish with a Glitch attached to Vanellope Von Schweetz',
-  objectivePortrait: `assets/images/cards/king_candy/King_Candy_Objective.png`,
+  objectivePortrait: `assets/images-webp/cards/king_candy/King_Candy_Objective.webp`,
   quote: `"Welcome to the boss level!"`,
-  villainDeckBack: `assets/images/cards/king_candy/King_Candy_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/king_candy/King_Candy_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/king_candy/King_Candy_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/king_candy/King_Candy_Fate_Back.webp`,
   additionalTokens: true,
-  additionalTokensPath: `assets/images/cards/king_candy/Racer_Token.png`,
+  additionalTokensPath: `assets/images-webp/cards/king_candy/Racer_Token.webp`,
   speedLevel: 'orange'
 };

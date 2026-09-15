@@ -5,8 +5,8 @@ export const PETE: Villain = {
   id: 'pete',
   name: 'Gambadilegno',
   expansionId: EXPANSIONS_IDS.PerfectlyWretched,
-  portrait: 'assets/images/cards/pete/Pete.png',
-  mover: 'assets/images/movers/Petemover.png',
+  portrait: 'assets/images-webp/cards/pete/Pete.webp',
+  mover: 'assets/images-webp/movers/Petemover.webp',
   mechanics: {
     setup: `Pete has a special setup: he has five Goal Tokens, and he randomly places four of them in his Realm, one to each location.`,
 
@@ -29,11 +29,11 @@ export const PETE: Villain = {
     },
   },
   objective: 'Complete the four selected Goals.',
-  objectivePortrait: `assets/images/cards/pete/Pete_Objective.jpg`,
+  objectivePortrait: `assets/images-webp/cards/pete/Pete_Objective.webp`,
   quote: `"I'm gonna knock you right into next week!"`,
-  villainDeckBack: `assets/images/cards/pete/Pete_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/pete/Pete_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/pete/Pete_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/pete/Pete_Fate_Back.webp`,
   additionalTokens: true,
-  additionalTokensPath: `assets/images/cards/pete/Pete_Goaltokens.png`,
+  additionalTokensPath: `assets/images-webp/cards/pete/Pete_Goaltokens.webp`,
   speedLevel: 'orange'
 };

@@ -6,7 +6,7 @@ import { SYNDROME } from '../villains/5-bigger-and-badder/syndrome-villain';
 export const BIGGER_AND_BADDER: Expansion = {
   id: 'bigger-and-badder',
   name: 'Bigger and Badder',
-  coverImage: 'assets/images/expansions/bigger-and-badder-box.png',
+  coverImage: 'assets/images-webp/expansions/bigger-and-badder-box.webp',
   releaseDate: new Date('2022-02'),
   expansionNumber: 5,
   villains: [SYNDROME, LOTSO, MADAM_MIM],

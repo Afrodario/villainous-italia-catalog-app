@@ -5,8 +5,8 @@ export const YZMA: Villain = {
   id: 'yzma',
   name: 'Yzma',
   expansionId: EXPANSIONS_IDS.EvilComesPrepared,
-  portrait: 'assets/images/cards/yzma/Yzma.png',
-  mover: 'assets/images/movers/Yzmamover.png',
+  portrait: 'assets/images-webp/cards/yzma/Yzma.webp',
+  mover: 'assets/images-webp/movers/Yzmamover.webp',
   mechanics: {
     setup: `Yzma has a unique setup for her Fate deck: at the start of the game, it is dealt into four different Fate decks, one for each location, placed above its corresponding location (with room to spare to place Heroes).`,
     rules: [
@@ -18,9 +18,9 @@ export const YZMA: Villain = {
     victory: ``,
   },
   objective: 'Defeat Kuzco using Kronk.',
-  objectivePortrait: `assets/images/cards/yzma/Yzma_Objective.jpg`,
+  objectivePortrait: `assets/images-webp/cards/yzma/Yzma_Objective.webp`,
   quote: `"Our moment of triumph approaches!"`,
-  villainDeckBack: `assets/images/cards/yzma/Yzma_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/yzma/Yzma_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/yzma/Yzma_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/yzma/Yzma_Fate_Back.webp`,
   speedLevel: 'yellow'
 };

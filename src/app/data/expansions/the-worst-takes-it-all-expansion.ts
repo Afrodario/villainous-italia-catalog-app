@@ -9,7 +9,7 @@ import { URSULA } from '../villains/0-the-worst-takes-it-all/ursula-villain';
 export const THE_WORST_TAKES_IT_ALL: Expansion = {
   id: 'the-worst-takes-it-all',
   name: 'The Worst Takes It All',
-  coverImage: 'assets/images/expansions/the-worst-takes-it-all-box.png',
+  coverImage: 'assets/images-webp/expansions/the-worst-takes-it-all-box.webp',
   releaseDate: new Date('2018-07'),
   expansionNumber: 0,
   villains: [

@@ -5,8 +5,8 @@ export const HADES: Villain = {
   id: 'hades',
   name: 'Ade',
   expansionId: EXPANSIONS_IDS.WickedToTheCore,
-  portrait: 'assets/images/cards/hades/Hades.png',
-  mover: 'assets/images/movers/Hadesmover.png',
+  portrait: 'assets/images-webp/cards/hades/Hades.webp',
+  mover: 'assets/images-webp/movers/Hadesmover.webp',
   mechanics: {
     setup: ``,
     rules: [
@@ -17,9 +17,9 @@ export const HADES: Villain = {
     victory: ``,
   },
   objective: 'Start your turn with three Titans at Mount Olympus.',
-  objectivePortrait: `assets/images/cards/hades/Hades_Objective.jpg`,
+  objectivePortrait: `assets/images-webp/cards/hades/Hades_Objective.webp`,
   quote: `"Everybody's got a weakness."`,
-  villainDeckBack: `assets/images/cards/hades/Hades_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/hades/Hades_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/hades/Hades_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/hades/Hades_Fate_Back.webp`,
   speedLevel: 'red'
 };

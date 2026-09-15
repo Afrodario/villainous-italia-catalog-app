@@ -5,8 +5,8 @@ export const TAMATOA: Villain = {
   id: 'tamatoa',
   name: 'Tamatoa',
   expansionId: EXPANSIONS_IDS.TreacherousTides,
-  portrait: 'assets/images/cards/tamatoa/Tamatoa.png',
-  mover: 'assets/images/movers/Tamatoamover.png',
+  portrait: 'assets/images-webp/cards/tamatoa/Tamatoa.webp',
+  mover: 'assets/images-webp/movers/Tamatoamover.webp',
   mechanics: {
     setup: ``,
     rules: [
@@ -17,12 +17,12 @@ export const TAMATOA: Villain = {
     victory: `Tamatoa must get Maui's Hook and the Heart of Te Fiti to his lair. He plays the Hook from his Villain deck, while the Heart must be taken from his Fate deck, and he can find it using Crustacean With the Power of Creation. Moana and Maui can steal the Items from him, and he will need to defeat them to reclaim them.`,
   },
   objective: "Have the Heart of Te Fiti and Maui's Hook at Tamatoa's Lair.",
-  objectivePortrait: `assets/images/cards/tamatoa/Tamatoa_Objective.png`,
+  objectivePortrait: `assets/images-webp/cards/tamatoa/Tamatoa_Objective.webp`,
   quote: `"What have we here? It's a sparkly, shiny... Wait a minute. Ugh! It's a human!"`,
-  villainDeckBack: `assets/images/cards/tamatoa/Tamatoa_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/tamatoa/Tamatoa_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/tamatoa/Tamatoa_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/tamatoa/Tamatoa_Fate_Back.webp`,
   additionalDeck: true,
-  additionalDeckBack: `assets/images/cards/tamatoa/Tamatoa_Maui_Back.png`,
+  additionalDeckBack: `assets/images-webp/cards/tamatoa/Tamatoa_Maui_Back.webp`,
   additionalDeckName: `Maui`,
   speedLevel: 'yellow'
 };

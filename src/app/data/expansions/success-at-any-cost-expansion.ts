@@ -3,7 +3,7 @@ import { Expansion } from '../../models/expansion.model';
 export const SUCCESS_AT_ANY_COST: Expansion = {
   id: 'success-at-any-cost',
   name: 'Success at Any Cost',
-  coverImage: 'assets/images/expansions/success-at-any-cost-box.png',
+  coverImage: 'assets/images-webp/expansions/success-at-any-cost-box.webp',
   releaseDate: new Date('2026-07'),
   expansionNumber: 9,
   villains: [],

@@ -3,7 +3,7 @@ import { Expansion } from '../../models/expansion.model';
 export const COME_WE_FLY: Expansion = {
   id: 'come-we-fly',
   name: 'Come, We Fly!',
-  coverImage: 'assets/images/expansions/come-we-fly-box.png',
+  coverImage: 'assets/images-webp/expansions/come-we-fly-box.webp',
   releaseDate: new Date('2026-07'),
   expansionNumber: 10,
   villains: [],

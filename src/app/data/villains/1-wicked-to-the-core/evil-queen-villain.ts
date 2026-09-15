@@ -5,8 +5,8 @@ export const EVIL_QUEEN: Villain = {
   id: 'evil-queen',
   name: 'Regina Cattiva',
   expansionId: EXPANSIONS_IDS.WickedToTheCore,
-  portrait: 'assets/images/cards/evil_queen/Evil_Queen.png',
-  mover: 'assets/images/movers/Evil_Queenmover.png',
+  portrait: 'assets/images-webp/cards/evil_queen/Evil_Queen.webp',
+  mover: 'assets/images-webp/movers/Evil_Queenmover.webp',
   mechanics: {
     setup: ``,
     rules: [
@@ -17,10 +17,10 @@ export const EVIL_QUEEN: Villain = {
     victory: ``,
   },
   objective: 'Defeat Snow White.',
-  objectivePortrait: `assets/images/cards/evil_queen/Evil_Queen_Objective.jpg`,
+  objectivePortrait: `assets/images-webp/cards/evil_queen/Evil_Queen_Objective.webp`,
   quote: `"I'll be the fairest in the land!"`,
-  villainDeckBack: `assets/images/cards/evil_queen/Evil_Queen_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/evil_queen/Evil_Queen_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/evil_queen/Evil_Queen_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/evil_queen/Evil_Queen_Fate_Back.webp`,
   additionalSetIds: [EXPANSIONS_IDS.DarknessBrewing],
   speedLevel: 'green'
 };

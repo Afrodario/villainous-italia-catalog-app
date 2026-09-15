@@ -5,8 +5,8 @@ export const DAVY_JONES: Villain = {
   id: 'davy-jones',
   name: 'Davy Jones',
   expansionId: EXPANSIONS_IDS.TreacherousTides,
-  portrait: 'assets/images/cards/davy_jones/Davy_Jones.png',
-  mover: 'assets/images/movers/Davyjonesmover.png',
+  portrait: 'assets/images-webp/cards/davy_jones/Davy_Jones.webp',
+  mover: 'assets/images-webp/movers/Davyjonesmover.webp',
   mechanics: {
     setup: `Davy Jones has five Treasure Tokens, each with a different name and Ability. They start the game in a shuffled pile face down.`,
     rules: [
@@ -27,11 +27,11 @@ export const DAVY_JONES: Villain = {
     },
   },
   objective: 'Collect all 5 Treasure Tokens',
-  objectivePortrait: `assets/images/cards/davy_jones/Davy_Jones_Objective.png`,
+  objectivePortrait: `assets/images-webp/cards/davy_jones/Davy_Jones_Objective.webp`,
   quote: `"Life is cruel. Why should the afterlife be any different?"`,
-  villainDeckBack: `assets/images/cards/davy_jones/Davy_Jones_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/davy_jones/Davy_Jones_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/davy_jones/Davy_Jones_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/davy_jones/Davy_Jones_Fate_Back.webp`,
   additionalTokens: true,
-  additionalTokensPath: `assets/images/cards/davy_jones/Treasure_Tokens.png`,
+  additionalTokensPath: `assets/images-webp/cards/davy_jones/Treasure_Tokens.webp`,
   speedLevel: 'red'
 };

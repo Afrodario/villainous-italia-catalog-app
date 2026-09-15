@@ -5,8 +5,8 @@ export const SYNDROME: Villain = {
   id: 'syndrome',
   name: 'Sindrome',
   expansionId: EXPANSIONS_IDS.BiggerAndBadder,
-  portrait: 'assets/images/cards/syndrome/Syndrome.png',
-  mover: 'assets/images/movers/Syndromemover.png',
+  portrait: 'assets/images-webp/cards/syndrome/Syndrome.webp',
+  mover: 'assets/images-webp/movers/Syndromemover.webp',
   mechanics: {
     setup: `Syndrome has a unique setup and progression mechanic using Omnidroid tiles. He starts the game with Omnidroid v.X8 at Nomanisan Island on his side of the board, and he can upgrade his Omnidroid by using his current model in a Vanquish action and discarding it, then removing Major Modifications from his Realm.`,
     rules: [
@@ -16,9 +16,9 @@ export const SYNDROME: Villain = {
     victory: `Syndrome must activate Syndrome's Remote while at Omnidroid v.10's location to defeat it, then clear his Realm of Heroes. To do this, he must first upgrade his Omnidroid v.X8 to Omnidroid v.X9, then to Omnidroid v.10, using them in Vanquish actions and removing Major Modifications from his Realm. He can use 15 Years Later or Mirage to find Heroes for his Omnidroids to Vanquish, or wait until an opponent Fates him. To defeat Heroes, he can use his Omnidroids, his many Allies, and Bio Probe. `,
   },
   objective: 'Defeat Omnidroid v.10 and have no Heroes in your Realm',
-  objectivePortrait: `assets/images/cards/syndrome/Syndrome_Objective.jpg`,
+  objectivePortrait: `assets/images-webp/cards/syndrome/Syndrome_Objective.webp`,
   quote: `"You can't count on anyone, especially your heroes."`,
-  villainDeckBack: `assets/images/cards/syndrome/Syndrome_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/syndrome/Syndrome_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/syndrome/Syndrome_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/syndrome/Syndrome_Fate_Back.webp`,
   speedLevel: 'yellow'
 };

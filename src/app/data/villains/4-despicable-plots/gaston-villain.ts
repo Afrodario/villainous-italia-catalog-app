@@ -5,8 +5,8 @@ export const GASTON: Villain = {
   id: 'gaston',
   name: 'Gaston',
   expansionId: EXPANSIONS_IDS.DespicablePlots,
-  portrait: 'assets/images/cards/gaston/Gaston.png',
-  mover: 'assets/images/movers/Gastonmover.png',
+  portrait: 'assets/images-webp/cards/gaston/Gaston.webp',
+  mover: 'assets/images-webp/movers/Gastonmover.webp',
   mechanics: {
     setup: ``,
     rules: [
@@ -16,11 +16,11 @@ export const GASTON: Villain = {
     victory: `Gaston must remove all 8 Obstacles from his board. He does so by using Effects or Conditions like Temper or Beautiful as Me, by activating Monsieur D'Arque, and by defeating Beast or Maurice. `,
   },
   objective: 'Remove all 8 Obstacles',
-  objectivePortrait: `assets/images/cards/gaston/Gaston_Objective.png`,
+  objectivePortrait: `assets/images-webp/cards/gaston/Gaston_Objective.webp`,
   quote: `"And don't I deserve the best?"`,
-  villainDeckBack: `assets/images/cards/gaston/Gaston_Villain_Back.jpg`,
-  fateDeckBack: `assets/images/cards/gaston/Gaston_Fate_Back.jpg`,
+  villainDeckBack: `assets/images-webp/cards/gaston/Gaston_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/gaston/Gaston_Fate_Back.webp`,
   additionalTokens: true,
-  additionalTokensPath: `assets/images/cards/gaston/Obstacletokens.png`,
+  additionalTokensPath: `assets/images-webp/cards/gaston/Obstacletokens.webp`,
   speedLevel: 'orange'
 };

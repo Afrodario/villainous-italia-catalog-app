@@ -5,8 +5,8 @@ export const SHERE_KHAN: Villain = {
   id: 'shere-khan',
   name: 'Shere Khan',
   expansionId: EXPANSIONS_IDS.SugarAndSpite,
-  portrait: 'assets/images/cards/shere_khan/Shere_Khan.png',
-  mover: 'assets/images/movers/Sherekhanmover.png',
+  portrait: 'assets/images-webp/cards/shere_khan/Shere_Khan.webp',
+  mover: 'assets/images-webp/movers/Sherekhanmover.webp',
   mechanics: {
     setup: ``,
     rules: [
@@ -17,11 +17,11 @@ export const SHERE_KHAN: Villain = {
   },
   objective:
     'Defeat Mowgli while there are no Fire Tokens in his Realm.',
-  objectivePortrait: `assets/images/cards/shere_khan/Shere_Khan_Objective.png`,
+  objectivePortrait: `assets/images-webp/cards/shere_khan/Shere_Khan_Objective.webp`,
   quote: `"Now, I'm going to close my eyes and count to ten. It makes the chase more interesting ... for me."`,
-  villainDeckBack: `assets/images/cards/shere_khan/Shere_Khan_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/shere_khan/Shere_Khan_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/shere_khan/Shere_Khan_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/shere_khan/Shere_Khan_Fate_Back.webp`,
   additionalTokens: true,
-  additionalTokensPath: `assets/images/cards/shere_khan/Fire_Token.png`,
+  additionalTokensPath: `assets/images-webp/cards/shere_khan/Fire_Token.webp`,
   speedLevel: 'green'
 };

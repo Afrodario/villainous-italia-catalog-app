@@ -5,8 +5,8 @@ export const URSULA: Villain = {
   id: 'ursula',
   name: 'Ursula',
   expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
-  portrait: 'assets/images/cards/ursula/Ursula.png',
-  mover: 'assets/images/movers/Ursulamover.png',
+  portrait: 'assets/images-webp/cards/ursula/Ursula.webp',
+  mover: 'assets/images-webp/movers/Ursulamover.webp',
   mechanics: {
     setup: ``,
     rules: [
@@ -16,9 +16,9 @@ export const URSULA: Villain = {
     victory: ``,
   },
   objective: `Start your turn with the Trident and the Crown at Ursula's lair.`,
-  objectivePortrait: `assets/images/cards/ursula/Ursula_Objective.jpg`,
+  objectivePortrait: `assets/images-webp/cards/ursula/Ursula_Objective.webp`,
   quote: `"The sea and all its spoils bow to my power!"`,
-  villainDeckBack: `assets/images/cards/ursula/Ursula_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/ursula/Ursula_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/ursula/Ursula_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/ursula/Ursula_Fate_Back.webp`,
   speedLevel: 'red'
 };

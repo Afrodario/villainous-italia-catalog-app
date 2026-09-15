@@ -5,8 +5,8 @@ export const LADY_TREMAINE: Villain = {
   id: 'lady-tremaine',
   name: 'La Matrigna',
   expansionId: EXPANSIONS_IDS.DespicablePlots,
-  portrait: 'assets/images/cards/lady_tremaine/Lady_Tremaine.png',
-  mover: 'assets/images/movers/Lady_Tremainemover.png',
+  portrait: 'assets/images-webp/cards/lady_tremaine/Lady_Tremaine.webp',
+  mover: 'assets/images-webp/movers/Lady_Tremainemover.webp',
   mechanics: {
     setup: ``,
     rules: [
@@ -18,11 +18,11 @@ export const LADY_TREMAINE: Villain = {
     victory: `Lady Tremaine must marry either Drizella or Anastasia to The Prince. To do this, she must first unlock The Ballroom by playing Invitation from the King. Then she must have either Ball Gown Drizella or Ball Gown Anastasia (which can only be played to replace their informal versions already in play) in The Ballroom with The Prince, and then activate Wedding Bells when no Glass Slippers are present.`,
   },
   objective: 'Marry Drizella or Anastacia to the Prince',
-  objectivePortrait: `assets/images/cards/lady_tremaine/Lady_Tremaine_Objective.png`,
+  objectivePortrait: `assets/images-webp/cards/lady_tremaine/Lady_Tremaine_Objective.webp`,
   quote: `"Above all, self-control."`,
-  villainDeckBack: `assets/images/cards/lady_tremaine/Lady_Tremaine_Villain_Back.jpg`,
-  fateDeckBack: `assets/images/cards/lady_tremaine/Lady_Tremaine_Fate_Back.jpg`,
+  villainDeckBack: `assets/images-webp/cards/lady_tremaine/Lady_Tremaine_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/lady_tremaine/Lady_Tremaine_Fate_Back.webp`,
   additionalTokens: true,
-  additionalTokensPath: `assets/images/cards/lady_tremaine/Trappedtokens.png`,
+  additionalTokensPath: `assets/images-webp/cards/lady_tremaine/Trappedtokens.webp`,
   speedLevel: 'orange'
 };

@@ -7,7 +7,7 @@ import { SANDERSON_SISTERS } from '../villains/sanderson-sisters-villain';
 export const DARKNESS_BREWING: Expansion = {
   id: 'darkness-brewing',
   name: 'Darkness Brewing',
-  coverImage: 'assets/images/expansions/darkness-brewing-box.png',
+  coverImage: 'assets/images-webp/expansions/darkness-brewing-box.webp',
   releaseDate: new Date('2026-07'),
   expansionNumber: 0,
   villains: [EVIL_QUEEN, MALEFICENT, SANDERSON_SISTERS, URSULA],

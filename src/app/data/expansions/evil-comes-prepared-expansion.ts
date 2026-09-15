@@ -6,7 +6,7 @@ import { YZMA } from '../villains/2-evil-comes-prepared/yzma-villain';
 export const EVIL_COMES_PREPARED: Expansion = {
   id: 'evil-comes-prepared',
   name: 'Evil Comes Prepared',
-  coverImage: 'assets/images/expansions/evil-comes-prepared-box.png',
+  coverImage: 'assets/images-webp/expansions/evil-comes-prepared-box.webp',
   releaseDate: new Date('2019-07'),
   expansionNumber: 2,
   villains: [SCAR, YZMA, RATIGAN],

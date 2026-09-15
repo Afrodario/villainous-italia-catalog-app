@@ -5,8 +5,8 @@ export const DR_FACILIER: Villain = {
   id: 'dr-facilier',
   name: 'Dr. Facilier',
   expansionId: EXPANSIONS_IDS.WickedToTheCore,
-  portrait: 'assets/images/cards/dr_facilier/Dr_Facilier.png',
-  mover: 'assets/images/movers/Dr_Faciliermover.png',
+  portrait: 'assets/images-webp/cards/dr_facilier/Dr_Facilier.webp',
+  mover: 'assets/images-webp/movers/Dr_Faciliermover.webp',
   mechanics: {
     setup: ``,
     rules: [
@@ -17,9 +17,9 @@ export const DR_FACILIER: Villain = {
     victory: ``,
   },
   objective: 'Control the Talisman and successfully rule New Orleans.',
-  objectivePortrait: `assets/images/cards/dr_facilier/Dr_Facilier_Objective.jpg`,
+  objectivePortrait: `assets/images-webp/cards/dr_facilier/Dr_Facilier_Objective.webp`,
   quote: `"I got friends on the other side."`,
-  villainDeckBack: `assets/images/cards/dr_facilier/Dr_Facilier_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/dr_facilier/Dr_Facilier_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/dr_facilier/Dr_Facilier_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/dr_facilier/Dr_Facilier_Fate_Back.webp`,
   speedLevel: 'green'
 };
