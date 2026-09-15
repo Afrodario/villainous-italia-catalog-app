@@ -5,8 +5,8 @@ export const CAPTAIN_HOOK: Villain = {
   id: 'captain-hook',
   name: 'Capitan Uncino',
   expansionId: EXPANSIONS_IDS.TheWorstTakesItAll,
-  portrait: 'assets/images/cards/captain_hook/Captain_Hook.png',
-  mover: 'assets/images/movers/Captain_Hookmover.png',
+  portrait: 'assets/images-webp/cards/captain_hook/Captain_Hook.webp',
+  mover: 'assets/images-webp/movers/Captain_Hookmover.webp',
   mechanics: {
     setup: ``,
     rules: [
@@ -17,9 +17,9 @@ export const CAPTAIN_HOOK: Villain = {
     victory: `Captain Hook must defeat Peter Pan at the Jolly Roger.`,
   },
   objective: 'Defeat Peter Pan at the Jolly Roger.',
-  objectivePortrait: `assets/images/cards/captain_hook/Captain_Hook_Objective.jpg`,
+  objectivePortrait: `assets/images-webp/cards/captain_hook/Captain_Hook_Objective.webp`,
   quote: `"Double the powder and shorten the fuse!"`,
-  villainDeckBack: `assets/images/cards/captain_hook/Captain_Hook_Villain_Back.png`,
-  fateDeckBack: `assets/images/cards/captain_hook/Captain_Hook_Fate_Back.png`,
+  villainDeckBack: `assets/images-webp/cards/captain_hook/Captain_Hook_Villain_Back.webp`,
+  fateDeckBack: `assets/images-webp/cards/captain_hook/Captain_Hook_Fate_Back.webp`,
   speedLevel: 'yellow'
 };
