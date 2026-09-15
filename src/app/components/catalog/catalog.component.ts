@@ -54,9 +54,17 @@ export class CatalogComponent implements OnDestroy {
   selectedMover: Villain | null = null;
   selectedDeckBack: string | null = null;
   selectedDeckBackTitle = '';
+
   showBackToVillains = false;
+  showBackToExpansions = false;
+
+  villainsScrollDirection: 'up' | 'down' = 'up';
+  expansionsScrollDirection: 'up' | 'down' = 'up';
+
   showSpeedInfo = false;
+
   private villainsObserver?: IntersectionObserver;
+  private expansionsObserver?: IntersectionObserver;
 
   selectedVersion: VillainousVersion | null = null;
 
@@ -70,6 +78,10 @@ export class CatalogComponent implements OnDestroy {
   villainsSection?: ElementRef<HTMLElement>;
   @ViewChild('deckSection')
   deckSection?: ElementRef<HTMLElement>;
+  @ViewChild('versionContent')
+  versionSection?: ElementRef<HTMLElement>;
+  @ViewChild('expansionsSection')
+  expansionsSection?: ElementRef<HTMLElement>;
 
   @Input() cardToOpenId: string | null = null;
   @Output() gameplayActionSelected = new EventEmitter<string>();
@@ -126,6 +138,15 @@ export class CatalogComponent implements OnDestroy {
 
   selectVersion(version: VillainousVersion): void {
     this.selectedVersion = version;
+
+    requestAnimationFrame(() => {
+      this.setupExpansionsObserver();
+
+      this.expansionsSection?.nativeElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
   }
 
   selectExpansion(expansion: Expansion): void {
@@ -159,6 +180,13 @@ export class CatalogComponent implements OnDestroy {
     });
   }
 
+  scrollToExpansions(): void {
+    this.expansionsSection?.nativeElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+
   private setupVillainsObserver(): void {
     this.villainsObserver?.disconnect();
 
@@ -171,6 +199,11 @@ export class CatalogComponent implements OnDestroy {
         const entry = entries[0];
 
         this.showBackToVillains = !entry.isIntersecting;
+
+        if (!entry.isIntersecting) {
+          this.villainsScrollDirection =
+            entry.boundingClientRect.top > 0 ? 'down' : 'up';
+        }
       },
       {
         threshold: 0.1,
@@ -178,6 +211,32 @@ export class CatalogComponent implements OnDestroy {
     );
 
     this.villainsObserver.observe(this.villainsSection.nativeElement);
+  }
+
+  private setupExpansionsObserver(): void {
+    this.expansionsObserver?.disconnect();
+
+    if (!this.expansionsSection) {
+      return;
+    }
+
+    this.expansionsObserver = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+
+        this.showBackToExpansions = !entry.isIntersecting;
+
+        if (!entry.isIntersecting) {
+          this.expansionsScrollDirection =
+            entry.boundingClientRect.top > 0 ? 'down' : 'up';
+        }
+      },
+      {
+        threshold: 0.1,
+      },
+    );
+
+    this.expansionsObserver.observe(this.expansionsSection.nativeElement);
   }
 
   selectVillain(villain: Villain): void {
@@ -317,5 +376,6 @@ export class CatalogComponent implements OnDestroy {
 
   ngOnDestroy(): void {
     this.villainsObserver?.disconnect();
+    this.expansionsObserver?.disconnect();
   }
 }
