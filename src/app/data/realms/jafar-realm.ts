@@ -5,12 +5,12 @@ import { VILLAINS_IDS } from '../../models/villains-expansions-ids.model';
 export const JAFAR_REALM: Realm = {
   id: 'jafar-realm',
   villainId: VILLAINS_IDS.Jafar,
-  image: 'assets/images/cards/jafar/Jafarrealm.jpg',
+  image: 'assets/images-webp/cards/jafar/Jafarrealm.webp',
   locations: [
     {
       id: 'sultans-palace',
       name: 'Palazzo del Sultano',
-      image: 'assets/images/realms/jafar/Sultans_Palace.jpg',
+      image: 'assets/images-webp/realms/jafar/Sultans_Palace.webp',
       description: {
         paragraphs: [
           'Luogo utile sopratutto per il Fato sempre disponibile e per l’unica azione Scontro di cui dispone Jafar',
@@ -24,7 +24,7 @@ export const JAFAR_REALM: Realm = {
     {
       id: 'streets-of-agrabah',
       name: 'Strade di Agrabah',
-      image: 'assets/images/realms/jafar/Streets_of_Agrabah.png',
+      image: 'assets/images-webp/realms/jafar/Streets_of_Agrabah.webp',
       description: {
         paragraphs: [
           'Un ottimo luogo per Jafar in quanto dispone dell’azione Scartare carte (unica disponibile se la Caverna delle Meraviglie è ancora bloccata) che vi permette di scorrere il vostro mazzo cattivo',
@@ -38,7 +38,7 @@ export const JAFAR_REALM: Realm = {
     {
       id: 'oasis',
       name: 'Oasi',
-      image: 'assets/images/realms/jafar/Oasis.png',
+      image: 'assets/images-webp/realms/jafar/Oasis.webp',
       description: {
         paragraphs: [
           'Ottimo luogo per Jafar sopratutto nelle prime fasi della partita, prima di sbloccare la Caverna delle Meraviglie',
@@ -53,7 +53,7 @@ export const JAFAR_REALM: Realm = {
     {
       id: 'cave-of-wonders',
       name: 'Caverna delle meraviglie',
-      image: 'assets/images/realms/jafar/Cave_of_Wonders.png',
+      image: 'assets/images-webp/realms/jafar/Cave_of_Wonders.webp',
 
       description: {
         paragraphs: [

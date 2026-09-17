@@ -1,7 +1,12 @@
-import { ACTIONS, CARD_TYPES } from "../../../models/actions-types.model";
-import { CardDefinition } from "../../../models/card-definition.model";
-import { EXPANSIONS_IDS, VILLAINS_IDS } from "../../../models/villains-expansions-ids.model";
-import { VANQUISH } from "../../gameplay/actions/vanquish-action";
+import { ACTIONS, CARD_TYPES } from '../../../models/actions-types.model';
+import { CardDefinition } from '../../../models/card-definition.model';
+import {
+  EXPANSIONS_IDS,
+  VILLAINS_IDS,
+} from '../../../models/villains-expansions-ids.model';
+import { GAIN_POWER } from '../../gameplay/actions/gain-power-action';
+import { MOVE_A_HERO } from '../../gameplay/actions/move-a-hero-action';
+import { VANQUISH } from '../../gameplay/actions/vanquish-action';
 
 export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
   {
@@ -14,16 +19,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     cost: 2,
     quantity: 3,
     strength: 2,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -36,16 +35,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     type: 'effect',
     cost: 1,
     quantity: 3,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -59,16 +52,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     cost: 1,
     quantity: 3,
     strength: 2,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -81,16 +68,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     type: CARD_TYPES.Ally,
     cost: 0,
     quantity: 3,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -103,16 +84,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     type: 'effect',
     cost: 1,
     quantity: 2,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -125,22 +100,16 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     type: CARD_TYPES.Item,
     cost: 2,
     quantity: 2,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: false,
     specifics: {
       hasAddedAction: true,
-      addedAction: VANQUISH
-    }
+      addedAction: VANQUISH,
+    },
   },
   {
     id: 'cunning',
@@ -150,16 +119,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     image: 'assets/images-webp/cards/captain_hook/Cunning.webp',
     type: CARD_TYPES.Condition,
     quantity: 2,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -173,16 +136,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     cost: 1,
     quantity: 2,
     strengthModifier: 2,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -195,16 +152,14 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     type: CARD_TYPES.Item,
     cost: 2,
     quantity: 2,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
+    },
+    specifics: {
+      hasAddedAction: true,
+      addedAction: GAIN_POWER,
     },
     isFateCard: false,
   },
@@ -216,16 +171,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     image: 'assets/images-webp/cards/captain_hook/Obsession.webp',
     type: CARD_TYPES.Condition,
     quantity: 2,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -239,16 +188,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     cost: 3,
     quantity: 2,
     strength: 4,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -261,16 +204,14 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     type: CARD_TYPES.Item,
     cost: 2,
     quantity: 1,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
+    },
+    specifics: {
+      hasAddedAction: true,
+      addedAction: MOVE_A_HERO,
     },
     isFateCard: false,
   },
@@ -284,16 +225,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     cost: 2,
     quantity: 1,
     strength: 2,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -306,16 +241,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     type: CARD_TYPES.Item,
     cost: 4,
     quantity: 1,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -329,20 +258,14 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     cost: 2,
     quantity: 1,
     strength: 2,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: false,
   },
-//MAZZO FATO
+  //MAZZO FATO
   {
     id: 'pixie-dust',
     villainId: VILLAINS_IDS.CaptainHook,
@@ -352,16 +275,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     type: CARD_TYPES.Item,
     quantity: 3,
     strengthModifier: 2,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -374,16 +291,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     type: CARD_TYPES.Ally,
     quantity: 2,
     strength: 4,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -395,16 +306,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     image: 'assets/images-webp/cards/captain_hook/Splitting_Headache.webp',
     type: 'effect',
     quantity: 2,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -416,16 +321,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     image: 'assets/images-webp/cards/captain_hook/Taunt.webp',
     type: CARD_TYPES.Item,
     quantity: 2,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -438,16 +337,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     type: CARD_TYPES.Hero,
     quantity: 1,
     strength: 2,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -460,16 +353,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     type: CARD_TYPES.Hero,
     quantity: 1,
     strength: 1,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -482,16 +369,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     type: CARD_TYPES.Hero,
     quantity: 1,
     strength: 8,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -504,16 +385,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     type: CARD_TYPES.Hero,
     quantity: 1,
     strength: 5,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -526,16 +401,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     type: CARD_TYPES.Hero,
     quantity: 1,
     strength: 2,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -548,17 +417,11 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     type: CARD_TYPES.Hero,
     quantity: 1,
     strength: 3,
-    description:
-      'Description.',
+    description: 'Description.',
     strategy: {
-      paragraphs: [
-        'Paragrafo 1',
-        'Paragrafo 2 ’',
-        'Paragrafo 3',
-      ],
-      warning:
-        'Warning',
+      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
+      warning: 'Warning',
     },
     isFateCard: true,
   },
-]
+];

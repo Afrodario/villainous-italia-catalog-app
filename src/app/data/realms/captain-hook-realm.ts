@@ -5,12 +5,12 @@ import { VILLAINS_IDS } from '../../models/villains-expansions-ids.model';
 export const CAPTAIN_HOOK_REALM: Realm = {
   id: 'captain-hook-realm',
   villainId: VILLAINS_IDS.CaptainHook,
-  image: 'assets/images/realms/captain_hook/Hookrealm.jpg',
+  image: 'assets/images-webp-webp/realms/captain_hook/Hookrealm.webp',
   locations: [
     {
       id: 'jolly-roger',
       name: 'Jolly Roger',
-      image: 'assets/images/realms/captain_hook/Jolly_Roger.png',
+      image: 'assets/images-webp/realms/captain_hook/Jolly_Roger.webp',
       description: {
         paragraphs: [
           'Luogo utile sopratutto per il Fato sempre disponibile e per l’unica azione Scontro di cui dispone Jafar',
@@ -25,7 +25,7 @@ export const CAPTAIN_HOOK_REALM: Realm = {
     {
       id: 'skull-rock',
       name: 'La Roccia del Teschio',
-      image: 'assets/images/realms/captain_hook/Skull_Rock.png',
+      image: 'assets/images-webp/realms/captain_hook/Skull_Rock.webp',
       description: {
         paragraphs: [
           'Un ottimo luogo per Jafar in quanto dispone dell’azione Scartare carte (unica disponibile se la Caverna delle Meraviglie è ancora bloccata) che vi permette di scorrere il vostro mazzo cattivo',
@@ -39,7 +39,7 @@ export const CAPTAIN_HOOK_REALM: Realm = {
     {
       id: 'mermaid-lagoon',
       name: 'La Laguna delle Sirene',
-      image: 'assets/images/realms/captain_hook/Mermaid_Lagoon.png',
+      image: 'assets/images-webp/realms/captain_hook/Mermaid_Lagoon.webp',
       description: {
         paragraphs: [
           'Ottimo luogo per Jafar sopratutto nelle prime fasi della partita, prima di sbloccare la Caverna delle Meraviglie',
@@ -54,7 +54,7 @@ export const CAPTAIN_HOOK_REALM: Realm = {
     {
       id: 'hangmans-tree',
       name: 'L’Albero dell’Impiccato',
-      image: 'assets/images/realms/captain_hook/Hangmans_Tree.png',
+      image: 'assets/images-webp/realms/captain_hook/Hangmans_Tree.webp',
 
       description: {
         paragraphs: [
