@@ -55,6 +55,15 @@
       >
         📚 Regole di gioco
       </button>
+      <button
+        type="button"
+        (click)="showProgression()"
+        class="rounded-lg px-5 py-2 font-semibold transition"
+        [class.bg-purple-600]="currentSection === 'progression'"
+        [class.bg-slate-800]="currentSection !== 'progression'"
+      >
+        🎯 Progressione
+      </button>
     </div>
   </nav>
 
@@ -95,5 +104,9 @@
       [selectedActionId]="selectedGameplayActionId"
       (cardSelected)="showCatalogCard($event)"
     />
+  }
+
+  @if (currentSection === "progression") {
+    <app-progression />
   }
 </div>

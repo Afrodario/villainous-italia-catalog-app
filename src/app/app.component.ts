@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-
 import { ScenarioService } from './services/scenario.service';
 import { GameEngineService } from './services/game-engine.service';
-
 import { Scenario } from './models/scenario.model';
 import { Scene } from './models/scene.model';
 import { Choice } from './models/choice.model';
@@ -11,6 +9,7 @@ import { ScenarioListComponent } from './components/scenario-list.component';
 import { GameViewComponent } from './components/game-view/game-view.component';
 import { CatalogComponent } from './components/catalog/catalog.component';
 import { GameplayComponent } from './components/gameplay/gameplay.component';
+import { ProgressionComponent } from './components/progression/progression.component';
 
 @Component({
   selector: 'app-root',
@@ -20,18 +19,25 @@ import { GameplayComponent } from './components/gameplay/gameplay.component';
     GameViewComponent,
     CatalogComponent,
     GameplayComponent,
+    ProgressionComponent,
   ],
-
   templateUrl: './app.component.html',
 })
 export class AppComponent {
   scenarios: Scenario[] = [];
+
   currentScenario: Scenario | null = null;
+
   currentScene: Scene | null = null;
+
   gameState: GameState | null = null;
+
   selectedGameplayActionId: string | null = null;
+
   cardToOpenId: string | null = null;
-  currentSection: 'scenarios' | 'catalog' | 'gameplay' = 'catalog';
+
+  currentSection: 'scenarios' | 'catalog' | 'gameplay' | 'progression' =
+    'catalog';
 
   constructor(
     private scenarioService: ScenarioService,
@@ -51,6 +57,10 @@ export class AppComponent {
   showGameplay(): void {
     this.currentSection = 'gameplay';
     this.cardToOpenId = null;
+  }
+
+  showProgression(): void {
+    this.currentSection = 'progression';
   }
 
   showGameplayAction(actionId: string): void {
@@ -75,6 +85,7 @@ export class AppComponent {
     if (!this.currentScenario) {
       return;
     }
+
     this.gameEngine.start(this.currentScenario);
     this.currentScene = this.gameEngine.getCurrentScene();
     this.gameState = this.gameEngine.getGameState();
@@ -88,7 +99,9 @@ export class AppComponent {
 
   showCatalogCard(cardId: string): void {
     this.cardToOpenId = cardId;
+
     console.log('CARD TO OPEN ID PRESO', this.cardToOpenId);
+
     this.currentSection = 'catalog';
   }
 }
