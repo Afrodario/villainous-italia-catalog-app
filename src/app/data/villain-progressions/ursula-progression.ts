@@ -36,6 +36,11 @@ export const URSULA_PROGRESSION: VillainProgression = {
       label: 'Posizione della Corona',
       options: [
         {
+          id: 'palace',
+          label: 'Palazzo',
+          percentage: 0,
+        },
+        {
           id: 'shore',
           label: 'Riva',
           percentage: 5,
@@ -64,6 +69,11 @@ export const URSULA_PROGRESSION: VillainProgression = {
       id: 'trident-location',
       label: 'Posizione del Tridente',
       options: [
+        {
+          id: 'palace',
+          label: 'Palazzo',
+          percentage: 0,
+        },
         {
           id: 'shore',
           label: 'Riva',
