@@ -250,6 +250,14 @@ export class VillainProgressService {
     progression: VillainProgression,
     state: VillainProgressState,
   ): number {
+    if (item.counterSources) {
+      return this.calculateCompositeDynamicPercentage(item, state);
+    }
+
+    if (item.divisor === undefined) {
+      return 0;
+    }
+
     const counterState = state.items.find(
       (stateItem) => stateItem.id === item.counterId,
     );
@@ -293,5 +301,36 @@ export class VillainProgressService {
     }
 
     return Math.max(0, percentage);
+  }
+
+  private calculateCompositeDynamicPercentage(
+    item: VillainProgressDynamic,
+    state: VillainProgressState,
+  ): number {
+    let percentage = item.counterSources!.reduce((total, source) => {
+      const stateItem = state.items.find(
+        (stateItem) => stateItem.id === source.counterId,
+      );
+
+      if (!stateItem || stateItem.type !== 'counter') {
+        return total;
+      }
+
+      const count = Math.min(stateItem.value, source.max ?? stateItem.value);
+
+      return total + count * source.percentagePerUnit;
+    }, 0);
+
+    if (item.penaltyCounterId && item.penaltyPerUnit !== undefined) {
+      const penaltyState = state.items.find(
+        (stateItem) => stateItem.id === item.penaltyCounterId,
+      );
+
+      if (penaltyState && penaltyState.type === 'counter') {
+        percentage -= penaltyState.value * item.penaltyPerUnit;
+      }
+    }
+
+    return Math.max(0, Math.min(percentage, item.maxPercentage));
   }
 }

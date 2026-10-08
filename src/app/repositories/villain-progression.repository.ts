@@ -10,6 +10,7 @@ import { QUEEN_OF_HEARTS_PROGRESSION } from '../data/villain-progressions/queen-
 import { URSULA_PROGRESSION } from '../data/villain-progressions/ursula-progression';
 import { EVIL_QUEEN_PROGRESSION } from '../data/villain-progressions/evil-queen-progression';
 import { DR_FACILIER_PROGRESSION } from '../data/villain-progressions/dr-facilier.progression';
+import { HADES_PROGRESSION } from '../data/villain-progressions/hades.progression';
 
 @Injectable({
   providedIn: 'root',
@@ -23,7 +24,8 @@ export class VillainProgressionRepository {
     QUEEN_OF_HEARTS_PROGRESSION,
     URSULA_PROGRESSION,
     EVIL_QUEEN_PROGRESSION,
-    DR_FACILIER_PROGRESSION
+    DR_FACILIER_PROGRESSION,
+    HADES_PROGRESSION
   ];
 
   getAll(): VillainProgression[] {

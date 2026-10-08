@@ -22,6 +22,13 @@ export class VillainProgressComponent implements OnChanges {
 
   percentage = 0;
 
+  private readonly titanCounterIds = [
+    'underworld-titans',
+    'thebes-titans',
+    'gardens-titans',
+    'mount-olympus-titans',
+  ];
+
   constructor(private readonly progressService: VillainProgressService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -146,5 +153,31 @@ export class VillainProgressComponent implements OnChanges {
       this.progression,
       this.state,
     );
+  }
+
+  getTotalTitans(): number {
+    return this.titanCounterIds.reduce((total, counterId) => {
+      const stateItem = this.state.items.find(
+        (stateItem) => stateItem.id === counterId,
+      );
+
+      if (!stateItem || stateItem.type !== 'counter') {
+        return total;
+      }
+
+      return total + stateItem.value;
+    }, 0);
+  }
+
+  canIncreaseCounter(itemId: string): boolean {
+    if (itemId === 'trapped-titans') {
+      return this.getCounterValue('trapped-titans') < this.getTotalTitans();
+    }
+
+    if (!this.titanCounterIds.includes(itemId)) {
+      return true;
+    }
+
+    return this.getTotalTitans() < 5;
   }
 }
