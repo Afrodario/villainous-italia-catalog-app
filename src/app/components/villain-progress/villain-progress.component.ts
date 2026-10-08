@@ -105,13 +105,27 @@ export class VillainProgressComponent implements OnChanges {
   }
 
   selectChoice(itemId: string, optionId: string): void {
-    const item = this.state.items.find((stateItem) => stateItem.id === itemId);
+    const item = this.progression.items.find(
+      (progressionItem) => progressionItem.id === itemId,
+    );
 
     if (!item || item.type !== 'choice') {
       return;
     }
 
-    item.selectedOptionId = optionId;
+    if (!this.isItemAvailable(item)) {
+      return;
+    }
+
+    const stateItem = this.state.items.find(
+      (stateItem) => stateItem.id === itemId,
+    );
+
+    if (!stateItem || stateItem.type !== 'choice') {
+      return;
+    }
+
+    stateItem.selectedOptionId = optionId;
 
     this.updatePercentage();
   }

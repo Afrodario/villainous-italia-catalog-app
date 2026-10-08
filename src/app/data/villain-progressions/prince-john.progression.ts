@@ -17,11 +17,13 @@ export const PRINCE_JOHN_PROGRESSION: VillainProgression = {
       id: 'start-turn-with-20-power',
       label: 'Iniziare il turno con almeno 20 Gettoni Potere',
       percentage: 10,
-      requires: {
-        type: 'counter',
-        itemId: 'power-tokens',
-        min: 20,
-      },
+      requires: [
+        {
+          type: 'counter',
+          itemId: 'power-tokens',
+          min: 20,
+        },
+      ],
     },
   ],
 };

@@ -54,10 +54,12 @@ export const CAPTAIN_HOOK_PROGRESSION: VillainProgression = {
       id: 'defeat-peter-pan',
       label: 'Sconfiggere Peter Pan alla Jolly Roger',
       percentage: 10,
-      requires: {
-        type: 'percentage',
-        min: 90,
-      },
+      requires: [
+        {
+          type: 'percentage',
+          min: 90,
+        },
+      ],
     },
   ],
 };

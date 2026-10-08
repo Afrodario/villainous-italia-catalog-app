@@ -8,6 +8,7 @@ import {
   VillainProgressChoice,
   VillainProgressState,
   VillainProgressItemState,
+  VillainProgressRequirement,
 } from '../models/villain-progressions/villain-progress.model';
 
 @Injectable({
@@ -19,7 +20,7 @@ export class VillainProgressService {
     state: VillainProgressState,
   ): number {
     const percentage = progression.items.reduce((total, item) => {
-      return total + this.calculateItemPercentage(item, state);
+      return total + this.calculateItemPercentage(item, progression, state);
     }, 0);
 
     return Math.min(percentage, 100);
@@ -56,11 +57,16 @@ export class VillainProgressService {
 
   private calculateItemPercentage(
     item: VillainProgressItem,
+    progression: VillainProgression,
     state: VillainProgressState,
   ): number {
     const itemState = state.items.find((stateItem) => stateItem.id === item.id);
 
     if (!itemState) {
+      return 0;
+    }
+
+    if (!this.isItemAvailable(item, progression, state)) {
       return 0;
     }
 
@@ -121,17 +127,11 @@ export class VillainProgressService {
     return selectedOption?.percentage ?? 0;
   }
 
-  isItemAvailable(
-    item: VillainProgressItem,
+  private isRequirementSatisfied(
+    requirement: VillainProgressRequirement,
     progression: VillainProgression,
     state: VillainProgressState,
   ): boolean {
-    const requirement = item.requires;
-
-    if (!requirement) {
-      return true;
-    }
-
     switch (requirement.type) {
       case 'percentage':
         return this.calculatePercentage(progression, state) >= requirement.min;
@@ -172,5 +172,21 @@ export class VillainProgressService {
         return stateItem.selectedOptionId === requirement.optionId;
       }
     }
+  }
+
+  isItemAvailable(
+    item: VillainProgressItem,
+    progression: VillainProgression,
+    state: VillainProgressState,
+  ): boolean {
+    const requirements = item.requires;
+
+    if (!requirements || requirements.length === 0) {
+      return true;
+    }
+
+    return requirements.every((requirement) =>
+      this.isRequirementSatisfied(requirement, progression, state),
+    );
   }
 }

@@ -92,6 +92,7 @@
                   type="radio"
                   [name]="item.id"
                   class="h-4 w-4 accent-purple-600"
+                  [disabled]="!isItemAvailable(item)"
                   [checked]="isChoiceSelected(item.id, option.id)"
                   (change)="selectChoice(item.id, option.id)"
                 />

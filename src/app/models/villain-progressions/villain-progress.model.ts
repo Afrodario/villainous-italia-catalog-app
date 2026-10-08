@@ -41,7 +41,7 @@ export interface VillainProgressStep {
   id: string;
   label: string;
   percentage: number;
-  requires?: VillainProgressRequirement;
+  requires?: VillainProgressRequirement[];
 }
 
 export interface VillainProgressCounter {
@@ -51,7 +51,7 @@ export interface VillainProgressCounter {
   min?: number;
   max?: number;
   percentagePerUnit: number;
-  requires?: VillainProgressRequirement;
+  requires?: VillainProgressRequirement[];
 }
 
 export interface VillainProgressChoice {
@@ -59,7 +59,7 @@ export interface VillainProgressChoice {
   id: string;
   label: string;
   options: VillainProgressChoiceOption[];
-  requires?: VillainProgressRequirement;
+  requires?: VillainProgressRequirement[];
 }
 
 export interface VillainProgressChoiceOption {
