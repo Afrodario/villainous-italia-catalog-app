@@ -29,7 +29,7 @@
   </header>
 
   <nav class="border-b border-white/10 bg-slate-900">
-    <div class="flex items-center gap-2">
+    <div class="flex flex-wrap items-center gap-2">
       <button
         type="button"
         disabled
@@ -40,7 +40,7 @@
       <button
         type="button"
         (click)="showCatalog()"
-        class="rounded-lg px-5 py-2 font-semibold transition"
+        class="rounded-lg px-3 py-2 font-semibold transition sm:px-5"
         [class.bg-purple-600]="currentSection === 'catalog'"
         [class.bg-slate-800]="currentSection !== 'catalog'"
       >
@@ -49,7 +49,7 @@
       <button
         type="button"
         (click)="showGameplay()"
-        class="rounded-lg px-5 py-2 font-semibold transition"
+        class="rounded-lg px-3 py-2 font-semibold transition sm:px-5"
         [class.bg-purple-600]="currentSection === 'gameplay'"
         [class.bg-slate-800]="currentSection !== 'gameplay'"
       >
@@ -58,7 +58,7 @@
       <button
         type="button"
         (click)="showProgression()"
-        class="rounded-lg px-5 py-2 font-semibold transition"
+        class="rounded-lg px-3 py-2 font-semibold transition sm:px-5"
         [class.bg-purple-600]="currentSection === 'progression'"
         [class.bg-slate-800]="currentSection !== 'progression'"
       >

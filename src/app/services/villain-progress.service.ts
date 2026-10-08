@@ -19,8 +19,13 @@ export class VillainProgressService {
   calculatePercentage(
     progression: VillainProgression,
     state: VillainProgressState,
+    excludedItemId?: string,
   ): number {
     const percentage = progression.items.reduce((total, item) => {
+      if (item.id === excludedItemId) {
+        return total;
+      }
+
       return total + this.calculateItemPercentage(item, progression, state);
     }, 0);
 
@@ -145,10 +150,14 @@ export class VillainProgressService {
     requirement: VillainProgressRequirement,
     progression: VillainProgression,
     state: VillainProgressState,
+    currentItemId: string,
   ): boolean {
     switch (requirement.type) {
       case 'percentage':
-        return this.calculatePercentage(progression, state) >= requirement.min;
+        return (
+          this.calculatePercentage(progression, state, currentItemId) >=
+          requirement.min
+        );
 
       case 'counter': {
         const stateItem = state.items.find(
@@ -203,7 +212,7 @@ export class VillainProgressService {
     }
 
     return requirements.every((requirement) =>
-      this.isRequirementSatisfied(requirement, progression, state),
+      this.isRequirementSatisfied(requirement, progression, state, item.id),
     );
   }
 
