@@ -12,6 +12,7 @@ import { EVIL_QUEEN_PROGRESSION } from '../data/villain-progressions/evil-queen-
 import { DR_FACILIER_PROGRESSION } from '../data/villain-progressions/dr-facilier.progression';
 import { HADES_PROGRESSION } from '../data/villain-progressions/hades.progression';
 import { SCAR_PROGRESSION } from '../data/villain-progressions/scar-progression';
+import { YZMA_PROGRESSION } from '../data/villain-progressions/yzma.progression';
 
 @Injectable({
   providedIn: 'root',
@@ -27,7 +28,8 @@ export class VillainProgressionRepository {
     EVIL_QUEEN_PROGRESSION,
     DR_FACILIER_PROGRESSION,
     HADES_PROGRESSION,
-    SCAR_PROGRESSION
+    SCAR_PROGRESSION,
+    YZMA_PROGRESSION
   ];
 
   getAll(): VillainProgression[] {
