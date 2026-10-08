@@ -7,7 +7,8 @@ export type VillainProgressRequirement =
   | VillainProgressPercentageRequirement
   | VillainProgressCounterRequirement
   | VillainProgressStepRequirement
-  | VillainProgressChoiceRequirement;
+  | VillainProgressChoiceRequirement
+  | VillainProgressCounterGroup;
 
 export interface VillainProgressPercentageRequirement {
   type: 'percentage';
@@ -31,10 +32,21 @@ export interface VillainProgressChoiceRequirement {
   optionId: string;
 }
 
+export interface VillainProgressCounterGroup {
+  type: 'counter-group';
+  id: string;
+  label: string;
+  counterIds: string[];
+  threshold: number;
+  percentages: number[];
+  requires?: VillainProgressRequirement[];
+}
+
 export type VillainProgressItem =
   | VillainProgressStep
   | VillainProgressCounter
-  | VillainProgressChoice;
+  | VillainProgressChoice
+  | VillainProgressCounterGroup;
 
 export interface VillainProgressStep {
   type: 'step';

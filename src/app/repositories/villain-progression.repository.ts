@@ -5,6 +5,7 @@ import { VillainProgression } from '../models/villain-progressions/villain-progr
 import { CAPTAIN_HOOK_PROGRESSION } from '../data/villain-progressions/captain-hook.progression';
 import { PRINCE_JOHN_PROGRESSION } from '../data/villain-progressions/prince-john.progression';
 import { JAFAR_PROGRESSION } from '../data/villain-progressions/jafar.progression';
+import { MALEFICENT_PROGRESSION } from '../data/villain-progressions/maleficent-progression';
 
 @Injectable({
   providedIn: 'root',
@@ -13,7 +14,8 @@ export class VillainProgressionRepository {
   private readonly progressions: VillainProgression[] = [
     CAPTAIN_HOOK_PROGRESSION,
     PRINCE_JOHN_PROGRESSION,
-    JAFAR_PROGRESSION
+    JAFAR_PROGRESSION,
+    MALEFICENT_PROGRESSION
   ];
 
   getAll(): VillainProgression[] {

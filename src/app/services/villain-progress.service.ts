@@ -9,6 +9,7 @@ import {
   VillainProgressState,
   VillainProgressItemState,
   VillainProgressRequirement,
+  VillainProgressCounterGroup,
 } from '../models/villain-progressions/villain-progress.model';
 
 @Injectable({
@@ -28,28 +29,37 @@ export class VillainProgressService {
 
   createInitialState(progression: VillainProgression): VillainProgressState {
     return {
-      items: progression.items.map((item) => {
+      items: progression.items.flatMap((item): VillainProgressItemState[] => {
         switch (item.type) {
           case 'step':
-            return {
-              type: 'step',
-              id: item.id,
-              completed: false,
-            };
+            return [
+              {
+                type: 'step',
+                id: item.id,
+                completed: false,
+              },
+            ];
 
           case 'counter':
-            return {
-              type: 'counter',
-              id: item.id,
-              value: item.min ?? 0,
-            };
+            return [
+              {
+                type: 'counter',
+                id: item.id,
+                value: item.min ?? 0,
+              },
+            ];
 
           case 'choice':
-            return {
-              type: 'choice',
-              id: item.id,
-              selectedOptionId: null,
-            };
+            return [
+              {
+                type: 'choice',
+                id: item.id,
+                selectedOptionId: null,
+              },
+            ];
+
+          case 'counter-group':
+            return [];
         }
       }),
     };
@@ -60,13 +70,17 @@ export class VillainProgressService {
     progression: VillainProgression,
     state: VillainProgressState,
   ): number {
-    const itemState = state.items.find((stateItem) => stateItem.id === item.id);
-
-    if (!itemState) {
+    if (!this.isItemAvailable(item, progression, state)) {
       return 0;
     }
 
-    if (!this.isItemAvailable(item, progression, state)) {
+    if (item.type === 'counter-group') {
+      return this.calculateCounterGroupPercentage(item, state);
+    }
+
+    const itemState = state.items.find((stateItem) => stateItem.id === item.id);
+
+    if (!itemState) {
       return 0;
     }
 
@@ -171,6 +185,9 @@ export class VillainProgressService {
 
         return stateItem.selectedOptionId === requirement.optionId;
       }
+
+      default:
+        return false;
     }
   }
 
@@ -188,5 +205,26 @@ export class VillainProgressService {
     return requirements.every((requirement) =>
       this.isRequirementSatisfied(requirement, progression, state),
     );
+  }
+
+  private calculateCounterGroupPercentage(
+    item: VillainProgressCounterGroup,
+    state: VillainProgressState,
+  ): number {
+    const count = item.counterIds.filter((counterId) => {
+      const stateItem = state.items.find(
+        (stateItem) => stateItem.id === counterId,
+      );
+
+      return stateItem?.type === 'counter' && stateItem.value >= item.threshold;
+    }).length;
+
+    if (count === 0) {
+      return 0;
+    }
+
+    const percentageIndex = Math.min(count, item.percentages.length) - 1;
+
+    return item.percentages[percentageIndex] ?? 0;
   }
 }
