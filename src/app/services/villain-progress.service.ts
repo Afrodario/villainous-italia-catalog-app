@@ -97,6 +97,15 @@ export class VillainProgressService {
       return 0;
     }
 
+    if (
+      item.type === 'step' &&
+      itemState.type === 'step' &&
+      item.completeProgression &&
+      itemState.completed
+    ) {
+      return 100;
+    }
+
     switch (item.type) {
       case 'step':
         return this.calculateStepPercentage(item, itemState);
@@ -203,6 +212,16 @@ export class VillainProgressService {
         return stateItem.selectedOptionId === requirement.optionId;
       }
 
+      case 'choice-selected': {
+        const stateItem = state.items.find(
+          (stateItem) => stateItem.id === requirement.itemId,
+        );
+
+        return (
+          stateItem?.type === 'choice' && stateItem.selectedOptionId !== null
+        );
+      }
+
       default:
         return false;
     }
@@ -250,6 +269,15 @@ export class VillainProgressService {
     progression: VillainProgression,
     state: VillainProgressState,
   ): number {
+    if (item.remaining) {
+      const currentPercentage = this.calculatePercentage(
+        progression,
+        state,
+        item.id,
+      );
+
+      return Math.max(0, item.maxPercentage - currentPercentage);
+    }
     if (item.counterSources) {
       return this.calculateCompositeDynamicPercentage(item, state);
     }
