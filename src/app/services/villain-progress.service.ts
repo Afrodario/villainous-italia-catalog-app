@@ -222,6 +222,9 @@ export class VillainProgressService {
         );
       }
 
+      case 'captured-puppies':
+        return this.getCapturedPuppies(state) >= requirement.min;
+
       default:
         return false;
     }
@@ -365,5 +368,40 @@ export class VillainProgressService {
     }
 
     return Math.max(0, Math.min(percentage, item.maxPercentage));
+  }
+
+  private getCapturedPuppies(state: VillainProgressState): number {
+    const puppyValues: Record<string, number> = {
+      'puppy-11-radcliffe-1': 11,
+      'puppy-11-radcliffe-2': 11,
+      'puppy-22-radcliffe': 22,
+
+      'puppy-11-countryside-1': 11,
+      'puppy-11-countryside-2': 11,
+      'puppy-22-countryside': 22,
+
+      'puppy-11-barn-1': 11,
+      'puppy-11-barn-2': 11,
+      'puppy-22-barn': 22,
+
+      'puppy-11-hellhall-1': 11,
+      'puppy-11-hellhall-2': 11,
+      'puppy-22-hellhall': 22,
+    };
+
+    return Object.entries(puppyValues).reduce((total, [itemId, value]) => {
+      const stateItem = state.items.find(
+        (stateItem) => stateItem.id === itemId,
+      );
+
+      if (
+        stateItem?.type === 'choice' &&
+        stateItem.selectedOptionId === 'captured'
+      ) {
+        return total + value;
+      }
+
+      return total;
+    }, 0);
   }
 }

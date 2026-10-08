@@ -8,7 +8,8 @@ export type VillainProgressRequirement =
   | VillainProgressCounterRequirement
   | VillainProgressStepRequirement
   | VillainProgressChoiceRequirement
-  | VillainProgressChoiceSelectedRequirement;
+  | VillainProgressChoiceSelectedRequirement
+  | VillainProgressCapturedPuppiesRequirement;
 
 export interface VillainProgressPercentageRequirement {
   type: 'percentage';
@@ -35,6 +36,11 @@ export interface VillainProgressChoiceRequirement {
 export interface VillainProgressChoiceSelectedRequirement {
   type: 'choice-selected';
   itemId: string;
+}
+
+export interface VillainProgressCapturedPuppiesRequirement {
+  type: 'captured-puppies';
+  min: number;
 }
 
 export interface VillainProgressCounterGroup {
