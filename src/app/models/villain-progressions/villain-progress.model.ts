@@ -8,7 +8,6 @@ export type VillainProgressRequirement =
   | VillainProgressCounterRequirement
   | VillainProgressStepRequirement
   | VillainProgressChoiceRequirement
-  | VillainProgressCounterGroup;
 
 export interface VillainProgressPercentageRequirement {
   type: 'percentage';
@@ -42,11 +41,26 @@ export interface VillainProgressCounterGroup {
   requires?: VillainProgressRequirement[];
 }
 
+export interface VillainProgressDynamic {
+  type: 'dynamic';
+  id: string;
+  label: string;
+  maxPercentage: number;
+  divisor: number;
+  alternativeDivisor?: number;
+  alternativeDivisorRequirement?: VillainProgressRequirement;
+  counterId: string;
+  penaltyCounterId?: string;
+  penaltyPerUnit?: number;
+  requires?: VillainProgressRequirement[];
+}
+
 export type VillainProgressItem =
   | VillainProgressStep
   | VillainProgressCounter
   | VillainProgressChoice
-  | VillainProgressCounterGroup;
+  | VillainProgressCounterGroup
+  | VillainProgressDynamic;
 
 export interface VillainProgressStep {
   type: 'step';
@@ -89,7 +103,7 @@ export interface VillainProgressState {
 export type VillainProgressItemState =
   | VillainProgressStepState
   | VillainProgressCounterState
-  | VillainProgressChoiceState;
+  | VillainProgressChoiceState
 
 export interface VillainProgressStepState {
   type: 'step';

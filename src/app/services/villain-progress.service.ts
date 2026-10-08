@@ -10,6 +10,7 @@ import {
   VillainProgressItemState,
   VillainProgressRequirement,
   VillainProgressCounterGroup,
+  VillainProgressDynamic,
 } from '../models/villain-progressions/villain-progress.model';
 
 @Injectable({
@@ -65,6 +66,9 @@ export class VillainProgressService {
 
           case 'counter-group':
             return [];
+
+          case 'dynamic':
+            return [];
         }
       }),
     };
@@ -81,6 +85,10 @@ export class VillainProgressService {
 
     if (item.type === 'counter-group') {
       return this.calculateCounterGroupPercentage(item, state);
+    }
+
+    if (item.type === 'dynamic') {
+      return this.calculateDynamicPercentage(item, progression, state);
     }
 
     const itemState = state.items.find((stateItem) => stateItem.id === item.id);
@@ -235,5 +243,55 @@ export class VillainProgressService {
     const percentageIndex = Math.min(count, item.percentages.length) - 1;
 
     return item.percentages[percentageIndex] ?? 0;
+  }
+
+  private calculateDynamicPercentage(
+    item: VillainProgressDynamic,
+    progression: VillainProgression,
+    state: VillainProgressState,
+  ): number {
+    const counterState = state.items.find(
+      (stateItem) => stateItem.id === item.counterId,
+    );
+
+    if (!counterState || counterState.type !== 'counter') {
+      return 0;
+    }
+
+    const count = counterState.value;
+
+    if (count <= 0) {
+      return 0;
+    }
+
+    const useAlternativeDivisor =
+      item.alternativeDivisorRequirement &&
+      this.isRequirementSatisfied(
+        item.alternativeDivisorRequirement,
+        progression,
+        state,
+        item.id,
+      );
+
+    const divisor =
+      useAlternativeDivisor && item.alternativeDivisor !== undefined
+        ? item.alternativeDivisor
+        : item.divisor;
+
+    let percentage = divisor / count;
+
+    percentage = Math.min(percentage, item.maxPercentage);
+
+    if (item.penaltyCounterId && item.penaltyPerUnit !== undefined) {
+      const penaltyState = state.items.find(
+        (stateItem) => stateItem.id === item.penaltyCounterId,
+      );
+
+      if (penaltyState && penaltyState.type === 'counter') {
+        percentage -= penaltyState.value * item.penaltyPerUnit;
+      }
+    }
+
+    return Math.max(0, percentage);
   }
 }
