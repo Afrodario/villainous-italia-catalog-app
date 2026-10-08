@@ -254,10 +254,6 @@ export class VillainProgressService {
       return this.calculateCompositeDynamicPercentage(item, state);
     }
 
-    if (item.divisor === undefined) {
-      return 0;
-    }
-
     const counterState = state.items.find(
       (stateItem) => stateItem.id === item.counterId,
     );
@@ -269,6 +265,15 @@ export class VillainProgressService {
     const count = counterState.value;
 
     if (count <= 0) {
+      return 0;
+    }
+
+    // Calcolo diretto: valore del contatore × percentuale per unità
+    if (item.percentagePerUnit !== undefined) {
+      return Math.min(count * item.percentagePerUnit, item.maxPercentage);
+    }
+
+    if (item.divisor === undefined) {
       return 0;
     }
 

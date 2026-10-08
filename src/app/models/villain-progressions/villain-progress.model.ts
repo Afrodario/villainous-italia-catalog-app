@@ -48,11 +48,12 @@ export interface VillainProgressDynamic {
   maxPercentage: number;
 
   divisor?: number;
+  percentagePerUnit?: number;
+
   alternativeDivisor?: number;
   alternativeDivisorRequirement?: VillainProgressRequirement;
 
   counterId?: string;
-
   counterSources?: VillainProgressDynamicCounterSource[];
 
   penaltyCounterId?: string;
