@@ -6,6 +6,8 @@ import { CAPTAIN_HOOK_PROGRESSION } from '../data/villain-progressions/captain-h
 import { PRINCE_JOHN_PROGRESSION } from '../data/villain-progressions/prince-john.progression';
 import { JAFAR_PROGRESSION } from '../data/villain-progressions/jafar.progression';
 import { MALEFICENT_PROGRESSION } from '../data/villain-progressions/maleficent-progression';
+import { QUEEN_OF_HEARTS_PROGRESSION } from '../data/villain-progressions/queen-of-hearts.progression';
+import { URSULA_PROGRESSION } from '../data/villain-progressions/ursula-progression';
 
 @Injectable({
   providedIn: 'root',
@@ -15,7 +17,9 @@ export class VillainProgressionRepository {
     CAPTAIN_HOOK_PROGRESSION,
     PRINCE_JOHN_PROGRESSION,
     JAFAR_PROGRESSION,
-    MALEFICENT_PROGRESSION
+    MALEFICENT_PROGRESSION,
+    QUEEN_OF_HEARTS_PROGRESSION,
+    URSULA_PROGRESSION
   ];
 
   getAll(): VillainProgression[] {
