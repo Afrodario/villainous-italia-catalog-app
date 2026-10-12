@@ -16,6 +16,8 @@ import { YZMA_PROGRESSION } from '../data/villain-progressions/yzma.progression'
 import { RATIGAN_PROGRESSION } from '../data/villain-progressions/ratigan.progression';
 import { CRUELLA_DE_VIL_PROGRESSION } from '../data/villain-progressions/cruella-de-vil.progression';
 import { MOTHER_GOTHEL_PROGRESSION } from '../data/villain-progressions/mother-gothel.progression';
+import { PETE_PROGRESSION } from '../data/villain-progressions/pete.progression';
+import { GASTON_PROGRESSION } from '../data/villain-progressions/gaston.progression';
 
 @Injectable({
   providedIn: 'root',
@@ -35,7 +37,9 @@ export class VillainProgressionRepository {
     YZMA_PROGRESSION,
     RATIGAN_PROGRESSION,
     CRUELLA_DE_VIL_PROGRESSION,
-    MOTHER_GOTHEL_PROGRESSION
+    MOTHER_GOTHEL_PROGRESSION,
+    PETE_PROGRESSION,
+    GASTON_PROGRESSION
   ];
 
   getAll(): VillainProgression[] {

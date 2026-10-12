@@ -86,7 +86,8 @@ export type VillainProgressItem =
   | VillainProgressCounter
   | VillainProgressChoice
   | VillainProgressCounterGroup
-  | VillainProgressDynamic;
+  | VillainProgressDynamic
+  | VillainProgressObjectiveSet
 
 export interface VillainProgressStep {
   type: 'step';
@@ -130,7 +131,8 @@ export interface VillainProgressState {
 export type VillainProgressItemState =
   | VillainProgressStepState
   | VillainProgressCounterState
-  | VillainProgressChoiceState;
+  | VillainProgressChoiceState
+  | VillainProgressObjectiveSetState;
 
 export interface VillainProgressStepState {
   type: 'step';
@@ -148,4 +150,25 @@ export interface VillainProgressChoiceState {
   type: 'choice';
   id: string;
   selectedOptionId: string | null;
+}
+
+export interface VillainProgressObjectiveSet {
+  type: 'objective-set';
+  id: string;
+  label: string;
+  objectives: VillainProgressObjective[];
+  requires?: VillainProgressRequirement[];
+}
+
+export interface VillainProgressObjective {
+  id: string;
+  label: string;
+  weight: number;
+}
+
+export interface VillainProgressObjectiveSetState {
+  type: 'objective-set';
+  id: string;
+  excludedObjectiveId: string | null;
+  completedObjectiveIds: string[];
 }

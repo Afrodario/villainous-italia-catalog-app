@@ -109,6 +109,90 @@
           </div>
         </div>
       }
+      @if (item.type === "objective-set") {
+        <div class="rounded-lg border border-white/10 bg-slate-900 p-4">
+          <div class="mb-4">
+            <div class="font-semibold text-slate-200">
+              {{ item.label }}
+            </div>
+
+            <p class="mt-1 text-xs text-slate-400">
+              Completa 4 obiettivi su 5. Escludine uno prima di iniziare la
+              partita.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            @for (objective of item.objectives; track objective.id) {
+              <div class="rounded-lg border border-white/10 bg-slate-950 p-3">
+                <div class="flex items-start gap-3">
+                  <input
+                    type="checkbox"
+                    class="mt-1 h-5 w-5 shrink-0 accent-purple-600"
+                    [checked]="isObjectiveCompleted(item.id, objective.id)"
+                    [disabled]="
+                      !isItemAvailable(item) ||
+                      getObjectiveSetState(item.id)?.excludedObjectiveId ===
+                        objective.id
+                    "
+                    (change)="toggleObjective(item.id, objective.id)"
+                  />
+
+                  <div class="min-w-0 flex-1">
+                    <div class="font-medium text-slate-200">
+                      {{ objective.label }}
+                    </div>
+
+                    <div class="mt-1 text-xs text-slate-400">
+                      Peso: {{ objective.weight }}
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    class="rounded-md border px-3 py-2 text-xs font-semibold transition"
+                    [class.border-red-500]="
+                      getObjectiveSetState(item.id)?.excludedObjectiveId ===
+                      objective.id
+                    "
+                    [class.bg-red-950]="
+                      getObjectiveSetState(item.id)?.excludedObjectiveId ===
+                      objective.id
+                    "
+                    [class.text-red-300]="
+                      getObjectiveSetState(item.id)?.excludedObjectiveId ===
+                      objective.id
+                    "
+                    [class.border-white-10]="
+                      getObjectiveSetState(item.id)?.excludedObjectiveId !==
+                      objective.id
+                    "
+                    [class.text-slate-300]="
+                      getObjectiveSetState(item.id)?.excludedObjectiveId !==
+                      objective.id
+                    "
+                    [disabled]="
+                      !isItemAvailable(item) ||
+                      (getObjectiveSetState(item.id)?.excludedObjectiveId !==
+                        null &&
+                        getObjectiveSetState(item.id)?.excludedObjectiveId !==
+                          objective.id)
+                    "
+                    (click)="excludeObjective(item.id, objective.id)"
+                  >
+                    {{
+                      getObjectiveSetState(item.id)?.excludedObjectiveId ===
+                      objective.id
+                        ? "Escluso · Annulla"
+                        : "Escludi"
+                    }}
+                  </button>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+      }
       @if (item.type === "counter") {
         <div class="rounded-lg border border-white/10 bg-slate-900 p-4">
           <div class="mb-4 flex items-start justify-between gap-4">

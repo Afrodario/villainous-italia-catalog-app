@@ -64,6 +64,16 @@ export class VillainProgressService {
               },
             ];
 
+          case 'objective-set':
+            return [
+              {
+                type: 'objective-set',
+                id: item.id,
+                excludedObjectiveId: null,
+                completedObjectiveIds: [],
+              },
+            ];
+
           case 'counter-group':
             return [];
 
@@ -81,6 +91,40 @@ export class VillainProgressService {
   ): number {
     if (!this.isItemAvailable(item, progression, state)) {
       return 0;
+    }
+
+    if (item.type === 'objective-set') {
+      const itemState = state.items.find(
+        (stateItem) => stateItem.id === item.id,
+      );
+
+      if (itemState?.type !== 'objective-set') {
+        return 0;
+      }
+
+      const availableObjectives = item.objectives.filter(
+        (objective) => objective.id !== itemState.excludedObjectiveId,
+      );
+
+      const totalWeight = availableObjectives.reduce(
+        (total, objective) => total + objective.weight,
+        0,
+      );
+
+      if (totalWeight === 0) {
+        return 0;
+      }
+
+      const completedWeight = availableObjectives.reduce(
+        (total, objective) =>
+          total +
+          (itemState.completedObjectiveIds.includes(objective.id)
+            ? objective.weight
+            : 0),
+        0,
+      );
+
+      return (completedWeight / totalWeight) * 100;
     }
 
     if (item.type === 'counter-group') {

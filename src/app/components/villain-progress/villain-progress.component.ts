@@ -3,6 +3,7 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import {
   VillainProgression,
   VillainProgressItem,
+  VillainProgressObjectiveSetState,
   VillainProgressState,
 } from '../../models/villain-progressions/villain-progress.model';
 
@@ -179,5 +180,82 @@ export class VillainProgressComponent implements OnChanges {
     }
 
     return this.getTotalTitans() < 5;
+  }
+
+  getObjectiveSetState(
+    itemId: string,
+  ): VillainProgressObjectiveSetState | undefined {
+    const item = this.state.items.find((stateItem) => stateItem.id === itemId);
+
+    return item?.type === 'objective-set' ? item : undefined;
+  }
+
+  isObjectiveCompleted(itemId: string, objectiveId: string): boolean {
+    return (
+      this.getObjectiveSetState(itemId)?.completedObjectiveIds.includes(
+        objectiveId,
+      ) ?? false
+    );
+  }
+
+  toggleObjective(itemId: string, objectiveId: string): void {
+    const item = this.progression.items.find(
+      (progressionItem) => progressionItem.id === itemId,
+    );
+
+    if (!item || item.type !== 'objective-set' || !this.isItemAvailable(item)) {
+      return;
+    }
+
+    const state = this.getObjectiveSetState(itemId);
+
+    if (!state || state.excludedObjectiveId === objectiveId) {
+      return;
+    }
+
+    const index = state.completedObjectiveIds.indexOf(objectiveId);
+
+    if (index >= 0) {
+      state.completedObjectiveIds.splice(index, 1);
+    } else {
+      state.completedObjectiveIds.push(objectiveId);
+    }
+
+    this.updatePercentage();
+  }
+
+  excludeObjective(itemId: string, objectiveId: string): void {
+    const item = this.progression.items.find(
+      (progressionItem) => progressionItem.id === itemId,
+    );
+
+    if (!item || item.type !== 'objective-set' || !this.isItemAvailable(item)) {
+      return;
+    }
+
+    const state = this.getObjectiveSetState(itemId);
+
+    if (!state) {
+      return;
+    }
+
+    // Non consentire di escludere un secondo obiettivo.
+    if (
+      state.excludedObjectiveId !== null &&
+      state.excludedObjectiveId !== objectiveId
+    ) {
+      return;
+    }
+
+    if (state.excludedObjectiveId === objectiveId) {
+      state.excludedObjectiveId = null;
+    } else {
+      state.excludedObjectiveId = objectiveId;
+      state.completedObjectiveIds = state.completedObjectiveIds.filter(
+        (id) => id !== objectiveId,
+      );
+    }
+
+    this.updatePercentage();
   }
 }
