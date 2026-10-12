@@ -18,6 +18,8 @@ import { CRUELLA_DE_VIL_PROGRESSION } from '../data/villain-progressions/cruella
 import { MOTHER_GOTHEL_PROGRESSION } from '../data/villain-progressions/mother-gothel.progression';
 import { PETE_PROGRESSION } from '../data/villain-progressions/pete.progression';
 import { GASTON_PROGRESSION } from '../data/villain-progressions/gaston.progression';
+import { LADY_TREMAINE_PROGRESSION } from '../data/villain-progressions/lady-tremaine.progression';
+import { HORNED_KING_PROGRESSION } from '../data/villain-progressions/horned-king.progression';
 
 @Injectable({
   providedIn: 'root',
@@ -39,7 +41,9 @@ export class VillainProgressionRepository {
     CRUELLA_DE_VIL_PROGRESSION,
     MOTHER_GOTHEL_PROGRESSION,
     PETE_PROGRESSION,
-    GASTON_PROGRESSION
+    GASTON_PROGRESSION,
+    LADY_TREMAINE_PROGRESSION,
+    HORNED_KING_PROGRESSION
   ];
 
   getAll(): VillainProgression[] {
