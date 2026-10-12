@@ -7,13 +7,8 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
     {
       type: 'choice',
       id: 'puppy-11-radcliffe-1',
-      label: 'Cucciolo da 11 - Casa Radcliffe',
+      label: 'Cucciolo da 11 - Casa Radcliffe #1',
       options: [
-        {
-          id: 'in-pile',
-          label: 'Nella pila dei Cuccioli',
-          percentage: 0,
-        },
         {
           id: 'on-board',
           label: 'Sul tabellone',
@@ -34,13 +29,8 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
     {
       type: 'choice',
       id: 'puppy-11-radcliffe-2',
-      label: 'Cucciolo da 11 - Casa Radcliffe',
+      label: 'Cucciolo da 11 - Casa Radcliffe #2',
       options: [
-        {
-          id: 'in-pile',
-          label: 'Nella pila dei Cuccioli',
-          percentage: 0,
-        },
         {
           id: 'on-board',
           label: 'Sul tabellone',
@@ -64,11 +54,6 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       label: 'Cucciolo da 22 - Casa Radcliffe',
       options: [
         {
-          id: 'in-pile',
-          label: 'Nella pila dei Cuccioli',
-          percentage: 0,
-        },
-        {
           id: 'on-board',
           label: 'Sul tabellone',
           percentage: 5.2778,
@@ -90,13 +75,8 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
     {
       type: 'choice',
       id: 'puppy-11-countryside-1',
-      label: 'Cucciolo da 11 - La Campagna',
+      label: 'Cucciolo da 11 - La Campagna #1',
       options: [
-        {
-          id: 'in-pile',
-          label: 'Nella pila dei Cuccioli',
-          percentage: 0,
-        },
         {
           id: 'on-board',
           label: 'Sul tabellone',
@@ -117,13 +97,8 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
     {
       type: 'choice',
       id: 'puppy-11-countryside-2',
-      label: 'Cucciolo da 11 - La Campagna',
+      label: 'Cucciolo da 11 - La Campagna #2',
       options: [
-        {
-          id: 'in-pile',
-          label: 'Nella pila dei Cuccioli',
-          percentage: 0,
-        },
         {
           id: 'on-board',
           label: 'Sul tabellone',
@@ -147,11 +122,6 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       label: 'Cucciolo da 22 - La Campagna',
       options: [
         {
-          id: 'in-pile',
-          label: 'Nella pila dei Cuccioli',
-          percentage: 0,
-        },
-        {
           id: 'on-board',
           label: 'Sul tabellone',
           percentage: 5.2778,
@@ -173,13 +143,8 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
     {
       type: 'choice',
       id: 'puppy-11-barn-1',
-      label: 'Cucciolo da 11 - La Vaccheria',
+      label: 'Cucciolo da 11 - La Vaccheria #1',
       options: [
-        {
-          id: 'in-pile',
-          label: 'Nella pila dei Cuccioli',
-          percentage: 0,
-        },
         {
           id: 'on-board',
           label: 'Sul tabellone',
@@ -200,13 +165,8 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
     {
       type: 'choice',
       id: 'puppy-11-barn-2',
-      label: 'Cucciolo da 11 - La Vaccheria',
+      label: 'Cucciolo da 11 - La Vaccheria #2',
       options: [
-        {
-          id: 'in-pile',
-          label: 'Nella pila dei Cuccioli',
-          percentage: 0,
-        },
         {
           id: 'on-board',
           label: 'Sul tabellone',
@@ -230,11 +190,6 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       label: 'Cucciolo da 22 - La Vaccheria',
       options: [
         {
-          id: 'in-pile',
-          label: 'Nella pila dei Cuccioli',
-          percentage: 0,
-        },
-        {
           id: 'on-board',
           label: 'Sul tabellone',
           percentage: 5.2778,
@@ -256,13 +211,8 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
     {
       type: 'choice',
       id: 'puppy-11-hellhall-1',
-      label: "Cucciolo da 11 - L'Antro dell'Inferno",
+      label: "Cucciolo da 11 - L'Antro dell'Inferno #1",
       options: [
-        {
-          id: 'in-pile',
-          label: 'Nella pila dei Cuccioli',
-          percentage: 0,
-        },
         {
           id: 'on-board',
           label: 'Sul tabellone',
@@ -283,13 +233,8 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
     {
       type: 'choice',
       id: 'puppy-11-hellhall-2',
-      label: "Cucciolo da 11 - L'Antro dell'Inferno",
+      label: "Cucciolo da 11 - L'Antro dell'Inferno #2",
       options: [
-        {
-          id: 'in-pile',
-          label: 'Nella pila dei Cuccioli',
-          percentage: 0,
-        },
         {
           id: 'on-board',
           label: 'Sul tabellone',
@@ -312,11 +257,6 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       id: 'puppy-22-hellhall',
       label: "Cucciolo da 22 - L'Antro dell'Inferno",
       options: [
-        {
-          id: 'in-pile',
-          label: 'Nella pila dei Cuccioli',
-          percentage: 0,
-        },
         {
           id: 'on-board',
           label: 'Sul tabellone',
