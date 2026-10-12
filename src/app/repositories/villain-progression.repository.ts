@@ -23,6 +23,7 @@ import { HORNED_KING_PROGRESSION } from '../data/villain-progressions/horned-kin
 import { SYNDROME_PROGRESSION } from '../data/villain-progressions/syndrome.progression';
 import { MADAM_MIM_PROGRESSION } from '../data/villain-progressions/madam-mim.progression';
 import { LOTSO_PROGRESSION } from '../data/villain-progressions/lotso.progression';
+import { OOGIE_BOOGIE_PROGRESSION } from '../data/villain-progressions/oogie-boogie.progression';
 
 @Injectable({
   providedIn: 'root',
@@ -49,7 +50,8 @@ export class VillainProgressionRepository {
     HORNED_KING_PROGRESSION,
     SYNDROME_PROGRESSION,
     MADAM_MIM_PROGRESSION,
-    LOTSO_PROGRESSION
+    LOTSO_PROGRESSION,
+    OOGIE_BOOGIE_PROGRESSION
   ];
 
   getAll(): VillainProgression[] {
