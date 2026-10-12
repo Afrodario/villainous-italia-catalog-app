@@ -30,6 +30,11 @@ export class VillainProgressComponent implements OnChanges {
     'mount-olympus-titans',
   ];
 
+  private readonly lotsoHeroCounterIds = [
+    'heroes-outside-classroom',
+    'heroes-inside-classroom',
+  ];
+
   constructor(private readonly progressService: VillainProgressService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -170,16 +175,26 @@ export class VillainProgressComponent implements OnChanges {
     }, 0);
   }
 
+  getTotalLotsoHeroes(): number {
+    return this.lotsoHeroCounterIds.reduce((total, counterId) => {
+      return total + this.getCounterValue(counterId);
+    }, 0);
+  }
+
   canIncreaseCounter(itemId: string): boolean {
     if (itemId === 'trapped-titans') {
       return this.getCounterValue('trapped-titans') < this.getTotalTitans();
     }
 
-    if (!this.titanCounterIds.includes(itemId)) {
-      return true;
+    if (this.titanCounterIds.includes(itemId)) {
+      return this.getTotalTitans() < 5;
     }
 
-    return this.getTotalTitans() < 5;
+    if (this.lotsoHeroCounterIds.includes(itemId)) {
+      return this.getTotalLotsoHeroes() < 4;
+    }
+
+    return true;
   }
 
   getObjectiveSetState(

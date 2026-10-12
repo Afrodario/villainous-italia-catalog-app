@@ -20,6 +20,9 @@ import { PETE_PROGRESSION } from '../data/villain-progressions/pete.progression'
 import { GASTON_PROGRESSION } from '../data/villain-progressions/gaston.progression';
 import { LADY_TREMAINE_PROGRESSION } from '../data/villain-progressions/lady-tremaine.progression';
 import { HORNED_KING_PROGRESSION } from '../data/villain-progressions/horned-king.progression';
+import { SYNDROME_PROGRESSION } from '../data/villain-progressions/syndrome.progression';
+import { MADAM_MIM_PROGRESSION } from '../data/villain-progressions/madam-mim.progression';
+import { LOTSO_PROGRESSION } from '../data/villain-progressions/lotso.progression';
 
 @Injectable({
   providedIn: 'root',
@@ -43,7 +46,10 @@ export class VillainProgressionRepository {
     PETE_PROGRESSION,
     GASTON_PROGRESSION,
     LADY_TREMAINE_PROGRESSION,
-    HORNED_KING_PROGRESSION
+    HORNED_KING_PROGRESSION,
+    SYNDROME_PROGRESSION,
+    MADAM_MIM_PROGRESSION,
+    LOTSO_PROGRESSION
   ];
 
   getAll(): VillainProgression[] {
