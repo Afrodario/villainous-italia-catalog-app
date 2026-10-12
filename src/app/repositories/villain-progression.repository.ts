@@ -24,6 +24,10 @@ import { SYNDROME_PROGRESSION } from '../data/villain-progressions/syndrome.prog
 import { MADAM_MIM_PROGRESSION } from '../data/villain-progressions/madam-mim.progression';
 import { LOTSO_PROGRESSION } from '../data/villain-progressions/lotso.progression';
 import { OOGIE_BOOGIE_PROGRESSION } from '../data/villain-progressions/oogie-boogie.progression';
+import { KING_CANDY_PROGRESSION } from '../data/villain-progressions/king-candy.progression';
+import { SHERE_KHAN_PROGRESSION } from '../data/villain-progressions/shere-khan.progression';
+import { DAVY_JONES_PROGRESSION } from '../data/villain-progressions/davy-jones.progression';
+import { TAMATOA_PROGRESSION } from '../data/villain-progressions/tamatoa.progression';
 
 @Injectable({
   providedIn: 'root',
@@ -51,7 +55,11 @@ export class VillainProgressionRepository {
     SYNDROME_PROGRESSION,
     MADAM_MIM_PROGRESSION,
     LOTSO_PROGRESSION,
-    OOGIE_BOOGIE_PROGRESSION
+    OOGIE_BOOGIE_PROGRESSION,
+    KING_CANDY_PROGRESSION,
+    SHERE_KHAN_PROGRESSION,
+    DAVY_JONES_PROGRESSION,
+    TAMATOA_PROGRESSION
   ];
 
   getAll(): VillainProgression[] {

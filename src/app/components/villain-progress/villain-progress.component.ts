@@ -35,6 +35,12 @@ export class VillainProgressComponent implements OnChanges {
     'heroes-inside-classroom',
   ];
 
+  private readonly davyJonesTreasureCounterIds = [
+    'covered-treasures',
+    'revealed-treasures',
+    'collected-treasures',
+  ];
+
   constructor(private readonly progressService: VillainProgressService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -110,7 +116,14 @@ export class VillainProgressComponent implements OnChanges {
     const min = progressionItem.min ?? 0;
     const max = progressionItem.max ?? Number.MAX_SAFE_INTEGER;
 
-    const newValue = Math.max(min, Math.min(item.value + delta, max));
+    let newValue = Math.max(min, Math.min(item.value + delta, max));
+
+    if (this.davyJonesTreasureCounterIds.includes(itemId) && delta > 0) {
+      const totalTreasures = this.getTotalDavyJonesTreasures();
+      const remainingCapacity = Math.max(0, 5 - totalTreasures);
+
+      newValue = Math.min(newValue, item.value + remainingCapacity);
+    }
 
     item.value = newValue;
 
@@ -181,6 +194,13 @@ export class VillainProgressComponent implements OnChanges {
     }, 0);
   }
 
+  getTotalDavyJonesTreasures(): number {
+    return this.davyJonesTreasureCounterIds.reduce(
+      (total, counterId) => total + this.getCounterValue(counterId),
+      0,
+    );
+  }
+
   canIncreaseCounter(itemId: string): boolean {
     if (itemId === 'trapped-titans') {
       return this.getCounterValue('trapped-titans') < this.getTotalTitans();
@@ -192,6 +212,10 @@ export class VillainProgressComponent implements OnChanges {
 
     if (this.lotsoHeroCounterIds.includes(itemId)) {
       return this.getTotalLotsoHeroes() < 4;
+    }
+
+    if (this.davyJonesTreasureCounterIds.includes(itemId)) {
+      return this.getTotalDavyJonesTreasures() < 5;
     }
 
     return true;

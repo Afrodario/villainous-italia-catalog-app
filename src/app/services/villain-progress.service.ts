@@ -279,6 +279,39 @@ export class VillainProgressService {
     progression: VillainProgression,
     state: VillainProgressState,
   ): boolean {
+    // Shere Khan: Condizioni per sconfiggere Mowgli
+    if (
+      progression.villainId === 'shere-khan' &&
+      item.id === 'mowgli-defeated'
+    ) {
+      const balooState = state.items.find(
+        (stateItem) => stateItem.id === 'baloo-in-play',
+      );
+      if (balooState?.type === 'step' && balooState.completed) {
+        return false;
+      }
+      const strategyState = state.items.find(
+        (stateItem) => stateItem.id === 'victory-strategy',
+      );
+      if (
+        strategyState?.type !== 'choice' ||
+        strategyState.selectedOptionId === null
+      ) {
+        return false;
+      }
+      if (strategyState.selectedOptionId === 'traditional') {
+        const fireState = state.items.find(
+          (stateItem) => stateItem.id === 'fire-tokens-remaining',
+        );
+        if (
+          fireState?.type !== 'choice' ||
+          fireState.selectedOptionId !== 'zero'
+        ) {
+          return false;
+        }
+      }
+    }
+
     const requirements = item.requires;
 
     if (!requirements || requirements.length === 0) {
