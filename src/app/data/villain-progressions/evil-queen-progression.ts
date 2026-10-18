@@ -32,7 +32,7 @@ export const EVIL_QUEEN_PROGRESSION: VillainProgression = {
       type: 'step',
       id: 'dwarfs-cottage-unlocked',
       label: 'Avere sbloccato la Casetta dei Nani',
-      percentage: 10,
+      percentage: 0,
       requires: [
         {
           type: 'step',
@@ -57,7 +57,7 @@ export const EVIL_QUEEN_PROGRESSION: VillainProgression = {
       type: 'step',
       id: 'snow-white-in-play',
       label: 'Avere Biancaneve in gioco',
-      percentage: 10,
+      percentage: 15,
     },
 
     {
@@ -105,7 +105,7 @@ export const EVIL_QUEEN_PROGRESSION: VillainProgression = {
       type: 'step',
       id: 'defeat-snow-white',
       label: 'Sconfiggere Biancaneve',
-      percentage: 5,
+      percentage: 10,
       requires: [
         {
           type: 'step',

@@ -50,6 +50,14 @@ export const CAPTAIN_HOOK_PROGRESSION: VillainProgression = {
       ],
     },
     {
+      type: 'counter',
+      id: 'taunt-cards-active',
+      label: 'Copie di Schernire ancora in gioco',
+      min: 0,
+      max: 2,
+      percentagePerUnit: -10,
+    },
+    {
       type: 'step',
       id: 'defeat-peter-pan',
       label: 'Sconfiggere Peter Pan alla Jolly Roger',
