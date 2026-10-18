@@ -63,7 +63,7 @@ export const EVIL_QUEEN_PROGRESSION: VillainProgression = {
     {
       type: 'step',
       id: 'doc-not-in-play',
-      label: 'Avere Dotto non presente in gioco',
+      label: 'Dotto non è presente nel Reame',
       percentage: 0,
     },
 

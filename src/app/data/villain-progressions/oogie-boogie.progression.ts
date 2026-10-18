@@ -1,5 +1,4 @@
-import { VillainProgression } from "../../models/villain-progressions/villain-progress.model";
-
+import { VillainProgression } from '../../models/villain-progressions/villain-progress.model';
 
 export const OOGIE_BOOGIE_PROGRESSION: VillainProgression = {
   villainId: 'oogie-boogie',
@@ -31,12 +30,20 @@ export const OOGIE_BOOGIE_PROGRESSION: VillainProgression = {
     },
     {
       type: 'counter',
+      id: 'citizens-of-halloween-town',
+      label: 'Cittadini del Paese di Halloween nel Luogo di Jack Skeletron',
+      min: 0,
+      max: 4,
+      percentagePerUnit: -5,
+    },
+    {
+      type: 'counter',
       id: 'allies-strength-zero-absent',
       label:
         'Forza totale degli Alleati nel Luogo di Jack Skeletron (Zero non in gioco)',
       min: 0,
       max: 8,
-      percentagePerUnit: 2.5,
+      percentagePerUnit: 1.25,
       requires: [
         {
           type: 'choice',
@@ -52,7 +59,7 @@ export const OOGIE_BOOGIE_PROGRESSION: VillainProgression = {
         'Forza totale degli Alleati nel Luogo di Jack Skeletron (Zero in gioco)',
       min: 0,
       max: 10,
-      percentagePerUnit: 2,
+      percentagePerUnit: 1,
       requires: [
         {
           type: 'choice',
