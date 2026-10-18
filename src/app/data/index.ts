@@ -51,6 +51,7 @@ import { SHERE_KHAN } from './villains/7-sugar-and-spite/shere-khan-villain';
 import { DAVY_JONES } from './villains/8-treacherous-tides/davy-jones-villain';
 import { TAMATOA } from './villains/8-treacherous-tides/tamatoa-villain';
 import { ERNESTO_DE_LA_CRUZ } from './villains/9-success-at-any-cost/ernesto-de-la-cruz.villain';
+import { PRINCE_HANS } from './villains/9-success-at-any-cost/prince-hans.villain';
 import { SANDERSON_SISTERS } from './villains/sanderson-sisters-villain';
 export * from './expansions';
 export * from './villains/0-the-worst-takes-it-all/jafar-villain';
@@ -112,5 +113,6 @@ export const ALL_VILLAINS = [
   DAVY_JONES,
   TAMATOA,
   ERNESTO_DE_LA_CRUZ,
+  PRINCE_HANS,
   SANDERSON_SISTERS
 ];
