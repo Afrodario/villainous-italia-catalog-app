@@ -9,6 +9,7 @@ export enum EXPANSIONS_IDS {
     SugarAndSpite = 'sugar-and-spite',
     TreacherousTides = 'treacherous-tides',
     DarknessBrewing = 'darkness-brewing',
+    SuccessAtAnyCost = 'success-at-any-cost',
     ComeWeFly = 'come-we-fly'
 }
 
@@ -38,5 +39,8 @@ export enum VILLAINS_IDS {
     KingCandy = 'king-candy',
     ShereKhan = 'shere-khan',
     DavyJones = 'davy-jones',
-    Tamatoa = 'tamatoa'
+    Tamatoa = 'tamatoa',
+    ErnestoDeLaCruz = 'ernesto-de-la-cruz',
+    PrinceHans = 'prince-hans',
+    SandersonSisters = 'sanderson-sisters'
 }

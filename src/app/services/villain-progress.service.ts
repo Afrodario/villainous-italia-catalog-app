@@ -30,7 +30,7 @@ export class VillainProgressService {
       return total + this.calculateItemPercentage(item, progression, state);
     }, 0);
 
-    return Math.min(percentage, 100);
+    return Math.max(0, Math.min(percentage, 100));
   }
 
   createInitialState(progression: VillainProgression): VillainProgressState {
@@ -349,6 +349,33 @@ export class VillainProgressService {
     progression: VillainProgression,
     state: VillainProgressState,
   ): number {
+    // Caso specifico: malus della Forza residua di Hector Rivera
+    if (
+      progression.villainId === 'ernesto-de-la-cruz' &&
+      item.id === 'hector-strength-penalty'
+    ) {
+      const hectorState = state.items.find(
+        (stateItem) => stateItem.id === 'hector-in-play',
+      );
+
+      if (hectorState?.type !== 'step' || !hectorState.completed) {
+        return 0;
+      }
+
+      const photoState = state.items.find(
+        (stateItem) => stateItem.id === 'photo-pieces-turned',
+      );
+
+      if (!photoState || photoState.type !== 'counter') {
+        return 0;
+      }
+
+      const photosFaceDown = Math.max(0, Math.min(photoState.value, 6));
+      const photosFaceUp = 6 - photosFaceDown;
+      const hectorStrength = 1 + photosFaceUp;
+
+      return -(25 * hectorStrength) / 7;
+    }
     if (item.remaining) {
       const currentPercentage = this.calculatePercentage(
         progression,
@@ -413,7 +440,8 @@ export class VillainProgressService {
       }
     }
 
-    return Math.max(0, percentage);
+    //return Math.max(0, percentage);
+    return Math.max(0, Math.min(percentage, 100));
   }
 
   private calculateCompositeDynamicPercentage(

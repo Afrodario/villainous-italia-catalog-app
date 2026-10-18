@@ -28,6 +28,7 @@ import { KING_CANDY_PROGRESSION } from '../data/villain-progressions/king-candy.
 import { SHERE_KHAN_PROGRESSION } from '../data/villain-progressions/shere-khan.progression';
 import { DAVY_JONES_PROGRESSION } from '../data/villain-progressions/davy-jones.progression';
 import { TAMATOA_PROGRESSION } from '../data/villain-progressions/tamatoa.progression';
+import { ERNESTO_DE_LA_CRUZ_PROGRESSION } from '../data/villain-progressions/ernesto-de-la-cruz.progression';
 
 @Injectable({
   providedIn: 'root',
@@ -59,6 +60,7 @@ export class VillainProgressionRepository {
     KING_CANDY_PROGRESSION,
     SHERE_KHAN_PROGRESSION,
     DAVY_JONES_PROGRESSION,
+    ERNESTO_DE_LA_CRUZ_PROGRESSION,
     TAMATOA_PROGRESSION
   ];
 
