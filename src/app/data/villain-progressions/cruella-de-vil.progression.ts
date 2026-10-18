@@ -11,7 +11,7 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       options: [
         {
           id: 'on-board',
-          label: 'Sul tabellone',
+          label: 'Nel Reame',
           percentage: 2.6389,
         },
         {
@@ -33,7 +33,7 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       options: [
         {
           id: 'on-board',
-          label: 'Sul tabellone',
+          label: 'Nel Reame',
           percentage: 2.6389,
         },
         {
@@ -55,7 +55,7 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       options: [
         {
           id: 'on-board',
-          label: 'Sul tabellone',
+          label: 'Nel Reame',
           percentage: 5.2778,
         },
         {
@@ -79,7 +79,7 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       options: [
         {
           id: 'on-board',
-          label: 'Sul tabellone',
+          label: 'Nel Reame',
           percentage: 2.6389,
         },
         {
@@ -101,7 +101,7 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       options: [
         {
           id: 'on-board',
-          label: 'Sul tabellone',
+          label: 'Nel Reame',
           percentage: 2.6389,
         },
         {
@@ -123,7 +123,7 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       options: [
         {
           id: 'on-board',
-          label: 'Sul tabellone',
+          label: 'Nel Reame',
           percentage: 5.2778,
         },
         {
@@ -147,7 +147,7 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       options: [
         {
           id: 'on-board',
-          label: 'Sul tabellone',
+          label: 'Nel Reame',
           percentage: 2.6389,
         },
         {
@@ -169,7 +169,7 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       options: [
         {
           id: 'on-board',
-          label: 'Sul tabellone',
+          label: 'Nel Reame',
           percentage: 2.6389,
         },
         {
@@ -191,7 +191,7 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       options: [
         {
           id: 'on-board',
-          label: 'Sul tabellone',
+          label: 'Nel Reame',
           percentage: 5.2778,
         },
         {
@@ -215,7 +215,7 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       options: [
         {
           id: 'on-board',
-          label: 'Sul tabellone',
+          label: 'Nel Reame',
           percentage: 2.6389,
         },
         {
@@ -237,7 +237,7 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       options: [
         {
           id: 'on-board',
-          label: 'Sul tabellone',
+          label: 'Nel Reame',
           percentage: 2.6389,
         },
         {
@@ -259,7 +259,7 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       options: [
         {
           id: 'on-board',
-          label: 'Sul tabellone',
+          label: 'Nel Reame',
           percentage: 5.2778,
         },
         {
