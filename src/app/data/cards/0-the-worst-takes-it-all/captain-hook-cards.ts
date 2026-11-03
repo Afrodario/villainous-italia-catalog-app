@@ -21,8 +21,11 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     strength: 2,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Uno degli Alleati più flessibili di Capitan Uncino.',
+        'Se potete, cercate di giocarli per primi e di posizionarli alla Roccia del Teschio e alla Laguna delle Sirene, in modo da poterli usare nel maggior numero di luoghi all’occorrenza.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -37,8 +40,13 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     quantity: 3,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Uno degli Effetti più utili a disposizione di Capitan Uncino.',
+        'Assicuratevi di giocarlo ad ogni occasione utile per sfoltire il vostro mazzo Fato e avvicinarvi sempre di più a Peter Pan.',
+        'Ovviamente, tenderete sempre a scartare entrambe le carte che guarderete, se tra di loro non ci sarà Peter Pan. Quando le rimetterete al loro posto, i vostri avversari sapranno che avrete trovato Peter Pan e saranno riluttanti a scagliarvi il Fato contro. In questo caso, abbiate l’accortezza di riposizionare Peter Pan come prima carta del mazzo Fato e tenete in serbo una copia di Degno Avversario per farlo venire allo scoperto.',
+        'Nel caso in cui abbiate già trovato Peter Pan, Spaventare vi sarà comunque utile a liberarvi delle copie di Schernire e Polvere di Fata che potrebbero ostacolarvi.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -54,8 +62,11 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     strength: 2,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Lo Smargiasso è un Alleato economico, il cui scopo è principalmente quello di aumentare la potenza dell’intera armata che dovrà sconfiggere Peter Pan.',
+        'Se avete Potere in abbondanza, non fa mai male giocarne uno alla Jolly Roger, per accumulare tutta la Forza necessaria allo scontro finale. Altrimenti, potreste anche scartarlo per cercare di raggiungere Alleati migliori.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -70,8 +81,12 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     quantity: 3,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Un altro ottimo mezzo per scavare nel mazzo Fato e avvicinarvi sempre di più a Peter Pan.',
+        'Avrete il controllo sull’Eroe che verrà pescato, quindi, se non si tratterà di Peter Pan, assicuratevi di posizionarlo in un luogo dove degli Alleati saranno già pronti a sconfiggerlo. Ovviamente, l’efficacia di questo Effetto è massimizzata se avete giocato Spaventare e saprete cosa vi aspetta nel mazzo Fato.',
+        'Se siete a corto di Potere, inoltre, il costo gratuito di Degno Avversario può venirvi incontro per recuperare 2 Gettoni Potere, che non fanno mai male.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -86,8 +101,12 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     quantity: 2,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Non ci saranno molte occasioni in cui vorrete giocare questo Effetto, considerando che non vi consente di svolgere subito un’azione Scontro, per cui non tenetelo in mano per più tempo del dovuto.',
+        'Tuttavia, nel culmine della partita può aiutarvi a raggiungere la vittoria all’ultimo minuto, specie se i vostri avversari pensano che non abbiate sufficiente Forza per sconfiggere Peter Pan.',
+        'Assicuratevi di giocare Signore, Signorsì Signore per spostare Alleati alla Jolly Roger o dovunque abbiate piazzato un Cannone.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -102,8 +121,12 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     quantity: 2,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Le due copie di Cannone danno a Capitan Uncino molta più flessibilità nel suo obiettivo.',
+        'Assicuratevi di giocarle entrambe e, all’occorrenza, di muoverle dove più vi fa comodo, in modo da cogliere sempre gli avversari di sorpresa.',
+        'Pianificando il posizionamento dei Cannoni, potrete riuscire a sconfiggere Peter Pan senza necessariamente recarvi alla Jolly Roger.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: false,
     specifics: {
@@ -121,8 +144,12 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     quantity: 2,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Conservate questa Condizione quando avrete in mano un Bruto Pirata, il vostro Alleato più forte ma anche più costoso.',
+        'Potete anche usarla nel caso in cui abbiate estrema necessità di sconfiggere un Eroe con uno Schernire assegnato oppure se vi manca un solo Alleato per riuscire ad eliminare Peter Pan.',
+        'Quasi tutti i cattivi hanno almeno un Alleato con Forza 4 o superiore, per cui non dovrebbe essere particolarmente difficile riuscire ad attivare Astuzia.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -138,8 +165,11 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     strengthModifier: 2,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Ad un costo esiguo, la Sciabola consente di dare un piccolo bonus in Forza all’Alleato che ne ha più bisogno e nel momento più opportuno.',
+        'Se avete già Alleati in abbondanza, sentitevi pure liberi di scartarla.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -154,8 +184,10 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     quantity: 2,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Non fa mai male riuscire a recuperare un Gettone Potere in più, per cui giocate gli Uncini da Cerimonia dove più ne avete bisogno e assicuratevi di muoverli di volta in volta con l’azione Muovere Oggetto/Alleato, così da non rimanere mai a corto di Potere nelle vostre mosse successive.',
+      ],
+      //warning: 'Warning',
     },
     specifics: {
       hasAddedAction: true,
@@ -173,8 +205,11 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     quantity: 2,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'L’effetto di Ossessione si rivela essere preziosissimo per scavare nel mazzo Fato prima del proprio turno e prepararsi all’eventualità che venga fuori Peter Pan. Tuttavia, non è la Condizione più semplice da attivare.',
+        'Assicuratevi di tenerla in mano solo quando uno degli avversari ha già in campo un Eroe con il giusto valore in Forza o se siete sicurissimi che a breve dovrà necessariamente sconfiggerne uno.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -190,8 +225,12 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     strength: 4,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Questo pirata possiede una grande Forza ad un Costo abbastanza alto.',
+        'Se sarete riusciti ad accumulare molto Potere, magari anche grazie agli Uncini da Cerimonia, assicuratevi di giocare entrambe le copie del Bruto Pirata, di cui almeno una alla Jolly Roger.',
+        'Altrimenti, per risparmiare Potere, potreste anche giocare il Bruto Pirata tramite una copia di Astuzia.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -206,8 +245,12 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     quantity: 1,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Sicuramente una delle carte più potenti del mazzo di Capitan Uncino. Assicuratevi di giocarlo all’Albero dell’Impiccato quando l’avrete già sbloccato e Peter Pan sarà lì. In questo modo, potrete sfruttare due azioni Muovere un Eroe.',
+        'Se poi nel turno successivo sfrutterete l’azione Muovere Oggetto/Alleato della Laguna delle Sirene per muovere il Dispositivo, potrete nuovamente utilizzarlo e far arrivare Peter Pan alla Jolly Roger, il tutto in soli due turni! Utilizzando questa strategia, se avrete piazzato un Cannone alla Laguna delle Sirene, sarete anche in grado di vincere, ammesso abbiate abbastanza Alleati alla Jolly Roger per sconfiggere Peter Pan.',
+        'L’unica controindicazione del Dispositivo Ingegnoso è che, se verrà giocato troppo presto, rischierà di essere scartato da una copia di Terribile Mal di Testa, rendendolo molto difficile da recuperare.',
+      ],
+      //warning: 'Warning',
     },
     specifics: {
       hasAddedAction: true,
@@ -227,8 +270,12 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     strength: 2,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Più che per la sua Forza, Mr. Starkey si rivela molto utile per la sua abilità. Cercate di utilizzarlo per muovere Peter Pan dall’Albero dell’Impiccato al momento più opportuno.',
+        'Inoltre, potete anche usare Mr. Starkey in combinazione con il Dispositivo Ingegnoso e l’azione Muovere un Eroe presente all’Albero dell’Impiccato.',
+        'Se riuscirete a pianificare una combinazione di queste abilità, potrete cogliere alla sprovvista gli avversari, soprattutto se alla Jolly Roger ci saranno già Alleati sufficientemente forti per sconfiggere Peter Pan.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -243,8 +290,12 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     quantity: 1,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'La vostra priorità assoluta sarà sempre recuperare questa carta, dato che Uncino non può vincere senza.',
+        'Scartate frequentemente e giocate quante più carte avete in mano, per raggiungere in fretta la Mappa.',
+        'Una volta giocata, ricordate sempre che potrete scartarla per giocare gratuitamente un Oggetto dalla vostra mano, un’utile possibilità se sarete a corto di Potere.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: false,
   },
@@ -260,8 +311,11 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     strength: 2,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Per via della sua utilissima abilità, conviene sempre giocare Spugna alla Jolly Roger, a meno che non abbiate altro modo di eliminare un Eroe che abbia uno Schernire assegnato.',
+        'Tuttavia, cercate di giocare Spugna quando già avrete una nutrita armata di pirati alla Jolly Roger, in quanto gli avversari tenderanno a scartare proprio lui usando Trilli, privandovi di ben 4 punti Forza.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: false,
   },
