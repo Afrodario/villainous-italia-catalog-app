@@ -30,6 +30,7 @@ import { DAVY_JONES_PROGRESSION } from '../data/villain-progressions/davy-jones.
 import { TAMATOA_PROGRESSION } from '../data/villain-progressions/tamatoa.progression';
 import { ERNESTO_DE_LA_CRUZ_PROGRESSION } from '../data/villain-progressions/ernesto-de-la-cruz.progression';
 import { PRINCE_HANS_PROGRESSION } from '../data/villain-progressions/prince-hans.progression';
+import { SANDERSON_SISTERS_PROGRESSION } from '../data/villain-progressions/sanderson-sisters.progression';
 
 @Injectable({
   providedIn: 'root',
@@ -63,7 +64,8 @@ export class VillainProgressionRepository {
     DAVY_JONES_PROGRESSION,
     TAMATOA_PROGRESSION,
     ERNESTO_DE_LA_CRUZ_PROGRESSION,
-    PRINCE_HANS_PROGRESSION
+    PRINCE_HANS_PROGRESSION,
+    SANDERSON_SISTERS_PROGRESSION
   ];
 
   getAll(): VillainProgression[] {

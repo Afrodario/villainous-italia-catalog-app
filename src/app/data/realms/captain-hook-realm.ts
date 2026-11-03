@@ -5,7 +5,7 @@ import { VILLAINS_IDS } from '../../models/villains-expansions-ids.model';
 export const CAPTAIN_HOOK_REALM: Realm = {
   id: 'captain-hook-realm',
   villainId: VILLAINS_IDS.CaptainHook,
-  image: 'assets/images-webp-webp/realms/captain_hook/Hookrealm.webp',
+  image: 'assets/images-webp/realms/captain_hook/Hookrealm.webp',
   locations: [
     {
       id: 'jolly-roger',
