@@ -10,6 +10,7 @@ import { GameViewComponent } from './components/game-view/game-view.component';
 import { CatalogComponent } from './components/catalog/catalog.component';
 import { GameplayComponent } from './components/gameplay/gameplay.component';
 import { ProgressionComponent } from './components/progression/progression.component';
+import { HallOfFameComponent } from './components/hall-of-fame/hall-of-fame.component';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,7 @@ import { ProgressionComponent } from './components/progression/progression.compo
     CatalogComponent,
     GameplayComponent,
     ProgressionComponent,
+    HallOfFameComponent,
   ],
   templateUrl: './app.component.html',
 })
@@ -36,8 +38,12 @@ export class AppComponent {
 
   cardToOpenId: string | null = null;
 
-  currentSection: 'scenarios' | 'catalog' | 'gameplay' | 'progression' =
-    'catalog';
+  currentSection:
+    | 'scenarios'
+    | 'catalog'
+    | 'gameplay'
+    | 'progression'
+    | 'hall-of-fame' = 'catalog';
 
   constructor(
     private scenarioService: ScenarioService,
@@ -61,6 +67,10 @@ export class AppComponent {
 
   showProgression(): void {
     this.currentSection = 'progression';
+  }
+
+  showHallOfFame(): void {
+    this.currentSection = 'hall-of-fame';
   }
 
   showGameplayAction(actionId: string): void {

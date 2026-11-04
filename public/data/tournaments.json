@@ -1,0 +1,147 @@
+[
+  {
+    "id": "modena-play-2023",
+    "name": "MODENA PLAY 2023",
+    "year": 2023,
+    "order": 1
+  },
+  {
+    "id": "roma-ludico-2023",
+    "name": "ROMA LUDICO 2023",
+    "year": 2023,
+    "order": 2
+  },
+  {
+    "id": "lucca-comics-2023",
+    "name": "LUCCA COMICS 2023",
+    "year": 2023,
+    "order": 3
+  },
+  {
+    "id": "milano-games-week-2023",
+    "name": "MILANO GAMES WEEK 2023",
+    "year": 2023,
+    "order": 4
+  },
+  {
+    "id": "villainous-before-christmas-2023",
+    "name": "VILLAINOUS BEFORE CHRISTMAS 2023",
+    "year": 2023,
+    "order": 5
+  },
+  {
+    "id": "good-to-be-bad-tour-roma-apertura-2024",
+    "name": "GOOD TO BE BAD TOUR ROMA APERTURA 2024",
+    "year": 2024,
+    "order": 6
+  },
+  {
+    "id": "modena-play-2024",
+    "name": "MODENA PLAY 2024",
+    "year": 2024,
+    "order": 7
+  },
+  {
+    "id": "good-to-be-bad-tour-roma-i-2024",
+    "name": "GOOD TO BE BAD TOUR ROMA I 2024",
+    "year": 2024,
+    "order": 8
+  },
+  {
+    "id": "lucca-comics-2024",
+    "name": "LUCCA COMICS 2024",
+    "year": 2024,
+    "order": 9
+  },
+  {
+    "id": "good-to-be-bad-tour-roma-ii-2024",
+    "name": "GOOD TO BE BAD TOUR ROMA II 2024",
+    "year": 2024,
+    "order": 10
+  },
+  {
+    "id": "milano-games-week-2024",
+    "name": "MILANO GAMES WEEK 2024",
+    "year": 2024,
+    "order": 11
+  },
+  {
+    "id": "the-villainous-before-christmas-2024",
+    "name": "THE VILLAINOUS BEFORE CHRISTMAS 2024",
+    "year": 2024,
+    "order": 12
+  },
+  {
+    "id": "bad-to-the-bone-tour-roma-apertura-2025",
+    "name": "BAD TO THE BONE TOUR ROMA APERTURA 2025",
+    "year": 2025,
+    "order": 13
+  },
+  {
+    "id": "bad-to-the-bone-tour-bologna-play-2025",
+    "name": "BAD TO THE BONE TOUR BOLOGNA PLAY 2025",
+    "year": 2025,
+    "order": 14
+  },
+  {
+    "id": "bad-to-the-bone-tour-roma-2025",
+    "name": "BAD TO THE BONE TOUR ROMA 2025",
+    "year": 2025,
+    "order": 15
+  },
+  {
+    "id": "torneo-villainous-napoli-2025",
+    "name": "TORNEO VILLAINOUS NAPOLI 2025",
+    "year": 2025,
+    "order": 16
+  },
+  {
+    "id": "bad-to-the-bone-tour-lucca-comics-2025",
+    "name": "BAD TO THE BONE TOUR LUCCA COMICS 2025",
+    "year": 2025,
+    "order": 17
+  },
+  {
+    "id": "bad-to-the-bone-tour-roma-natale-2025",
+    "name": "BAD TO THE BONE TOUR ROMA NATALE 2025",
+    "year": 2025,
+    "order": 18,
+    "specialResults": [
+      {
+        "value": 5,
+        "label": "Vincitore del torneo",
+        "description": "Riconoscimento speciale per la vittoria nel torneo con il maggior numero di iscritti mai organizzato."
+      }
+    ]
+  },
+  {
+    "id": "the-bad-side-tour-bologna-2026",
+    "name": "THE BAD SIDE TOUR BOLOGNA 2026",
+    "year": 2026,
+    "order": 19
+  },
+  {
+    "id": "the-bad-side-tour-inkhearts-roma-2026",
+    "name": "THE BAD SIDE TOUR (INKHEARTS) ROMA 2026",
+    "year": 2026,
+    "order": 20
+  },
+  {
+    "id": "the-bad-side-tour-games-on-board-2026",
+    "name": "THE BAD SIDE TOUR GAMES ON BOARD 2026",
+    "year": 2026,
+    "order": 21
+  },
+  {
+    "id": "the-bad-side-tour-milano-draft-2026",
+    "name": "THE BAD SIDE TOUR MILANO DRAFT 2026",
+    "year": 2026,
+    "order": 22
+  },
+  {
+    "id": "the-bad-side-tour-lucca-comics-2026",
+    "name": "THE BAD SIDE TOUR LUCCA COMICS 2026",
+    "year": 2026,
+    "order": 23
+  }
+]
