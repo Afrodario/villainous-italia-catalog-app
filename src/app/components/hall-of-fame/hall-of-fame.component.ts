@@ -1,11 +1,12 @@
 import { Component, OnInit, inject } from '@angular/core';
-
+import { NgClass } from '@angular/common';
 import { HallOfFameService } from './hall-of-fame.service';
 import { Player, PlayerResult, Tournament } from './hall-of-fame.model';
 
 @Component({
   selector: 'app-hall-of-fame',
   standalone: true,
+  imports: [NgClass],
   template: `
     <section class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
       @if (isLoading) {
@@ -138,6 +139,10 @@ import { Player, PlayerResult, Tournament } from './hall-of-fame.model';
                       {{ tournament.name }}
                     </h4>
 
+                    <p class="mt-1 text-xs text-amber-400">
+                      {{ tournament.tour }}
+                    </p>
+
                     <p class="mt-1 text-xs text-slate-400">
                       {{ tournament.year }}
                     </p>
@@ -248,7 +253,7 @@ import { Player, PlayerResult, Tournament } from './hall-of-fame.model';
                 <button
                   type="button"
                   (click)="selectPlayer(player)"
-                  class="flex w-full items-center gap-3 rounded-xl border border-slate-700 bg-slate-800/70 p-4 text-left shadow-sm transition hover:border-amber-400/60 hover:bg-slate-800 sm:gap-5"
+                  class="flex w-full items-center gap-3 rounded-xl border border-slate-700 p-4 text-left shadow-sm transition hover:border-amber-400/60 sm:gap-5"
                 >
                   <div
                     class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-700 text-sm font-black text-white sm:h-12 sm:w-12"
@@ -257,7 +262,10 @@ import { Player, PlayerResult, Tournament } from './hall-of-fame.model';
                   </div>
 
                   <div class="min-w-0 flex-1">
-                    <h3 class="truncate font-bold text-white sm:text-lg">
+                    <h3
+                      class="truncate font-bold sm:text-lg"
+                      [ngClass]="getPlayerNameClass(player)"
+                    >
                       {{ player.name }}
                     </h3>
 
@@ -266,13 +274,44 @@ import { Player, PlayerResult, Tournament } from './hall-of-fame.model';
                     </p>
                   </div>
 
-                  <div class="shrink-0 text-right">
-                    <p class="text-xs uppercase tracking-wide text-slate-400">
-                      Indice
-                    </p>
-                    <p class="text-lg font-black text-amber-400 sm:text-xl">
-                      {{ formatIndex(player.qualificationIndex) }}
-                    </p>
+                  <div class="flex shrink-0 items-center gap-2">
+                    @if (getTournamentWins(player) > 0) {
+                      <div
+                        class="flex items-center gap-1 text-amber-400"
+                        title="Numero di tornei vinti"
+                      >
+                        <svg
+                          class="h-6 w-6"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="M8 21h8" />
+                          <path d="M12 17v4" />
+                          <path d="M7 4h10v7a5 5 0 0 1-10 0V4Z" />
+                          <path d="M17 5h3v2a4 4 0 0 1-3.5 4" />
+                          <path d="M7 5H4v2a4 4 0 0 0 3.5 4" />
+                        </svg>
+
+                        <span class="text-sm font-black">
+                          X {{ getTournamentWins(player) }}
+                        </span>
+                      </div>
+                    }
+
+                    <div class="text-right">
+                      <p class="text-xs uppercase tracking-wide text-slate-400">
+                        Indice
+                      </p>
+                      <p class="text-lg font-black text-amber-400 sm:text-xl">
+                        {{ formatIndex(player.qualificationIndex) }}
+                      </p>
+                    </div>
                   </div>
 
                   <div class="hidden shrink-0 text-right sm:block">
@@ -307,7 +346,6 @@ import { Player, PlayerResult, Tournament } from './hall-of-fame.model';
 })
 export class HallOfFameComponent implements OnInit {
   private hallOfFameService = inject(HallOfFameService);
-
   players: Player[] = [];
   tournaments: Tournament[] = [];
 
@@ -461,7 +499,25 @@ export class HallOfFameComponent implements OnInit {
   formatIndex(value: number): string {
     return value.toLocaleString('it-IT', {
       minimumFractionDigits: 0,
-      maximumFractionDigits: 6,
+      maximumFractionDigits: 4,
     });
+  }
+
+  getPlayerNameClass(player: Player): string {
+    if (player.totalPoints >= 5) {
+      return 'text-orange-400';
+    }
+
+    if (player.totalPoints >= 2) {
+      return 'text-sky-300';
+    }
+
+    return 'text-lime-300';
+  }
+
+  getTournamentWins(player: Player): number {
+    return Object.values(player.results).filter(
+      (result) => typeof result === 'number' && result >= 4,
+    ).length;
   }
 }

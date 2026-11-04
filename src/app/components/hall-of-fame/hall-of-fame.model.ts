@@ -23,6 +23,7 @@ export interface Tournament {
   name: string;
   year: number;
   order: number;
+  tour: string;
   specialResults?: SpecialResult[];
 }
 

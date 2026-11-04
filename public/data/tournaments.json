@@ -3,109 +3,127 @@
     "id": "modena-play-2023",
     "name": "MODENA PLAY 2023",
     "year": 2023,
-    "order": 1
+    "order": 1,
+    "tour": "BIGGER AND BADDER TOUR"
   },
   {
     "id": "roma-ludico-2023",
     "name": "ROMA LUDICO 2023",
     "year": 2023,
-    "order": 2
+    "order": 2,
+    "tour": "BIGGER AND BADDER TOUR"
   },
   {
     "id": "lucca-comics-2023",
     "name": "LUCCA COMICS 2023",
     "year": 2023,
-    "order": 3
+    "order": 3,
+    "tour": "BIGGER AND BADDER TOUR"
   },
   {
     "id": "milano-games-week-2023",
     "name": "MILANO GAMES WEEK 2023",
     "year": 2023,
-    "order": 4
+    "order": 4,
+    "tour": "BIGGER AND BADDER TOUR"
   },
   {
     "id": "villainous-before-christmas-2023",
     "name": "VILLAINOUS BEFORE CHRISTMAS 2023",
     "year": 2023,
-    "order": 5
+    "order": 5,
+    "tour": "BIGGER AND BADDER TOUR"
   },
   {
     "id": "good-to-be-bad-tour-roma-apertura-2024",
     "name": "GOOD TO BE BAD TOUR ROMA APERTURA 2024",
     "year": 2024,
-    "order": 6
+    "order": 6,
+    "tour": "GOOD TO BE BAD TOUR"
   },
   {
     "id": "modena-play-2024",
     "name": "MODENA PLAY 2024",
     "year": 2024,
-    "order": 7
+    "order": 7,
+    "tour": "GOOD TO BE BAD TOUR"
   },
   {
     "id": "good-to-be-bad-tour-roma-i-2024",
     "name": "GOOD TO BE BAD TOUR ROMA I 2024",
     "year": 2024,
-    "order": 8
+    "order": 8,
+    "tour": "GOOD TO BE BAD TOUR"
   },
   {
     "id": "lucca-comics-2024",
     "name": "LUCCA COMICS 2024",
     "year": 2024,
-    "order": 9
+    "order": 9,
+    "tour": "GOOD TO BE BAD TOUR"
   },
   {
     "id": "good-to-be-bad-tour-roma-ii-2024",
     "name": "GOOD TO BE BAD TOUR ROMA II 2024",
     "year": 2024,
-    "order": 10
+    "order": 10,
+    "tour": "GOOD TO BE BAD TOUR"
   },
   {
     "id": "milano-games-week-2024",
     "name": "MILANO GAMES WEEK 2024",
     "year": 2024,
-    "order": 11
+    "order": 11,
+    "tour": "GOOD TO BE BAD TOUR"
   },
   {
     "id": "the-villainous-before-christmas-2024",
     "name": "THE VILLAINOUS BEFORE CHRISTMAS 2024",
     "year": 2024,
-    "order": 12
+    "order": 12,
+    "tour": "GOOD TO BE BAD TOUR"
   },
   {
     "id": "bad-to-the-bone-tour-roma-apertura-2025",
     "name": "BAD TO THE BONE TOUR ROMA APERTURA 2025",
     "year": 2025,
-    "order": 13
+    "order": 13,
+    "tour": "BAD TO THE BONE TOUR"
   },
   {
     "id": "bad-to-the-bone-tour-bologna-play-2025",
     "name": "BAD TO THE BONE TOUR BOLOGNA PLAY 2025",
     "year": 2025,
-    "order": 14
+    "order": 14,
+    "tour": "BAD TO THE BONE TOUR"
   },
   {
     "id": "bad-to-the-bone-tour-roma-2025",
     "name": "BAD TO THE BONE TOUR ROMA 2025",
     "year": 2025,
-    "order": 15
+    "order": 15,
+    "tour": "BAD TO THE BONE TOUR"
   },
   {
     "id": "torneo-villainous-napoli-2025",
     "name": "TORNEO VILLAINOUS NAPOLI 2025",
     "year": 2025,
-    "order": 16
+    "order": 16,
+    "tour": "BAD TO THE BONE TOUR"
   },
   {
     "id": "bad-to-the-bone-tour-lucca-comics-2025",
     "name": "BAD TO THE BONE TOUR LUCCA COMICS 2025",
     "year": 2025,
-    "order": 17
+    "order": 17,
+    "tour": "BAD TO THE BONE TOUR"
   },
   {
     "id": "bad-to-the-bone-tour-roma-natale-2025",
     "name": "BAD TO THE BONE TOUR ROMA NATALE 2025",
     "year": 2025,
     "order": 18,
+    "tour": "BAD TO THE BONE TOUR",
     "specialResults": [
       {
         "value": 5,
@@ -118,30 +136,35 @@
     "id": "the-bad-side-tour-bologna-2026",
     "name": "THE BAD SIDE TOUR BOLOGNA 2026",
     "year": 2026,
-    "order": 19
+    "order": 19,
+    "tour": "THE BAD SIDE TOUR"
   },
   {
     "id": "the-bad-side-tour-inkhearts-roma-2026",
     "name": "THE BAD SIDE TOUR (INKHEARTS) ROMA 2026",
     "year": 2026,
-    "order": 20
+    "order": 20,
+    "tour": "THE BAD SIDE TOUR"
   },
   {
     "id": "the-bad-side-tour-games-on-board-2026",
     "name": "THE BAD SIDE TOUR GAMES ON BOARD 2026",
     "year": 2026,
-    "order": 21
+    "order": 21,
+    "tour": "THE BAD SIDE TOUR"
   },
   {
     "id": "the-bad-side-tour-milano-draft-2026",
     "name": "THE BAD SIDE TOUR MILANO DRAFT 2026",
     "year": 2026,
-    "order": 22
+    "order": 22,
+    "tour": "THE BAD SIDE TOUR"
   },
   {
     "id": "the-bad-side-tour-lucca-comics-2026",
     "name": "THE BAD SIDE TOUR LUCCA COMICS 2026",
     "year": 2026,
-    "order": 23
+    "order": 23,
+    "tour": "THE BAD SIDE TOUR"
   }
 ]
