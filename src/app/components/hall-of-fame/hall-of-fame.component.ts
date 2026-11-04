@@ -55,7 +55,7 @@ import { Player, PlayerResult, Tournament } from './hall-of-fame.model';
           <div class="mb-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
             <div class="rounded-xl border border-slate-700 bg-slate-800/70 p-4">
               <p class="text-xs uppercase tracking-wide text-slate-400">
-                Indice qualificazione
+                Indice qualità / presenza
               </p>
               <p class="mt-2 text-3xl font-black text-amber-400">
                 {{ formatIndex(player.qualificationIndex) }}

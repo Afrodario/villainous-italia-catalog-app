@@ -34,8 +34,8 @@ export const KING_CANDY_PROGRESSION: VillainProgression = {
       id: 'race-spaces-traveled',
       label: 'Caselle percorse nella Grande Corsa',
       min: 0,
-      max: 20,
-      percentagePerUnit: 2,
+      max: 19,
+      percentagePerUnit: 2.105263157894737,
       requires: [
         {
           type: 'step',
