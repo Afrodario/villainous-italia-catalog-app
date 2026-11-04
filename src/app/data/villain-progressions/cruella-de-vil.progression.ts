@@ -10,6 +10,11 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       label: 'Cucciolo da 11 - Casa Radcliffe #1',
       options: [
         {
+          id: 'in-pile',
+          label: 'Nella riserva (scegli per deselezionare le altre opzioni)',
+          percentage: 0,
+        },
+        {
           id: 'on-board',
           label: 'Nel Reame',
           percentage: 2.6389,
@@ -32,6 +37,11 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       label: 'Cucciolo da 11 - Casa Radcliffe #2',
       options: [
         {
+          id: 'in-pile',
+          label: 'Nella riserva (scegli per deselezionare le altre opzioni)',
+          percentage: 0,
+        },
+        {
           id: 'on-board',
           label: 'Nel Reame',
           percentage: 2.6389,
@@ -53,6 +63,11 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       id: 'puppy-22-radcliffe',
       label: 'Cucciolo da 22 - Casa Radcliffe',
       options: [
+        {
+          id: 'in-pile',
+          label: 'Nella riserva (scegli per deselezionare le altre opzioni)',
+          percentage: 0,
+        },
         {
           id: 'on-board',
           label: 'Nel Reame',
@@ -78,6 +93,11 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       label: 'Cucciolo da 11 - La Campagna #1',
       options: [
         {
+          id: 'in-pile',
+          label: 'Nella riserva (scegli per deselezionare le altre opzioni)',
+          percentage: 0,
+        },
+        {
           id: 'on-board',
           label: 'Nel Reame',
           percentage: 2.6389,
@@ -100,6 +120,11 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       label: 'Cucciolo da 11 - La Campagna #2',
       options: [
         {
+          id: 'in-pile',
+          label: 'Nella riserva (scegli per deselezionare le altre opzioni)',
+          percentage: 0,
+        },
+        {
           id: 'on-board',
           label: 'Nel Reame',
           percentage: 2.6389,
@@ -121,6 +146,11 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       id: 'puppy-22-countryside',
       label: 'Cucciolo da 22 - La Campagna',
       options: [
+        {
+          id: 'in-pile',
+          label: 'Nella riserva (scegli per deselezionare le altre opzioni)',
+          percentage: 0,
+        },
         {
           id: 'on-board',
           label: 'Nel Reame',
@@ -146,6 +176,11 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       label: 'Cucciolo da 11 - La Vaccheria #1',
       options: [
         {
+          id: 'in-pile',
+          label: 'Nella riserva (scegli per deselezionare le altre opzioni)',
+          percentage: 0,
+        },
+        {
           id: 'on-board',
           label: 'Nel Reame',
           percentage: 2.6389,
@@ -168,6 +203,11 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       label: 'Cucciolo da 11 - La Vaccheria #2',
       options: [
         {
+          id: 'in-pile',
+          label: 'Nella riserva (scegli per deselezionare le altre opzioni)',
+          percentage: 0,
+        },
+        {
           id: 'on-board',
           label: 'Nel Reame',
           percentage: 2.6389,
@@ -189,6 +229,11 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       id: 'puppy-22-barn',
       label: 'Cucciolo da 22 - La Vaccheria',
       options: [
+        {
+          id: 'in-pile',
+          label: 'Nella riserva (scegli per deselezionare le altre opzioni)',
+          percentage: 0,
+        },
         {
           id: 'on-board',
           label: 'Nel Reame',
@@ -214,6 +259,11 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       label: "Cucciolo da 11 - L'Antro dell'Inferno #1",
       options: [
         {
+          id: 'in-pile',
+          label: 'Nella riserva (scegli per deselezionare le altre opzioni)',
+          percentage: 0,
+        },
+        {
           id: 'on-board',
           label: 'Nel Reame',
           percentage: 2.6389,
@@ -236,6 +286,11 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       label: "Cucciolo da 11 - L'Antro dell'Inferno #2",
       options: [
         {
+          id: 'in-pile',
+          label: 'Nella riserva (scegli per deselezionare le altre opzioni)',
+          percentage: 0,
+        },
+        {
           id: 'on-board',
           label: 'Nel Reame',
           percentage: 2.6389,
@@ -257,6 +312,11 @@ export const CRUELLA_DE_VIL_PROGRESSION: VillainProgression = {
       id: 'puppy-22-hellhall',
       label: "Cucciolo da 22 - L'Antro dell'Inferno",
       options: [
+        {
+          id: 'in-pile',
+          label: 'Nella riserva (scegli per deselezionare le altre opzioni)',
+          percentage: 0,
+        },
         {
           id: 'on-board',
           label: 'Nel Reame',
