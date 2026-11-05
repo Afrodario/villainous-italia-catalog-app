@@ -331,8 +331,12 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     strengthModifier: 2,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Il metodo migliore per potenziare Peter Pan e renderlo più difficile da sconfiggere per Uncino.',
+        'Assicuratevi sempre di assegnare tutte le copie di Polvere di Fata a Peter Pan o, in alternativa, ad un altro Eroe che abbia Schernire, così da rallentare ulteriormente il Capitano.',
+        'Un altro buon bersaglio è Wendy, considerando che la sua abilità potenzia gli altri Eroi fintantoché rimane in campo.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -347,8 +351,11 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     strength: 4,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Considerando che Uncino avrà bisogno di minimo due Alleati per sconfiggere i Bimbi Sperduti, come specificato nella loro abilità, sono un ottimo bersaglio per una copia di Schernire.',
+        'Cercate, se possibile, di giocare entrambe le copie de I Bimbi Sperduti ed entrambi gli Schernire su di loro, così da garantire che Uncino debba spendere molto Potere e Alleati per liberarsene, tralasciando così Peter Pan.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -362,8 +369,11 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     quantity: 2,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'I bersagli migliori per questo Effetto sono, nell’ordine, il Dispositivo Ingegnoso e un Cannone, cioè gli Oggetti più utili nel mazzo Cattivo di Uncino.',
+        'In mancanza, potete anche scartare una Sciabola assegnata ad un Alleato, ma fatelo soltanto se può fare la differenza nell’ammontare di Forza necessario a sconfiggere Peter Pan.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -377,8 +387,13 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     quantity: 2,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Uno dei mezzi più potenti per rallentare la partita di Capitan Uncino.',
+        'Assegnate una copia di Schernire agli Eroi più forti che avete giocato nel Reame, preferibilmente Tic Tac e i Bimbi Sperduti. In questo modo, Uncino sarà costretto a sprecare un’azione Scontro e i suoi Alleati per liberarsene.',
+        'Rallentarlo in questo modo, da ulteriormente tempo agli avversari per potenziare Peter Pan con la Polvere di Fata.',
+      ],
+      warning:
+        'Se più di un Eroe ha una copia di Schernire assegnata, Uncino può decidere quale dei due Eroi sconfiggere per primo.',
     },
     isFateCard: true,
   },
@@ -393,8 +408,12 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     strength: 2,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Uno degli Eroi più deboli del mazzo Fato di Capitan Uncino.',
+        'Se non avete niente di meglio da giocare, assicuratevi di assegnargli una copia di Polvere di Fata, per sfruttare la sua abilità, e di posizionarlo dove potrà bloccare azioni essenziali per Uncino.',
+        'Ricordate che Gianni ottiene +1 in Forza se ha almeno un Oggetto assegnato, non per ogni Oggetto che ha assegnato.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -409,8 +428,11 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     strength: 1,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Chi gioca contro Uncino dovrebbe sparpagliare quanti più Eroi possibile nel suo Reame, in modo da fare buon uso delle copie di Schernire. ',
+        'Michele può dare il colpo di grazia, considerando che ottiene un bonus in Forza per ogni luogo che contiene un Eroe, incluso Michele, per un totale potenziale di cinque!',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -425,8 +447,12 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     strength: 8,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Peter Pan è l’Eroe con la Forza più alta di tutto il gioco, insieme a Jack Skeletron.',
+        'Fate tutto ciò che è in vostro potere per impedire che venga rivelato e, se questo accade, assegnategli ogni copia di Polvere di Fata disponibile e giocate Schernire su qualunque altro Eroe, per impedire ad Uncino di sconfiggere il suo arcinemico e vincere la partita.',
+      ],
+      warning:
+        'Se Peter Pan viene rivelato come prima carta durante un’azione Fato, dovete comunque rivelare anche la seconda, anche se verrà scartata dall’effetto di Peter, dato che le carte Fato sono considerate rivelate entrambe nello stesso momento.',
     },
     isFateCard: true,
   },
@@ -441,8 +467,12 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     strength: 5,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'L’incubo di Capitan Uncino, capace di divorargli la mano, letteralmente e a livello di gioco.',
+        'Ha la Forza base più alta tra tutti gli Eroi del suo mazzo Fato, ad eccezione di Peter Pan, quindi è sempre un’ottima scelta da giocare. ',
+        'Piazzatelo alla Jolly Roger o alla Laguna delle Sirene, per impedire ad Uncino di giocare carte e, se ne siete in grado, potenziatelo con la Polvere di Fata, in modo da lasciarlo in gioco il più possibile.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -457,8 +487,11 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     strength: 2,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Giocate Trilli dove sarà collocato l’Eroe più forte a disposizione di Uncino, generalmente Spugna, un Bruto Pirata o chiunque abbia una Sciabola assegnata. ',
+        'Generalmente, Uncino ammasserà i suoi pirati alla Jolly Roger, quindi Trilli potrà essere giocata quasi sempre lì, per massimizzarne l’effetto.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: true,
   },
@@ -473,8 +506,12 @@ export const CAPTAIN_HOOK_CARDS: CardDefinition[] = [
     strength: 3,
     description: 'Description.',
     strategy: {
-      paragraphs: ['Paragrafo 1', 'Paragrafo 2 ’', 'Paragrafo 3'],
-      warning: 'Warning',
+      paragraphs: [
+        'Più tempo Wendy rimarrà nel Reame, più gli altri Eroi ne beneficeranno.',
+        'Usata in combinazione con gli Schernire e le Polvere di Fata, Wendy potrà contribuire a rendere sempre più difficili da sconfiggere gli Eroi più potenti del mazzo Fato di Uncino, generalmente Tic Tac e i Bimbi Sperduti.',
+        'Non assegnate mai a Wendy una copia di Schernire, in quanto Uncino vorrà liberarsi di lei quanto prima e finireste con lo sprecarla.',
+      ],
+      //warning: 'Warning',
     },
     isFateCard: true,
   },

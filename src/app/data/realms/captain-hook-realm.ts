@@ -13,9 +13,9 @@ export const CAPTAIN_HOOK_REALM: Realm = {
       image: 'assets/images-webp/realms/captain_hook/Jolly_Roger.webp',
       description: {
         paragraphs: [
-          'Luogo utile sopratutto per il Fato sempre disponibile e per l’unica azione Scontro di cui dispone Jafar',
-          'Se non ci sono eroi a coprire le azioni superiori, può essere utile sopratutto per l’azione Attivare',
-          'Non è un luogo fondamentale per Jafar (in quanto lo Scontro non sempre è necessario poiché Jafar può anche usare Ipnotizzare o Ah, Sarei un Serpente?',
+          'Luogo fondamentale per il raggiungimento dell’obiettivo di Capitan Uncino. Cercate di tenerlo il più libero possibile dagli Eroi.',
+          'Unico luogo del Reame con l’azione Scontro.',
+          'Preparate qui i vostri Alleati in vista dello scontro con Peter Pan così da essere pronti ad affrontarlo quando lo muoverete sulla Jolly Roger.',
         ],
       },
       upperActions: [ACTIONS.GainPower, ACTIONS.DiscardCards],
@@ -28,8 +28,8 @@ export const CAPTAIN_HOOK_REALM: Realm = {
       image: 'assets/images-webp/realms/captain_hook/Skull_Rock.webp',
       description: {
         paragraphs: [
-          'Un ottimo luogo per Jafar in quanto dispone dell’azione Scartare carte (unica disponibile se la Caverna delle Meraviglie è ancora bloccata) che vi permette di scorrere il vostro mazzo cattivo',
-          'Utile anche per giocare una carta e, se non ci sono eroi a coprirne la parte superiore, il Fato',
+          'Luogo fondamentale per Uncino in quanto dispone dell’azione Scartare carte sempre disponibile. Questo vi permette di scorrere il vostro mazzo alla ricerca della Mappa, sopratutto nelle fasi iniziali se non è ancora in vostro possesso.',
+          'Utile anche per scagliare il Fato contro gli avversari, se non avete altro modo di avanzare al momento.',
         ],
       },
       upperActions: [ACTIONS.GainPower, ACTIONS.PlayACard],
@@ -42,8 +42,8 @@ export const CAPTAIN_HOOK_REALM: Realm = {
       image: 'assets/images-webp/realms/captain_hook/Mermaid_Lagoon.webp',
       description: {
         paragraphs: [
-          'Ottimo luogo per Jafar sopratutto nelle prime fasi della partita, prima di sbloccare la Caverna delle Meraviglie',
-          'Ottimo per ottenere 3 gettoni Potere, giocare ben due carte e attivare un’abilità.',
+          'Luogo importante per raccogliere rapidamente Potere e per giocare fino a due carte nello stesso turno (se non ci sono Eroi a coprirne la parte superiore).',
+          'Giocando qui l’Uncino da Cerimonia potete ottenere il suo Potere e muoverlo con l’apposita azione in un luogo adiacente per sfruttarlo nuovamente, se pianificate di andare lì al prossimo turno.',
         ],
       },
 
@@ -58,9 +58,10 @@ export const CAPTAIN_HOOK_REALM: Realm = {
 
       description: {
         paragraphs: [
-          'Una volta che viene sbloccato, è utile alternare lo spostamento di Jafar fra qua e Le Strade di Agrabah',
-          'Luogo fondamentale per l’unica azione Muovere un Oggetto o un Alleato, per permettervi di muovere la Lampada Magica verso il Palazzo del Sultano.',
-          'Vi permette di ottenere una discreta quantità di Potere e di scartare carte per scorrere il vostro mazzo',
+          'Unico Luogo con l’azione Muovere un Eroe, che è fondamentale per muovere Peter Pan, una volta giocato qui, fino alla Jolly Roger.',
+          'Permette di ottenere una discreta quantità di Potere, sopratutto se riuscite a sbloccarlo nelle fasi iniziali.',
+          'Se giocate qui il Cannone, che vi permette di aggiungere l’azione Scontro ad un Luogo, potete muovere Peter Pan dalla Roccia del Teschio alla Jolly Roger e sconfiggerlo nello stesso turno.',
+          'Altrimenti, potreste anche giocare qui il Dispositivo Ingegnoso per riuscire a muovere Peter Pan di due luoghi in un solo turno.'
         ],
       },
       upperActions: [ACTIONS.Fate, ACTIONS.GainPower],
