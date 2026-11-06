@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import {
   FAQ_UPDATE,
   GENERAL_FAQ,
@@ -7,7 +8,10 @@ import {
   CURRENCY_LOSS_CARDS,
   ANY_TEXT_CARDS,
 } from './faq.data';
+
 import { FaqEntry, VillainFaq } from './faq.model';
+import { VillainRepository } from '../../repositories/villain.repository';
+import { Villain } from '../../models/villain.model';
 
 @Component({
   selector: 'app-faq',
@@ -22,7 +26,19 @@ export class FaqComponent {
   readonly currencyLossCards = CURRENCY_LOSS_CARDS;
   readonly anyTextCards = ANY_TEXT_CARDS;
 
+  readonly villainsByName: Map<string, Villain>;
+
   expandedVillainId: string | null = null;
+
+  constructor(private villainRepository: VillainRepository) {
+    this.villainsByName = new Map(
+      this.villainRepository.getAll().map((villain) => [villain.name, villain]),
+    );
+  }
+
+  getVillainById(villainId: string): Villain {
+    return this.villainRepository.getById(villainId);
+  }
 
   toggleVillain(villainId: string): void {
     this.expandedVillainId =

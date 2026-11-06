@@ -24,7 +24,7 @@ import { FaqComponent } from './components/faq/faq.component';
     GameplayComponent,
     ProgressionComponent,
     HallOfFameComponent,
-    FaqComponent,
+    FaqComponent
   ],
   templateUrl: './app.component.html',
 })

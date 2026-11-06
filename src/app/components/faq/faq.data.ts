@@ -143,7 +143,7 @@ export const CURRENCY_LOSS_CARDS: CardListGroup[] = [
 export const ANY_TEXT_CARDS: AnyCardEntry[] = [
   {
     villain: 'Gaston',
-    card: 'Bestia',
+    card: 'La Bestia',
     originalText: 'any Allies to any other location',
     clarification:
       'Muove un qualsiasi numero di Alleati in uno ed un solo luogo.',
@@ -164,7 +164,7 @@ export const ANY_TEXT_CARDS: AnyCardEntry[] = [
     villain: 'Re Cornelius',
     card: 'Doli',
     originalText: 'each Hero to any other location',
-    clarification: 'Muove ciascun Eroe in uno ed un solo luogo.',
+    clarification: 'Muove ogni Eroe in uno ed un solo luogo.',
   },
   {
     villain: 'Maga Magò',
@@ -747,7 +747,7 @@ export const VILLAIN_FAQ: VillainFaq[] = [
   },
 
   {
-    villainId: 'king-cornelius',
+    villainId: 'horned-king',
     villainName: 'Re Cornelius',
     cards: [
       {
@@ -772,7 +772,7 @@ export const VILLAIN_FAQ: VillainFaq[] = [
   },
 
   {
-    villainId: 'madame-mim',
+    villainId: 'madam-mim',
     villainName: 'Maga Magò',
     cards: [
       {
