@@ -11,6 +11,8 @@ import { CatalogComponent } from './components/catalog/catalog.component';
 import { GameplayComponent } from './components/gameplay/gameplay.component';
 import { ProgressionComponent } from './components/progression/progression.component';
 import { HallOfFameComponent } from './components/hall-of-fame/hall-of-fame.component';
+import { FaqComponent } from './components/faq/faq.component';
+
 
 @Component({
   selector: 'app-root',
@@ -22,6 +24,7 @@ import { HallOfFameComponent } from './components/hall-of-fame/hall-of-fame.comp
     GameplayComponent,
     ProgressionComponent,
     HallOfFameComponent,
+    FaqComponent,
   ],
   templateUrl: './app.component.html',
 })
@@ -43,7 +46,8 @@ export class AppComponent {
     | 'catalog'
     | 'gameplay'
     | 'progression'
-    | 'hall-of-fame' = 'catalog';
+    | 'hall-of-fame'
+    | 'faq' = 'catalog';
 
   constructor(
     private scenarioService: ScenarioService,
@@ -71,6 +75,10 @@ export class AppComponent {
 
   showHallOfFame(): void {
     this.currentSection = 'hall-of-fame';
+  }
+
+  showFaq(): void {
+    this.currentSection = 'faq';
   }
 
   showGameplayAction(actionId: string): void {

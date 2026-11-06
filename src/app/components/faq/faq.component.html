@@ -1,0 +1,402 @@
+<div class="w-full max-w-6xl mx-auto px-4 py-6">
+  <!-- TITOLO -->
+  <div class="mb-8 text-center">
+    <h1 class="text-3xl md:text-4xl font-black text-white">
+      FAQ Disney Villainous
+    </h1>
+    <p class="mt-2 text-sm md:text-base text-gray-400">
+      Chiarimenti e precisazioni sulle regole e sulle carte del gioco
+    </p>
+  </div>
+
+  <!-- AGGIORNAMENTI -->
+  <section
+    class="mb-8 rounded-xl border border-green-500/40 bg-green-950/40 p-5 shadow-lg"
+  >
+    <div class="flex items-start gap-4">
+      <div
+        class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-500/20 text-green-400"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"
+          />
+        </svg>
+      </div>
+
+      <div class="min-w-0">
+        <h2 class="text-lg font-black text-green-300">
+          FAQ aggiornate alla versione {{ update.version }}
+        </h2>
+        <p class="mt-1 text-sm text-gray-400">
+          Ultimo aggiornamento: {{ update.date }}
+        </p>
+
+        @if (update.changes.length > 0) {
+          <ul class="mt-4 space-y-2">
+            @for (change of update.changes; track change) {
+              <li class="flex gap-2 text-sm text-gray-200">
+                <span class="text-green-400">•</span>
+                <span>{{ change }}</span>
+              </li>
+            }
+          </ul>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- REGOLE GENERALI -->
+  <section class="mb-10">
+    <div class="mb-4">
+      <h2 class="text-2xl font-black text-white">Regole generali</h2>
+      <p class="mt-1 text-sm text-gray-400">
+        Chiarimenti validi per il gioco in generale.
+      </p>
+    </div>
+
+    <div class="space-y-3">
+      @for (faq of generalFaq; track faq.number) {
+        <div class="rounded-lg border border-gray-700 bg-gray-900/70 p-4">
+          <div class="flex items-start gap-3">
+            <span
+              class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gray-700 text-xs font-black text-gray-200"
+            >
+              {{ faq.number }}
+            </span>
+            <p class="text-sm leading-relaxed text-gray-200">
+              {{ faq.text }}
+            </p>
+          </div>
+        </div>
+      }
+    </div>
+  </section>
+
+  <!-- CARTE CHE FANNO PERDERE VALUTA -->
+  <section class="mb-10">
+    <div class="mb-4">
+      <h2 class="text-2xl font-black text-white">
+        Lista delle carte che fanno perdere valuta
+      </h2>
+      <p class="mt-1 text-sm text-gray-400">
+        Precisazioni sugli effetti di alcune carte che riducono le risorse o i
+        valori presenti nel gioco.
+      </p>
+    </div>
+
+    <div class="space-y-5">
+      @for (group of currencyLossCards; track group.title) {
+        <div class="rounded-xl border border-gray-700 bg-gray-900/70 p-4">
+          <h3 class="text-lg font-black text-amber-300">
+            {{ group.title }}
+          </h3>
+
+          <p class="mt-2 text-sm leading-relaxed text-gray-400">
+            {{ group.description }}
+          </p>
+
+          <div class="mt-4 space-y-3">
+            @for (entry of group.entries; track entry.card) {
+              <div class="rounded-lg border border-gray-700 bg-gray-950/50 p-3">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="text-sm font-black text-white">
+                    {{ entry.card }}
+                  </span>
+                  <span
+                    class="rounded-md bg-purple-500/20 px-2 py-1 text-xs font-bold text-purple-300"
+                  >
+                    {{ entry.villain }}
+                  </span>
+                </div>
+
+                <p class="mt-2 text-sm leading-relaxed text-gray-300">
+                  {{ entry.clarification }}
+                </p>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </section>
+
+  <!-- CARTE FORMULATE CON ANY -->
+  <section class="mb-10">
+    <div class="mb-4">
+      <h2 class="text-2xl font-black text-white">
+        Lista delle carte formulate con "Any" nel testo originale
+      </h2>
+
+      <p class="mt-1 text-sm text-gray-400">
+        Le seguenti carte, che hanno effetto su carte o luoghi e sono accomunate
+        dalla presenza di "any" nel testo originale, sono da interpretarsi con
+        queste specifiche.
+      </p>
+    </div>
+
+    <div class="grid gap-4 md:grid-cols-2">
+      @for (entry of anyTextCards; track entry.villain + entry.card) {
+        <div class="rounded-xl border border-gray-700 bg-gray-900/70 p-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h3 class="text-base font-black text-white">
+              {{ entry.card }}
+            </h3>
+
+            <span
+              class="rounded-md bg-purple-500/20 px-2 py-1 text-xs font-bold text-purple-300"
+            >
+              {{ entry.villain }}
+            </span>
+          </div>
+
+          <div class="mt-3 rounded-lg bg-gray-950/60 p-3">
+            <span
+              class="text-xs font-black uppercase tracking-wide text-gray-500"
+            >
+              Testo originale
+            </span>
+
+            <p class="mt-1 text-sm italic text-sky-300">
+              "{{ entry.originalText }}"
+            </p>
+          </div>
+
+          <div class="mt-3">
+            <span
+              class="text-xs font-black uppercase tracking-wide text-gray-500"
+            >
+              Interpretazione
+            </span>
+
+            <p class="mt-1 text-sm leading-relaxed text-gray-300">
+              {{ entry.clarification }}
+            </p>
+          </div>
+        </div>
+      }
+    </div>
+  </section>
+
+  <!-- CARTE PARTICOLARI -->
+  <section class="mb-10">
+    <div class="mb-4">
+      <h2 class="text-2xl font-black text-white">
+        Carte con comportamenti particolari
+      </h2>
+      <p class="mt-1 text-sm text-gray-400">
+        Chiarimenti relativi a specifiche carte che possono generare dubbi
+        durante una partita.
+      </p>
+    </div>
+
+    <div class="grid gap-4 md:grid-cols-2">
+      @for (faq of specialCardFaq; track faq.card) {
+        <div class="rounded-xl border border-gray-700 bg-gray-900/70 p-4">
+          <div class="flex flex-wrap items-center gap-2">
+            <span
+              class="rounded-md bg-purple-500/20 px-2 py-1 text-xs font-bold text-purple-300"
+            >
+              {{ faq.villain }}
+            </span>
+            <h3 class="text-base font-black text-white">
+              {{ faq.card }}
+            </h3>
+          </div>
+
+          <p class="mt-3 text-sm leading-relaxed text-gray-300">
+            {{ faq.text }}
+          </p>
+        </div>
+      }
+    </div>
+  </section>
+
+  <!-- FAQ DEI CATTIVI -->
+  <section>
+    <div class="mb-5">
+      <h2 class="text-2xl font-black text-white">FAQ dei Cattivi</h2>
+      <p class="mt-1 text-sm text-gray-400">
+        Chiarimenti specifici sulle meccaniche e sulle carte dei singoli
+        Cattivi.
+      </p>
+    </div>
+
+    <div class="space-y-3">
+      @for (villain of villainFaq; track villain.villainId) {
+        <div
+          class="overflow-hidden rounded-xl border border-gray-700 bg-gray-900/70"
+        >
+          <!-- INTESTAZIONE ACCORDION -->
+          <button
+            type="button"
+            class="flex w-full items-center justify-between gap-4 px-4 py-4 text-left transition hover:bg-gray-800/70"
+            (click)="toggleVillain(villain.villainId)"
+          >
+            <div class="min-w-0">
+              <h3 class="text-lg font-black text-white">
+                {{ villain.villainName }}
+              </h3>
+
+              <p class="mt-1 text-xs text-gray-500">
+                {{
+                  (villain.mechanics?.length ?? 0) +
+                    (villain.cards?.length ?? 0)
+                }}
+                chiarimenti
+              </p>
+            </div>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 shrink-0 text-gray-400 transition-transform duration-200"
+              [class.rotate-180]="isVillainExpanded(villain.villainId)"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19 9-7 7-7-7"
+              />
+            </svg>
+          </button>
+
+          <!-- CONTENUTO -->
+          @if (isVillainExpanded(villain.villainId)) {
+            <div class="border-t border-gray-700 px-4 py-5">
+              <!-- MECCANICHE -->
+              @if (villain.mechanics?.length) {
+                <div class="mb-6">
+                  <h4
+                    class="mb-3 text-sm font-black uppercase tracking-wide text-sky-300"
+                  >
+                    Meccaniche
+                  </h4>
+
+                  <div class="space-y-3">
+                    @for (entry of villain.mechanics; track $index) {
+                      <div
+                        class="rounded-lg border border-gray-700 bg-gray-950/50 p-4"
+                      >
+                        @if (entry.card) {
+                          <h5 class="mb-2 text-sm font-black text-amber-200">
+                            {{ entry.card }}
+                          </h5>
+                        }
+
+                        <p class="text-sm font-bold leading-relaxed text-white">
+                          {{ entry.question }}
+                        </p>
+
+                        @if (entry.answer) {
+                          <p class="mt-3 text-sm leading-relaxed text-gray-300">
+                            {{ entry.answer }}
+                          </p>
+                        }
+
+                        <div
+                          class="mt-3 flex flex-wrap items-center gap-2 border-t border-gray-800 pt-3"
+                        >
+                          <span
+                            class="text-xs font-bold uppercase tracking-wide text-gray-500"
+                          >
+                            Fonte
+                          </span>
+                          <span class="text-xs text-gray-400">
+                            {{ entry.source }}
+                          </span>
+                        </div>
+                      </div>
+                    }
+                  </div>
+                </div>
+              }
+
+              <!-- CARTE -->
+              @if (villain.cards?.length) {
+                <div>
+                  <h4
+                    class="mb-3 text-sm font-black uppercase tracking-wide text-amber-300"
+                  >
+                    Carte
+                  </h4>
+
+                  <div class="space-y-4">
+                    @for (entry of villain.cards; track $index) {
+                      <div
+                        class="overflow-hidden rounded-lg border border-gray-700"
+                      >
+                        @if (entry.card) {
+                          <div class="bg-gray-800/80 px-4 py-3">
+                            <h5 class="text-sm font-black text-amber-200">
+                              {{ entry.card }}
+                            </h5>
+                          </div>
+                        }
+
+                        <div class="space-y-3 bg-gray-950/40 p-4">
+                          <div>
+                            <span
+                              class="text-xs font-black uppercase tracking-wide text-gray-500"
+                            >
+                              Domanda
+                            </span>
+                            <p
+                              class="mt-1 text-sm leading-relaxed text-gray-200"
+                            >
+                              {{ entry.question }}
+                            </p>
+                          </div>
+
+                          @if (entry.answer) {
+                            <div>
+                              <span
+                                class="text-xs font-black uppercase tracking-wide text-gray-500"
+                              >
+                                Chiarimento
+                              </span>
+                              <p
+                                class="mt-1 text-sm leading-relaxed text-gray-300"
+                              >
+                                {{ entry.answer }}
+                              </p>
+                            </div>
+                          }
+
+                          <div
+                            class="flex flex-wrap items-center gap-2 border-t border-gray-800 pt-3"
+                          >
+                            <span
+                              class="text-xs font-black uppercase tracking-wide text-gray-500"
+                            >
+                              Fonte
+                            </span>
+                            <span class="text-xs text-gray-400">
+                              {{ entry.source }}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    }
+                  </div>
+                </div>
+              }
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </section>
+</div>

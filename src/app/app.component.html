@@ -57,6 +57,15 @@
       </button>
       <button
         type="button"
+        (click)="showFaq()"
+        class="rounded-lg px-3 py-2 font-semibold transition sm:px-5"
+        [class.bg-purple-600]="currentSection === 'faq'"
+        [class.bg-slate-800]="currentSection !== 'faq'"
+      >
+        📚 FAQ
+      </button>
+      <button
+        type="button"
         (click)="showProgression()"
         class="rounded-lg px-3 py-2 font-semibold transition sm:px-5"
         [class.bg-purple-600]="currentSection === 'progression'"
@@ -114,6 +123,10 @@
       [selectedActionId]="selectedGameplayActionId"
       (cardSelected)="showCatalogCard($event)"
     />
+  }
+
+  @if (currentSection === "faq") {
+    <app-faq />
   }
 
   @if (currentSection === "progression") {
