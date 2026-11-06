@@ -5563,5 +5563,40 @@
       "the-bad-side-tour-milano-draft-2026": "NP",
       "the-bad-side-tour-lucca-comics-2026": 0
     }
+  },
+  {
+    "id": "alessio-latorraca",
+    "name": "ALESSIO LATORRACA",
+    "totalPoints": 0,
+    "averagePoints": 0,
+    "participations": 1,
+    "absences": 22,
+    "presenceRate": 0.043478260869565216,
+    "qualificationIndex": 0,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": 0,
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP"
+    }
   }
 ]
