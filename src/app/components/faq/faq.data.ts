@@ -830,7 +830,14 @@ export const VILLAIN_FAQ: VillainFaq[] = [
       {
         card: 'Cappello di Woody',
         question:
-          'Bisogna piazzare un gettone -1 Forza su ogni Eroe quando si gioca il Cappello, ad eccezione di Woody. Per quanto riguarda Rex, ottiene -1 nei casi specificati nella FAQ.',
+          'Bisogna piazzare un gettone -1 Forza su ogni Eroe quando si gioca il Cappello, ad eccezione di Woody. Se I Giocattoli di Bonnie viene giocata in presenza del Cappello di Woody, bisogna aggiungere un gettone -1 Forza dopo aver applicato l’effetto di i Giocattoli di Bonnie, tranne su Rex se si trova in un luogo con altri Eroi. Quando il Cappello di Woody viene scartato, bisogna rimuovere un gettone -1 Forza da ogni Eroe nel Reame.',
+        source:
+          'Regole condivise stabilite con la community americana, presumibilmente con l’approvazione dei playtester.',
+      },
+      {
+        card: 'Rex & Cappello di Woody',
+        question:
+          'Per quanto riguarda Rex, ottiene -1 dal Cappello di Woody nei seguenti casi: 1) quando è l’unico Eroe in un luogo (e lo mantiene anche quando altri Eroi vengono successivamente giocati dove si trova lui); 2) quando tutti gli altri Eroi si muovono in un luogo diverso dal suo; 3) quando viene giocato in un luogo dove già si trovano altri Eroi.',
         source:
           'Regole condivise stabilite con la community americana, presumibilmente con l’approvazione dei playtester.',
       },
@@ -857,6 +864,13 @@ export const VILLAIN_FAQ: VillainFaq[] = [
         card: 'Omnidroide v.10',
         question:
           'Va sempre giocato al Centro di Metroville. Se il Telecomando non è presente o è sotto il controllo di Sindrome, va giocato nella parte alta del Reame. Se il Telecomando di Sindrome è assegnato ad un Eroe, va giocato nella parte bassa del Reame.',
+        source:
+          'Meccanica confermata da Lord of the Board, playtester, a Villainous Italia.',
+      },
+      {
+        card: 'Omnidroide v.10 - Meccanica di gioco',
+        question:
+          'Ogni volta in cui viene giocato un Eroe e il Telecomando gli viene assegnato, l’Omnidroide v.10 viene mosso nello stesso luogo, in basso. Quando l’Eroe con il Telecomando viene sconfitto, l’Omnidroide v.10 si muove in alto nello stesso luogo e il Telecomando ricade in basso. Tecnicamente, attivare il Telecomando e capovolgere la tessera dell’Omnidroide v.10 sul lato Distrutto dovrebbe essere l’ultima azione per ottenere la vittoria. È possibile attivare il Telecomando e capovolgere la tessera PRIMA e POI sconfiggere tutti gli Eroi rimanenti, ma in questo modo, l’Omnidroide distrutto rimarrebbe permanentemente nella parte alta del Reame, a bloccare azioni, e non potrà più essere mosso (come specificato nella Guida Cattivo) né utilizzato per sconfiggere Eroi rimanenti.',
         source:
           'Meccanica confermata da Lord of the Board, playtester, a Villainous Italia.',
       },

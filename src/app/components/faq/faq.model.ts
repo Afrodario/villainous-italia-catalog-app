@@ -18,7 +18,7 @@ export interface SpecialCardFaq {
 export interface FaqEntry {
   card?: string;
   question: string;
-  answer?: string;
+  //answer?: string;
   source: string;
 }
 
