@@ -213,6 +213,25 @@
         </h2>
 
         <form (ngSubmit)="savePlayerChanges()" class="space-y-4">
+          <!-- Ricerca giocatore -->
+          <div>
+            <label
+              for="admin-player-search"
+              class="mb-2 block text-sm font-semibold text-gray-300"
+            >
+              Cerca un giocatore per nome
+            </label>
+
+            <input
+              id="admin-player-search"
+              type="text"
+              [(ngModel)]="adminPlayerSearchTerm"
+              name="adminPlayerSearchTerm"
+              placeholder="Digita il nome o una parte del nome..."
+              class="w-full rounded-lg border border-gray-600 bg-gray-800 px-4 py-3 text-white placeholder-gray-500 focus:border-amber-500 focus:outline-none"
+            />
+          </div>
+
           <!-- Selezione giocatore -->
           <div>
             <label
@@ -232,12 +251,25 @@
             >
               <option value="" disabled>Seleziona un giocatore...</option>
 
-              @for (player of players; track player.id) {
+              @for (player of adminFilteredPlayers; track player.id) {
                 <option [value]="player.id">
                   {{ player.name }}
                 </option>
               }
+
+              @if (adminFilteredPlayers.length === 0) {
+                <option value="" disabled>Nessun giocatore trovato</option>
+              }
             </select>
+
+            <p class="mt-2 text-xs text-gray-500">
+              {{ adminFilteredPlayers.length }}
+              {{
+                adminFilteredPlayers.length === 1
+                  ? "giocatore trovato"
+                  : "giocatori trovati"
+              }}
+            </p>
           </div>
 
           <!-- Nome -->

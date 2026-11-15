@@ -38,6 +38,7 @@ export class VillainousNightOutComponent implements OnInit {
 
   // Modifica giocatore
   selectedPlayerId = '';
+  adminPlayerSearchTerm = '';
   editedPlayerName = '';
   editedPlayerLocation = '';
   editedStamps = 0;
@@ -111,6 +112,18 @@ export class VillainousNightOutComponent implements OnInit {
           return a.name.localeCompare(b.name, 'it');
       }
     });
+  }
+
+  get adminFilteredPlayers(): VnoPlayer[] {
+    const search = this.adminPlayerSearchTerm.trim().toLocaleLowerCase('it');
+
+    if (!search) {
+      return this.players;
+    }
+
+    return this.players.filter((player) =>
+      player.name.toLocaleLowerCase('it').includes(search),
+    );
   }
 
   getVenueLabel(venue: VnoVenue): string {
@@ -218,6 +231,7 @@ export class VillainousNightOutComponent implements OnInit {
     this.selectedPlayerId = playerId;
 
     const player = this.players.find((p) => p.id === playerId);
+    this.adminPlayerSearchTerm = '';
 
     this.editedPlayerName = player?.name ?? '';
     this.editedPlayerLocation = player?.location ?? '';
