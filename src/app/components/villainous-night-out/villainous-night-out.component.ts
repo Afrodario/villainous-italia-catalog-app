@@ -21,6 +21,7 @@ export class VillainousNightOutComponent implements OnInit {
   players: VnoPlayer[] = [];
   readonly venues = VNO_VENUES;
   searchTerm = '';
+  sortBy: 'stamps' | 'location' | 'venue' = 'stamps';
   isLoading = true;
   errorMessage: string | null = null;
 
@@ -77,15 +78,39 @@ export class VillainousNightOutComponent implements OnInit {
   get filteredPlayers(): VnoPlayer[] {
     const search = this.searchTerm.trim().toLocaleLowerCase('it');
 
-    if (!search) {
-      return this.players;
-    }
-
-    return this.players.filter(
-      (player) =>
+    const filtered = this.players.filter((player) => {
+      return (
+        !search ||
         player.name.toLocaleLowerCase('it').includes(search) ||
-        player.location?.toLocaleLowerCase('it').includes(search),
-    );
+        player.location?.toLocaleLowerCase('it').includes(search)
+      );
+    });
+
+    return [...filtered].sort((a, b) => {
+      switch (this.sortBy) {
+        case 'stamps':
+          return b.stamps - a.stamps || a.name.localeCompare(b.name, 'it');
+
+        case 'location':
+          return (
+            (a.location || '\uffff').localeCompare(
+              b.location || '\uffff',
+              'it',
+            ) || a.name.localeCompare(b.name, 'it')
+          );
+
+        case 'venue':
+          return (
+            (a.last_night_out_venue || '\uffff').localeCompare(
+              b.last_night_out_venue || '\uffff',
+              'it',
+            ) || a.name.localeCompare(b.name, 'it')
+          );
+
+        default:
+          return a.name.localeCompare(b.name, 'it');
+      }
+    });
   }
 
   getVenueLabel(venue: VnoVenue): string {

@@ -405,6 +405,24 @@
     />
   </div>
 
+  <!-- Ordinamento -->
+  <div class="mb-6">
+    <label for="vno-sort" class="mb-2 block text-sm font-bold text-gray-300">
+      Ordina giocatori per
+    </label>
+
+    <select
+      id="vno-sort"
+      name="sortBy"
+      [(ngModel)]="sortBy"
+      class="w-full rounded-xl border border-gray-700 bg-gray-900 px-4 py-3 text-sm text-white outline-none transition focus:border-purple-500"
+    >
+      <option value="stamps">🎟️ Timbri raccolti (decrescente)</option>
+      <option value="location">📍 Città di provenienza (A-Z)</option>
+      <option value="venue">🏠 Ultimo locale frequentato (A-Z)</option>
+    </select>
+  </div>
+
   <!-- Caricamento -->
   @if (isLoading) {
     <div
