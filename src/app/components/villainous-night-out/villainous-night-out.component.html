@@ -143,15 +143,18 @@
         </form>
       </div>
 
-      <!-- Aggiornamento timbri -->
+      <!-- Modifica giocatore -->
       <div class="rounded-xl border border-gray-700 bg-gray-900/70 p-5">
-        <h2 class="mb-4 text-lg font-black text-white">🎟️ Aggiorna timbri</h2>
+        <h2 class="mb-4 text-lg font-black text-white">
+          ✏️ Modifica giocatore
+        </h2>
 
-        <form (ngSubmit)="updateStamps()" class="space-y-4">
+        <form (ngSubmit)="savePlayerChanges()" class="space-y-4">
+          <!-- Selezione giocatore -->
           <div>
             <label
               for="selected-player"
-              class="mb-2 block text-sm font-bold text-gray-300"
+              class="mb-2 block text-sm font-semibold text-gray-300"
             >
               Seleziona giocatore
             </label>
@@ -162,7 +165,7 @@
               [(ngModel)]="selectedPlayerId"
               (ngModelChange)="onSelectedPlayerChange($event)"
               required
-              class="w-full rounded-lg border border-gray-700 bg-gray-800 px-4 py-3 text-sm text-white outline-none transition focus:border-purple-500"
+              class="w-full rounded-lg border border-gray-600 bg-gray-800 px-4 py-3 text-white focus:border-amber-500 focus:outline-none"
             >
               <option value="" disabled>Seleziona un giocatore...</option>
 
@@ -174,10 +177,52 @@
             </select>
           </div>
 
+          <!-- Nome -->
+          <div>
+            <label
+              for="edited-player-name"
+              class="mb-2 block text-sm font-semibold text-gray-300"
+            >
+              Nome e cognome
+            </label>
+
+            <input
+              id="edited-player-name"
+              type="text"
+              name="editedPlayerName"
+              [(ngModel)]="editedPlayerName"
+              required
+              [disabled]="!selectedPlayerId"
+              placeholder="Nome del giocatore"
+              class="w-full rounded-lg border border-gray-600 bg-gray-800 px-4 py-3 text-white placeholder-gray-500 focus:border-amber-500 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+            />
+          </div>
+
+          <!-- Provenienza -->
+          <div>
+            <label
+              for="edited-player-location"
+              class="mb-2 block text-sm font-semibold text-gray-300"
+            >
+              Provenienza geografica
+            </label>
+
+            <input
+              id="edited-player-location"
+              type="text"
+              name="editedPlayerLocation"
+              [(ngModel)]="editedPlayerLocation"
+              [disabled]="!selectedPlayerId"
+              placeholder="Es. Milano, Roma, Firenze..."
+              class="w-full rounded-lg border border-gray-600 bg-gray-800 px-4 py-3 text-white placeholder-gray-500 focus:border-amber-500 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+            />
+          </div>
+
+          <!-- Numero timbri -->
           <div>
             <label
               for="edited-stamps"
-              class="mb-2 block text-sm font-bold text-gray-300"
+              class="mb-2 block text-sm font-semibold text-gray-300"
             >
               Numero totale di timbri
             </label>
@@ -191,18 +236,23 @@
               step="1"
               required
               [disabled]="!selectedPlayerId"
-              class="w-full rounded-lg border border-gray-700 bg-gray-800 px-4 py-3 text-sm text-white outline-none transition focus:border-purple-500 disabled:opacity-40"
+              class="w-full rounded-lg border border-gray-600 bg-gray-800 px-4 py-3 text-white focus:border-amber-500 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
             />
           </div>
 
+          <p class="text-xs text-gray-500">
+            Seleziona un giocatore per modificarne i dati.
+          </p>
+
+          <!-- Salvataggio -->
           <button
             type="submit"
-            [disabled]="isUpdatingStamps || !selectedPlayerId"
-            class="w-full rounded-lg bg-amber-600 px-4 py-3 text-sm font-bold text-white transition hover:bg-amber-500 disabled:cursor-not-allowed disabled:opacity-50"
+            [disabled]="
+              isSavingPlayer || !selectedPlayerId || !editedPlayerName.trim()
+            "
+            class="w-full rounded-lg bg-amber-500 px-5 py-3 font-bold text-gray-950 transition hover:bg-amber-400 disabled:cursor-not-allowed disabled:opacity-50"
           >
-            {{
-              isUpdatingStamps ? "Aggiornamento in corso..." : "Salva timbri"
-            }}
+            {{ isSavingPlayer ? "Salvataggio in corso..." : "Salva modifiche" }}
           </button>
         </form>
       </div>

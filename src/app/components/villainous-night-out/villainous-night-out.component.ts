@@ -31,10 +31,12 @@ export class VillainousNightOutComponent implements OnInit {
   newPlayerLocation = '';
   isAddingPlayer = false;
 
-  // Aggiornamento timbri
+  // Modifica giocatore
   selectedPlayerId = '';
+  editedPlayerName = '';
+  editedPlayerLocation = '';
   editedStamps = 0;
-  isUpdatingStamps = false;
+  isSavingPlayer = false;
 
   // Messaggi amministrativi
   adminSuccessMessage: string | null = null;
@@ -72,9 +74,10 @@ export class VillainousNightOutComponent implements OnInit {
       return this.players;
     }
 
-    return this.players.filter((player) =>
-      player.name.toLocaleLowerCase('it').includes(search) ||
-      player.location?.toLocaleLowerCase('it').includes(search),
+    return this.players.filter(
+      (player) =>
+        player.name.toLocaleLowerCase('it').includes(search) ||
+        player.location?.toLocaleLowerCase('it').includes(search),
     );
   }
 
@@ -103,6 +106,8 @@ export class VillainousNightOutComponent implements OnInit {
       await this.authService.signOut();
 
       this.selectedPlayerId = '';
+      this.editedPlayerName = '';
+      this.editedPlayerLocation = '';
       this.editedStamps = 0;
     } catch (error) {
       console.error('Errore durante il logout:', error);
@@ -137,11 +142,9 @@ export class VillainousNightOutComponent implements OnInit {
       this.newPlayerName = '';
       this.newPlayerLocation = '';
 
-      this.adminSuccessMessage =
-        `Il giocatore ${player.name} è stato aggiunto correttamente.`;
-
+      this.adminSuccessMessage = `Il giocatore ${player.name} è stato aggiunto correttamente.`;
     } catch (error) {
-      console.error('Errore durante l\'inserimento del giocatore:', error);
+      console.error("Errore durante l'inserimento del giocatore:", error);
 
       this.adminErrorMessage =
         'Non è stato possibile aggiungere il giocatore. Riprova.';
@@ -156,16 +159,26 @@ export class VillainousNightOutComponent implements OnInit {
 
     const player = this.players.find((p) => p.id === playerId);
 
+    this.editedPlayerName = player?.name ?? '';
+    this.editedPlayerLocation = player?.location ?? '';
     this.editedStamps = player?.stamps ?? 0;
+
     this.clearAdminMessages();
   }
 
-  // Aggiorna il numero di timbri
-  async updateStamps(): Promise<void> {
+  // Salva tutte le modifiche del giocatore
+  async savePlayerChanges(): Promise<void> {
+    const name = this.editedPlayerName.trim();
+    const location = this.editedPlayerLocation.trim();
     const stamps = Number(this.editedStamps);
 
     if (!this.selectedPlayerId) {
       this.adminErrorMessage = 'Seleziona un giocatore.';
+      return;
+    }
+
+    if (!name) {
+      this.adminErrorMessage = 'Il nome del giocatore è obbligatorio.';
       return;
     }
 
@@ -176,29 +189,31 @@ export class VillainousNightOutComponent implements OnInit {
     }
 
     this.clearAdminMessages();
-    this.isUpdatingStamps = true;
+    this.isSavingPlayer = true;
 
     try {
       const updatedPlayer =
-        await this.villainousNightOutService.updateStamps(
+        await this.villainousNightOutService.savePlayerChanges(
           this.selectedPlayerId,
+          name,
+          location,
           stamps,
         );
 
-      this.players = this.players.map((player) =>
-        player.id === updatedPlayer.id ? updatedPlayer : player,
-      );
+      this.players = this.players
+        .map((player) =>
+          player.id === updatedPlayer.id ? updatedPlayer : player,
+        )
+        .sort((a, b) => a.name.localeCompare(b.name, 'it'));
 
-      this.adminSuccessMessage =
-        `Timbri di ${updatedPlayer.name} aggiornati correttamente.`;
-
+      this.adminSuccessMessage = `I dati di ${updatedPlayer.name} sono stati aggiornati correttamente.`;
     } catch (error) {
-      console.error('Errore durante l\'aggiornamento dei timbri:', error);
+      console.error('Errore durante il salvataggio del giocatore:', error);
 
       this.adminErrorMessage =
-        'Non è stato possibile aggiornare i timbri. Riprova.';
+        'Non è stato possibile salvare le modifiche. Riprova.';
     } finally {
-      this.isUpdatingStamps = false;
+      this.isSavingPlayer = false;
     }
   }
 
