@@ -9,6 +9,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { VnoPlayer } from '../../models/vno-player.model';
 import { VillainousNightOutService } from '../../services/villainous-night-out.service';
 import { AuthService } from '../../services/auth.service';
+import { VNO_VENUES, VnoVenue } from '../../data/vno-venues.data';
 
 @Component({
   selector: 'app-villainous-night-out',
@@ -18,7 +19,7 @@ import { AuthService } from '../../services/auth.service';
 })
 export class VillainousNightOutComponent implements OnInit {
   players: VnoPlayer[] = [];
-
+  readonly venues = VNO_VENUES;
   searchTerm = '';
   isLoading = true;
   errorMessage: string | null = null;
@@ -29,6 +30,9 @@ export class VillainousNightOutComponent implements OnInit {
   // Nuovo giocatore
   newPlayerName = '';
   newPlayerLocation = '';
+  newPlayerSecretPlans = 0;
+  newPlayerLastNightOutDate = '';
+  newPlayerLastNightOutVenue = '';
   isAddingPlayer = false;
 
   // Modifica giocatore
@@ -36,6 +40,9 @@ export class VillainousNightOutComponent implements OnInit {
   editedPlayerName = '';
   editedPlayerLocation = '';
   editedStamps = 0;
+  editedSecretPlans = 0;
+  editedLastNightOutDate = '';
+  editedLastNightOutVenue = '';
   isSavingPlayer = false;
 
   // Messaggi amministrativi
@@ -81,6 +88,10 @@ export class VillainousNightOutComponent implements OnInit {
     );
   }
 
+  getVenueLabel(venue: VnoVenue): string {
+    return `${venue.name} (${venue.city})`;
+  }
+
   onSearch(event: Event): void {
     const input = event.target as HTMLInputElement;
     this.searchTerm = input.value;
@@ -109,6 +120,9 @@ export class VillainousNightOutComponent implements OnInit {
       this.editedPlayerName = '';
       this.editedPlayerLocation = '';
       this.editedStamps = 0;
+      this.editedSecretPlans = 0;
+      this.editedLastNightOutDate = '';
+      this.editedLastNightOutVenue = '';
     } catch (error) {
       console.error('Errore durante il logout:', error);
       this.authErrorMessage =
@@ -120,9 +134,24 @@ export class VillainousNightOutComponent implements OnInit {
   async addPlayer(): Promise<void> {
     const name = this.newPlayerName.trim();
     const location = this.newPlayerLocation.trim();
+    const secretPlans = Number(this.newPlayerSecretPlans);
+    const lastNightOutDate = this.newPlayerLastNightOutDate;
+    const selectedVenue = this.venues.find(
+      (venue) => venue.id === this.newPlayerLastNightOutVenue,
+    );
+
+    const lastNightOutVenue = selectedVenue
+      ? this.getVenueLabel(selectedVenue)
+      : '';
 
     if (!name) {
       this.adminErrorMessage = 'Inserisci il nome del giocatore.';
+      return;
+    }
+
+    if (!Number.isInteger(secretPlans) || secretPlans < 0) {
+      this.adminErrorMessage =
+        'Il numero di Piani Segreti deve essere un intero maggiore o uguale a zero.';
       return;
     }
 
@@ -133,6 +162,9 @@ export class VillainousNightOutComponent implements OnInit {
       const player = await this.villainousNightOutService.addPlayer(
         name,
         location,
+        secretPlans,
+        lastNightOutDate,
+        lastNightOutVenue,
       );
 
       this.players = [...this.players, player].sort((a, b) =>
@@ -141,6 +173,9 @@ export class VillainousNightOutComponent implements OnInit {
 
       this.newPlayerName = '';
       this.newPlayerLocation = '';
+      this.newPlayerSecretPlans = 0;
+      this.newPlayerLastNightOutDate = '';
+      this.newPlayerLastNightOutVenue = '';
 
       this.adminSuccessMessage = `Il giocatore ${player.name} è stato aggiunto correttamente.`;
     } catch (error) {
@@ -162,6 +197,17 @@ export class VillainousNightOutComponent implements OnInit {
     this.editedPlayerName = player?.name ?? '';
     this.editedPlayerLocation = player?.location ?? '';
     this.editedStamps = player?.stamps ?? 0;
+    this.editedSecretPlans = player?.secret_plans ?? 0;
+    this.editedLastNightOutDate = player?.last_night_out_date ?? '';
+    const savedVenue = player?.last_night_out_venue ?? '';
+
+    const matchingVenue = this.venues.find(
+      (venue) => this.getVenueLabel(venue) === savedVenue,
+    );
+
+    this.editedLastNightOutVenue = matchingVenue
+      ? matchingVenue.id
+      : savedVenue;
 
     this.clearAdminMessages();
   }
@@ -171,6 +217,15 @@ export class VillainousNightOutComponent implements OnInit {
     const name = this.editedPlayerName.trim();
     const location = this.editedPlayerLocation.trim();
     const stamps = Number(this.editedStamps);
+    const secretPlans = Number(this.editedSecretPlans);
+    const lastNightOutDate = this.editedLastNightOutDate;
+    const selectedVenue = this.venues.find(
+      (venue) => venue.id === this.editedLastNightOutVenue,
+    );
+
+    const lastNightOutVenue = selectedVenue
+      ? this.getVenueLabel(selectedVenue)
+      : this.editedLastNightOutVenue.trim();
 
     if (!this.selectedPlayerId) {
       this.adminErrorMessage = 'Seleziona un giocatore.';
@@ -188,6 +243,12 @@ export class VillainousNightOutComponent implements OnInit {
       return;
     }
 
+    if (!Number.isInteger(secretPlans) || secretPlans < 0) {
+      this.adminErrorMessage =
+        'Il numero di Piani Segreti deve essere un intero maggiore o uguale a zero.';
+      return;
+    }
+
     this.clearAdminMessages();
     this.isSavingPlayer = true;
 
@@ -198,6 +259,9 @@ export class VillainousNightOutComponent implements OnInit {
           name,
           location,
           stamps,
+          secretPlans,
+          lastNightOutDate,
+          lastNightOutVenue,
         );
 
       this.players = this.players
@@ -215,6 +279,15 @@ export class VillainousNightOutComponent implements OnInit {
     } finally {
       this.isSavingPlayer = false;
     }
+  }
+
+  formatLastNightOutDate(date: string | null): string {
+    if (!date) {
+      return 'Non ancora registrata';
+    }
+
+    const [year, month, day] = date.split('-');
+    return `${day}/${month}/${year}`;
   }
 
   private clearAdminMessages(): void {

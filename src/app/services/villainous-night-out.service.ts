@@ -24,12 +24,21 @@ export class VillainousNightOutService {
   }
 
   // Aggiunge un nuovo giocatore
-  async addPlayer(name: string, location: string): Promise<VnoPlayer> {
+  async addPlayer(
+    name: string,
+    location: string,
+    secretPlans: number,
+    lastNightOutDate: string,
+    lastNightOutVenue: string,
+  ): Promise<VnoPlayer> {
     const { data, error } = await this.supabaseService.client
       .from('vno_players')
       .insert({
         name: name.trim(),
         location: location.trim() || null,
+        secret_plans: secretPlans,
+        last_night_out_date: lastNightOutDate || null,
+        last_night_out_venue: lastNightOutVenue || null,
       })
       .select()
       .single();
@@ -47,6 +56,9 @@ export class VillainousNightOutService {
     name: string,
     location: string,
     stamps: number,
+    secretPlans: number,
+    lastNightOutDate: string,
+    lastNightOutVenue: string,
   ): Promise<VnoPlayer> {
     const { data, error } = await this.supabaseService.client
       .from('vno_players')
@@ -54,6 +66,9 @@ export class VillainousNightOutService {
         name: name.trim(),
         location: location.trim() || null,
         stamps,
+        secret_plans: secretPlans,
+        last_night_out_date: lastNightOutDate || null,
+        last_night_out_venue: lastNightOutVenue || null,
         updated_at: new Date().toISOString(),
       })
       .eq('id', playerId)
