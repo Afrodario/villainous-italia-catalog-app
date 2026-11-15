@@ -100,29 +100,31 @@
     </div>
   </nav>
 
-  <!-- LISTA SCENARI -->
-  @if (currentSection === "scenarios" && !currentScenario) {
-    <app-scenario-list
-      [scenarios]="scenarios"
-      (scenarioSelected)="startScenario($event)"
-    />
-  }
+  @defer (when currentSection === 'scenarios') {
+    @if (currentSection === "scenarios" && !currentScenario) {
+      <app-scenario-list
+        [scenarios]="scenarios"
+        (scenarioSelected)="startScenario($event)"
+      />
+    }
 
-  <!-- GIOCO -->
-  @if (
-    currentSection === "scenarios" &&
-    currentScenario &&
-    currentScene &&
-    gameState
-  ) {
-    <app-game-view
-      [scenario]="currentScenario"
-      [scene]="currentScene"
-      [gameState]="gameState"
-      (choiceSelected)="selectChoice($event)"
-      (restart)="restartScenario()"
-      (back)="backToScenarios()"
-    />
+    @if (
+      currentSection === "scenarios" &&
+      currentScenario &&
+      currentScene &&
+      gameState
+    ) {
+      <app-game-view
+        [scenario]="currentScenario"
+        [scene]="currentScene"
+        [gameState]="gameState"
+        (choiceSelected)="selectChoice($event)"
+        (restart)="restartScenario()"
+        (back)="backToScenarios()"
+      />
+    }
+  } @placeholder {
+    <div></div>
   }
 
   @if (currentSection === "catalog") {
@@ -132,26 +134,46 @@
     />
   }
 
-  @if (currentSection === "gameplay") {
-    <app-gameplay
-      [selectedActionId]="selectedGameplayActionId"
-      (cardSelected)="showCatalogCard($event)"
-    />
+  @defer (when currentSection === 'gameplay') {
+    @if (currentSection === "gameplay") {
+      <app-gameplay
+        [selectedActionId]="selectedGameplayActionId"
+        (cardSelected)="showCatalogCard($event)"
+      />
+    }
+  } @placeholder {
+    <div></div>
   }
 
-  @if (currentSection === "faq") {
-    <app-faq />
+  @defer (when currentSection === 'faq') {
+    @if (currentSection === "faq") {
+      <app-faq />
+    }
+  } @placeholder {
+    <div></div>
   }
 
-  @if (currentSection === "progression") {
-    <app-progression />
+  @defer (when currentSection === 'progression') {
+    @if (currentSection === "progression") {
+      <app-progression />
+    }
+  } @placeholder {
+    <div></div>
   }
 
-  @if (currentSection === "hall-of-fame") {
-    <app-hall-of-fame />
+  @defer (when currentSection === 'hall-of-fame') {
+    @if (currentSection === "hall-of-fame") {
+      <app-hall-of-fame />
+    }
+  } @placeholder {
+    <div></div>
   }
 
-  @if (currentSection === "villainous-night-out") {
-    <app-villainous-night-out />
+  @defer (when currentSection === 'villainous-night-out') {
+    @if (currentSection === "villainous-night-out") {
+      <app-villainous-night-out />
+    }
+  } @placeholder {
+    <div></div>
   }
 </div>
