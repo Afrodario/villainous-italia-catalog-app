@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ScenarioService } from './services/scenario.service';
 import { GameEngineService } from './services/game-engine.service';
 import { Scenario } from './models/scenario.model';
@@ -12,19 +13,21 @@ import { GameplayComponent } from './components/gameplay/gameplay.component';
 import { ProgressionComponent } from './components/progression/progression.component';
 import { HallOfFameComponent } from './components/hall-of-fame/hall-of-fame.component';
 import { FaqComponent } from './components/faq/faq.component';
-
+import { VillainousNightOutComponent } from './components/villainous-night-out/villainous-night-out.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
+    CommonModule,
     ScenarioListComponent,
     GameViewComponent,
     CatalogComponent,
     GameplayComponent,
     ProgressionComponent,
     HallOfFameComponent,
-    FaqComponent
+    FaqComponent,
+    VillainousNightOutComponent,
   ],
   templateUrl: './app.component.html',
 })
@@ -47,7 +50,8 @@ export class AppComponent {
     | 'gameplay'
     | 'progression'
     | 'hall-of-fame'
-    | 'faq' = 'catalog';
+    | 'faq' 
+    | 'villainous-night-out' = 'catalog';
 
   constructor(
     private scenarioService: ScenarioService,
@@ -79,6 +83,10 @@ export class AppComponent {
 
   showFaq(): void {
     this.currentSection = 'faq';
+  }
+
+  showVillainousNightOut(): void {
+    this.currentSection = 'villainous-night-out';
   }
 
   showGameplayAction(actionId: string): void {

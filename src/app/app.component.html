@@ -85,6 +85,18 @@
       >
         🏆 Hall of Fame
       </button>
+
+      <button
+        (click)="showVillainousNightOut()"
+        [ngClass]="{
+          'bg-purple-600 text-white': currentSection === 'villainous-night-out',
+          'bg-gray-800 text-gray-300 hover:bg-gray-700':
+            currentSection !== 'villainous-night-out',
+        }"
+        class="rounded-lg px-4 py-2 text-sm font-bold transition"
+      >
+        🎟️ Villainous Night Out
+      </button>
     </div>
   </nav>
 
@@ -137,5 +149,9 @@
 
   @if (currentSection === "hall-of-fame") {
     <app-hall-of-fame />
+  }
+
+  @if (currentSection === "villainous-night-out") {
+    <app-villainous-night-out />
   }
 </div>
