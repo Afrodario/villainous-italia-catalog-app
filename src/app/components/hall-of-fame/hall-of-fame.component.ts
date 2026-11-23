@@ -263,7 +263,7 @@ import { Player, PlayerResult, Tournament } from './hall-of-fame.model';
 
                   <div class="min-w-0 flex-1">
                     <h3
-                      class="truncate font-bold sm:text-lg"
+                      class="break-words font-bold sm:text-lg"
                       [ngClass]="getPlayerNameClass(player)"
                     >
                       {{ player.name }}
@@ -280,7 +280,7 @@ import { Player, PlayerResult, Tournament } from './hall-of-fame.model';
                       ) {
                         <span class="text-slate-600">·</span>
 
-                        <span class="truncate" [title]="latestTournament">
+                        <span class="break-words" [title]="latestTournament">
                           Ultimo: {{ latestTournament }}
                         </span>
                       }
