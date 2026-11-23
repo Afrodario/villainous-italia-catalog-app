@@ -32,6 +32,11 @@ export const RATIGAN_PROGRESSION: VillainProgression = {
           percentage: 0,
         },
         {
+          id: 'the-secret-lair',
+          label: 'Regina Robot al Covo Segreto',
+          percentage: 25,
+        },
+        {
           id: 'flaversham-toy-shop',
           label: 'Regina Robot al Negozio di Giocattoli di Flaversham',
           percentage: 45,
