@@ -166,5 +166,12 @@
     "year": 2026,
     "order": 23,
     "tour": "The Bad Side Tour"
+  },
+  {
+    "id": "the-bad-side-tour-monsummano-2026",
+    "name": "THE BAD SIDE TOUR MONSUMMANO 2026",
+    "year": 2026,
+    "order": 24,
+    "tour": "The Bad Side Tour"
   }
 ]

@@ -269,9 +269,22 @@ import { Player, PlayerResult, Tournament } from './hall-of-fame.model';
                       {{ player.name }}
                     </h3>
 
-                    <p class="mt-1 text-xs text-slate-400 sm:text-sm">
-                      {{ player.participations }} partecipazioni
-                    </p>
+                    <div
+                      class="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-slate-400 sm:text-sm"
+                    >
+                      <span> {{ player.participations }} partecipazioni </span>
+
+                      @if (
+                        getLatestParticipation(player);
+                        as latestTournament
+                      ) {
+                        <span class="text-slate-600">·</span>
+
+                        <span class="truncate" [title]="latestTournament">
+                          Ultimo: {{ latestTournament }}
+                        </span>
+                      }
+                    </div>
                   </div>
 
                   <div class="flex shrink-0 items-center gap-2">
@@ -428,6 +441,19 @@ export class HallOfFameComponent implements OnInit {
 
   getPosition(player: Player): number {
     return this.players.findIndex((p) => p.id === player.id) + 1;
+  }
+
+  getLatestParticipation(player: Player): string | undefined {
+    for (let i = this.tournaments.length - 1; i >= 0; i--) {
+      const tournament = this.tournaments[i];
+      const result = this.getPlayerResult(player, tournament);
+
+      if (result !== undefined && result !== 'NP') {
+        return tournament.name;
+      }
+    }
+
+    return undefined;
   }
 
   getPlayerResult(

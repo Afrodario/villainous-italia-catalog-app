@@ -2,12 +2,12 @@
   {
     "id": "vincenzo-intravaia",
     "name": "VINCENZO INTRAVAIA",
-    "totalPoints": 46,
-    "averagePoints": 2.5555555555555554,
-    "participations": 18,
+    "totalPoints": 48,
+    "averagePoints": 2.526315789473684,
+    "participations": 19,
     "absences": 5,
-    "presenceRate": 0.782608695652174,
-    "qualificationIndex": 2,
+    "presenceRate": 0.7916666666666666,
+    "qualificationIndex": 1.9999999999999998,
     "results": {
       "modena-play-2023": 3,
       "roma-ludico-2023": "NP",
@@ -31,53 +31,19 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": 4,
       "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": 0
-    }
-  },
-  {
-    "id": "lorenzo-sean-ricco",
-    "name": "LORENZO SEAN RICCO'",
-    "totalPoints": 27,
-    "averagePoints": 2.25,
-    "participations": 12,
-    "absences": 11,
-    "presenceRate": 0.5217391304347826,
-    "qualificationIndex": 1.1739130434782608,
-    "results": {
-      "modena-play-2023": 2,
-      "roma-ludico-2023": 3,
-      "lucca-comics-2023": 2,
-      "milano-games-week-2023": 1,
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": 4,
-      "modena-play-2024": 4,
-      "good-to-be-bad-tour-roma-i-2024": 1,
-      "lucca-comics-2024": 4,
-      "good-to-be-bad-tour-roma-ii-2024": 2,
-      "milano-games-week-2024": 1,
-      "the-villainous-before-christmas-2024": 3,
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": 0,
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": 0,
+      "the-bad-side-tour-monsummano-2026": 2
     }
   },
   {
     "id": "riccardo-recce",
     "name": "RICCARDO RECCE",
-    "totalPoints": 27,
-    "averagePoints": 1.35,
-    "participations": 20,
+    "totalPoints": 31,
+    "averagePoints": 1.4761904761904763,
+    "participations": 21,
     "absences": 3,
-    "presenceRate": 0.8695652173913043,
-    "qualificationIndex": 1.173913043478261,
+    "presenceRate": 0.875,
+    "qualificationIndex": 1.2916666666666667,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 1,
@@ -101,18 +67,55 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": 1,
       "the-bad-side-tour-milano-draft-2026": 0,
-      "the-bad-side-tour-lucca-comics-2026": 3
+      "the-bad-side-tour-lucca-comics-2026": 3,
+      "the-bad-side-tour-monsummano-2026": 4
+    }
+  },
+  {
+    "id": "lorenzo-sean-ricco",
+    "name": "LORENZO SEAN RICCO'",
+    "totalPoints": 27,
+    "averagePoints": 2.25,
+    "participations": 12,
+    "absences": 12,
+    "presenceRate": 0.5,
+    "qualificationIndex": 1.125,
+    "results": {
+      "modena-play-2023": 2,
+      "roma-ludico-2023": 3,
+      "lucca-comics-2023": 2,
+      "milano-games-week-2023": 1,
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": 4,
+      "modena-play-2024": 4,
+      "good-to-be-bad-tour-roma-i-2024": 1,
+      "lucca-comics-2024": 4,
+      "good-to-be-bad-tour-roma-ii-2024": 2,
+      "milano-games-week-2024": 1,
+      "the-villainous-before-christmas-2024": 3,
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": 0,
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
     "id": "elena-chiuppesi",
     "name": "ELENA CHIUPPESI",
-    "totalPoints": 24,
-    "averagePoints": 1.2,
-    "participations": 20,
+    "totalPoints": 25,
+    "averagePoints": 1.1904761904761905,
+    "participations": 21,
     "absences": 3,
-    "presenceRate": 0.8695652173913043,
-    "qualificationIndex": 1.0434782608695652,
+    "presenceRate": 0.875,
+    "qualificationIndex": 1.0416666666666667,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 0,
@@ -136,7 +139,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": 1,
       "the-bad-side-tour-milano-draft-2026": 0,
-      "the-bad-side-tour-lucca-comics-2026": 2
+      "the-bad-side-tour-lucca-comics-2026": 2,
+      "the-bad-side-tour-monsummano-2026": 1
     }
   },
   {
@@ -145,9 +149,9 @@
     "totalPoints": 17,
     "averagePoints": 2.125,
     "participations": 8,
-    "absences": 15,
-    "presenceRate": 0.34782608695652173,
-    "qualificationIndex": 0.7391304347826086,
+    "absences": 16,
+    "presenceRate": 0.3333333333333333,
+    "qualificationIndex": 0.7083333333333333,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -171,7 +175,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": 4
+      "the-bad-side-tour-lucca-comics-2026": 4,
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -180,9 +185,9 @@
     "totalPoints": 16,
     "averagePoints": 1.4545454545454546,
     "participations": 11,
-    "absences": 12,
-    "presenceRate": 0.4782608695652174,
-    "qualificationIndex": 0.6956521739130436,
+    "absences": 13,
+    "presenceRate": 0.4583333333333333,
+    "qualificationIndex": 0.6666666666666666,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 0,
@@ -206,7 +211,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": 4,
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -215,9 +221,9 @@
     "totalPoints": 16,
     "averagePoints": 1.4545454545454546,
     "participations": 11,
-    "absences": 12,
-    "presenceRate": 0.4782608695652174,
-    "qualificationIndex": 0.6956521739130436,
+    "absences": 13,
+    "presenceRate": 0.4583333333333333,
+    "qualificationIndex": 0.6666666666666666,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -241,18 +247,19 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": 2,
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": 0
+      "the-bad-side-tour-lucca-comics-2026": 0,
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
     "id": "marino-prostran",
     "name": "MARINO PROSTRAN",
-    "totalPoints": 15,
-    "averagePoints": 2.5,
-    "participations": 6,
+    "totalPoints": 16,
+    "averagePoints": 2.2857142857142856,
+    "participations": 7,
     "absences": 17,
-    "presenceRate": 0.2608695652173913,
-    "qualificationIndex": 0.6521739130434783,
+    "presenceRate": 0.2916666666666667,
+    "qualificationIndex": 0.6666666666666666,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -276,18 +283,19 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": 0,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 1
     }
   },
   {
     "id": "matteo-degni",
     "name": "MATTEO DEGNI",
-    "totalPoints": 14,
+    "totalPoints": 15,
     "averagePoints": 1,
-    "participations": 14,
+    "participations": 15,
     "absences": 9,
-    "presenceRate": 0.6086956521739131,
-    "qualificationIndex": 0.6086956521739131,
+    "presenceRate": 0.625,
+    "qualificationIndex": 0.625,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 1,
@@ -311,18 +319,19 @@
       "the-bad-side-tour-inkhearts-roma-2026": 2,
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 1
     }
   },
   {
     "id": "alessandro-dattolo",
     "name": "ALESSANDRO DATTOLO",
     "totalPoints": 11,
-    "averagePoints": 1.8333333333333333,
-    "participations": 6,
+    "averagePoints": 1.5714285714285714,
+    "participations": 7,
     "absences": 17,
-    "presenceRate": 0.2608695652173913,
-    "qualificationIndex": 0.47826086956521735,
+    "presenceRate": 0.2916666666666667,
+    "qualificationIndex": 0.45833333333333337,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -346,7 +355,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": 4,
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 0
     }
   },
   {
@@ -355,9 +365,9 @@
     "totalPoints": 10,
     "averagePoints": 1.25,
     "participations": 8,
-    "absences": 15,
-    "presenceRate": 0.34782608695652173,
-    "qualificationIndex": 0.43478260869565216,
+    "absences": 16,
+    "presenceRate": 0.3333333333333333,
+    "qualificationIndex": 0.41666666666666663,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -381,7 +391,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -390,9 +401,9 @@
     "totalPoints": 9,
     "averagePoints": 2.25,
     "participations": 4,
-    "absences": 19,
-    "presenceRate": 0.17391304347826086,
-    "qualificationIndex": 0.3913043478260869,
+    "absences": 20,
+    "presenceRate": 0.16666666666666666,
+    "qualificationIndex": 0.375,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -416,7 +427,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -425,9 +437,9 @@
     "totalPoints": 9,
     "averagePoints": 1.125,
     "participations": 8,
-    "absences": 15,
-    "presenceRate": 0.34782608695652173,
-    "qualificationIndex": 0.3913043478260869,
+    "absences": 16,
+    "presenceRate": 0.3333333333333333,
+    "qualificationIndex": 0.375,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 2,
@@ -451,18 +463,19 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
     "id": "alessia-pericoli",
     "name": "ALESSIA PERICOLI",
-    "totalPoints": 8,
-    "averagePoints": 0.6666666666666666,
-    "participations": 12,
+    "totalPoints": 9,
+    "averagePoints": 0.6923076923076923,
+    "participations": 13,
     "absences": 11,
-    "presenceRate": 0.5217391304347826,
-    "qualificationIndex": 0.34782608695652173,
+    "presenceRate": 0.5416666666666666,
+    "qualificationIndex": 0.37499999999999994,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -486,7 +499,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": 1,
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": 2
+      "the-bad-side-tour-lucca-comics-2026": 2,
+      "the-bad-side-tour-monsummano-2026": 1
     }
   },
   {
@@ -495,9 +509,9 @@
     "totalPoints": 7,
     "averagePoints": 1.75,
     "participations": 4,
-    "absences": 19,
-    "presenceRate": 0.17391304347826086,
-    "qualificationIndex": 0.30434782608695654,
+    "absences": 20,
+    "presenceRate": 0.16666666666666666,
+    "qualificationIndex": 0.29166666666666663,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -521,7 +535,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -530,9 +545,9 @@
     "totalPoints": 7,
     "averagePoints": 1.1666666666666667,
     "participations": 6,
-    "absences": 17,
-    "presenceRate": 0.2608695652173913,
-    "qualificationIndex": 0.30434782608695654,
+    "absences": 18,
+    "presenceRate": 0.25,
+    "qualificationIndex": 0.2916666666666667,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -556,7 +571,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -565,9 +581,9 @@
     "totalPoints": 7,
     "averagePoints": 0.875,
     "participations": 8,
-    "absences": 15,
-    "presenceRate": 0.34782608695652173,
-    "qualificationIndex": 0.30434782608695654,
+    "absences": 16,
+    "presenceRate": 0.3333333333333333,
+    "qualificationIndex": 0.29166666666666663,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -591,123 +607,19 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "davide-ruocco",
-    "name": "DAVIDE RUOCCO",
-    "totalPoints": 6,
-    "averagePoints": 1.5,
-    "participations": 4,
-    "absences": 19,
-    "presenceRate": 0.17391304347826086,
-    "qualificationIndex": 0.2608695652173913,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": 4,
-      "lucca-comics-2023": 1,
-      "milano-games-week-2023": 1,
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": 0,
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "eric-dall-armi",
-    "name": "ERIC DALL'ARMI",
-    "totalPoints": 6,
-    "averagePoints": 1.5,
-    "participations": 4,
-    "absences": 19,
-    "presenceRate": 0.17391304347826086,
-    "qualificationIndex": 0.2608695652173913,
-    "results": {
-      "modena-play-2023": 4,
-      "roma-ludico-2023": 0,
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": 2,
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": 0,
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "marco-innocenti",
-    "name": "MARCO INNOCENTI",
-    "totalPoints": 6,
-    "averagePoints": 0.6,
-    "participations": 10,
-    "absences": 13,
-    "presenceRate": 0.43478260869565216,
-    "qualificationIndex": 0.2608695652173913,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": 1,
-      "lucca-comics-2024": 2,
-      "good-to-be-bad-tour-roma-ii-2024": 1,
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": 0,
-      "bad-to-the-bone-tour-roma-apertura-2025": 0,
-      "bad-to-the-bone-tour-bologna-play-2025": 0,
-      "bad-to-the-bone-tour-roma-2025": 0,
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": 0,
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": 2,
-      "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": 0
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
     "id": "letianna-quattropani",
     "name": "LETIANNA QUATTROPANI",
-    "totalPoints": 6,
-    "averagePoints": 3,
-    "participations": 2,
+    "totalPoints": 7,
+    "averagePoints": 2.3333333333333335,
+    "participations": 3,
     "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.2608695652173913,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.2916666666666667,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -731,7 +643,116 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": 4,
       "the-bad-side-tour-milano-draft-2026": 2,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 1
+    }
+  },
+  {
+    "id": "davide-ruocco",
+    "name": "DAVIDE RUOCCO",
+    "totalPoints": 6,
+    "averagePoints": 1.5,
+    "participations": 4,
+    "absences": 20,
+    "presenceRate": 0.16666666666666666,
+    "qualificationIndex": 0.25,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": 4,
+      "lucca-comics-2023": 1,
+      "milano-games-week-2023": 1,
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": 0,
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
+    }
+  },
+  {
+    "id": "eric-dall-armi",
+    "name": "ERIC DALL'ARMI",
+    "totalPoints": 6,
+    "averagePoints": 1.5,
+    "participations": 4,
+    "absences": 20,
+    "presenceRate": 0.16666666666666666,
+    "qualificationIndex": 0.25,
+    "results": {
+      "modena-play-2023": 4,
+      "roma-ludico-2023": 0,
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": 2,
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": 0,
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
+    }
+  },
+  {
+    "id": "marco-innocenti",
+    "name": "MARCO INNOCENTI",
+    "totalPoints": 6,
+    "averagePoints": 0.5454545454545454,
+    "participations": 11,
+    "absences": 13,
+    "presenceRate": 0.4583333333333333,
+    "qualificationIndex": 0.24999999999999997,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": 1,
+      "lucca-comics-2024": 2,
+      "good-to-be-bad-tour-roma-ii-2024": 1,
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": 0,
+      "bad-to-the-bone-tour-roma-apertura-2025": 0,
+      "bad-to-the-bone-tour-bologna-play-2025": 0,
+      "bad-to-the-bone-tour-roma-2025": 0,
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": 0,
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": 2,
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": 0,
+      "the-bad-side-tour-monsummano-2026": 0
     }
   },
   {
@@ -740,9 +761,9 @@
     "totalPoints": 5,
     "averagePoints": 1.6666666666666667,
     "participations": 3,
-    "absences": 20,
-    "presenceRate": 0.13043478260869565,
-    "qualificationIndex": 0.21739130434782608,
+    "absences": 21,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.20833333333333334,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -766,7 +787,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -775,9 +797,9 @@
     "totalPoints": 5,
     "averagePoints": 1,
     "participations": 5,
-    "absences": 18,
-    "presenceRate": 0.21739130434782608,
-    "qualificationIndex": 0.21739130434782608,
+    "absences": 19,
+    "presenceRate": 0.20833333333333334,
+    "qualificationIndex": 0.20833333333333334,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -801,7 +823,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -810,9 +833,9 @@
     "totalPoints": 5,
     "averagePoints": 0.8333333333333334,
     "participations": 6,
-    "absences": 17,
-    "presenceRate": 0.2608695652173913,
-    "qualificationIndex": 0.21739130434782608,
+    "absences": 18,
+    "presenceRate": 0.25,
+    "qualificationIndex": 0.20833333333333334,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -836,7 +859,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -845,9 +869,9 @@
     "totalPoints": 5,
     "averagePoints": 0.5555555555555556,
     "participations": 9,
-    "absences": 14,
-    "presenceRate": 0.391304347826087,
-    "qualificationIndex": 0.2173913043478261,
+    "absences": 15,
+    "presenceRate": 0.375,
+    "qualificationIndex": 0.20833333333333334,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 0,
@@ -871,7 +895,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -880,9 +905,9 @@
     "totalPoints": 5,
     "averagePoints": 0.5555555555555556,
     "participations": 9,
-    "absences": 14,
-    "presenceRate": 0.391304347826087,
-    "qualificationIndex": 0.2173913043478261,
+    "absences": 15,
+    "presenceRate": 0.375,
+    "qualificationIndex": 0.20833333333333334,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 1,
@@ -906,7 +931,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -915,9 +941,9 @@
     "totalPoints": 5,
     "averagePoints": 0.5,
     "participations": 10,
-    "absences": 13,
-    "presenceRate": 0.43478260869565216,
-    "qualificationIndex": 0.21739130434782608,
+    "absences": 14,
+    "presenceRate": 0.4166666666666667,
+    "qualificationIndex": 0.20833333333333334,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 0,
@@ -941,7 +967,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -950,9 +977,9 @@
     "totalPoints": 5,
     "averagePoints": 0.5,
     "participations": 10,
-    "absences": 13,
-    "presenceRate": 0.43478260869565216,
-    "qualificationIndex": 0.21739130434782608,
+    "absences": 14,
+    "presenceRate": 0.4166666666666667,
+    "qualificationIndex": 0.20833333333333334,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 0,
@@ -976,7 +1003,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": 1,
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -985,9 +1013,9 @@
     "totalPoints": 5,
     "averagePoints": 1,
     "participations": 5,
-    "absences": 18,
-    "presenceRate": 0.21739130434782608,
-    "qualificationIndex": 0.21739130434782608,
+    "absences": 19,
+    "presenceRate": 0.20833333333333334,
+    "qualificationIndex": 0.20833333333333334,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -1011,7 +1039,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": 0,
       "the-bad-side-tour-games-on-board-2026": 1,
       "the-bad-side-tour-milano-draft-2026": 3,
-      "the-bad-side-tour-lucca-comics-2026": 0
+      "the-bad-side-tour-lucca-comics-2026": 0,
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -1020,9 +1049,9 @@
     "totalPoints": 5,
     "averagePoints": 0.7142857142857143,
     "participations": 7,
-    "absences": 16,
-    "presenceRate": 0.30434782608695654,
-    "qualificationIndex": 0.2173913043478261,
+    "absences": 17,
+    "presenceRate": 0.2916666666666667,
+    "qualificationIndex": 0.20833333333333334,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -1046,333 +1075,19 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": 1
-    }
-  },
-  {
-    "id": "elena-corotti",
-    "name": "ELENA COROTTI",
-    "totalPoints": 4,
-    "averagePoints": 2,
-    "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.17391304347826086,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": 4,
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": 0,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "giuliano-mora",
-    "name": "GIULIANO MORA",
-    "totalPoints": 4,
-    "averagePoints": 4,
-    "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.17391304347826086,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": 4,
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "iacopo-gaito",
-    "name": "IACOPO GAITO",
-    "totalPoints": 4,
-    "averagePoints": 1.3333333333333333,
-    "participations": 3,
-    "absences": 20,
-    "presenceRate": 0.13043478260869565,
-    "qualificationIndex": 0.17391304347826086,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": 2,
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": 1,
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": 1,
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "leonardo-marucci",
-    "name": "LEONARDO MARUCCI",
-    "totalPoints": 4,
-    "averagePoints": 1,
-    "participations": 4,
-    "absences": 19,
-    "presenceRate": 0.17391304347826086,
-    "qualificationIndex": 0.17391304347826086,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": 2,
-      "good-to-be-bad-tour-roma-ii-2024": 0,
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": 1,
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": 1,
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "emiliano-sansonne",
-    "name": "EMILIANO SANSONNE",
-    "totalPoints": 4,
-    "averagePoints": 0.8,
-    "participations": 5,
-    "absences": 18,
-    "presenceRate": 0.21739130434782608,
-    "qualificationIndex": 0.17391304347826086,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": 1,
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": 1,
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": 2,
-      "bad-to-the-bone-tour-roma-apertura-2025": 0,
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": 0,
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "giovanni-lasaponara",
-    "name": "GIOVANNI LASAPONARA",
-    "totalPoints": 4,
-    "averagePoints": 0.6666666666666666,
-    "participations": 6,
-    "absences": 17,
-    "presenceRate": 0.2608695652173913,
-    "qualificationIndex": 0.17391304347826086,
-    "results": {
-      "modena-play-2023": 1,
-      "roma-ludico-2023": 0,
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": 1,
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": 1,
-      "the-villainous-before-christmas-2024": 1,
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": 0,
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "ilaria-genzano",
-    "name": "ILARIA GENZANO",
-    "totalPoints": 4,
-    "averagePoints": 0.6666666666666666,
-    "participations": 6,
-    "absences": 17,
-    "presenceRate": 0.2608695652173913,
-    "qualificationIndex": 0.17391304347826086,
-    "results": {
-      "modena-play-2023": 2,
-      "roma-ludico-2023": 0,
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": 2,
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": 0,
-      "the-villainous-before-christmas-2024": 0,
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": 0,
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "luca-bonina",
-    "name": "LUCA BONINA",
-    "totalPoints": 4,
-    "averagePoints": 0.6666666666666666,
-    "participations": 6,
-    "absences": 17,
-    "presenceRate": 0.2608695652173913,
-    "qualificationIndex": 0.17391304347826086,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": 0,
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": 2,
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": 0,
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": 1,
-      "bad-to-the-bone-tour-roma-apertura-2025": 0,
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": 1,
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "giulia-viola",
-    "name": "GIULIA VIOLA",
-    "totalPoints": 4,
-    "averagePoints": 1.3333333333333333,
-    "participations": 3,
-    "absences": 20,
-    "presenceRate": 0.13043478260869565,
-    "qualificationIndex": 0.17391304347826086,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": 3,
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": 0
+      "the-bad-side-tour-lucca-comics-2026": 1,
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
     "id": "davide-inzerillo",
     "name": "DAVIDE INZERILLO",
-    "totalPoints": 4,
+    "totalPoints": 5,
     "averagePoints": 1,
-    "participations": 4,
+    "participations": 5,
     "absences": 19,
-    "presenceRate": 0.17391304347826086,
-    "qualificationIndex": 0.17391304347826086,
+    "presenceRate": 0.20833333333333334,
+    "qualificationIndex": 0.20833333333333334,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -1396,123 +1111,19 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "glenda-giacomelli",
-    "name": "GLENDA GIACOMELLI",
-    "totalPoints": 4,
-    "averagePoints": 4,
-    "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.17391304347826086,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": 4,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "daniele-giavarini",
-    "name": "DANIELE GIAVARINI",
-    "totalPoints": 4,
-    "averagePoints": 4,
-    "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.17391304347826086,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": 4,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "irene-meneghetti",
-    "name": "IRENE MENEGHETTI",
-    "totalPoints": 4,
-    "averagePoints": 2,
-    "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.17391304347826086,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": 3,
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": 1
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 1
     }
   },
   {
     "id": "stefano-laudani",
     "name": "STEFANO LAUDANI",
-    "totalPoints": 4,
-    "averagePoints": 0.6666666666666666,
-    "participations": 6,
+    "totalPoints": 5,
+    "averagePoints": 0.7142857142857143,
+    "participations": 7,
     "absences": 17,
-    "presenceRate": 0.2608695652173913,
-    "qualificationIndex": 0.17391304347826086,
+    "presenceRate": 0.2916666666666667,
+    "qualificationIndex": 0.20833333333333334,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -1536,7 +1147,512 @@
       "the-bad-side-tour-inkhearts-roma-2026": 1,
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": 1
+      "the-bad-side-tour-lucca-comics-2026": 1,
+      "the-bad-side-tour-monsummano-2026": 1
+    }
+  },
+  {
+    "id": "elena-corotti",
+    "name": "ELENA COROTTI",
+    "totalPoints": 4,
+    "averagePoints": 2,
+    "participations": 2,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.16666666666666666,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": 4,
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": 0,
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
+    }
+  },
+  {
+    "id": "giuliano-mora",
+    "name": "GIULIANO MORA",
+    "totalPoints": 4,
+    "averagePoints": 4,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.16666666666666666,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": 4,
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
+    }
+  },
+  {
+    "id": "iacopo-gaito",
+    "name": "IACOPO GAITO",
+    "totalPoints": 4,
+    "averagePoints": 1.3333333333333333,
+    "participations": 3,
+    "absences": 21,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.16666666666666666,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": 2,
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": 1,
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": 1,
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
+    }
+  },
+  {
+    "id": "leonardo-marucci",
+    "name": "LEONARDO MARUCCI",
+    "totalPoints": 4,
+    "averagePoints": 1,
+    "participations": 4,
+    "absences": 20,
+    "presenceRate": 0.16666666666666666,
+    "qualificationIndex": 0.16666666666666666,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": 2,
+      "good-to-be-bad-tour-roma-ii-2024": 0,
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": 1,
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": 1,
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
+    }
+  },
+  {
+    "id": "emiliano-sansonne",
+    "name": "EMILIANO SANSONNE",
+    "totalPoints": 4,
+    "averagePoints": 0.8,
+    "participations": 5,
+    "absences": 19,
+    "presenceRate": 0.20833333333333334,
+    "qualificationIndex": 0.16666666666666669,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": 1,
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": 1,
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": 2,
+      "bad-to-the-bone-tour-roma-apertura-2025": 0,
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": 0,
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
+    }
+  },
+  {
+    "id": "giovanni-lasaponara",
+    "name": "GIOVANNI LASAPONARA",
+    "totalPoints": 4,
+    "averagePoints": 0.6666666666666666,
+    "participations": 6,
+    "absences": 18,
+    "presenceRate": 0.25,
+    "qualificationIndex": 0.16666666666666666,
+    "results": {
+      "modena-play-2023": 1,
+      "roma-ludico-2023": 0,
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": 1,
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": 1,
+      "the-villainous-before-christmas-2024": 1,
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": 0,
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
+    }
+  },
+  {
+    "id": "ilaria-genzano",
+    "name": "ILARIA GENZANO",
+    "totalPoints": 4,
+    "averagePoints": 0.6666666666666666,
+    "participations": 6,
+    "absences": 18,
+    "presenceRate": 0.25,
+    "qualificationIndex": 0.16666666666666666,
+    "results": {
+      "modena-play-2023": 2,
+      "roma-ludico-2023": 0,
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": 2,
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": 0,
+      "the-villainous-before-christmas-2024": 0,
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": 0,
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
+    }
+  },
+  {
+    "id": "luca-bonina",
+    "name": "LUCA BONINA",
+    "totalPoints": 4,
+    "averagePoints": 0.6666666666666666,
+    "participations": 6,
+    "absences": 18,
+    "presenceRate": 0.25,
+    "qualificationIndex": 0.16666666666666666,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": 0,
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": 2,
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": 0,
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": 1,
+      "bad-to-the-bone-tour-roma-apertura-2025": 0,
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": 1,
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
+    }
+  },
+  {
+    "id": "giulia-viola",
+    "name": "GIULIA VIOLA",
+    "totalPoints": 4,
+    "averagePoints": 1,
+    "participations": 4,
+    "absences": 20,
+    "presenceRate": 0.16666666666666666,
+    "qualificationIndex": 0.16666666666666666,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": 3,
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": 1,
+      "the-bad-side-tour-lucca-comics-2026": 0,
+      "the-bad-side-tour-monsummano-2026": 0
+    }
+  },
+  {
+    "id": "glenda-giacomelli",
+    "name": "GLENDA GIACOMELLI",
+    "totalPoints": 4,
+    "averagePoints": 4,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.16666666666666666,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": 4,
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
+    }
+  },
+  {
+    "id": "daniele-giavarini",
+    "name": "DANIELE GIAVARINI",
+    "totalPoints": 4,
+    "averagePoints": 4,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.16666666666666666,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": 4,
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
+    }
+  },
+  {
+    "id": "irene-meneghetti",
+    "name": "IRENE MENEGHETTI",
+    "totalPoints": 4,
+    "averagePoints": 2,
+    "participations": 2,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.16666666666666666,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": 3,
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": 1,
+      "the-bad-side-tour-monsummano-2026": "NP"
+    }
+  },
+  {
+    "id": "tommaso-ferrando",
+    "name": "TOMMASO FERRANDO",
+    "totalPoints": 4,
+    "averagePoints": 0.8,
+    "participations": 5,
+    "absences": 19,
+    "presenceRate": 0.20833333333333334,
+    "qualificationIndex": 0.16666666666666669,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": 0,
+      "bad-to-the-bone-tour-roma-natale-2025": 1,
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": 1,
+      "the-bad-side-tour-lucca-comics-2026": 1,
+      "the-bad-side-tour-monsummano-2026": 1
+    }
+  },
+  {
+    "id": "mattia-mattioli",
+    "name": "MATTIA MATTIOLI",
+    "totalPoints": 4,
+    "averagePoints": 4,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.16666666666666666,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 4
     }
   },
   {
@@ -1545,9 +1661,9 @@
     "totalPoints": 3,
     "averagePoints": 3,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.13043478260869565,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.125,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -1571,7 +1687,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -1580,9 +1697,9 @@
     "totalPoints": 3,
     "averagePoints": 3,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.13043478260869565,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.125,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -1606,7 +1723,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -1615,9 +1733,9 @@
     "totalPoints": 3,
     "averagePoints": 1.5,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.13043478260869565,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.125,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -1641,7 +1759,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -1650,9 +1769,9 @@
     "totalPoints": 3,
     "averagePoints": 1.5,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.13043478260869565,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.125,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -1676,7 +1795,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -1685,9 +1805,9 @@
     "totalPoints": 3,
     "averagePoints": 1.5,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.13043478260869565,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.125,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -1711,7 +1831,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -1720,9 +1841,9 @@
     "totalPoints": 3,
     "averagePoints": 1,
     "participations": 3,
-    "absences": 20,
-    "presenceRate": 0.13043478260869565,
-    "qualificationIndex": 0.13043478260869565,
+    "absences": 21,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.125,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -1746,7 +1867,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -1755,9 +1877,9 @@
     "totalPoints": 3,
     "averagePoints": 1,
     "participations": 3,
-    "absences": 20,
-    "presenceRate": 0.13043478260869565,
-    "qualificationIndex": 0.13043478260869565,
+    "absences": 21,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.125,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -1781,7 +1903,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -1790,9 +1913,9 @@
     "totalPoints": 3,
     "averagePoints": 1,
     "participations": 3,
-    "absences": 20,
-    "presenceRate": 0.13043478260869565,
-    "qualificationIndex": 0.13043478260869565,
+    "absences": 21,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.125,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -1816,7 +1939,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -1825,9 +1949,9 @@
     "totalPoints": 3,
     "averagePoints": 1,
     "participations": 3,
-    "absences": 20,
-    "presenceRate": 0.13043478260869565,
-    "qualificationIndex": 0.13043478260869565,
+    "absences": 21,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.125,
     "results": {
       "modena-play-2023": 1,
       "roma-ludico-2023": "NP",
@@ -1851,7 +1975,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -1860,9 +1985,9 @@
     "totalPoints": 3,
     "averagePoints": 1,
     "participations": 3,
-    "absences": 20,
-    "presenceRate": 0.13043478260869565,
-    "qualificationIndex": 0.13043478260869565,
+    "absences": 21,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.125,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -1886,7 +2011,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -1895,9 +2021,9 @@
     "totalPoints": 3,
     "averagePoints": 0.75,
     "participations": 4,
-    "absences": 19,
-    "presenceRate": 0.17391304347826086,
-    "qualificationIndex": 0.13043478260869565,
+    "absences": 20,
+    "presenceRate": 0.16666666666666666,
+    "qualificationIndex": 0.125,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -1921,7 +2047,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -1930,9 +2057,9 @@
     "totalPoints": 3,
     "averagePoints": 0.75,
     "participations": 4,
-    "absences": 19,
-    "presenceRate": 0.17391304347826086,
-    "qualificationIndex": 0.13043478260869565,
+    "absences": 20,
+    "presenceRate": 0.16666666666666666,
+    "qualificationIndex": 0.125,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 0,
@@ -1956,7 +2083,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -1965,9 +2093,9 @@
     "totalPoints": 3,
     "averagePoints": 0.5,
     "participations": 6,
-    "absences": 17,
-    "presenceRate": 0.2608695652173913,
-    "qualificationIndex": 0.13043478260869565,
+    "absences": 18,
+    "presenceRate": 0.25,
+    "qualificationIndex": 0.125,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -1991,7 +2119,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2000,9 +2129,9 @@
     "totalPoints": 3,
     "averagePoints": 0.42857142857142855,
     "participations": 7,
-    "absences": 16,
-    "presenceRate": 0.30434782608695654,
-    "qualificationIndex": 0.13043478260869565,
+    "absences": 17,
+    "presenceRate": 0.2916666666666667,
+    "qualificationIndex": 0.125,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2026,18 +2155,19 @@
       "the-bad-side-tour-inkhearts-roma-2026": 0,
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
-    "id": "tommaso-ferrando",
-    "name": "TOMMASO FERRANDO",
+    "id": "giorgia-d-amico",
+    "name": "GIORGIA D'AMICO",
     "totalPoints": 3,
-    "averagePoints": 0.75,
-    "participations": 4,
-    "absences": 19,
-    "presenceRate": 0.17391304347826086,
-    "qualificationIndex": 0.13043478260869565,
+    "averagePoints": 0.5,
+    "participations": 6,
+    "absences": 18,
+    "presenceRate": 0.25,
+    "qualificationIndex": 0.125,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2055,13 +2185,50 @@
       "bad-to-the-bone-tour-bologna-play-2025": "NP",
       "bad-to-the-bone-tour-roma-2025": "NP",
       "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": 0,
+      "bad-to-the-bone-tour-lucca-comics-2025": 1,
       "bad-to-the-bone-tour-roma-natale-2025": 1,
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": 0,
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": 0,
+      "the-bad-side-tour-lucca-comics-2026": 0,
+      "the-bad-side-tour-monsummano-2026": 1
+    }
+  },
+  {
+    "id": "francesco-strafella",
+    "name": "FRANCESCO STRAFELLA",
+    "totalPoints": 3,
+    "averagePoints": 1.5,
+    "participations": 2,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.125,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
       "the-bad-side-tour-bologna-2026": "NP",
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": 1
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 2
     }
   },
   {
@@ -2070,9 +2237,9 @@
     "totalPoints": 2,
     "averagePoints": 2,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.08695652173913043,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.08333333333333333,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 2,
@@ -2096,7 +2263,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2105,9 +2273,9 @@
     "totalPoints": 2,
     "averagePoints": 2,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.08695652173913043,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.08333333333333333,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2131,7 +2299,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2140,9 +2309,9 @@
     "totalPoints": 2,
     "averagePoints": 2,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.08695652173913043,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.08333333333333333,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2166,7 +2335,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2175,9 +2345,9 @@
     "totalPoints": 2,
     "averagePoints": 2,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.08695652173913043,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.08333333333333333,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2201,18 +2371,19 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
     "id": "gianluca-capitta",
     "name": "GIANLUCA CAPITTA",
     "totalPoints": 2,
-    "averagePoints": 1,
-    "participations": 2,
+    "averagePoints": 0.6666666666666666,
+    "participations": 3,
     "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.08695652173913043,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.08333333333333333,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2236,7 +2407,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": 2,
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": 0,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 0
     }
   },
   {
@@ -2245,9 +2417,9 @@
     "totalPoints": 2,
     "averagePoints": 1,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.08695652173913043,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.08333333333333333,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2271,7 +2443,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2280,9 +2453,9 @@
     "totalPoints": 2,
     "averagePoints": 1,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.08695652173913043,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.08333333333333333,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2306,7 +2479,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2315,9 +2489,9 @@
     "totalPoints": 2,
     "averagePoints": 1,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.08695652173913043,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.08333333333333333,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2341,42 +2515,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "giorgia-d-amico",
-    "name": "GIORGIA D'AMICO",
-    "totalPoints": 2,
-    "averagePoints": 0.4,
-    "participations": 5,
-    "absences": 18,
-    "presenceRate": 0.21739130434782608,
-    "qualificationIndex": 0.08695652173913043,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": 1,
-      "bad-to-the-bone-tour-roma-natale-2025": 1,
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": 0,
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": 0,
-      "the-bad-side-tour-lucca-comics-2026": 0
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2385,9 +2525,9 @@
     "totalPoints": 2,
     "averagePoints": 0.6666666666666666,
     "participations": 3,
-    "absences": 20,
-    "presenceRate": 0.13043478260869565,
-    "qualificationIndex": 0.08695652173913043,
+    "absences": 21,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.08333333333333333,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2411,7 +2551,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2420,9 +2561,9 @@
     "totalPoints": 2,
     "averagePoints": 0.4,
     "participations": 5,
-    "absences": 18,
-    "presenceRate": 0.21739130434782608,
-    "qualificationIndex": 0.08695652173913043,
+    "absences": 19,
+    "presenceRate": 0.20833333333333334,
+    "qualificationIndex": 0.08333333333333334,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2446,7 +2587,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2455,9 +2597,9 @@
     "totalPoints": 2,
     "averagePoints": 0.4,
     "participations": 5,
-    "absences": 18,
-    "presenceRate": 0.21739130434782608,
-    "qualificationIndex": 0.08695652173913043,
+    "absences": 19,
+    "presenceRate": 0.20833333333333334,
+    "qualificationIndex": 0.08333333333333334,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 1,
@@ -2481,7 +2623,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2490,9 +2633,9 @@
     "totalPoints": 2,
     "averagePoints": 0.3333333333333333,
     "participations": 6,
-    "absences": 17,
-    "presenceRate": 0.2608695652173913,
-    "qualificationIndex": 0.08695652173913043,
+    "absences": 18,
+    "presenceRate": 0.25,
+    "qualificationIndex": 0.08333333333333333,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2516,7 +2659,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2525,9 +2669,9 @@
     "totalPoints": 2,
     "averagePoints": 0.2857142857142857,
     "participations": 7,
-    "absences": 16,
-    "presenceRate": 0.30434782608695654,
-    "qualificationIndex": 0.08695652173913043,
+    "absences": 17,
+    "presenceRate": 0.2916666666666667,
+    "qualificationIndex": 0.08333333333333333,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 0,
@@ -2551,7 +2695,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2560,9 +2705,9 @@
     "totalPoints": 2,
     "averagePoints": 0.5,
     "participations": 4,
-    "absences": 19,
-    "presenceRate": 0.17391304347826086,
-    "qualificationIndex": 0.08695652173913043,
+    "absences": 20,
+    "presenceRate": 0.16666666666666666,
+    "qualificationIndex": 0.08333333333333333,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2586,7 +2731,116 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
+    }
+  },
+  {
+    "id": "federico-vande",
+    "name": "FEDERICO VANDE",
+    "totalPoints": 2,
+    "averagePoints": 1,
+    "participations": 2,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.08333333333333333,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": 1,
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 1
+    }
+  },
+  {
+    "id": "lorenzo-bacci",
+    "name": "LORENZO BACCI",
+    "totalPoints": 2,
+    "averagePoints": 1,
+    "participations": 2,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.08333333333333333,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": 1,
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 1
+    }
+  },
+  {
+    "id": "marco-traversari",
+    "name": "MARCO TRAVERSARI",
+    "totalPoints": 2,
+    "averagePoints": 1,
+    "participations": 2,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.08333333333333333,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": 1,
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 1
     }
   },
   {
@@ -2595,9 +2849,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2621,7 +2875,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2630,9 +2885,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2656,7 +2911,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2665,9 +2921,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2691,7 +2947,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2700,9 +2957,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2726,7 +2983,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2735,9 +2993,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2761,7 +3019,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2770,9 +3029,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2796,7 +3055,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2805,9 +3065,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2831,7 +3091,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2840,9 +3101,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2866,7 +3127,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2875,9 +3137,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2901,7 +3163,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2910,9 +3173,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2936,7 +3199,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2945,9 +3209,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -2971,7 +3235,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -2980,9 +3245,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3006,42 +3271,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "federico-vande",
-    "name": "FEDERICO VANDE",
-    "totalPoints": 1,
-    "averagePoints": 1,
-    "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": 1,
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3050,9 +3281,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3076,7 +3307,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3085,9 +3317,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3111,7 +3343,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3120,9 +3353,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3146,7 +3379,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3155,9 +3389,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3181,7 +3415,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3190,9 +3425,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3216,7 +3451,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3225,9 +3461,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3251,7 +3487,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3260,9 +3497,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3286,7 +3523,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3295,9 +3533,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3321,7 +3559,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3330,9 +3569,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3356,7 +3595,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3365,9 +3605,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3391,7 +3631,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3400,9 +3641,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3426,7 +3667,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3435,9 +3677,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3461,7 +3703,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3470,9 +3713,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3496,7 +3739,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3505,9 +3749,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3531,7 +3775,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3540,9 +3785,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": 1,
       "roma-ludico-2023": "NP",
@@ -3566,7 +3811,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3575,9 +3821,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3601,7 +3847,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3610,9 +3857,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3636,7 +3883,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3645,9 +3893,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": 1,
       "roma-ludico-2023": "NP",
@@ -3671,7 +3919,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3680,9 +3929,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": 1,
       "roma-ludico-2023": "NP",
@@ -3706,7 +3955,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3715,9 +3965,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3741,7 +3991,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3750,9 +4001,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3776,7 +4027,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3785,9 +4037,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3811,7 +4063,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": 1,
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3820,9 +4073,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3846,7 +4099,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": 1,
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3855,9 +4109,9 @@
     "totalPoints": 1,
     "averagePoints": 0.5,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3881,7 +4135,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3890,9 +4145,9 @@
     "totalPoints": 1,
     "averagePoints": 0.5,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3916,7 +4171,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3925,9 +4181,9 @@
     "totalPoints": 1,
     "averagePoints": 0.5,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3951,7 +4207,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3960,9 +4217,9 @@
     "totalPoints": 1,
     "averagePoints": 0.5,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -3986,7 +4243,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -3995,9 +4253,9 @@
     "totalPoints": 1,
     "averagePoints": 0.5,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4021,7 +4279,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4030,9 +4289,9 @@
     "totalPoints": 1,
     "averagePoints": 0.5,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4056,7 +4315,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4065,9 +4325,9 @@
     "totalPoints": 1,
     "averagePoints": 0.5,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4091,7 +4351,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4100,9 +4361,9 @@
     "totalPoints": 1,
     "averagePoints": 0.5,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4126,7 +4387,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": 0,
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4135,9 +4397,9 @@
     "totalPoints": 1,
     "averagePoints": 0.5,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4161,7 +4423,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": 1,
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4170,9 +4433,9 @@
     "totalPoints": 1,
     "averagePoints": 0.3333333333333333,
     "participations": 3,
-    "absences": 20,
-    "presenceRate": 0.13043478260869565,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 21,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 0,
@@ -4196,7 +4459,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4205,9 +4469,9 @@
     "totalPoints": 1,
     "averagePoints": 0.3333333333333333,
     "participations": 3,
-    "absences": 20,
-    "presenceRate": 0.13043478260869565,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 21,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4231,7 +4495,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4240,9 +4505,9 @@
     "totalPoints": 1,
     "averagePoints": 0.3333333333333333,
     "participations": 3,
-    "absences": 20,
-    "presenceRate": 0.13043478260869565,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 21,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 0,
@@ -4266,7 +4531,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4275,9 +4541,9 @@
     "totalPoints": 1,
     "averagePoints": 0.3333333333333333,
     "participations": 3,
-    "absences": 20,
-    "presenceRate": 0.13043478260869565,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 21,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4301,7 +4567,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4310,9 +4577,9 @@
     "totalPoints": 1,
     "averagePoints": 0.3333333333333333,
     "participations": 3,
-    "absences": 20,
-    "presenceRate": 0.13043478260869565,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 21,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4336,7 +4603,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4345,9 +4613,9 @@
     "totalPoints": 1,
     "averagePoints": 0.25,
     "participations": 4,
-    "absences": 19,
-    "presenceRate": 0.17391304347826086,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 20,
+    "presenceRate": 0.16666666666666666,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4371,7 +4639,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4380,9 +4649,9 @@
     "totalPoints": 1,
     "averagePoints": 0.25,
     "participations": 4,
-    "absences": 19,
-    "presenceRate": 0.17391304347826086,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 20,
+    "presenceRate": 0.16666666666666666,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4406,7 +4675,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4415,9 +4685,9 @@
     "totalPoints": 1,
     "averagePoints": 0.25,
     "participations": 4,
-    "absences": 19,
-    "presenceRate": 0.17391304347826086,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 20,
+    "presenceRate": 0.16666666666666666,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 0,
@@ -4441,7 +4711,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4450,9 +4721,9 @@
     "totalPoints": 1,
     "averagePoints": 0.25,
     "participations": 4,
-    "absences": 19,
-    "presenceRate": 0.17391304347826086,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 20,
+    "presenceRate": 0.16666666666666666,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": 1,
       "roma-ludico-2023": 0,
@@ -4476,7 +4747,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4485,9 +4757,9 @@
     "totalPoints": 1,
     "averagePoints": 0.25,
     "participations": 4,
-    "absences": 19,
-    "presenceRate": 0.17391304347826086,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 20,
+    "presenceRate": 0.16666666666666666,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4511,7 +4783,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4520,9 +4793,9 @@
     "totalPoints": 1,
     "averagePoints": 0.2,
     "participations": 5,
-    "absences": 18,
-    "presenceRate": 0.21739130434782608,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 19,
+    "presenceRate": 0.20833333333333334,
+    "qualificationIndex": 0.04166666666666667,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4546,7 +4819,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4555,9 +4829,9 @@
     "totalPoints": 1,
     "averagePoints": 0.2,
     "participations": 5,
-    "absences": 18,
-    "presenceRate": 0.21739130434782608,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 19,
+    "presenceRate": 0.20833333333333334,
+    "qualificationIndex": 0.04166666666666667,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 0,
@@ -4581,7 +4855,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4590,9 +4865,9 @@
     "totalPoints": 1,
     "averagePoints": 0.2,
     "participations": 5,
-    "absences": 18,
-    "presenceRate": 0.21739130434782608,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 19,
+    "presenceRate": 0.20833333333333334,
+    "qualificationIndex": 0.04166666666666667,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4616,7 +4891,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4625,9 +4901,9 @@
     "totalPoints": 1,
     "averagePoints": 0.16666666666666666,
     "participations": 6,
-    "absences": 17,
-    "presenceRate": 0.2608695652173913,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 18,
+    "presenceRate": 0.25,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": 0,
@@ -4651,18 +4927,19 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
     "id": "andrea-macripo",
     "name": "ANDREA MACRIPO'",
     "totalPoints": 1,
-    "averagePoints": 0.5,
-    "participations": 2,
+    "averagePoints": 0.3333333333333333,
+    "participations": 3,
     "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.043478260869565216,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4686,7 +4963,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": 0,
       "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 0
     }
   },
   {
@@ -4695,9 +4973,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4721,42 +4999,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "francesco-strafella",
-    "name": "FRANCESCO STRAFELLA",
-    "totalPoints": 1,
-    "averagePoints": 1,
-    "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4765,9 +5009,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4791,7 +5035,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4800,9 +5045,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4826,7 +5071,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -4835,9 +5081,9 @@
     "totalPoints": 1,
     "averagePoints": 1,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4861,88 +5107,19 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "lorenzo-bacci",
-    "name": "LORENZO BACCI",
-    "totalPoints": 1,
-    "averagePoints": 1,
-    "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "marco-traversari",
-    "name": "MARCO TRAVERSARI",
-    "totalPoints": 1,
-    "averagePoints": 1,
-    "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0.043478260869565216,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
     "id": "erika-lacqua",
     "name": "ERIKA LACQUA",
     "totalPoints": 1,
-    "averagePoints": 0.5,
-    "participations": 2,
+    "averagePoints": 0.3333333333333333,
+    "participations": 3,
     "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0.043478260869565216,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.041666666666666664,
     "results": {
       "modena-play-2023": "NP",
       "roma-ludico-2023": "NP",
@@ -4966,7 +5143,296 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": 1,
-      "the-bad-side-tour-lucca-comics-2026": 0
+      "the-bad-side-tour-lucca-comics-2026": 0,
+      "the-bad-side-tour-monsummano-2026": 0
+    }
+  },
+  {
+    "id": "fabio-liparulo",
+    "name": "FABIO LIPARULO",
+    "totalPoints": 1,
+    "averagePoints": 0.5,
+    "participations": 2,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.041666666666666664,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": 0,
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 1
+    }
+  },
+  {
+    "id": "selvaggia-puccianti",
+    "name": "SELVAGGIA PUCCIANTI",
+    "totalPoints": 1,
+    "averagePoints": 0.3333333333333333,
+    "participations": 3,
+    "absences": 21,
+    "presenceRate": 0.125,
+    "qualificationIndex": 0.041666666666666664,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": 0,
+      "the-bad-side-tour-milano-draft-2026": 0,
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 1
+    }
+  },
+  {
+    "id": "mattia-manganiello",
+    "name": "MATTIA MANGANIELLO",
+    "totalPoints": 1,
+    "averagePoints": 0.5,
+    "participations": 2,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
+    "qualificationIndex": 0.041666666666666664,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": 0,
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 1
+    }
+  },
+  {
+    "id": "chiara-squaratti",
+    "name": "CHIARA SQUARATTI",
+    "totalPoints": 1,
+    "averagePoints": 1,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 1
+    }
+  },
+  {
+    "id": "malvina-celli",
+    "name": "MALVINA CELLI",
+    "totalPoints": 1,
+    "averagePoints": 1,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 1
+    }
+  },
+  {
+    "id": "alessio-bianucci",
+    "name": "ALESSIO BIANUCCI",
+    "totalPoints": 1,
+    "averagePoints": 1,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 1
+    }
+  },
+  {
+    "id": "sami-shahaj",
+    "name": "SAMI SHAHAJ",
+    "totalPoints": 1,
+    "averagePoints": 1,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 1
+    }
+  },
+  {
+    "id": "debora-cerretini",
+    "name": "DEBORA CERRETINI",
+    "totalPoints": 1,
+    "averagePoints": 1,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0.041666666666666664,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 1
     }
   },
   {
@@ -4975,8 +5441,8 @@
     "totalPoints": 0,
     "averagePoints": 0,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
     "qualificationIndex": 0,
     "results": {
       "modena-play-2023": "NP",
@@ -5001,42 +5467,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": 0,
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "fabio-liparulo",
-    "name": "FABIO LIPARULO",
-    "totalPoints": 0,
-    "averagePoints": 0,
-    "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": 0,
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -5044,9 +5476,9 @@
     "name": "MARTINA SCARPELLINI",
     "totalPoints": 0,
     "averagePoints": 0,
-    "participations": 1,
+    "participations": 2,
     "absences": 22,
-    "presenceRate": 0.043478260869565216,
+    "presenceRate": 0.08333333333333333,
     "qualificationIndex": 0,
     "results": {
       "modena-play-2023": "NP",
@@ -5071,7 +5503,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": 0,
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 0
     }
   },
   {
@@ -5080,8 +5513,8 @@
     "totalPoints": 0,
     "averagePoints": 0,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
     "qualificationIndex": 0,
     "results": {
       "modena-play-2023": "NP",
@@ -5106,7 +5539,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": 0,
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -5115,8 +5549,8 @@
     "totalPoints": 0,
     "averagePoints": 0,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
     "qualificationIndex": 0,
     "results": {
       "modena-play-2023": "NP",
@@ -5141,7 +5575,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": 0,
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -5150,8 +5585,8 @@
     "totalPoints": 0,
     "averagePoints": 0,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
     "qualificationIndex": 0,
     "results": {
       "modena-play-2023": "NP",
@@ -5176,7 +5611,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": 0,
       "the-bad-side-tour-milano-draft-2026": 0,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -5185,8 +5621,8 @@
     "totalPoints": 0,
     "averagePoints": 0,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
     "qualificationIndex": 0,
     "results": {
       "modena-play-2023": "NP",
@@ -5211,7 +5647,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": 0,
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -5220,8 +5657,8 @@
     "totalPoints": 0,
     "averagePoints": 0,
     "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
+    "absences": 22,
+    "presenceRate": 0.08333333333333333,
     "qualificationIndex": 0,
     "results": {
       "modena-play-2023": "NP",
@@ -5246,7 +5683,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": 0,
       "the-bad-side-tour-milano-draft-2026": 0,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -5254,9 +5692,9 @@
     "name": "CARLOTTA PETRI",
     "totalPoints": 0,
     "averagePoints": 0,
-    "participations": 1,
+    "participations": 2,
     "absences": 22,
-    "presenceRate": 0.043478260869565216,
+    "presenceRate": 0.08333333333333333,
     "qualificationIndex": 0,
     "results": {
       "modena-play-2023": "NP",
@@ -5281,42 +5719,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": 0,
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "selvaggia-puccianti",
-    "name": "SELVAGGIA PUCCIANTI",
-    "totalPoints": 0,
-    "averagePoints": 0,
-    "participations": 2,
-    "absences": 21,
-    "presenceRate": 0.08695652173913043,
-    "qualificationIndex": 0,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": 0,
-      "the-bad-side-tour-milano-draft-2026": 0,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 0
     }
   },
   {
@@ -5325,8 +5729,8 @@
     "totalPoints": 0,
     "averagePoints": 0,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
     "qualificationIndex": 0,
     "results": {
       "modena-play-2023": "NP",
@@ -5351,7 +5755,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": 0,
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -5360,8 +5765,8 @@
     "totalPoints": 0,
     "averagePoints": 0,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
     "qualificationIndex": 0,
     "results": {
       "modena-play-2023": "NP",
@@ -5386,7 +5791,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": 0,
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -5394,9 +5800,9 @@
     "name": "CHIARA FABRIS",
     "totalPoints": 0,
     "averagePoints": 0,
-    "participations": 1,
+    "participations": 2,
     "absences": 22,
-    "presenceRate": 0.043478260869565216,
+    "presenceRate": 0.08333333333333333,
     "qualificationIndex": 0,
     "results": {
       "modena-play-2023": "NP",
@@ -5421,7 +5827,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": 0,
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 0
     }
   },
   {
@@ -5429,9 +5836,9 @@
     "name": "LEONARDO FRIGERIO",
     "totalPoints": 0,
     "averagePoints": 0,
-    "participations": 1,
+    "participations": 2,
     "absences": 22,
-    "presenceRate": 0.043478260869565216,
+    "presenceRate": 0.08333333333333333,
     "qualificationIndex": 0,
     "results": {
       "modena-play-2023": "NP",
@@ -5456,7 +5863,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": 0,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 0
     }
   },
   {
@@ -5465,8 +5873,8 @@
     "totalPoints": 0,
     "averagePoints": 0,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
     "qualificationIndex": 0,
     "results": {
       "modena-play-2023": "NP",
@@ -5491,42 +5899,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": 0,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
-    }
-  },
-  {
-    "id": "mattia-manganiello",
-    "name": "MATTIA MANGANIELLO",
-    "totalPoints": 0,
-    "averagePoints": 0,
-    "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
-    "qualificationIndex": 0,
-    "results": {
-      "modena-play-2023": "NP",
-      "roma-ludico-2023": "NP",
-      "lucca-comics-2023": "NP",
-      "milano-games-week-2023": "NP",
-      "villainous-before-christmas-2023": "NP",
-      "good-to-be-bad-tour-roma-apertura-2024": "NP",
-      "modena-play-2024": "NP",
-      "good-to-be-bad-tour-roma-i-2024": "NP",
-      "lucca-comics-2024": "NP",
-      "good-to-be-bad-tour-roma-ii-2024": "NP",
-      "milano-games-week-2024": "NP",
-      "the-villainous-before-christmas-2024": "NP",
-      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
-      "bad-to-the-bone-tour-bologna-play-2025": "NP",
-      "bad-to-the-bone-tour-roma-2025": "NP",
-      "torneo-villainous-napoli-2025": "NP",
-      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
-      "bad-to-the-bone-tour-roma-natale-2025": "NP",
-      "the-bad-side-tour-bologna-2026": "NP",
-      "the-bad-side-tour-inkhearts-roma-2026": "NP",
-      "the-bad-side-tour-games-on-board-2026": "NP",
-      "the-bad-side-tour-milano-draft-2026": 0,
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -5535,8 +5909,8 @@
     "totalPoints": 0,
     "averagePoints": 0,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
     "qualificationIndex": 0,
     "results": {
       "modena-play-2023": "NP",
@@ -5561,7 +5935,8 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": 0
+      "the-bad-side-tour-lucca-comics-2026": 0,
+      "the-bad-side-tour-monsummano-2026": "NP"
     }
   },
   {
@@ -5570,8 +5945,8 @@
     "totalPoints": 0,
     "averagePoints": 0,
     "participations": 1,
-    "absences": 22,
-    "presenceRate": 0.043478260869565216,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
     "qualificationIndex": 0,
     "results": {
       "modena-play-2023": "NP",
@@ -5596,7 +5971,296 @@
       "the-bad-side-tour-inkhearts-roma-2026": "NP",
       "the-bad-side-tour-games-on-board-2026": "NP",
       "the-bad-side-tour-milano-draft-2026": "NP",
-      "the-bad-side-tour-lucca-comics-2026": "NP"
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": "NP"
+    }
+  },
+  {
+    "id": "luca-amoni",
+    "name": "LUCA AMONI",
+    "totalPoints": 0,
+    "averagePoints": 0,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 0
+    }
+  },
+  {
+    "id": "giovanni-vescovini",
+    "name": "GIOVANNI VESCOVINI",
+    "totalPoints": 0,
+    "averagePoints": 0,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 0
+    }
+  },
+  {
+    "id": "pablo-magherini",
+    "name": "PABLO MAGHERINI",
+    "totalPoints": 0,
+    "averagePoints": 0,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 0
+    }
+  },
+  {
+    "id": "giuseppe-piscitelli",
+    "name": "GIUSEPPE PISCITELLI",
+    "totalPoints": 0,
+    "averagePoints": 0,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 0
+    }
+  },
+  {
+    "id": "leonardo-querci",
+    "name": "LEONARDO QUERCI",
+    "totalPoints": 0,
+    "averagePoints": 0,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 0
+    }
+  },
+  {
+    "id": "matteo-marini",
+    "name": "MATTEO MARINI",
+    "totalPoints": 0,
+    "averagePoints": 0,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 0
+    }
+  },
+  {
+    "id": "daniele-cini",
+    "name": "DANIELE CINI",
+    "totalPoints": 0,
+    "averagePoints": 0,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 0
+    }
+  },
+  {
+    "id": "rachele-puccianti",
+    "name": "RACHELE PUCCIANTI",
+    "totalPoints": 0,
+    "averagePoints": 0,
+    "participations": 1,
+    "absences": 23,
+    "presenceRate": 0.041666666666666664,
+    "qualificationIndex": 0,
+    "results": {
+      "modena-play-2023": "NP",
+      "roma-ludico-2023": "NP",
+      "lucca-comics-2023": "NP",
+      "milano-games-week-2023": "NP",
+      "villainous-before-christmas-2023": "NP",
+      "good-to-be-bad-tour-roma-apertura-2024": "NP",
+      "modena-play-2024": "NP",
+      "good-to-be-bad-tour-roma-i-2024": "NP",
+      "lucca-comics-2024": "NP",
+      "good-to-be-bad-tour-roma-ii-2024": "NP",
+      "milano-games-week-2024": "NP",
+      "the-villainous-before-christmas-2024": "NP",
+      "bad-to-the-bone-tour-roma-apertura-2025": "NP",
+      "bad-to-the-bone-tour-bologna-play-2025": "NP",
+      "bad-to-the-bone-tour-roma-2025": "NP",
+      "torneo-villainous-napoli-2025": "NP",
+      "bad-to-the-bone-tour-lucca-comics-2025": "NP",
+      "bad-to-the-bone-tour-roma-natale-2025": "NP",
+      "the-bad-side-tour-bologna-2026": "NP",
+      "the-bad-side-tour-inkhearts-roma-2026": "NP",
+      "the-bad-side-tour-games-on-board-2026": "NP",
+      "the-bad-side-tour-milano-draft-2026": "NP",
+      "the-bad-side-tour-lucca-comics-2026": "NP",
+      "the-bad-side-tour-monsummano-2026": 0
     }
   }
 ]
