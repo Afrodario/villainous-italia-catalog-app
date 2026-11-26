@@ -127,6 +127,35 @@ export class VillainousNightOutComponent implements OnInit {
     );
   }
 
+  onAdminPlayerSearchChange(searchTerm: string): void {
+    this.adminPlayerSearchTerm = searchTerm;
+
+    const filteredPlayers = this.adminFilteredPlayers;
+
+    if (filteredPlayers.length === 1) {
+      this.onSelectedPlayerChange(filteredPlayers[0].id);
+
+      // Mantiene il testo digitato nella ricerca
+      this.adminPlayerSearchTerm = searchTerm;
+      return;
+    }
+
+    // Se il giocatore attualmente selezionato non è più
+    // tra i risultati della ricerca, azzera la selezione.
+    if (
+      this.selectedPlayerId &&
+      !filteredPlayers.some((player) => player.id === this.selectedPlayerId)
+    ) {
+      this.selectedPlayerId = '';
+      this.editedPlayerName = '';
+      this.editedPlayerLocation = '';
+      this.editedStamps = 0;
+      this.editedSecretPlans = 0;
+      this.editedLastNightOutDate = '';
+      this.editedLastNightOutVenue = '';
+    }
+  }
+
   getVenueLabel(venue: VnoVenue): string {
     return `${venue.name} (${venue.city})`;
   }

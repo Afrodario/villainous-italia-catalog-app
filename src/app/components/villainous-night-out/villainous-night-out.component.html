@@ -247,6 +247,7 @@
               id="admin-player-search"
               type="text"
               [(ngModel)]="adminPlayerSearchTerm"
+              (ngModelChange)="onAdminPlayerSearchChange($event)"
               name="adminPlayerSearchTerm"
               placeholder="Digita il nome o una parte del nome..."
               class="w-full rounded-lg border border-gray-600 bg-gray-800 px-4 py-3 text-white placeholder-gray-500 focus:border-amber-500 focus:outline-none"
