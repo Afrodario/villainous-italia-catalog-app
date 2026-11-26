@@ -27,6 +27,7 @@ export class VillainousNightOutService {
   async addPlayer(
     name: string,
     location: string,
+    stamps: number,
     secretPlans: number,
     lastNightOutDate: string,
     lastNightOutVenue: string,
@@ -36,6 +37,7 @@ export class VillainousNightOutService {
       .insert({
         name: name.trim(),
         location: location.trim() || null,
+        stamps,
         secret_plans: secretPlans,
         last_night_out_date: lastNightOutDate || null,
         last_night_out_venue: lastNightOutVenue || null,

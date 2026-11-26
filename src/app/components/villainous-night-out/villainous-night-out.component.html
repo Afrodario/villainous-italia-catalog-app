@@ -127,6 +127,27 @@
             />
           </div>
 
+          <!-- Timbri -->
+          <div>
+            <label
+              for="new-player-stamps"
+              class="mb-2 block text-sm font-semibold text-gray-300"
+            >
+              Numero totale di timbri
+            </label>
+
+            <input
+              id="new-player-stamps"
+              type="number"
+              name="newPlayerStamps"
+              [(ngModel)]="newPlayerStamps"
+              min="0"
+              step="1"
+              required
+              class="w-full rounded-lg border border-gray-600 bg-gray-800 px-4 py-3 text-white focus:border-amber-500 focus:outline-none"
+            />
+          </div>
+
           <!-- Piani Segreti -->
           <div>
             <label
@@ -191,7 +212,7 @@
           </div>
 
           <p class="text-xs text-gray-500">
-            Il giocatore verrà inserito con 0 timbri.
+            Puoi inserire i timbri e i Piani Segreti già raccolti dal giocatore.
           </p>
 
           <button

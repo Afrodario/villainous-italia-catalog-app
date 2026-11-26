@@ -31,6 +31,7 @@ export class VillainousNightOutComponent implements OnInit {
   // Nuovo giocatore
   newPlayerName = '';
   newPlayerLocation = '';
+  newPlayerStamps = 0;
   newPlayerSecretPlans = 0;
   newPlayerLastNightOutDate = '';
   newPlayerLastNightOutVenue = '';
@@ -172,6 +173,7 @@ export class VillainousNightOutComponent implements OnInit {
   async addPlayer(): Promise<void> {
     const name = this.newPlayerName.trim();
     const location = this.newPlayerLocation.trim();
+    const stamps = Number(this.newPlayerStamps);
     const secretPlans = Number(this.newPlayerSecretPlans);
     const lastNightOutDate = this.newPlayerLastNightOutDate;
     const selectedVenue = this.venues.find(
@@ -186,7 +188,11 @@ export class VillainousNightOutComponent implements OnInit {
       this.adminErrorMessage = 'Inserisci il nome del giocatore.';
       return;
     }
-
+    if (!Number.isInteger(stamps) || stamps < 0) {
+      this.adminErrorMessage =
+        'Il numero di timbri deve essere un intero maggiore o uguale a zero.';
+      return;
+    }
     if (!Number.isInteger(secretPlans) || secretPlans < 0) {
       this.adminErrorMessage =
         'Il numero di Piani Segreti deve essere un intero maggiore o uguale a zero.';
@@ -200,6 +206,7 @@ export class VillainousNightOutComponent implements OnInit {
       const player = await this.villainousNightOutService.addPlayer(
         name,
         location,
+        stamps,
         secretPlans,
         lastNightOutDate,
         lastNightOutVenue,
@@ -211,6 +218,7 @@ export class VillainousNightOutComponent implements OnInit {
 
       this.newPlayerName = '';
       this.newPlayerLocation = '';
+      this.newPlayerStamps = 0;
       this.newPlayerSecretPlans = 0;
       this.newPlayerLastNightOutDate = '';
       this.newPlayerLastNightOutVenue = '';
